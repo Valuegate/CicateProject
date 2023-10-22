@@ -1,5 +1,10 @@
-
-
+*::before{
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
 a {
 color: black;
 text-decoration: none ;
@@ -11,7 +16,12 @@ li{
     text-decoration: none ;
 }
 
-
+body {
+    font-size: 1.6rem;
+    height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 .navv{
     display: flex;
