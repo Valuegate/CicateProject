@@ -1,0 +1,112 @@
+.pay_bold{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 100px;
+font-weight: bold;
+letter-spacing: -0.9px;
+line-height: 96.3px;
+white-space: nowrap;
+}
+
+.pay_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.payment_fle{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.john_oliver{
+        color: #ffffff;
+        font-family: "PP Monument Extended-Light", Helvetica;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 32.5px;
+        white-space: nowrap;
+        background-color: #282828;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        width: 500px;
+       
+        }
+        
+
+
+.payment_fle2{
+    display: flex;
+    justify-content: space-around;
+    gap: 80rem;
+}
+
+.payment_fle3{
+    display: flex;
+    justify-content: right;
+    gap: 80rem;
+    margin-top: 200px;
+    margin-right: 700px;
+    padding-bottom: 40px;
+}
+
+.black_pay{
+    background-color: #282828;
+   border-radius: 60px;
+    line-height: 40px;
+    padding: 30px;
+   margin-top: 70px;
+}
+
+.black_pay2{
+    background-color: #282828;
+   border-radius: 60px;
+    line-height: 40px;
+    padding: 30px;
+   margin-top: 70px;
+   width: 1450px;
+}
+
+.justify_black{
+    display: flex;
+    justify-content: center;
+}
+
+.green_money2 {
+    color: #33cc00;
+    font-family: "Monument Extended-Regular", Helvetica;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -0.75px;
+    line-height: 80.3px;
+    white-space: nowrap;
+    }
+
+.button_pay{
+background-color: #33cc00;
+border-radius: 80px;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 45px;
+font-weight: bold;
+letter-spacing: -0.4px;
+line-height: 42.8px;
+text-align: center;
+white-space: nowrap;
+padding: 30px;
+cursor: pointer;
+}
+
+.total_pay{
+    color: #ffffff;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.4px;
+    line-height: 42.8px;
+    white-space: nowrap;
+}

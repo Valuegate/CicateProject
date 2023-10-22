@@ -1,0 +1,37 @@
+
+
+    .bluk2 {
+        z-index: 0;
+        background-color: #020202;
+        border-radius: 60px;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 160px;
+        padding-bottom: 120px;
+        display: flex;
+        
+        
+        }
+
+        .form_class2{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 4rem;
+       line-height: 45px;
+        }
+
+        .fall3{
+            margin-left: 100px;
+            justify-content: center;
+            line-height: 60px;
+          
+            
+        }
+
+        .right_side3{
+            margin-right: 30px;
+            margin-top: 70px;
+        }
+
+        

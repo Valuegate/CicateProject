@@ -1,0 +1,229 @@
+.CICATE {
+    height: 207px;
+    left: 0;
+    top: 0;
+    width: 1285px;
+    }
+    
+    .cicate_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 140px;
+    }
+
+.black{
+    background-color: #282828;
+border-radius: 60px;
+height: 617px;
+left: 0;
+top: 0;
+width: 628px;
+}
+
+.green{
+    background-color: #33cc00;
+border-radius: 60px;
+height: 617px;
+left: 0;
+top: 0;
+width: 628px;
+}
+
+    .color_div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    }
+
+    .union {
+        height: 1047px;
+        left: 0;
+        top: 0;
+        width: 1800px;
+        z-index: 0;
+        position: absolute;
+        }
+
+        .unionx{
+            height: 1047px;
+            left: 0;
+            top: 0;
+            width: 2200px;
+            z-index: 0;
+            margin-left: 800px;
+        }
+        
+        .testad {
+            color: #ffffff;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 110px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 99px;
+            top: 0;
+            width: 766px;
+            position: relative;
+            z-index: 0;
+            }
+         
+            .test_subheader {
+                color: #ffffff;
+                font-family: "Gordita-Regular", Helvetica;
+                font-size: 60px;
+                font-weight: 400;
+                left: 0;
+                letter-spacing: 0;
+                line-height: 70.2px;
+                top: 0;
+                width: 599px;
+                margin-left: -30px;
+               position: relative;
+                }
+
+                .buton_test {
+                    background-color: #33cc00;
+                    border-radius: 60px;
+                    height: 116px;
+                    left: 0;
+                    top: 0;
+                    width: 355px;
+                    color: #ffffff;
+                    font-family: "PP Monument Extended-Regular", Helvetica;
+                    font-size: 35px;
+                    font-weight: 400;
+                    letter-spacing: 0;
+                    line-height: 40.9px;
+                    text-align: center;
+                    width: 355px;
+                    position: relative;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    }
+      
+                    .weheader {
+                        color: #ffffff;
+                        font-family: "Monument Extended-Regular", Helvetica;
+                        font-size: 70px;
+                        font-weight: bold;
+                        left: 0;
+                        letter-spacing: 0;
+                        line-height: 63px;
+                        top: 0;
+                        width: 555px;
+                        }
+                        .shift{
+                            margin-left: 50px;
+                            padding-top: 60px;
+                        }
+                         .two_para{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 8rem;
+                         }
+.all_para1{
+    color: #ffffff;
+    font-family: "Gordita-Regular", Helvetica;
+    font-size: 25px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 34.2px;
+    text-align: justify;
+    top: 0;
+    width: 533px;
+}
+                         .all_para {
+                            color: #ffffff;
+                            font-family: "Gordita-Regular", Helvetica;
+                            font-size: 17px;
+                            font-weight: 400;
+                            left: 0;
+                            letter-spacing: 0;
+                            line-height: 27.2px;
+                            text-align: justify;
+                            top: 0;
+                            width: 533px;
+                            }
+                            
+                        .goal_header {
+                            color: #ffffff;
+                            font-family: "Monument Extended-Regular", Helvetica;
+                            font-size: 70px;
+                            font-weight: bold;
+                            left: 0;
+                            letter-spacing: 0;
+                            line-height: 75px;
+                            top: 0;
+                            white-space: nowrap;
+                            width: 620px;
+                            }
+                           .semi{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 35rem;
+                            padding-top: 40px;
+                           }
+                            .goal_img{
+                                height: 141px;
+                                left: 0;
+                                top: 0;
+                                width: 199px;
+                                }
+
+                        .wepara {
+                            color: #ffffff;
+                            font-family: "Gordita-Medium", Helvetica;
+                            font-size: 17px;
+                            font-weight: 500;
+                            left: 0;
+                            letter-spacing: 0;
+                            line-height: 27.2px;
+                            top: 0;
+                            width: 530px;
+                            text-align: justify;
+                            }
+                
+            
+     .image_slant{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-top: 70px;
+     }
+    .down_boxx{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .down_black {
+        background-color: #282828;
+        border-radius: 60px;
+        height: 856px;
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 1286px;
+        }
+
+        .image_text1{
+          margin-top: -600px;
+          margin-left: 30px;
+          z-index: 0;
+        }
+
+        .last{
+            margin-top: 50px;
+            margin-bottom: 10px;
+            z-index: 0;
+
+        }

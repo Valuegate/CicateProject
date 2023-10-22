@@ -1,0 +1,51 @@
+
+    .bluk_big {
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background-color: #020202;
+        border-radius: 60px;
+        justify-content: center;
+        position: relative;
+        margin-top: 80px;
+        margin-left: 160px;
+        padding-bottom: 70px;
+   
+    }
+
+    .form_class1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+        line-height: 30px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    .inputs1{
+        color: #ffffff;
+        font-family: "PP Monument Extended-Light", Helvetica;
+        font-size: 18px;
+        font-weight: 300;
+       
+        letter-spacing: 0;
+        line-height: 40.5px;
+        text-align: center;
+     
+        white-space: nowrap;
+    
+        background-color: #282828;
+       
+        border-radius: 30px;
+        }
+        .fall1{
+            margin-left: 1200px;
+            justify-content: center;
+           margin-bottom: 250px;
+        }
+
+        .right_side1{
+            margin-right: 1200px;
+            margin-top: 20px;
+        }

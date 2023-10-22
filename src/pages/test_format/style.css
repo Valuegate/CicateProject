@@ -1,0 +1,558 @@
+.top_box {
+    border: 2px solid;
+    border-color: #282828;
+    border-radius: 43px;
+    height: 286px;
+    display: flex;
+    justify-content: center;
+    width: 521px;
+    align-items: center;
+    margin-left: 1250px;
+    margin-top: 150px;
+    }
+.center_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 600px;
+}
+
+.card_para {
+    color: #282828;
+    font-family: "Gordita-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 26.5px;
+    text-align: justify;
+    top: 0;
+    width: 482px;
+    margin-left: 40px;
+    }
+
+    .how-to-apply-button {
+        align-items: center;
+        background-color: #282828;
+        border-radius: 37px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        height: 80px;
+        justify-content: center;
+        overflow: hidden;
+        padding: 10px 30px;
+        position: relative;
+        width: 450px;
+        margin-left: 45px;
+        margin-top: 30px;
+        }
+
+        .text-wrapperx {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Light", Helvetica;
+            font-size: 40px;
+            font-weight: 300;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 43.6px;
+           
+            text-align: center;
+            top: 0;
+            white-space: nowrap;
+            }
+.center_header1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 300px;
+
+}
+
+.socials_icons {
+    height: 108px;
+    left: 0;
+    top: 0;
+    width: 108px;
+    }
+
+.center_header3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 400px;
+
+}
+
+.center_header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    margin-left: 200px;
+    gap: 6rem;
+    margin-top: 60px;
+}
+
+.card_header {
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(232.69, 232.69, 232.69) 100%);
+    border-radius: 57px;
+    box-shadow: var(--shadow);
+    height: 790px;
+    left: 0;
+    top: 0;
+    width: 597px;
+
+    }
+
+    .card_wrapper {
+        color: #282828;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 80px;
+        font-weight: bold;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 101.6px;
+        top: 0;
+        white-space: nowrap;
+        margin-left: 130px;
+        margin-top: 30px;
+        }
+
+        .flex2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+        }
+
+        .flex3{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 4rem;
+       margin-top: 100px;
+       margin-left: -550px;
+        }
+
+        .flex5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            margin-top: 100px;
+            margin-left: -640px;
+             }
+
+             .flex6{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+                margin-top: 100px;
+                margin-left: -650px;
+                 }
+        
+        .span-para {
+            font-family: "PP Monument Extended-Light", Helvetica;
+            font-weight: 300;
+            font-size: 55px;
+            }
+        .flex4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .up_bold {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 45px;
+            }
+        .block {
+            height: 251px;
+            left: 0;
+            top: 0;
+            width: 249px;
+            }
+        .reasons {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 100px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 79.7px;
+            top: 0;
+            width: 598px;
+            }
+        .second_boxx {
+            border: 2px solid;
+            border-color: #282828;
+            border-radius: 43px;
+            height: 364px;
+            left: 0;
+            top: 0;
+            width: 521px;
+            }
+        .card-long {
+            background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(232.69, 232.69, 232.69) 100%);
+            border-radius: 57px;
+            box-shadow: var(--shadow);
+            height: 466px;
+            left: 0;
+            position: relative;
+            top: 0;
+            width: 1300px;
+            margin-top: 150px;
+            margin-left: -670px;
+            }
+.bottom_header{
+    
+    justify-content: center;
+    text-align: center;
+   margin-left: 40px;
+}
+    .inside_card {
+        border: 2px solid;
+        border-color: #282828;
+        border-radius: 43px;
+        height: 230px;
+        left: 0;
+        top: 0;
+        width: 510px;
+        padding-top: 30px;
+        margin-top: 100px;
+        margin-left: 40px;
+        }
+
+    
+    .box_ned_header {
+        color: #282828;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 90px;
+        font-weight: bold;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 90.2px;
+        top: 0;
+        width: 900px;
+        }
+
+        .box_ned_header1 {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 115px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0.5;
+            line-height: 90.2px;
+            top: 0;
+            width: 1000px;
+            
+            }
+
+        .box_ned_text {
+            color: #282828;
+            font-family: "Gordita-Regular", Helvetica;
+            font-size: 30px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 41.9px;
+            text-align: justify;
+            top: 0;
+            width: 727px;
+            }
+            
+
+    .box_ned_vertical {
+        border: 2px solid;
+        border-color: #282828;
+        border-radius: 43px;
+        height: 438px;
+        left: 0;
+        top: 0;
+        width: 346px;
+        }
+
+    .box_ned{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        gap: 8rem;
+        margin-left: 400px;
+
+    }
+    .test_subheader {
+        color: #282828;
+        font-family: "Gordita-Regular", Helvetica;
+        font-size: 30px;
+        font-weight: 400;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 36px;
+        opacity: 0.7;
+        text-align: center;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 676px;
+        margin-left: 1250px;
+        margin-top: 40px;
+        }
+
+        .test_subheader1 {
+            color: #282828;
+            font-family: "Gordita-Regular", Helvetica;
+            font-size: 35px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 36px;
+            opacity: 0.7;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-left: -400px;
+            margin-top: 40px;
+            width: 1000px;
+            }
+           .cross_wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+            margin-left: -550px;
+           }
+            .flex_social{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
+                margin-top: 40px;
+            }
+           .inside_black {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Regular", Helvetica;
+            font-size: 90px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 63px;
+            opacity: 0.5;
+            text-align: center;
+            width: 766px;
+            margin-left: 120px;
+            padding-top: 40px;
+            
+            }
+            .gradient_class {
+                height: 2394px;
+                left: 0;
+                top: 0;
+                width: 1980px;
+                margin-top: -1450px;
+                margin-left: -1050px;
+                }
+                
+           .down_bold {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 59px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 64.3px;
+            top: 0;
+            padding-top: 10px;
+            margin-left: -100px;
+            }
+
+            .rect {
+                background-color: #282828;
+                border-radius: 160px;
+                height: 370px;
+                left: 0;
+                top: 0;
+                width: 1070px;
+                margin-top: 130px;
+                margin-left: -600px;
+                z-index: 2;
+                position: relative;
+                }
+
+            .login-button {
+                all: unset;
+                align-items: center;
+                background-color: #282828;
+                border-radius: 30px;
+                box-sizing: border-box;
+                display: flex;
+                gap: 4px;
+                height: 63px;
+                justify-content: center;
+                overflow: hidden;
+                padding: 11px 18px;
+                width: 205px;
+                margin-left: -65px;
+                padding-top: 10px;
+                cursor: pointer;
+                margin-top: 10px;
+
+                }
+                .buton_txt {
+                color: #ffffff;
+                font-family: "Monument Extended-Regular", Helvetica;
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 32.7px;
+                position: relative;
+                text-align: center;
+                white-space: nowrap;
+                width: fit-content;
+                }
+
+            .down_bold1 {
+                color: #282828;
+                font-family: "PP Monument Extended-Regular", Helvetica;
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: -1.2px;
+                line-height: 36px;
+                opacity: 0.7;
+               margin-right: 200px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                justify-content: center;
+                display: flex;
+                text-align: center;
+                margin-left: -100px;
+               
+              
+                }
+
+                .down_bold2 {
+                    color: #282828;
+                    font-family: "PP Monument Extended-Regular", Helvetica;
+                    font-size: 30px;
+                    font-weight: 400;
+                    letter-spacing: -1.2px;
+                    line-height: 36px;
+                    opacity: 0.7;
+                    width: 381px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    }
+           .iconn {
+            height: 41px;
+            left: 0;
+            top: 0;
+            width: 52px;
+            }
+            
+           .down_gap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10rem;
+            margin-top: 130px;
+            margin-left: -400px;
+           }
+
+           .mid {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 80px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 76.1px;
+            top: 0;
+            width: 515px;
+            }
+           .cross_img {
+            height: 252px;
+            left: 0;
+            top: 0;
+            width: 217px;
+            }
+        .butons{
+            display: flex;
+            justify-content: center;
+            gap: 5rem;
+            margin-top: -300px;
+            margin-left: 220px;
+        }
+
+        .test_buttons {
+            align-items: center;
+            font-family: "Monument Extended-Regular", Helvetica;
+            background-color: #282828;
+            border-radius: 10px;
+            display: inline-flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 20px;
+            justify-content: center;
+            width: 200px;
+            height: 34px;
+            overflow: hidden;
+            font-weight: bold;
+            padding: 10px 30px;
+            color: white;
+            }
+
+            .test_buttons1 {
+                align-items: center;
+                font-family: "Monument Extended-Regular", Helvetica;
+                background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 0%, rgb(51, 204, 0) 86.04%);
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+                display: inline-flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 20px;
+                justify-content: center;
+                width: 200px;
+                height: 34px;
+                overflow: hidden;
+                font-weight: bold;
+                padding: 10px 30px;
+                color: white;
+                }
+    .green_gradient {
+        background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+        border-radius: 362px;
+        height: 724px;
+        left: 0;
+        top: 0;
+        width: 724px;
+        margin-left: 1150px;
+        margin-top: -300px;
+        z-index: 1;
+       
+        }
+
+        .format_header {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 150px;
+            font-weight: bold;
+            justify-content: center;
+            display: flex;
+            line-height: 130.5px;
+            text-align: center;
+            width: 1300px;
+            margin-left: 900px;
+            margin-top: -50px;
+
+            }

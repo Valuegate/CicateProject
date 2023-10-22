@@ -1,0 +1,220 @@
+.fill-in-uni {
+    background-color: #282828;
+    border-radius: 30px;
+    margin-top: 15px;
+    }
+    
+
+    .fill-in-uni3 {
+        background-color: #282828;
+        border-radius: 40px;
+        padding: 30px;
+        margin-bottom: 100px;
+        }
+
+
+        .ask_flex{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            gap: 7rem;
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+        
+
+        .colleague {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Regular", Helvetica;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: -0.2px;
+            line-height: 40.1px;
+            white-space: nowrap;
+            padding: 20px;
+            margin-left: 10px;
+        }
+
+
+        .names_lecturer {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Light", Helvetica;
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 30.4px;
+            white-space: nowrap;
+            padding: 20px;
+            margin-left: 10px;
+            }
+
+            .lecturer_img{
+                margin-right: 7px;
+            }
+
+
+            .positions_lecturer {
+                color: #ffffff;
+                font-family: "Gordita-Light", Helvetica;
+                font-size: 25px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 20.9px;
+                opacity: 0.6;
+                white-space: nowrap;
+                margin-left: 40px;
+                }
+
+                .view_all{
+                    color: #ffffff;
+                    font-family: "PP Monument Extended-Regular", Helvetica;
+                    font-size: 30px;
+                    font-weight: 400;
+                    letter-spacing: 0;
+                    line-height: 16.1px;
+                    text-align: center;
+                    text-decoration: underline;
+                    padding: 20px;
+                    margin-left: 10px;
+                    }
+
+        .boxes{
+            line-height: 40px;
+            padding-top: 10px;
+        }
+
+        .fill-in-uni4 {
+            background-color: #282828;
+            border-radius: 40px;
+           padding: 25px;
+            }
+
+            .write_code{
+                color: #ffffff;
+                font-family: "Gordita-Regular", Helvetica;
+                font-size: 23px;
+                font-weight: 400;
+                letter-spacing: -0.69px;
+                line-height: 24.6px;
+                opacity: 0.4;
+                padding: 20px;
+                }
+
+                .write_code1 {
+                    color: #ffffff;
+                    font-family: "PP Monument Extended-Regular", Helvetica;
+                    font-size: 30px;
+                    font-weight: 400;
+                    letter-spacing: -0.9px;
+                    line-height: 40.1px;
+                    text-align: justify;
+                    }
+                    .input9{
+                        margin-left: 20px;
+                       height: 30px;
+
+                    }
+                    .ads {
+                        color: #282828;
+                        font-family: "PP Monument Extended-Regular", Helvetica;
+                        font-size: 45px;
+                        font-weight: bold;
+                        left: 0;
+                        letter-spacing: -2.1px;
+                        line-height: 50.5px;
+                        padding: 8px;
+                        }
+
+                        .ads_img{
+                            margin-right: 10px;
+                        }
+
+                        .ads_para {
+                            color: #282828;
+                            font-family: "Gordita-Regular", Helvetica;
+                            font-size: 25px;
+                            font-weight: 400;
+                            letter-spacing: -0.6px;
+                            text-align: justify;
+                            line-height: 45px;
+                            opacity: 0.7;
+                            }
+
+                            .ask_button {
+                                align-items: center;
+                                background-color: #33cc00;
+                                border-radius: 20px;
+                                justify-content: center;
+                                overflow: hidden;
+                                color: #ffffff;
+                                font-family: "PP Monument Extended-Regular", Helvetica;
+                                font-size: 30px;
+                                font-weight: bold;
+                                letter-spacing: 0;
+                                line-height: 23.2px;
+                                text-align: center;
+                                padding: 20px;
+                                }
+
+    .fill-in-uni2 {
+        background-color: #282828;
+        border-radius: 23px;
+        margin-top: 40px;
+        padding: 20px;
+        }
+
+.blak_two{
+    
+}
+
+.test_invitation {
+    color: #ffffff;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -0.8px;
+    line-height: 50.8px;
+    }
+
+ 
+    .send_invitation {
+        color: #ffffff;
+        font-family: "Gordita-Regular", Helvetica;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: -0.6px;
+        line-height: 30px;
+        opacity: 0.7;
+        }
+        .invite_img{
+            margin-right: 20px;
+        }
+        .invite_div {
+            background-color: #ffffff;
+            border-radius: 30px;
+            padding: 15px;
+            margin-top: 10px;
+            color: #282828;
+          font-family: "PP Monument Extended-Regular", Helvetica;
+         font-size: 35px;
+         font-weight: bold;
+         cursor: pointer;
+            }
+        
+
+
+
+
+        .mail_list {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Regular", Helvetica;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: -0.9px;
+            line-height: 40.1px;
+            text-align: center;
+            cursor: pointer;
+            padding-left: 5px;
+            
+        }
+        

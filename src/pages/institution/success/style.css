@@ -1,0 +1,93 @@
+
+
+    .congrats {
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 70px;
+        font-weight: 400;
+      
+        left: 0;
+        letter-spacing: 0;
+        line-height: 74.9px;
+        text-align: center;
+        top: 0;
+        white-space: nowrap;
+       
+        padding-bottom: 20px;
+        }
+
+        .congrats_below {
+            color: #ffffff;
+            font-family: "Gordita-Light", Helvetica;
+            font-size: 40px;
+            font-weight: 300;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 48px;
+            text-align: center;
+            padding-top: 20px;
+            top: 0;
+           
+            }
+             .done{
+              justify-content: center;
+             }
+            .trophyy {
+            
+               justify-content: center;
+               margin-left: 800px;
+               padding-top: 40px;
+              
+                }
+
+                .white_flex {
+                    background-color: #ffffff;
+                    border-radius: 30px;
+                    color: #282828;
+                        font-family: "Monument Extended-Regular", Helvetica;
+                        font-size: 20px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 21.4px;
+                        text-align: center;
+                        padding: 15px;
+                    }
+
+                    .green_flex {
+                        background-color: #33cc00;
+                        border-radius: 30px;
+                        color: #282828;
+                        font-family: "Monument Extended-Regular", Helvetica;
+                        font-size: 20px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 21.4px;
+                        text-align: center;
+                        padding: 15px;
+                        }
+
+                        .bottom_wg{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding-top: 35px;
+                            gap: 5rem;
+                        }
+
+                       
+
+
+
+
+    .bluk4 {
+        z-index: 0;
+        background-color: #020202;
+        border-radius: 90px;
+        justify-content: center;
+        position: relative;
+        margin-top: 120px;
+        margin-left: 600px;
+        padding-bottom: 70px;
+        width: 800px;
+        box-shadow: 15px 15px 100px rgba(11, 197, 36, 0.624);
+        }

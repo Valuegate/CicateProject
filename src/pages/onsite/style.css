@@ -1,0 +1,217 @@
+.green_box {
+    height: 1636px;
+    width: 1636px;
+    }
+
+
+.green_box .ellipse {
+    background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+    border-radius: 818px;
+    height: 1636px;
+    left: 0;
+    position: fixed;
+    width: 1636px;
+    display:flex;
+    margin-left: -400px;
+    justify-content: center;
+        }
+
+        .sml{
+            margin-right: 10px;
+        }
+       .green_box .ellipse1 {
+            background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+            border-radius: 818px;
+            height: 1636px;
+            position: fixed;
+            width: 1636px;
+            display:flex;
+            margin-left: 1600px;
+            justify-content: center;
+                }
+
+        .icns{
+            display: flex;
+           align-items: center;
+            padding-top: 200px;
+            justify-content: center;
+            gap: 70rem;
+            
+        }
+
+        .info {
+            color: #282828;
+            font-family: "Gordita-Regular", Helvetica;
+            font-size: 30px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 35.6px;
+            opacity: 0.6;
+            text-align: justify;
+            top: 0;
+            width: 532px;
+            margin-top: -30px;
+            }
+
+            .info1 {
+                color: #282828;
+                font-family: "Gordita-Regular", Helvetica;
+                font-size: 25px;
+                font-weight: 400;
+                left: 0;
+                letter-spacing: 0;
+                line-height: 40.6px;
+                opacity: 0.6;
+                text-align: justify;
+                top: 0;
+                width: 532px;
+                }
+        .icon_color{
+           color:  #33CC00;
+        }
+        .icns2{
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            gap:30rem;
+        padding-top: 30px;
+        margin-top: -30px;
+
+            
+        }
+        .icns3{
+            display: flex;
+           align-items: center;
+            gap:30rem;
+          margin-top: -40px;
+          margin-left: 780px;
+          padding-top: 30px;
+        }
+        .bolds {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 60px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 50.2px;
+            top: 0;
+            width: 511px;
+            }
+
+            .bolds1 {
+                color: #282828;
+                font-family: "Monument Extended-Regular", Helvetica;
+                font-size: 60px;
+                font-weight: bold;
+                left: 0;
+                letter-spacing: 0;
+                line-height: 50.2px;
+                top: 0;
+                width: 511px;
+                margin-left: 5px;
+                }
+
+                .bolds3 {
+                    color: #282828;
+                    font-family: "Monument Extended-Regular", Helvetica;
+                    font-size: 25px;
+                    font-weight: bold;
+                    left: 0;
+                    letter-spacing: 0;
+                    line-height: 50.2px;
+                    top: 0;
+                    width: 511px;
+                    margin-left: 5px;
+                    }
+        .labels {
+            height: 232px;
+            width: 1190px;
+            }
+        .prep_header {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 160px;
+            font-weight: bold;
+            letter-spacing: -3px;
+            line-height: 155.5px;
+            text-align: center;
+            width: 1190px;
+            display: flex;
+            justify-content: center;
+            margin-left: 850px;
+            margin-top: -900px
+            }
+            .sub_header {
+                color: #282828;
+                font-family: "Gordita-Regular", Helvetica;
+                font-size: 40px;
+                font-weight: 400;
+                left: 0;
+                letter-spacing: 0;
+                line-height: 48px;
+                opacity: 0.7;
+                text-align: center;
+                top: 0;
+                width: 532px;
+                margin-left: 1200px;
+                }
+
+                .mode{
+                    display: flex;
+                    justify-content: center;
+                    gap: 7rem;
+                    font-weight: bold;
+                   
+                }
+
+                .online_img {
+        opacity: 0.5;
+                }
+                .onsite_img {
+        opacity: 1;
+                }
+.onsite1{
+        color: #282828;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 100px;
+        font-weight: bold ;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 76.4px;
+        text-align: center;
+        top: 0;
+        width: 363px;
+        opacity: 1;
+        }
+
+        .numbers {
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent;
+            background: linear-gradient(180deg, rgb(51, 204, 0) 0%, rgba(51, 204, 0, 0) 93.75%);
+            background-clip: text;
+            color: transparent;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 100px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 95.5px;
+            top: 0;
+            }
+
+.online1 {
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 100px;
+font-weight: bold;
+left: 0;
+opacity: 0.5;
+letter-spacing: 0;
+line-height: 76.4px;
+text-align: center;
+top: 0;
+width: 344px;
+    }
+

@@ -1,0 +1,240 @@
+.just{
+    justify-content: center !important;
+    margin-top: 200px;
+}
+
+.block_functions {
+    background-color: #282828;
+    border-radius: 48px;
+    line-height: 40px;
+    padding: 20px;
+    }
+
+    .grow_cicate {
+        -webkit-background-clip: text !important;
+        background: linear-gradient(180deg, rgb(255, 255, 255) 59.51%, rgba(255, 255, 255, 0) 100%);
+        background-clip: text;
+        color: transparent;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 0.5;
+        line-height: 60.8px;
+        z-index: 3;
+        color: #ffffff;
+        margin-left: -360px;
+        margin-top: 35px;
+
+        }
+
+        .like_pro{
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 0.5;
+            line-height: 40.8px;
+            color: #ffffff;
+        }
+
+        .like_pro1{
+            font-family: "Gordita-Light", Helvetica;
+            font-size: 30px;
+            font-weight: 200;
+            letter-spacing: 0.5;
+            line-height: 40.8px;
+            color: #ffffff;
+        }
+
+    .fill-in-block-with {
+        background-color: #ffffff;
+        border-radius: 30px;
+        height: 99px;
+        left: 0;
+        opacity: 0.2;
+        top: 0;
+        width: 617px;
+        }
+    .reg_find {
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 45px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 26.8px;
+        text-align: center;
+        white-space: nowrap;
+        background-color: #33cc00;
+        border: 1px solid;
+        border-radius: 30px;
+        padding: 35px;
+        }
+
+        .reg_find2 {
+            color: black;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 26.8px;
+            text-align: center;
+            white-space: nowrap;
+            background-color: #ffffff;
+            border: 1px solid;
+            border-radius: 30px;
+            padding: 35px;
+            opacity: 0.2;
+            width: 100%;
+           
+            }
+
+            .view{
+                font-size: 27px;
+                font-weight: bold;
+            }
+.foto_flex{
+    justify-content: center;
+    display: flex;
+    gap: 20rem;
+    margin-top: 150px;
+    margin-right: 100px;
+    padding-bottom: 60px;
+}
+
+.green_girl{
+    display: flex;
+    
+}
+         .yourself{
+            color: #ffffff;
+            font-family: "Gordita-Light", Helvetica;
+            font-size: 20px;
+            font-weight: 300;
+         }   
+  .cicate_move{
+  margin-left: -500px;
+  z-index: 3;
+  margin-top: 20px;
+  }
+
+
+.green_boy{
+    display: flex;
+  
+}
+.green_girl_div{
+   margin-left: -400px;
+}
+
+.green_boy_div{
+    margin-left: -450px;
+    z-index: 0;
+}
+
+.gy{
+    z-index: 1;
+}
+        .white_reg {
+            color: #ffffff;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 25px;
+            font-weight: 400;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 26.8px;
+            position:relative;
+        }
+        .fill_block {
+            background-color: #ffffff;
+            border-radius: 30px;
+            opacity: 0.2;
+            color: #ffffff;
+            text-align: center;
+            white-space: nowrap;
+            }
+
+          
+
+            .fill_text{
+                font-family: "PP Monument Extended-Regular", Helvetica;
+                font-size: 40px;
+               font-weight: bold;
+               letter-spacing: 0;
+              line-height: 26.8px;
+              color: #ffffff;
+             text-align: center;
+             white-space: nowrap;
+            }
+
+    .green_row {
+        background-color: #33cc00;
+        border: 1px solid;
+        border-radius: 30px;
+        height: 91px;
+        width: 617px;
+        }
+
+    .bold_dashboard {
+        color: #282828;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 70px;
+        font-weight: bold !important;
+        height: 64px;
+        left: 0;
+        letter-spacing: -1.8px;
+        line-height: 64.2px;
+        top: 0;
+        white-space: nowrap;
+        }
+
+        .my_test {
+            color: #282828;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 40px;
+            font-weight: bold;
+            height: 36px;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 2.4px;
+            white-space: nowrap;
+            }
+
+            .less_text {
+                color: #282828;
+                font-family: "Gordita-Regular", Helvetica;
+                font-size: 20px;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 30.4px;
+                text-align: justify;
+                white-space: nowrap;
+                }
+
+                .dashboard_flex{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 11rem;
+                    margin-top: 80px;
+                    line-height: 40px;
+                }
+
+                .img_set{
+                    margin-right: 15px;
+                }
+
+                .mon{
+                    display: flex;
+                    gap: 30rem;
+                }
+
+                .green_white{
+                    padding-top: 15px;
+                    display: flex;
+                    justify-content: center;
+                }
+                .img_jk{
+             margin-right: 15px;
+                }
+
+
+                

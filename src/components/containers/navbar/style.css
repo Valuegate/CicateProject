@@ -1,0 +1,260 @@
+*::before{
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+a {
+color: black;
+text-decoration: none ;
+}
+
+
+li{
+    list-style: none;
+    text-decoration: none ;
+}
+
+body {
+    font-size: 1.6rem;
+    height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 8vh;
+    text-decoration: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    
+}
+
+.vector {
+    height: 40px;
+    size: 40px;
+    margin-right: 7px;
+
+    }
+    
+
+ .up__header{
+text-decoration: none;
+right: 10px;
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-right: 700px;
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 40px;
+font-weight: bold;
+letter-spacing: -0.3px;
+line-height: 1.4px;
+text-align: right;
+cursor: pointer;
+
+
+
+
+
+
+    }
+.nav_brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70px;
+    display: flex;
+    margin-top: -30px;
+    text-decoration: none;
+    margin-right: 350px;
+
+}
+.login {
+ all: unset;
+align-items: center;
+background-color: #282828;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+border-radius: 10px;
+box-sizing: border-box;
+display: inline-flex;
+gap: 4px;
+overflow: hidden;
+padding: 11px 18px;
+position: relative;
+color: white;
+cursor: pointer;
+}
+ .separator {
+    height: 50px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 10px;
+    }
+.signUp {
+    all: unset;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Monument Extended-Regular", Helvetica;
+    background-color: #33cc00;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 11px 12px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+
+.nav__menu{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10rem;
+font-size: 45px;
+text-decoration: none;
+font-family: "PP Monument Extended-Regular", Helvetica;
+cursor: pointer;
+}
+
+.nav__toggler div{
+ width:2.5rem;
+ height: 0.2rem;
+ margin: 0.4rem;
+ background: darkgray;
+ transition: 0.4s ease-in;
+}
+
+.nav__toggler {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav__toggler {
+      display: block;
+      cursor: pointer;
+    }
+    .nav__menu {
+        position: fixed;
+        top: 7vh;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        background: green;
+        flex-direction: column;
+        transform: translateX(100%);
+        text-decoration: none;
+        z-index: 3;
+    }}
+
+    .nav__active{
+        transform: translateX(0);
+    }
+
+    .under__Header{
+       align-items: center;
+       justify-content: center;
+       color: #282828;
+       font-family: "Monument Extended-Regular", Helvetica;
+      font-size: 50px;
+      font-weight: 15px;
+      margin-left: 0px;
+      display: flex;
+      gap: 4rem;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 20px;
+      bottom: 0;
+      margin-top: 8vh;
+      height: 8vh;
+      background: white;
+      width: 100%;
+      left: 0;
+      padding-top: 20px;
+      z-index: 0;
+     }
+     
+     .box {
+       height: 724px;
+       width: 724px;
+     }
+     
+     .box .gradient {
+       background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+       border-radius: 362px;
+       height: 724px;
+       margin-top: 20%;
+       position: fixed;
+       top: 0;
+       justify-content: center;
+       width: 724px;
+     }
+     
+     label .header {
+       color: #282828;
+       font-family: "Monument Extended-Regular", Helvetica;
+       font-size: 100px;
+       font-weight: 400;
+       left: 0;
+       line-height: 95.5px;
+       position: fixed;
+       text-align: center;
+       top: 0;
+       width: 1286px;
+       text-decoration: none;
+       }
+       .label .text-wrapper {
+       letter-spacing: 0;
+       }
+       .label .span {
+       letter-spacing: -33px;
+       }
+       
+     
+     
+     .test_format_button {
+       align-items: center;
+       background-color: #33cc00;
+       border-radius: 10px;
+       display: inline-flex;
+       gap: 10px;
+       justify-content: center;
+       overflow: hidden;
+       padding: 10px 13px;
+       position: relative;
+       text-decoration: none;
+       }
+     
+       .test_format_button .text-wrapper {
+         color: #ffffff;
+         font-family: "Monument Extended-Regular", Helvetica;
+         font-size: 18px;
+         font-weight: 400;
+         letter-spacing: 0;
+         line-height: 19.6px;
+         margin-top: -1px;
+         position: relative;
+         white-space: nowrap;
+         width: fit-content;
+         }
+
+
+
+
+
+
+

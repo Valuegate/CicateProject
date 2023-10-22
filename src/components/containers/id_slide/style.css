@@ -1,0 +1,35 @@
+.slide_text{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 45px;
+font-weight: bold;
+left: 0;
+letter-spacing: 0;
+line-height: 30.8px;
+white-space: nowrap;
+}
+
+.pad{
+    margin-top: 70px;
+}
+.img_gren{
+margin-right: 10px;
+}
+.black_id{
+background-color: black;
+color: white;
+border-radius: 40px;
+padding: 15px;
+font-weight: bold;
+font-size: 45px;
+text-align: center;
+margin-right: 300px;
+}
+
+.row_flex3{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+

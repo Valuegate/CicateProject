@@ -1,0 +1,87 @@
+
+    .sign_opacity {
+        color: #ffffff;
+        font-family: "PP Monument Extended-Regular", Helvetica;
+        font-size: 40px;
+        font-weight: 400;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 36px;
+        opacity: 0.5;
+        top: 0;
+        white-space: nowrap;
+        width: 242px;
+        position: relative;
+        }
+      .whitehead{
+            height: 135px;
+            left: 0;
+            top: 0;
+            width: 136px;
+            margin-left: 50px;
+          }
+
+          .bodygrey{
+            height: 152px;
+            left: 0;
+            top: 0;
+            width: 252px;
+          }
+
+          .crusader{
+            height: 136px;
+            left: 0;
+            top: 0;
+            width: 137px;
+            margin-top: -150px;
+            margin-left: 151px;
+          }
+
+        .greta_div{
+          line-height: 200px;
+         
+          
+          
+        }
+        .dont {
+            color: #ffffff;
+            font-family: "Monument Extended-Regular", Helvetica;
+            font-size: 70px;
+            font-weight: bold;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 80px;
+            top: 0;
+            width: 648px;
+            position: relative;
+            }
+            
+            .create_button {
+                color: #282828;
+                font-family: "PP Monument Extended-Regular", Helvetica;
+                font-size: 35px;
+                font-weight: bold;
+                letter-spacing: 0;
+                line-height: 24.5px;
+                text-align: center;
+                white-space: nowrap;
+                background-color: #33CC00;
+                border-radius: 40px;
+               padding: 30px;
+                position: relative;
+                cursor: pointer;
+                }
+
+  
+    .sign_flex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20rem;
+  
+     margin-top: 400px;
+     padding-bottom: 500px;
+    
+    }
+
+  

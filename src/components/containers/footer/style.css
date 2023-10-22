@@ -1,0 +1,39 @@
+.footer{
+display: flex;
+align-items: center;
+background: #282828;
+justify-content: space-around;
+border-top-left-radius: 80px;
+border-top-right-radius: 80px;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 30px;
+font-weight: 400;
+line-height: 50px;
+ letter-spacing: 0;
+bottom: 0;
+z-index: 2;
+}
+
+
+.footer__container{
+    color: #ffffff;
+    font-family: "Gordita-Regular", Helvetica;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26.2px;
+    opacity: 0.5;
+    padding-bottom: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+ul{
+    padding: 0;
+    
+}
+
+

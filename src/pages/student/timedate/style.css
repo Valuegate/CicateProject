@@ -1,0 +1,23 @@
+.div3{
+    background-color: #282828;
+}
+
+.numbers_green{
+    background-color: #33CC00;
+    margin-right: 8px;
+    padding: 8px;
+    border-radius: 70%;
+}
+
+.review_flex1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8rem;
+    margin-top: 100px;
+    line-height: 50px;
+}
+
+.choose1{
+    margin-bottom: 180px;
+}

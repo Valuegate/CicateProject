@@ -1,0 +1,68 @@
+.photo_box {
+    background-color: #282828;
+    border: 1px dashed;
+    border-color: #ffffff;
+    border-radius: 77px;
+    height: 282px;
+    left: 0;
+    top: 0;
+    width: 451px;
+    cursor: pointer;
+    display: flex;
+    justify-content:center; 
+    }
+    .photo_tex {
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 50px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 40px;
+        opacity: 0.4;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 70px;
+    
+        }
+    .please_wrapper {
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 60px;
+        font-weight: bold;
+        height: 80px;
+        left: 0;
+        letter-spacing: 0;
+        line-height: 60px;
+        top: 0;
+        width: 595px;
+        }
+
+        .downsize{
+            
+        }
+         .flex_idd{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            gap: 8rem;
+            margin-top: 60px;
+         }
+        .so_wrapper {
+            color: #ffffff;
+            font-family: "PP Monument Extended-Light", Helvetica;
+            font-size: 40px;
+            font-weight: 300;
+            height: 61px;
+            left: 0;
+            letter-spacing: 0;
+            line-height: 40.5px;
+            top: 0;
+            width: 373px;
+            }
+            .button_position{
+                margin-top: 60px;
+                margin-left: 200px;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 40px;
+            }
