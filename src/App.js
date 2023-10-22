@@ -55,7 +55,7 @@ function App() {
         <Route path='/research' element={<Research/>}/>
         <Route path='/institutions' element={<Institutions/>}/>
         <Route path='/results' element={<Results/>}/>
-        <Route path='/home' element={<TestFormat/>}/>
+        <Route path='/' element={<TestFormat/>}/>
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/whyUs' element={<WhyUs/>}/>

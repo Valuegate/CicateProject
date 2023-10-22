@@ -25,7 +25,7 @@ const Navbar = () => {
       <nav className='navv'>
         <a href="/home" className='nav_brand'>CICATE </a>
           <ul className={active}>
-            <li className='nav_item'><a href="/home" className='nav_link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
+            <li className='nav_item'><a href="/" className='nav_link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li className='nav_item'><a href="/institutions" className='nav_link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
             <li className='nav_item'><a href="/about" className='nav_link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
             <li className='nav_item'><a href="/" className='nav_link'><img alt='img' src={seperator} /></a> </li>
