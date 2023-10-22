@@ -44,7 +44,7 @@ const Navbar = () => {
           </ul>
       </nav>
    <div className="under__Header">
-   <a href="/home" className="test_format_button">Test Format</a>
+   <a href="/" className="test_format_button">Test Format</a>
    <a href="/online">Prepare</a>
    <a href="/lisa">Results</a>
    <a href="/faq">FAQ</a>
