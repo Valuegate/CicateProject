@@ -12,9 +12,9 @@ const Institutions = () => {
       <Navbar/>
       <div className='first_header'>How To Apply For <br /> Partnership as a...</div>
       <div className='flex_options'>
-        <div className='options1'>Government</div>
-        <div className='options2'>University</div>
-        <div className='options1'>Company</div>
+        <div className='options2'>Government</div>
+        <div className='options1'>University</div>
+        <div className='options2'>Company</div>
       </div>
 
       <div>
