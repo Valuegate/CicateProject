@@ -1,0 +1,25 @@
+body {
+    font-size: 1rem; /* Set your desired base font size */
+  }
+  
+  .container {
+    width: 100%; /* Adjust your container width as needed */
+    max-width: 1200px; /* Add a max-width to limit content width */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  h1 {
+    font-size: 2rem; /* Set headings with relative font sizes (em or rem) */
+  }
+  
+  p {
+    font-size: 1rem; /* Paragraph text with relative font size */
+  }
+  
+  /* Use media queries to adjust your layout for different screen sizes */
+  @media (max-width: 768px) {
+    .maxwidth {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  }
+  

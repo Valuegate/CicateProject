@@ -2,9 +2,8 @@
     margin:0;
     box-sizing: border-box;
 }
-html{
-    font-size: 62.5%;
-}
+
+
 a {
 color: black;
 text-decoration: none ;
@@ -17,30 +16,37 @@ li{
 }
 
 body {
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
+  font-size: 1rem;
 }
+
 
 .navv{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: white;
+    height: 8vh;
     text-decoration: none;
     position: fixed;
-    width: 100%;
     z-index: 2;
+    gap: 10px;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    height: 100px;
     
 }
 
-.vector {
-    height: 40px;
-    size: 40px;
-    margin-right: 7px;
 
+.vector {
+    margin-right: 5px;
+    height: 20px;
     }
-    
+
+    .vector0 {
+        margin-right: 5px;
+        height: 20px;
+ 
+        
+        }
+
 
  .up__header{
 text-decoration: none;
@@ -61,35 +67,62 @@ cursor: pointer;
 
 
 
-
-
     }
 .nav_brand{
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 70px;
-    display: flex;
-    margin-top: -30px;
+    font-size: 18px;
     text-decoration: none;
-    margin-right: 350px;
+    margin-right: 45px;
+}
 
+.nav_brand2{
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 45px;
+    color:#ffffff
 }
 .login {
- all: unset;
-align-items: center;
-background-color: #282828;
-color: #ffffff;
-font-family: "Monument Extended-Regular", Helvetica;
-border-radius: 10px;
-box-sizing: border-box;
-display: inline-flex;
-gap: 4px;
-overflow: hidden;
-padding: 11px 18px;
-position: relative;
-color: white;
-cursor: pointer;
+    all: unset;
+    align-items: center;
+    background-color: #282828;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 11px 18px;
+ color: #ffffff;
+  font-family: "Monument Extended-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.4px;
+  text-align: center;
+  white-space: nowrap;
+ 
 }
+
+.login_black {
+    all: unset;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-flex;
+    overflow: hidden;
+    padding: 11px 18px;
+ color: black;
+  font-family: "Monument Extended-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 17.4px;
+  text-align: center;
+  white-space: nowrap;
+ 
+}
+
+
+
+
  .separator {
     height: 50px;
     left: 0;
@@ -100,19 +133,23 @@ cursor: pointer;
 .signUp {
     all: unset;
     align-items: center;
-    color: #ffffff;
-    font-family: "Monument Extended-Regular", Helvetica;
     background-color: #33cc00;
     border-radius: 10px;
     box-sizing: border-box;
-    display: inline-flex;
-    gap: 10px;
     justify-content: center;
     overflow: hidden;
     padding: 11px 12px;
-    position: relative;
-    cursor: pointer;
-    
+  color: #ffffff;
+  font-family: "Monument Extended-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 17.4px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+ 
 }
 
 
@@ -120,11 +157,11 @@ cursor: pointer;
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 10rem;
-font-size: 45px;
+gap: 6rem;
 text-decoration: none;
 font-family: "PP Monument Extended-Regular", Helvetica;
 cursor: pointer;
+font-size: 10px;
 }
 
 .nav__toggler div{
@@ -140,23 +177,29 @@ cursor: pointer;
     cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-    .nav__toggler {
-      display: block;
-      cursor: pointer;
+
+
+    .nav__link{
+        color: #282828;
+        font-family: "PP Monument Extended-Regular", Helvetica;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.36px;
+        line-height: 19.6px;
+        text-align: center;
+        white-space: nowrap;
     }
-    .nav__menu {
-        position: fixed;
-        top: 7vh;
-        width: 50%;
-        height: 100%;
-        right: 0;
-        background: green;
-        flex-direction: column;
-        transform: translateX(100%);
-        text-decoration: none;
-        z-index: 3;
-    }}
+
+    .nav__link2{
+        color:#ffffff;
+        font-family: "PP Monument Extended-Regular", Helvetica;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: -0.36px;
+        line-height: 19.6px;
+        text-align: center;
+        white-space: nowrap;
+    }
 
     .nav__active{
         transform: translateX(0);
@@ -167,29 +210,22 @@ cursor: pointer;
        justify-content: center;
        color: #282828;
        font-family: "Monument Extended-Regular", Helvetica;
-      font-size: 50px;
-      font-weight: 15px;
-      margin-left: 0px;
       display: flex;
       gap: 4rem;
       text-decoration: none;
       position: relative;
-      padding-bottom: 20px;
-      bottom: 0;
-      margin-top: 8vh;
-     
-      background: white;
-      width: 100%;
-     
-      padding-top: 20px;
+      margin-top: 10vh;
+     background-color: #ffffff;
       z-index: 0;
+      position: relative;
+      height: 70px;
+     margin-top: 10px;
+    
+    
      }
      
-     .box {
-       height: 724px;
-       width: 724px;
-     }
      
+   
      .box .gradient {
        background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
        border-radius: 362px;
@@ -210,8 +246,6 @@ cursor: pointer;
        line-height: 95.5px;
        position: fixed;
        text-align: center;
-       top: 0;
-       width: 1286px;
        text-decoration: none;
        }
        .label .text-wrapper {
@@ -235,7 +269,8 @@ cursor: pointer;
        position: relative;
        text-decoration: none;
        }
-     
+
+
        .test_format_button .text-wrapper {
          color: #ffffff;
          font-family: "Monument Extended-Regular", Helvetica;

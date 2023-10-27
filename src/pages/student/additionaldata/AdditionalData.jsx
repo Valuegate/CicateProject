@@ -11,23 +11,27 @@ const AdditionalData = () => {
       <div className='black_page'>
       <div className='div'>
           <RegCarousel/>
-          <div className='bluk2'>
-            <form action="" className='form_class2'>
+          <div className='bluk'>
+            <form action="" className='form_class'>
 
-              <div className='fall4'>
-                <label htmlFor="" className='labels'>Country of Birth: <br /><select name="" id="" className='inputs'>
+              <div className='fall'>
+                <label htmlFor="" className='labels'>Country of Birth: <br />
+                <select name="" id="" className='inputs_select'>
                   <option value="select" className=''>Select</option>
                   </select>
                   </label>
-                <label htmlFor="" className='labels'> <br />Native Language: <br /><select name="" id="" className='inputs'>
+
+                <label htmlFor="" className='labels'> <br />Native Language: <br />
+                <select name="" id="" className='inputs_select'>
                   <option value="select" className=''>Select</option>
                   </select>
                   </label>
               </div>
 
 
-              <div className='right_side5'>
-              <label htmlFor="" className='labels'>Country of Citizenship: <br /><select name="" id="" className='inputs'>
+              <div className='right_side'>
+              <label htmlFor="" className='labels'>Country of Citizenship: <br />
+              <select name="" id="" className='inputs_select'>
                 <option value="select">Select</option>
                 </select>
                 </label>

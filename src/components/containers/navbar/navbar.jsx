@@ -10,45 +10,47 @@ import seperator from '../../../assets/separator.svg'
 
 
 const Navbar = () => {
-
+  const [select, setSelect] = useState('')
+/** 
   const [active, setActive] = useState('nav__menu')
   const [toggleIcon, setToogleIcon] = useState('nav__toggler')
-  const navToggle =() => {
+
+  const navToggle = () => {
     active === 'nav__menu' ? setActive('nav__menu nav__active') : setActive('nav__menu')
-    toggleIcon === 'nav__toggler'
-    ? setToogleIcon('nav__toggler toggle' )
-     : setToogleIcon('nav__toggler');
-  
+    toggleIcon === 'nav__toggler' ? setToogleIcon('nav__toggler toggle' ): setToogleIcon('nav__toggler');
   }
+  **/
   return (
-    <div>
+    <div className='maxwidth'>
       <nav className='navv'>
         <a href="/" className='nav_brand'>CICATE </a>
-          <ul className={active}>
-            <li className='nav_item'><a href="/" className='nav_link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
-            <li className='nav_item'><a href="/institutions" className='nav_link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
-            <li className='nav_item'><a href="/about" className='nav_link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
-            <li className='nav_item'><a href="/" className='nav_link'><img alt='img' src={seperator} /></a> </li>
-            <li className='nav_item'><a href="/institution/university-login" className='login'>Login</a></li>
-            <li className='nav_item'><a href="/student/signup" className='signUp'>Sign Up</a> </li>
-            <li className='nav_item'><a href="/" className='nav_link'><img alt='img' src={search} /> Search</a> </li>
+          <ul className='nav__menu'>
+            <li><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
+            <li><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
+            <li><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
+            <li><a href="/" className='nav__link'><img alt='img' src={seperator} /></a> </li>
+            <li><a href="/institution/university-login" className='login'>login</a></li>
+            <li><a href="/student/signup" className='signUp'>sign Up</a> </li>
+            <li ><a href="/"  className='nav__link'><img alt='img' src={search} /> Search</a> </li>
           </ul>
          <ul>
          </ul>
-          <div className={toggleIcon} onClick={navToggle}>
+          <div className='toggleIcon' onClick='navToggle'>
             <div className='line1'></div>
             <div className='line2'></div>
             <div className='line3'></div>
           </div>
           <ul>
           </ul>
-      </nav>
-   <div className="under__Header">
-   <a href="/" className="test_format_button">Test Format</a>
-   <a href="/online">Prepare</a>
-   <a href="/lisa">Results</a>
-   <a href="/faq">FAQ</a>
+
+          <div className="under__Header">
+   <a href="/" className={select === 'testFormat' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('testFormat')}}>Test Format</a>
+   <a href="/online" className={select === 'prepare' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('prepare')}}>Prepare</a>
+   <a href="/lisa" className={select === 'results' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('results')}}>Results</a>
+   <a href="/faq" className={select === 'faq' ? 'test_format_button' : 'underr_tex'} onClick={()=>{setSelect('faq')}}>FAQ</a>
 </div>
+      </nav>
+  
 </div>
   )
 }

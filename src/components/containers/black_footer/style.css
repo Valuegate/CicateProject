@@ -13,30 +13,48 @@
   bottom: 0;
 }
 
-.nav__itemlist{
-  color: #ffffff;
-  font-family: "Gordita-Regular", Helvetica;
-}
-
 .copyright {
   color: #ffffff;
   font-family: "PP Monument Extended-Light", Helvetica;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
+  left: 0;
   letter-spacing: 1.1px;
-  line-height: 90.5px;
+  line-height: 32.5px;
   text-align: center;
   top: 0;
   white-space: nowrap;
   }
 
+
+.black-foot_header {
+  color: #ffffff;
+  font-family: "Gordita-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 1.1px;
+  line-height: 32.5px;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+  }
+
+.nav__itemlist{
+  color: #ffffff;
+  font-family: "Gordita-Regular", Helvetica;
+}
+
+
+
   .copyright2 {
     color: #33cc00;
     font-family: "PP Monument Extended-Light", Helvetica;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 300;
+    left: 0;
     letter-spacing: 0.99px;
-    line-height: 130.5px;
+    line-height: 32.5px;
     text-align: center;
     top: 0;
     white-space: nowrap;

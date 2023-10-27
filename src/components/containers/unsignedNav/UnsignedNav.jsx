@@ -1,9 +1,9 @@
 
 import React,{useState} from 'react'
 import './style.css'
-import vector1 from '../../../assets/Vector1.svg'
-import vector2 from '../../../assets/Vector2.svg'
-import vector3 from '../../../assets/Vector3.svg'
+import mac from '../../../assets/mac.svg'
+import caa from '../../../assets/caa.svg'
+import tee from '../../../assets/tee.svg'
 import search from '../../../assets/Search.svg'
 import phone from '../../../assets/group-648.png'
 import world from '../../../assets/vector.svg'
@@ -24,15 +24,15 @@ const UnsignedNav = () => {
   return (
     <div>
       <nav className='navvv'>
-        <a href="/" className='nav_brandd'>CICATE </a>
+        <a href="/" className='nav_brand2'>CICATE </a>
           <ul className={active}>
-            <li className='nav_item'><a href="/" className='nav_linkk' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
-            <li className='nav_item'><a href="/institutions" className='nav_linkk'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
-            <li className='nav_item'><a href="/about" className='nav_linkk'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
-            <li className='nav_item'><a href="/" className='nav_linkk'><img alt='img' src={seperator}/></a> </li>
-            <li className='nav_item'><a href="/institution/university-login" className='login'>Login</a></li>
+            <li className='nav_item'><a href="/" className='nav__link2' > <img alt='img' src={tee} className='vector0'/>Test Takers</a> </li>
+            <li className='nav_item'><a href="/institutions" className='nav__link2'><img alt='img' src={caa} className='vector0'/>Institutions</a> </li>
+            <li className='nav_item'><a href="/about" className='nav__link2'><img alt='img' src={mac} className='vector0'/>About Us</a> </li>
+            <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={seperator}/></a> </li>
+            <li className='nav_item'><a href="/institution/university-login" className='login_black'>Login</a></li>
             <li className='nav_item'><a href="/student/signup" className='signUp'>Sign Up</a> </li>
-            <li className='nav_item'><a href="/" className='nav_linkk'><img alt='img' src={search} /> Search</a> </li>
+            <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={search} /> Search</a> </li>
           </ul>
          <ul>
          </ul>

@@ -1,103 +1,14 @@
 
-    .current-position {
-        background-color: #33cc00;
-        border-radius: 30px;
-        height: 10px;
-        left: 0;
-        top: 0;
-        width: 330px;
-        }
 
-        .pic1{
-            height: 23px;
-            left: 0;
-            top: 0;
-            width: 29px;
-            }
-
-            .pic_unselect{
-                height: 23px;
-                left: 0;
-                top: 0;
-                width: 29px;
-                opacity: 0.5;
-                }
-
-            .inside_flex{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-               
-            }
-            
-            .next {
-                height: 23px;
-                left: 0;
-                top: 0;
-                width: 70px;
-                margin-left: 100px;
-                }
-
-
-    .fall{
-        margin-left: 1200px;
-        justify-content: center;
-    }
-
-    .flex_green_sign{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-        margin-top: 400px;
-        margin-left: -930px;
-       
-        
-    }
-    .personal_information {
-        color: #ffffff;
-        font-family: "PP Monument Extended-Light", Helvetica;
-        font-size: 20px;
-        font-weight: 400;
-        height: 46px;
-        left: 0;
-        letter-spacing: 0;
-        line-height: 22.3px;
-        top: 0;
-        width: 214px;
-        }
-
-
-        .personal_information1 {
-            color: #ffffff;
-            font-family: "PP Monument Extended-Light", Helvetica;
-            font-size: 20px;
-            font-weight: 400;
-            left: 0;
-            letter-spacing: 0;
-            line-height: 22.3px;
-            top: 0;
-           
-            }
-
-        .flex_end1{
-          display: flex;
-          justify-content: left;
-          align-items: center;
-          gap: 1rem;
-          margin-top: 30px;
-          padding: 10px;
-          margin-left: 50px;
-        }
-      
-
+    
         .green_money {
             color: #33cc00;
             font-family: "PP Monument Extended-Light", Helvetica;
-            font-size: 80px;
-            font-weight: 300;
-            letter-spacing: 0;
+            font-size: 30px;
+           font-weight: 300;
+           letter-spacing: 0;
             line-height: 32.1px;
+            letter-spacing: 0;
             margin-top: 80px;
             }
 
@@ -148,9 +59,10 @@ padding-right: 40px;
             .regfor{
                 justify-content:left;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 gap: 7rem;
-                margin-left: 50px;
+               margin-right: 350px;
                 line-height: 70px;
                 padding-top: 60px;
             }
@@ -159,112 +71,23 @@ padding-right: 40px;
         .registering {
             color: #ffffff;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 90px;
+            font-size: 53px;
             font-weight: bold;
+            letter-spacing: 0;
+            line-height: 56.7px;
             letter-spacing: 0;
             line-height: 56.7px;
             }
             .for {
             font-family: "PP Monument Extended-Light", Helvetica;
+            font-size: 53px;
             font-weight: 300;
+            letter-spacing: 0;
+            line-height: 30.7px;
             color: #ffffff;
-            font-size: 80px;
             }
             
-
-        .bluk {
-            height: 400px;
-            left: 0;
-            top: 0;
-            width: 1600px;
-            z-index: 0;
-            background-color: #020202;
-            border-radius: 60px;
-            justify-content: center;
-            position: relative;
-            margin-top: 80px;
-            margin-left: 160px;
-            padding-bottom: 70px;
-            
-            }
-.next_big{
-background-color: #33CC00;
-color: #ffffff;
-font-family: "Monument Extended-Regular", Helvetica;
-font-size: 60px;
-font-weight: bold;
-letter-spacing: 0;
-text-align: center;
-line-height: 20.5px;
-border-radius: 30px;
-padding: 10px;
-border-top-right-radius: 90px;
-
-}
-
-.submit_section{
-    margin-top: 60px;
-}
-.already_register{
-    color: #f9034d;
-font-family: "Gordita-Regular", Helvetica;
-font-size: 16px;
-font-weight: 400;
-left: 0;
-letter-spacing: 0;
-line-height: 17.4px;
-top: 0;
-white-space: nowrap;
-}
-
-.subtract_img {
-    height: 41px;
-    left: 0;
-    top: 0;
-    width: 46px;
-    }
-            
-
-                        .form_class{
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          height: 400px;
-                          width: 400px;
-                          line-height: 50px;
-                          gap: 6rem;
-                        }
-                       .right_side{
-                        margin-top: 5px;
-                       } 
-            
-        .personal {
-            font-weight: bold;
-            font-size: 50px;
-            font-family: "PP Monument Extended-Light", Helvetica;
-            }
-            .information {
-            font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 50px;
-            font-weight: bold;
-            line-height: 45px;
-            }
-
-
-            .personal_unselected {
-                font-weight: bold;
-                font-size: 50px;
-                font-family: "PP Monument Extended-Light", Helvetica;
-                opacity: 0.5;
-                }
-                .information_unselected {
-                font-family: "Monument Extended-Regular", Helvetica;
-                font-size: 50px;
-                font-weight: bold;
-                line-height: 45px;
-                opacity: 0.5;
-                color: #ffffff;
-                }
+    
                 .questions {
                     color: #ffffff;
                     font-family: "Monument Extended-Regular", Helvetica;
@@ -276,19 +99,6 @@ white-space: nowrap;
                     margin-left: 60px;
 
                     }
-    .green_body {
-        height: 200px;
-        left: 16px;
-        top: 0;
-        width: 150px;
-        }
-
-        .green_div {
-            height: 250px;
-            left: 0;
-            top: 0;
-            width: 150px;
-            }
 
             .second_block{
                 background-color:#282828;
@@ -298,16 +108,4 @@ white-space: nowrap;
                 width: 1900px;
             }
 
-            .signup_white{
-                color: #ffffff;
-                font-family: "Monument Extended-Regular", Helvetica;
-                font-size: 100px;
-                font-weight: bold;
-                height: 57px;
-                left: 0;
-                letter-spacing: 0;
-                line-height: 80.7px;
-                top: 0;
-                width: 500px;
-                }
-                
+           

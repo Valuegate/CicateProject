@@ -20,51 +20,51 @@ const TestCarousel = () => {
 
         <div className='green_money'>Cost:$150</div>
       </div>
-        <div className='flex_end1'>
+        <div className='flex_end'>
           <div className='inside_flex'>
             <img src={pic1} alt="img" className='pic1'/>
-           <p className='personal_information1'>
-            <span className='personal'>Online </span> 
+           <p className='personal_information'>
+            <span className='personal'>Online </span>  <br />
           <span className='information'>Ofline </span>
           <div className="current-position" />
           </p>
-          <div className='green_arrow_box'> <img src={greenArrow} alt='img' className='next1' /></div>
+          <div className='green_arrow_box'> <img src={greenArrow} alt='img' className='next' /></div>
           </div>
 
           <div className='inside_flex'>
             <img src={pic2} alt="img" className='pic1'/>
-           <p className='personal_information1'>
+           <p className='personal_information'>
             <span className='personal_unselected'>Time </span> <br />
           <span className='information_unselected'>&Date </span>
          
           </p>
-          <div className='green_arrow_box'> <img src={normal} alt='img' className='next1' /></div>
+          <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
           </div>
 
            <div className='inside_flex'>
-            <img src={pic3} alt="img" className='pic'/>
-           <p className='personal_information1'>
+            <img src={pic3} alt="img" className='pic1'/>
+           <p className='personal_information'>
             <span className='personal_unselected'>Photo  </span> <br />
           <span className='information_unselected'> Validation </span>
          
           </p>
-          <div className='green_arrow_box'> <img src={normal} alt='img' className='next1' /></div>
+          <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
           </div>
 
 
           <div className='inside_flex'>
-            <img src={pic3} alt="img" className='pic'/>
-           <p className='personal_information1'>
+            <img src={pic3} alt="img" className='pic1'/>
+           <p className='personal_information'>
             <span className='personal_unselected'>Review  </span> 
             <br />
           <span className='information_unselected'> &Submit </span>
          
           </p>
-          <div className='green_arrow_box'> <img src={normal} alt='img' className='next1' /></div>
+          <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
           </div>
 
           <div className='inside_flex'>
-            <img src={pic4} alt="img" className='pic_unselected'/>
+            <img src={pic4} alt="img" className='pic1'/>
             <div className='information_unselected'>Payment</div>
           </div>
         </div>

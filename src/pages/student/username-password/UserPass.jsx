@@ -13,16 +13,16 @@ const UserPass = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
-          <div className='bluk2'>
-            <form action="" className='form_class2'>
+          <div className='bluk'>
+            <form action="" className='form_class'>
 
-              <div className='fall4'>
+              <div className='fall'>
                 <label htmlFor="" className='labels'>Password: <br /><input type="text" className='inputs' placeholder='password'/></label> <br />
                 <label htmlFor="" className='labels'>Confirm Password: <br /><input type="text" className='inputs' placeholder='confirm password'/></label>
               </div>
 
 
-              <div className='right_sidde4'>
+              <div className='right_side'>
               <label htmlFor="" className='labels'>Username: <br /><input type="text" className='inputs' placeholder='Username'/></label>
               <div className='submit_section'>
                 <a href="/student/review" className='next_big'> Next</a>

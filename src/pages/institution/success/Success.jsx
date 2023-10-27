@@ -20,7 +20,7 @@ const Success = () => {
  <div className='congrats_below'>cicate</div>
 <div className='congrats_below'><img src={trophyy} alt="img" /></div>
 <div className='congrats'>Congratulations!</div>
-<div className='congrats_below'>Go Straight to the <br /> and start using <br />it now</div>
+<div className='congrats_below'>Go Straight to the <br /> Dashboard and start using <br />it now</div>
 
 <div className='bottom_wg'>
   <div className='wid'><a href="/" className='white_flex'>Dashboard Tutorial</a></div>

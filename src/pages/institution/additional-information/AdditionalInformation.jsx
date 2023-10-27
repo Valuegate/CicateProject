@@ -15,16 +15,16 @@ const AdditionalInformation = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
-          <div className='bluk_big'>
-         <form action="" className='form_class1'>
-          <div className='fall1'>
+          <div className='bluk'>
+         <form action="" className='form_class'>
+          <div className='fall'>
           <label htmlFor="" className='labels'>Institution Details: <br /><input type="text" className='inputs' placeholder='Name'/></label> <br />
          <label htmlFor="" className='labels'> <br />Acronym: <br /><input type="text" className='inputs' placeholder='Acronym' /></label> <br />
           <label htmlFor="" className='labels'> <br />Biography: Max 500 words: <br />
           <textarea name="" id="" cols="70" rows="10" className='inputs1' placeholder=''></textarea></label>
           </div>
 
-          <div className='right_side1'>
+          <div className='right_side'>
             <label htmlFor="" className='labels'>Type of University: <br />
            <input type="text" className='inputs' />
               </label> <br />

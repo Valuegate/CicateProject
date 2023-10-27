@@ -17,8 +17,8 @@ import gradient from '../../assets/gradient.svg'
 
 const TestFormat = () => {
   return (
-    <div>
-      <div>
+    <div className=''>
+      <div className=''>
       <div>
         <Navbar/>
       </div>

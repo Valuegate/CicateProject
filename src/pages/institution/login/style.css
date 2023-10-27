@@ -1,49 +1,52 @@
 .sign_white {
-    color: #ffffff;
-    font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 120px;
-    font-weight: bold;
-    line-height: 140px;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 100px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 107px;
     }
 
     .sign_opac {
-        color: #ffffff;
-        font-family: "Gordita-Regular", Helvetica;
-        font-size: 27px;
-        font-weight: 400;
-        letter-spacing: -0.81px;
-        line-height: 43.9px;
-        opacity: 0.7;
+ color: #ffffff;
+font-family: "Gordita-Regular", Helvetica;
+font-size: 27px;
+font-weight: 400;
+letter-spacing: -0.81px;
+line-height: 43.9px;
         }
+
+
         .forgot_password {
-            color: #33cc00;
-            font-family: "PP Monument Extended-Regular", Helvetica;
-            font-size: 20px;
-            font-weight: 400;
-            letter-spacing: 0.38px;
-            line-height: 40.5px;
-            text-align: center;
-            text-decoration: underline;
-            white-space: nowrap;
-            margin-left: 40px;
-         
+color: #33cc00;
+font-family: "PP Monument Extended-Regular", Helvetica;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 0.38px;
+line-height: 32.5px;
+text-align: center;
+text-decoration: underline;
+white-space: nowrap;
+margin-left: 60px;
 
             } 
 
-            .green_login{
-  background-color: #33cc00;
- border-radius: 32px;
-color: #282828;
- font-family: "Monument Extended-Regular", Helvetica;
-font-size: 40px;
-font-weight: bold;
-letter-spacing: 1.49px;
-line-height: 40.5px;
-text-align: center;
-white-space: nowrap;
-padding: 20px;
+ .green_login{
+ background-color: #33cc00;
+border-radius: 32px;
 
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 27px;
+font-weight: 400;
+letter-spacing: 1.49px;
+line-height: 32.5px;
+padding-left: 50px;
+padding-right: 50px;
 margin-left: 40px;
+text-align: center;
+
+
                 }
         .icon_immg{
             margin-right: 15px;
@@ -54,7 +57,7 @@ background-color: #FFFFFF;
 border-radius: 40px;
 padding: 20px;
 padding-right: 220px;
-font-size: 30px;
+font-size: 24px;
 }
 
 .pwd{
@@ -63,6 +66,6 @@ font-size: 30px;
     padding: 20px;
     padding-right: 220px;
     margin-top: 40px;
-    font-size: 30px;
+    font-size: 24px;
    
 }

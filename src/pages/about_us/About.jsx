@@ -19,7 +19,8 @@ const About = () => {
     <div className='black'>
         <div className='shift'>
             <div className='weheader'>Who We Are?</div>
-            <p className='wepara'>At CICATE (Competent International Candidates Assessment, Tests, and Exams), we are a globally recognised organisation 
+            <p className='wepara'>At CICATE (Competent International Candidates Assessment, <br />
+            Tests, and Exams), we are a globally recognised organisation <br />
                 dedicated to providing cutting-edge assessment solutions for individuals 
                 seeking educational and career opportunities abroad. With a commitment to competence and fairness, we offer a range of assessment products, including G.A.T.E, POCAS, and L.I.S.A, designed to identify candidates' true potential.
 <br />
@@ -34,7 +35,7 @@ Our international presence and reputation as a reliable assessment provider make
 
     <div className='shift'>
             <div className='weheader'>For What?</div>
-            <p className='wepara'>CICATE was founded with a clear mission in mind – to simplify and enhance the selection process for candidates
+            <p className='wepara'>CICATE was founded with a clear mission in mind br – to simplify and enhance the selection process for candidates
 looking to study or work abroad and to facilitate informed visa decisions. We understand the challenges
 candidates face in proving their competence and potential, which can often be subjective and biased. Therefore,
 we are committed to offering assessments that are fair, unbiased, and standardised, ensuring a level playing
@@ -58,32 +59,33 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
 
         <div className='two_para'>
             <div className=''>
-                <p className='all_para1'>At CICATE, our strategic goals are aligned with our vision of fairness, 
+                <p className='all_para1'>At CICATE, our strategic goals are aligned  brwith our vision of fairness, 
                     reliability, and efficiency in competence assessment:</p>
 
-                <p className='all_para'>Fairness and Objectivity: We strive to maintain the highest
+                <p className='all_para'>1.  Fairness and Objectivity: We strive to maintain the highest
                      levels of fairness and objectivity in our assessments, 
                      ensuring that all candidates are evaluated based on their merits.</p>
 
-                     <p className='all_para'> International Collaboration: We are committed to 
+                     <p className='all_para'>2.   International Collaboration: We are committed to 
                         expanding our international partnerships with universities, 
                         companies, and governments to provide a 
                         comprehensive assessment solution that 
                         benefits candidates and institutions alike.</p>
                      
-                     <p className='all_para'> Streamlining Visa Decisions: We aim to simplify the visa application process
+                     <p className='all_para'>3.   Streamlining Visa Decisions: We aim to simplify the visa application process
                          by working closely with immigration authorities, making 
                          it easier for candidates with CICATE credentials to obtain visas.</p>
             </div>
 
 
-            <div className=''>
-                <p className='all_para'>Continuous Innovation: We are dedicated to continuously improving our
-                     assessment methodologies, incorporating the latest research
+            <div className='right_cont'>
+                <p className='all_para'>4.  Continuous Innovation: We are dedicated to continuously improving  our
+                     assessment methodologies, incorporating the latest research 
                       and technology to provide even more accurate evaluations.</p>
 
-                <p className='all_para'>Candidate Success: Ultimately, our goal is to contribute to the success
-                     of candidates by helping them access educational and career
+                <p className='all_para'>5.  Candidate Success: Ultimately, our goal is to contribute to the 
+                 success
+                     of candidates by helping them access educational and  career
                       opportunities abroad based on their true potential.In conclusion,
                        CICATE is more than an assessment provider; we are a gateway to 
                        a brighter future for candidates worldwide. Our commitment to fairness,
