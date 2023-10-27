@@ -11,9 +11,12 @@ const Review = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
-          <div className='bluk3'>
-            <div className=''>
-              <div className=''><img src="" alt="" /><span className='personal_unselected'>Personal </span><br /><span className='information_unselected'>Information</span></div> <br />
+          <div className='bluk'>
+            <div className='master_div'>
+
+              <div className=''>
+                <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
+                <span className='information_unselected'>Information</span></div> <br />
               <label htmlFor="" className='labels'>First name & Middle name: <br />
                 <input type="text" className='inputs' />
               </label> <br />
@@ -28,7 +31,9 @@ const Review = () => {
                 </select>
               </label> <br />
 
-              <div className='add_margin'><img src="" alt="" /> <span className='personal_unselected'>Additional </span> <br /> <span className='information_unselected'>Information</span></div> <br />
+              <div className='add_margin'><img src="" alt="" /> 
+              <span className='personal_unselected'>Additional </span> <br /> 
+              <span className='information_unselected'>Information</span></div> <br />
               <label htmlFor="" className='labels'>Biography: <br />
                 <textarea className='inputs1' cols={70} rows={10}></textarea>
               </label> <br />
