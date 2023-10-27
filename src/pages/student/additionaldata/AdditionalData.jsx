@@ -11,6 +11,7 @@ const AdditionalData = () => {
       <div className='black_page'>
       <div className='div'>
           <RegCarousel/>
+          <div className='justify_bluk'>
           <div className='bluk'>
             <form action="" className='form_class'>
 
@@ -43,7 +44,7 @@ const AdditionalData = () => {
               </div>
             </form>
           </div>
-
+         </div>
         </div>
       
       </div>

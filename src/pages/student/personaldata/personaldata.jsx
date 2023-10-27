@@ -17,7 +17,7 @@ const PersonalData = () => {
 
 
 
-<div>
+<div className='justify_bluk'>
   <div className='bluk'>
     <form action="" className='form_class'>
 

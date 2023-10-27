@@ -13,6 +13,7 @@ const UserPass = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
+          <div className='justify_bluk'>
           <div className='bluk'>
             <form action="" className='form_class'>
 
@@ -32,7 +33,7 @@ const UserPass = () => {
 
             </form>
           </div>
-
+</div>
 <BlackFooter/>
         </div>
       </div>

@@ -12,6 +12,7 @@ const Success = () => {
       <div className='black_page'>
         <div className='div'>
 <RegCarousel/>
+<div className='justify_bluk'>
 <div className='bluk4'>
 
 
@@ -26,7 +27,7 @@ const Success = () => {
   <div className='wid'><a href="/" className='white_flex'>Dashboard Tutorial</a></div>
   <div className='wid'><a href="/" className='green_flex'>My Dashboard</a></div>
 </div>
-
+</div>
 </div>
 </div>
 

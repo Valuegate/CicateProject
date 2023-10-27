@@ -27,7 +27,10 @@
                     padding-left: 60px;
                     padding-right: 60px;
                     }
-
+      .justify_bluk{
+        justify-content: center;
+        display: flex;
+      }
                     .inputs_select{
                       color: #ffffff;
                       font-family: "PP Monument Extended-Light", Helvetica;
