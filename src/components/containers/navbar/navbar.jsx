@@ -46,7 +46,7 @@ const Navbar = () => {
           <div className="under__Header">
    <a href="/" className={select === 'testFormat' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('testFormat')}}>Test Format</a>
    <a href="/online" className={select === 'prepare' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('prepare')}}>Prepare</a>
-   <a href="/lisa" className={select === 'results' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('results')}}>Results</a>
+   <a href="/gate" className={select === 'results' ? 'test_format_button': 'underr_tex'} onClick={()=>{setSelect('results')}}>Results</a>
    <a href="/faq" className={select === 'faq' ? 'test_format_button' : 'underr_tex'} onClick={()=>{setSelect('faq')}}>FAQ</a>
 </div>
       </nav>

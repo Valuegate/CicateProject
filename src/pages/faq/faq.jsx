@@ -15,7 +15,7 @@ const Faq = () => {
       </div>
       <div className='blackbox1'>
         <div className='first_box'>
-        <div className="white_header">General FAQ</div>
+        <div className=""><p className='white_header'>General FAQ</p></div>
           <div className='white_box'>
           <div className="ci_header">What is CICATE?</div>
           <div>
@@ -39,7 +39,7 @@ educational and professional opportunities internationally and abroad.
         </div>
         <div className='second_box'>
         <div>
-<p className="white_header1">G.A.T.E. - Global <br /> Assessment Test <br />for Education FAQs</p>
+<p className="white_header">G.A.T.E. - Global <br /> Assessment Test <br />for Education FAQs</p>
 </div>
 <div className='inside_brown'>
 <p><a href="/" className="inside_text">What is G.A.T.E? <img src={tick} alt="img" className='tick_image'/> </a></p>
@@ -55,9 +55,10 @@ educational and professional opportunities internationally and abroad.
       </div>
 
       <div className='blackbox1'>
-   <div className='second_box1'>
+
+   <div className='first_box1'>
    <div>
-<p className="white_header1">P.O.C.A.S- Professional <br /> Assessment &amp; <br />Selection Suite FAQs</p>
+<p className="white_header">P.O.C.A.S- Professional <br /> Assessment &amp; <br />Selection Suite FAQs</p>
 </div>
 <div>
 <p><a href="/" className="inside_text">What is POCAS? <img src={tick} alt="img" className='tick_image'/> </a></p>
@@ -79,7 +80,7 @@ educational and professional opportunities internationally and abroad.
 </div>
 
    </div>
-   <div className='first_box11'>
+   <div className='second_box'>
    <div>
 <p className="white_header">General FAQ</p>
 </div>

@@ -21,8 +21,8 @@ const Gate = () => {
  </div>
 <div className="gate__container">
   <div><a href="/gate" className='pocas'>G.A.T.E</a></div>
-  <div><a href="/pocas" className='opacity'>POCAS</a></div>
-  <div><a href="/lisa" className='opacity'>LISA</a></div>
+  <div><a href="/#" className='opacity'>POCAS</a></div>
+  <div><a href="/#" className='opacity'>LISA</a></div>
 </div>
 <div className='box_gate'>
 <div className='gate_rectangle'></div>
