@@ -27,11 +27,14 @@
               justify-content: center;
              }
             .trophyy {
-            
                justify-content: center;
                margin-left: 800px;
                padding-top: 40px;
               
+                }
+
+                .img_size{
+                 width: 100px;
                 }
 
                 .white_flex {

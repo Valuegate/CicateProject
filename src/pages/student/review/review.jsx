@@ -11,6 +11,7 @@ const Review = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
+          <div className='justify_bluk'>
           <div className='bluk'>
             <div className='master_div'>
 
@@ -55,29 +56,8 @@ const Review = () => {
               <label htmlFor="" className='labels'> Repeat Password <br />
                 <input type="text" className='inputs' />
               </label> <br />
-               <form action="" className='form_review'>
-               <div>
-                <input type="checkbox"  className=''/> <label htmlFor="" className="review_terms"> Reviewed all the terms and conditions</label>
-                <div> <br />
-                <input type="checkbox" className=''/> <label htmlFor="" className="review_terms"> Agreeing with Privacy Conditions</label>
-               </div>
-               <br />
-               <div className='nexty'>
-               <a href="/institution/success" className='next_big'>Create</a>
-               </div>
-              
-             
-               </div>
-               </form>
-              
 
-            </div>
-
-
-
-
-
-            <div className=''>
+              <div className=''>
               <div className='email_margin'>
               <label htmlFor="" className='labels'> Date Of Birth: <br />
                 <input type="date" className='inputs' />
@@ -87,7 +67,7 @@ const Review = () => {
               </label> <br />
               </div>
 
-              <div className='social_margin'>
+              <div className=''>
               <label htmlFor="" className='labels'> Country of Citizenship: <br />
               <select id="country" name="country" class="form-control" className='inputs'>
                 <option value="Afghanistan">Afghanistan</option>
@@ -335,17 +315,34 @@ const Review = () => {
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
-              </label> <br />
+              </label> 
               </div>
-              <div className='username_margin'>
-              <label htmlFor="" className='labels'>Username: <br />
-                <input type="text" className='inputs' />
-              </label> <br />
-              </div>
+             
+            </div>
+               <form action="" className='form_review'>
+               <div>
+                <input type="checkbox"  className=''/> <label htmlFor="" className="review_terms"> Reviewed all the terms and conditions</label>
+                <div> <br />
+                <input type="checkbox" className=''/> <label htmlFor="" className="review_terms"> Agreeing with Privacy Conditions</label>
+               </div>
+               <br />
+               <div className='nexty'>
+               <a href="/institution/success" className='next_big'>Create</a>
+               </div>
+              
+             
+               </div>
+               </form>
             </div>
 
+
+
+
+
+           
+
           </div>
-         
+         </div>
         </div>
      
       </div>
