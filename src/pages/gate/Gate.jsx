@@ -24,6 +24,7 @@ const Gate = () => {
   <div><a href="/#" className='opacity'>POCAS</a></div>
   <div><a href="/#" className='opacity'>LISA</a></div>
 </div>
+<div className='move_gate'>
 <div className='box_gate'>
 <div className='gate_rectangle'></div>
 </div>
@@ -97,6 +98,7 @@ assess the academic readiness of applicants,
       providing them with opportunities to pursue their 
     studies without financial constraints.
     </p>
+  </div>
   </div>
   <Footer/>
   </div>
