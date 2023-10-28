@@ -23,51 +23,33 @@
     font-family: "Gordita-Regular", Helvetica;
     font-size: 20px;
     font-weight: 400;
-    left: 0;
     letter-spacing: 0;
     line-height: 26.5px;
     text-align: justify;
-    top: 0;
-    width: 482px;
-    margin-left: 40px;
+    align-items: center;
+    margin-left: 100px;
+    padding-bottom: 20px;
+
     }
-
-    .how-to-apply-button {
-        align-items: center;
-        background-color: #282828;
-        border-radius: 37px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        height: 80px;
-        justify-content: center;
-        overflow: hidden;
-        padding: 10px 30px;
-        position: relative;
-        width: 450px;
-        margin-left: 45px;
-        margin-top: 30px;
-        }
-
         .text-wrapperx {
             color: #ffffff;
             font-family: "PP Monument Extended-Light", Helvetica;
             font-size: 40px;
             font-weight: 300;
-            left: 0;
             letter-spacing: 0;
             line-height: 43.6px;
-           
             text-align: center;
-            top: 0;
             white-space: nowrap;
+            align-items: center;
+           background-color: #282828;
+           border-radius: 37px;
+           padding: 10px 30px;
             }
 .center_header1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
-    margin-left: 300px;
+  
 
 }
 
@@ -92,7 +74,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 35px;
-    margin-left: 200px;
     gap: 6rem;
     margin-top: 60px;
 }
@@ -101,10 +82,10 @@
     background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(232.69, 232.69, 232.69) 100%);
     border-radius: 57px;
     box-shadow: var(--shadow);
-    height: 790px;
-    left: 0;
-    top: 0;
+    height: 739px;
     width: 597px;
+    align-items: center;
+    text-align: center;
 
     }
 
@@ -126,7 +107,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 8rem;
         }
 
         .flex3{
@@ -135,7 +115,7 @@
        align-items: center;
        gap: 4rem;
        margin-top: 100px;
-       margin-left: -550px;
+      
         }
 
         .flex5{
@@ -158,8 +138,8 @@
         
         .span-para {
             font-family: "PP Monument Extended-Light", Helvetica;
-            font-weight: 300;
-            font-size: 55px;
+             font-weight: 300;
+             font-size: 35px;
             }
         .flex4{
             display: flex;
@@ -171,28 +151,23 @@
         .up_bold {
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 60px;
-            font-weight: bold;
+            font-size: 40px;
+            font-weight: 400;
             letter-spacing: 0;
-            line-height: 45px;
+            line-height: 40px;
             }
         .block {
-            height: 251px;
-            left: 0;
-            top: 0;
-            width: 249px;
+height: 251px;
+width: 249px;
             }
         .reasons {
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 100px;
-            font-weight: bold;
-            left: 0;
+            font-size: 90px;
+            font-weight: 400;
             letter-spacing: 0;
             line-height: 79.7px;
-            top: 0;
-            width: 598px;
-            }
+        }
         .second_boxx {
             border: 2px solid;
             border-color: #282828;
@@ -206,14 +181,18 @@
             background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(232.69, 232.69, 232.69) 100%);
             border-radius: 57px;
             box-shadow: var(--shadow);
-            height: 466px;
-            left: 0;
-            position: relative;
-            top: 0;
-            width: 1300px;
-            margin-top: 150px;
-            margin-left: -670px;
+            
+            padding: 40px;
+            margin-top: 100px;
+           justify-self: center;
             }
+.move_boxx{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-right: 900px;
+}
+          
 .bottom_header{
     
     justify-content: center;
@@ -225,8 +204,6 @@
         border-color: #282828;
         border-radius: 43px;
         height: 230px;
-        left: 0;
-        top: 0;
         width: 510px;
         padding-top: 30px;
         margin-top: 100px;
@@ -235,15 +212,11 @@
 
     
     .box_ned_header {
-        color: #282828;
         font-family: "Monument Extended-Regular", Helvetica;
-        font-size: 90px;
-        font-weight: bold;
-        left: 0;
+        font-size: 74px;
+        font-weight: 400;
         letter-spacing: 0;
-        line-height: 90.2px;
-        top: 0;
-        width: 900px;
+        line-height: 76.2px;
         }
 
         .box_ned_header1 {
@@ -261,16 +234,13 @@
 
         .box_ned_text {
             color: #282828;
-            font-family: "Gordita-Regular", Helvetica;
-            font-size: 30px;
-            font-weight: 400;
-            left: 0;
-            letter-spacing: 0;
-            line-height: 41.9px;
-            text-align: justify;
-            top: 0;
-            width: 727px;
-            }
+font-family: "Gordita-Regular", Helvetica;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 41.9px;
+text-align: justify;
+        }
             
 
     .box_ned_vertical {
@@ -287,9 +257,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 40px;
         gap: 8rem;
-        margin-left: 400px;
+        
 
     }
     .test_subheader {
@@ -301,24 +270,24 @@ letter-spacing: 0;
 line-height: 36px;
 opacity: 0.7;
 text-align: center;
-background-color: #282828;
-position: relative;
+
+
         }
 
         .test_subheader1 {
             color: #282828;
-            font-family: "Gordita-Regular", Helvetica;
-            font-size: 35px;
+            font-family: "PP Monument Extended-Regular", Helvetica;
+            font-size: 24px;
             font-weight: 400;
             letter-spacing: 0;
-            line-height: 36px;
-            opacity: 0.7;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            margin-left: -400px;
-            margin-top: 40px;
-            width: 1000px;
+            line-height: 21.6px;
+            opacity: 0.5;
+            }
+
+
+            .subbs{
+                display: flex;
+                justify-content: center;
             }
            .cross_wrapper{
             display: flex;
@@ -335,19 +304,15 @@ position: relative;
                 margin-top: 40px;
             }
            .inside_black {
-            color: #ffffff;
-            font-family: "PP Monument Extended-Regular", Helvetica;
-            font-size: 90px;
-            font-weight: 400;
-            left: 0;
-            letter-spacing: 0;
-            line-height: 63px;
-            opacity: 0.5;
-            text-align: center;
-            width: 766px;
-            margin-left: 120px;
-            padding-top: 40px;
-            z-index: 0;
+color: #ffffff;
+font-family: "PP Monument Extended-Regular", Helvetica;
+font-size: 70px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 63px;
+opacity: 0.5;
+text-align: center;
+z-index: 0;
             
             
             }
@@ -359,16 +324,13 @@ position: relative;
                 }
                 
            .down_bold {
-            color: #282828;
-            font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 59px;
-            font-weight: bold;
-            left: 0;
-            letter-spacing: 0;
-            line-height: 64.3px;
-            top: 0;
-            padding-top: 10px;
-            margin-left: -100px;
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 59px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 64.3px;
+text-align: center;
             }
            
               
@@ -388,31 +350,15 @@ position: relative;
                 align-items: center;
                 background-color: #282828;
                 border-radius: 30px;
-                box-sizing: border-box;
-                display: flex;
-                gap: 4px;
-                height: 63px;
-                justify-content: center;
-                overflow: hidden;
                 padding: 11px 18px;
-                width: 205px;
-                margin-left: -65px;
-                padding-top: 10px;
-                cursor: pointer;
-                margin-top: 10px;
-
-                }
-                .buton_txt {
                 color: #ffffff;
                 font-family: "Monument Extended-Regular", Helvetica;
                 font-size: 30px;
                 font-weight: 400;
                 letter-spacing: 0;
                 line-height: 32.7px;
-                position: relative;
-                text-align: center;
-                white-space: nowrap;
-                width: fit-content;
+                cursor: pointer;
+
                 }
 
             .down_bold1 {
@@ -423,13 +369,7 @@ position: relative;
                 letter-spacing: -1.2px;
                 line-height: 36px;
                 opacity: 0.7;
-               margin-right: 200px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                justify-content: center;
-                display: flex;
                 text-align: center;
-                margin-left: -100px;
                
               
                 }
@@ -465,13 +405,10 @@ position: relative;
            .mid {
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 80px;
-            font-weight: bold;
-            left: 0;
+            font-size: 75px;
+            font-weight: 400;
             letter-spacing: 0;
             line-height: 76.1px;
-            top: 0;
-            width: 515px;
             }
            .cross_img {
             height: 252px;
@@ -514,8 +451,6 @@ position: relative;
                 gap: 10px;
                 font-size: 20px;
                 justify-content: center;
-                width: 200px;
-                height: 34px;
                 overflow: hidden;
                 font-weight: bold;
                 padding: 10px 30px;
