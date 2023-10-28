@@ -1,3 +1,179 @@
+.new1{
+    height: 200px;
+    width: 250px;
+    border-color: black;
+    border: #282828;
+    background-color: black;
+    border-radius: 30px;
+}
+.top_boxone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 200px;
+}
+
+.abilities{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 100px;
+font-weight: 400;
+left: 0;
+line-height: 95.5px;
+text-align: center;
+}
+
+.top_abilities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grey_heades{
+    color: #282828;
+font-family: "Gordita-Regular", Helvetica;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 36px;
+opacity: 0.7;
+text-align: center;
+}
+
+.top_heades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bl_black{
+align-items: center;
+background-color: #282828;
+border-radius: 10px;
+padding: 10px 30px;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 17.4px;
+text-align: center;
+white-space: nowrap;
+}
+
+.bl_green{
+    align-items: center;
+background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 0%, rgb(51, 204, 0) 86.04%);
+background-color: rgba(255, 255, 255, 1);
+border-radius: 10px;
+padding: 10px 30px;
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 16px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 17.4px;
+text-align: center;
+white-space: nowrap;
+
+}
+
+.top_bl{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 30px;
+}
+
+.cicate_offerz{
+color: #282828;
+font-family: "Gordita-Regular", Helvetica;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 41.9px;
+text-align: justify;
+}
+
+
+.empower_box{
+border-radius: 30px;
+height: 600px;
+background-color: #282828;
+width: 500px;
+}
+
+
+.top_empower{
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+    margin-top: 30px;
+}
+
+
+.empower{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 74px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 76.2px;
+}
+
+.our_test{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 80px;
+font-weight: 400;
+left: 0;
+letter-spacing: 0;
+line-height: 101.6px;
+text-align: center;
+white-space: nowrap;
+}
+
+.top_our{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .top_box {
     border: 2px solid;
     border-color: #282828;
@@ -477,5 +653,4 @@ text-align: center;
            display: flex;
             text-align: center;
             
-
             }
