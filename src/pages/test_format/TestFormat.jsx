@@ -79,6 +79,22 @@ Reliable Tests</p>
               <a href="/" className='bl_to_apply'>How to Apply</a>
         </div>
     </div>
+<div className='top_bl_white2'>
+<div className='bl_white2'>
+        <div className='bl_block'></div>
+
+        <div>
+            <p className='bl_tests'>LISA</p>
+            <p className='bl_para'>This trusted evaluation covers language <br />
+             proficiency, academic aptitude, and job-specific <br /> 
+             skills, boosting your chances for visa approval <br />
+              and showcasing your competence for studying <br />
+               or working abroad.</p>
+               <a href="/" className='bl_to_apply'>How to Apply</a>
+        </div>
+    </div>
+</div>
+   
 </div>
 
 
