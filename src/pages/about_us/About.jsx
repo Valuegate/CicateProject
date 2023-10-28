@@ -99,20 +99,19 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
         </div>
 
     </div>
-    </div>s
+    </div>
 <div className='last'>
+
 <div className='image_slant'>
-    <div><img src={union} alt="" className='union'/></div>
+    <div>  <img src={union} alt="" className='union'/> </div>
     <div><img src={unionx} alt="" className='unionx'/></div>
 </div>
 
-<div className='image_text1'>
-    <div className='testad'>Test Ad <br />Here!</div>
-    <div className='test_subheader'>Make sure to reach out to our ads here!</div>
-    <button className='buton_test'>Read More</button>
-</div>
-</div>
 
+<div >
+   
+</div>
+</div>
 
 <Footer/>
     </div>
