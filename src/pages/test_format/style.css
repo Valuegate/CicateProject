@@ -394,6 +394,8 @@ padding: 20px;
 align-items: center;
 padding-left: 100px;
 padding-right: 100px;
+margin-bottom: 20px;
+z-index: 1;
 }
 
 .follow__us{
@@ -418,6 +420,18 @@ margin-top:10px;
 .links__img{
 height: 80px;
 width: 80px;
+}
+
+.gradient_flex{
+    justify-content: center;
+    display: flex;
+    margin-bottom: 500px;
+    z-index: 0;
+}
+
+.gradient_img{
+height: 2394px;
+width: 1980px;
 }
 
 
