@@ -154,6 +154,8 @@ Reliable Tests</p>
             <img src={facebook} alt="img" className='links__img'/></div>
     </div>
  </div>
+
+<Footer/>
 </div>
 
 
