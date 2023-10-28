@@ -94,7 +94,19 @@ Reliable Tests</p>
         </div>
     </div>
 </div>
-   
+   <div className='top_reasons'>
+    <div className='reasons_to'>Reasons <br /> To Test <br />Yourself</div>
+
+
+    <div className='img_fl'><img src={block1} alt="img" className='all_img' />
+    <div className='find_the'>Find the  <br /> <span className='right_test'>Right Test <br />for You</span></div>
+    </div>
+   </div>
+
+   <div className=''>
+    <div></div>
+    <div></div>
+   </div>
 </div>
 
 

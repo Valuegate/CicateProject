@@ -234,6 +234,50 @@ height: 500px;
 width: 521px;
 }
 
+.reasons_to{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 90px;
+font-weight: 400;
+}
+
+.find_the{
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 40px;
+margin-top: 30px;
+}
+
+.right_test{
+font-family: "PP Monument Extended-Light", Helvetica;
+font-weight: 300;
+font-size: 30px;
+}
+
+.all_img{
+height: 251px;
+width: 249px;
+}
+
+.top_reasons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 70px;
+}
+
+.img_fl{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+
 
 
 
