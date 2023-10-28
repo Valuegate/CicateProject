@@ -14,6 +14,7 @@ import facebook from '../../assets/facebook.png'
 import youtube from '../../assets/youtube.png'
 import linkedin from '../../assets/linkedin.png'
 import gradient from '../../assets/gradient.svg'
+import Footer from '../../components/containers/footer/footer'
 
 const TestFormat = () => {
   return (
@@ -128,6 +129,31 @@ Reliable Tests</p>
     <div><img src={cross} alt="img" className='cross__img'/></div>
     <div className='why__not'>Why not <br /> Create <br /> Account?</div>
   </div>
+
+  <div className='app_flex'>
+<div className='app_line'>
+    <img src={xicon} alt="img" className='img_right' /> 
+    <p className='applicant_black'>Applicant</p> 
+    <p className='applicant_opac'>Log in to your <br /> dashboard</p>
+    <a href="/" className='app_button'>Login</a>
+</div>
+<div className='app_line'>
+<img src={zicon} alt="img" className='img_right' /> 
+    <p className='applicant_black'>Institution</p> 
+    <p className='applicant_opac'>Log in to your <br /> dashboard</p>
+    <a href="/" className='app_button'>Login</a>
+</div>
+  </div>
+ <div className='set_black'>
+    <div className='links_board'>
+        <div className='follow__us'>Follow Us</div>
+        <div className='flex_links'>
+            <img src={instagram} alt="img" className='links__img' />
+            <img src={linkedin} alt="img" className='links__img' />
+            <img src={youtube} alt="img" className='links__img'/>
+            <img src={facebook} alt="img" className='links__img'/></div>
+    </div>
+ </div>
 </div>
 
 
