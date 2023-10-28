@@ -21,6 +21,40 @@ const TestFormat = () => {
       <div>
         <Navbar/>
       </div>
+      <div className='top_boxone'>
+     <div className='new1'></div>
+      </div>
+
+      <div className='top_abiities'>
+        <div className='abilities'>Test Your Abilities <br />
+to Success!</div>
+      </div>
+
+      <div className='top_heades'>
+        <div className='grey_heades'>Discover our innovative test formats <br /> designed to assess your competencies and <br />unlock exciting opportunities</div>
+      </div>
+      <div className='top_bl'>
+        <a href="/gate" className='bl_black'>GATE test</a>
+        <a href="/gate" className='bl_green'>POCAS test</a>
+        <a href="/gate" className='bl_black'>Lisa Test</a>
+      </div>
+
+      <div className='top_empower'>
+        <div className='empower_box'></div>
+        <div>
+            <p className='empower'>Empowering <br />
+Individuals With <br />
+Reliable Tests</p>
+            <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
+            G.A.T.E and CCA, ensuring accurate evaluations <br />
+             for your success. Discover how our products can <br />
+              propel you towards your goals.</p>
+        </div>
+      </div>
+
+    <div className='top_our'>
+        <div className='our_test'>Our Test Products</div>
+    </div>
 </div>
 
 
