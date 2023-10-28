@@ -55,6 +55,30 @@ Reliable Tests</p>
     <div className='top_our'>
         <div className='our_test'>Our Test Products</div>
     </div>
+
+    <div className='top_bl_white'>
+        <div className='bl_white'>
+            <div className='inside_black_bl'></div>
+            <p className='bl_tests'>G.A.T.E</p>
+            <p className='bl_para'>This trusted evaluation covers language <br />
+            proficiency, academic aptitude, and job-specific <br />
+             skills, boosting your chances for visa approval <br />
+             and showcasing your competence for studying <br />
+              or working abroad.</p>
+              <a href="/" className='bl_to_apply'>How to Apply</a>
+        </div>
+
+        <div className='bl_white'>
+        <div className='inside_black_bl'></div>
+            <p className='bl_tests'>P.O.C.A.S</p>
+            <p className='bl_para'>This trusted evaluation covers language <br />
+            proficiency, academic aptitude, and job-specific <br />
+             skills, boosting your chances for visa approval <br />
+             and showcasing your competence for studying <br />
+              or working abroad.</p>
+              <a href="/" className='bl_to_apply'>How to Apply</a>
+        </div>
+    </div>
 </div>
 
 
