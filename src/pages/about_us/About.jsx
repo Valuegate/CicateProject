@@ -53,12 +53,13 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
     <div className='down_black'>
 
         <div className='semi'>
-            <div className='goal_header'>Our <br />Strategic <br /> Goals</div>
-            <div><img src={tick2} alt="img" className='goal_img' /></div>
+           
+           
         </div>
 
         <div className='two_para'>
             <div className=''>
+            <div className='goal_header'>Our <br />Strategic <br /> Goals</div>
                 <p className='all_para1'>At CICATE, our strategic goals are aligned  brwith our vision of fairness, 
                     reliability, and efficiency in competence assessment:</p>
 
@@ -79,6 +80,7 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
 
 
             <div className='right_cont'>
+            <div><img src={tick2} alt="img" className='goal_img' /></div>
                 <p className='all_para'>4.  Continuous Innovation: We are dedicated to continuously improving  our
                      assessment methodologies, incorporating the latest research 
                       and technology to provide even more accurate evaluations.</p>

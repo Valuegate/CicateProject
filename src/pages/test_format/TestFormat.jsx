@@ -26,7 +26,7 @@ const TestFormat = () => {
       </div>
       <div className='green_gradient'></div>
       <div className='format_header'>
-      Test Your Abilities
+      Test Your Abilities <br />
       to Success!
       </div>
       <div className='test_subheader'>

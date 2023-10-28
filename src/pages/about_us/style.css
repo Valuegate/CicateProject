@@ -48,9 +48,7 @@ max-height: 617px;
         .unionx{
             height: 600px;
             width: 1000px;
-            z-index: 0;
-          
-           
+            z-index: 1;
         }
         
         .testad {
@@ -145,16 +143,15 @@ line-height: 63px;
                             font-weight: 400;
                           
                             letter-spacing: 0;
-                           
-                            line-height: 63px;
-                            
+                         
+        
                             white-space: nowrap;
                          
                             }
                            .semi{
                             display: flex;
-                           justify-content: center;
-                            gap: 80rem;
+                           justify-content: space-around;
+                            
                             padding-top: 40px;
                            }
                             .goal_img{
@@ -178,9 +175,11 @@ line-height: 63px;
      .image_slant{
         display: flex;
         justify-content: center;
-        margin-top: 70px;
+        margin-top: 10px;
         gap: 44rem;
-        padding-bottom: 50px;
+        z-index: 0;
+      margin-bottom: 100px;
+    
      }
     .down_boxx{
         position: relative;
@@ -194,9 +193,9 @@ line-height: 63px;
         background-color: #282828;
         border-radius: 60px;
         position: relative;
-        padding: 20px;
+        padding: 40px;
        max-height: 856px;
-        max-width: 1286px;
+        max-width: 600px;
         }
 
         .right_cont{
