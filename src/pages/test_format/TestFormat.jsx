@@ -103,10 +103,31 @@ Reliable Tests</p>
     </div>
    </div>
 
-   <div className=''>
-    <div></div>
-    <div></div>
+   <div className='the_bar'>
+    <div className='img_fl'> <div className='find_the'>Find <br /> <span className='right_test'>Qualified <br />Applicants</span></div><img src={block3} alt="img" className='all_img'/></div>
+
+
+    <div className='img_fl'><img src={block2} alt="img" className='all_img'/><div className='find_the'>show your  <br /> <span className='right_test'>Linguistic <br />Ability</span></div></div>
    </div>
+
+
+
+   <div className='the_bar'>
+    <div className='img_fl'> <div className='find_the'>Collabo <br /> <span className='right_test'>With ETS</span></div><img src={block4} alt="img" className='all_img'/></div>
+
+
+    <div className='img_fl'><img src={block5} alt="img" className='all_img'/><div className='find_the'>Gain Your  <br /> <span className='right_test'>Teaching <br />Licence</span></div></div>
+   </div>
+
+
+<div className='if_flex'>
+    <div className='if_reasons'>If reasons are good enough</div>
+</div>
+  
+  <div className='why_flex'>
+    <div><img src={cross} alt="img" className='cross__img'/></div>
+    <div className='why__not'>Why not <br /> Create <br /> Account?</div>
+  </div>
 </div>
 
 

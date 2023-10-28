@@ -276,7 +276,52 @@ width: 249px;
     gap: 2rem;
 }
 
+.the_bar{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 20px;
+}
+.if_flex{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
 
+.if_reasons{
+color: #282828;
+font-family: "PP Monument Extended-Regular", Helvetica;
+font-size: 24px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 21.6px;
+opacity: 0.5;
+}
+
+.why_flex{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    margin-top: 50px;
+}
+
+
+.why__not{
+ color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 75px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 76.1px;
+}
+
+.cross__img{
+height: 252px;
+width: 217px;
+}
 
 
 
