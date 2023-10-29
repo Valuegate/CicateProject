@@ -33,7 +33,7 @@ text-align: center;
 }
 
 .grey_heades{
-    color: #282828;
+color: #282828;
 font-family: "Gordita-Regular", Helvetica;
 font-size: 30px;
 font-weight: 400;
@@ -114,10 +114,11 @@ width: 500px;
 .top_empower{
     justify-content: center;
     display: flex;
-    gap: 4rem;
     margin-top: 30px;
 }
-
+.top_empower > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .empower{
 color: #282828;
@@ -443,9 +444,12 @@ margin-top:10px;
 .flex_links{
    display: flex;
    justify-content: center;
-   gap: 4rem;
    margin-top: 25px;
 }
+
+.flex_links > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .links__img{
 height: 80px;
@@ -791,9 +795,13 @@ text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 8rem;
             margin-left: -550px;
            }
+
+
+           .cross_wrapper > * + * {
+            margin-left: 8rem; /* Adjust as needed */
+          }
             .flex_social{
                 display: flex;
                 justify-content: center;
