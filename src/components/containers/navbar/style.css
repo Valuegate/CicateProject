@@ -163,7 +163,7 @@ cursor: pointer;
 font-size: 10px;
 }
 
-.nav_menu > * + * {
+.nav__menu > * + * {
     margin-left: 6rem; /* Adjust as needed */
   }
 
