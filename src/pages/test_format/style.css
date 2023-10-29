@@ -14,6 +14,7 @@
     margin-top: 200px;
 }
 
+
 .abilities{
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
@@ -159,11 +160,14 @@ padding: 20px;
 .top_bl_white{
     display: flex;
     justify-content: center;
-    gap: 4rem;
     align-items: center;
     margin-top: 40px;
     align-items: center;
 }
+
+.top_bl_white > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .bl_tests{
     color: #282828;
@@ -219,9 +223,13 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 display: flex;
 justify-content: center;
-gap: 4rem;
 padding: 30px;
 }
+
+
+.bl_white2 > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .top_bl_white2{
     display: flex;
@@ -269,23 +277,34 @@ width: 249px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
     margin-top: 70px;
 }
+
+
+.top_reasons > * + * {
+    margin-left: 6rem; /* Adjust as needed */
+  }
 
 .img_fl{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+
 }
+
+.img_fl > * + * {
+    margin-left: 2rem; /* Adjust as needed */
+  }
 
 .the_bar{
     display: flex;
     justify-content: center;
-    gap: 5rem;
     align-items: center;
     margin-top: 20px;
 }
+
+.the_bar > * + * {
+    margin-left: 5rem; /* Adjust as needed */
+  }
 .if_flex{
     justify-content: center;
     display: flex;
@@ -307,9 +326,12 @@ opacity: 0.5;
     justify-content: center;
     display: flex;
     align-items: center;
-    gap: 6rem;
     margin-top: 50px;
 }
+
+.why_flex > * + * {
+    margin-left: 6rem; /* Adjust as needed */
+  }
 
 
 .why__not{
@@ -355,9 +377,12 @@ margin-bottom: 10px;
     display: flex;
     align-items: center;
     margin-top: 120px;
-    gap: 5rem;
 
 }
+
+.app_flex > * + * {
+    margin-left: 5rem; /* Adjust as needed */
+  }
 
 .app_button{
 background-color: #282828;
