@@ -82,11 +82,14 @@ white-space: nowrap;
 
 .top_bl{
     justify-content: center;
-    display: flex;
     align-items: center;
-    gap: 4rem;
     margin-top: 30px;
+   display:flex;
 }
+
+.top_bl > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .cicate_offerz{
 color: #282828;
