@@ -17,11 +17,9 @@ color: #ffffff;
 font-family: "PP Monument Extended-Regular", Helvetica;
 font-size: 50px;
 font-weight: bold;
-left: 0;
 letter-spacing: -0.54px;
 line-height: 32.5px;
 text-align: center;
-top: 0;
 background-color: black;
 border-radius: 45px;
 padding: 20px;
@@ -40,7 +38,6 @@ padding-right: 40px;
                 letter-spacing: -0.54px;
                 line-height: 32.5px;
                 text-align: center;
-                top: 0;
                 background-color: #33cc00;
                 border-radius: 45px;
                 padding: 20px;
@@ -52,20 +49,28 @@ padding-right: 40px;
                 justify-content: left;
                 align-items: center;
                 margin-left: 60px;
-                gap: 5rem;
                 margin-top: 80px;
             }
+
+            .onsie > * + * {
+                margin-left: 5rem; /* Adjust as needed */
+              }
+            
 
             .regfor{
                 justify-content:left;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 7rem;
                margin-right: 350px;
                 line-height: 70px;
                 padding-top: 60px;
             }
+
+            .regfor > * + * {
+                margin-left: 7rem; /* Adjust as needed */
+              }
+            
 
 
         .registering {
