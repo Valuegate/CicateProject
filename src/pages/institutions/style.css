@@ -3,7 +3,6 @@
     font-family: "Monument Extended-Regular", Helvetica;
     font-size: 60px;
     font-weight: 400;
-
     letter-spacing: 0;
     line-height: 68.4px;
     text-align: center;
@@ -16,8 +15,12 @@
         border-radius: 60px;
         box-shadow: var(--shadow);
         padding: 17px;
-        margin-right: 12px;
+        margin-right: 10px;
         }
+
+        .cardz > * + * {
+            margin-left: 4rem; /* Adjust as needed */
+          }
 .move_card{
 display: flex;
 justify-content: center;
@@ -93,7 +96,9 @@ padding-right: 20px;
             margin-top: 50px;
            
         }
-
+        .green_globe > * + * {
+            margin-left: 6rem; /* Adjust as needed */
+          }
         .not_enough{
                 color: #ffffff;
                 font-family: "PP Monument Extended-Light", Helvetica;
@@ -101,7 +106,7 @@ padding-right: 20px;
                 font-weight: 300;
                 letter-spacing: 0;
                 line-height: 34.8px;
-                width: 786px;
+                
                 }
                 .apply1{
                     color: #ffffff;
@@ -111,8 +116,6 @@ padding-right: 20px;
                     left: 0;
                     letter-spacing: 0;
                     line-height: 51.8px;
-
-                    width: 431px;
                 }
 
 
@@ -137,23 +140,22 @@ padding-right: 20px;
             color: #33cc00;
             }
 
-            .left_green{
-                margin-left: 30px;
-                margin-right: -300px;
-            }
+          
 
         .imagetrs {
             z-index: 1;
             justify-content: center !important;
             display: flex !important;
-            margin-right: 300px;
+            justify-content: center !important;
             }
-            .second_imagep{
+
+            
+ .second_imagep{
 display: flex ;
 justify-content: center;
 z-index: 1;
 margin-top: -1500px;
-margin-left: 240px;
+margin-right: 60px;
             }
 
             .write_div{
