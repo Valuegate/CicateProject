@@ -65,7 +65,7 @@ const PersonalData = () => {
        
           
        
-  <div className='yui'></div>
+
    <BlackFooter/>
 </div>
 
