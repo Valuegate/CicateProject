@@ -16,21 +16,10 @@
     background-color: #282828;
     border-radius: 50px;
    padding: 15px;
-   width: 628px;
-   margin-bottom: 200px;
 
 }
 
-.first_box1{
-    background-color: #282828;
-    border-radius: 50px;
-   padding: 15px;
-   width: 628px;
-  margin-top: -150px;
- margin-bottom: 40px;
- 
- 
-}
+
 
 
 
@@ -46,10 +35,10 @@
     .inside_text {
 color: #ffffff;
 font-family: "Gordita-Regular", Helvetica;
-font-size: 24px;
+font-size: 20px;
 font-weight: 400;
 letter-spacing: -0.6px;
-line-height: 35.5px;
+line-height: 90.5px;
         }
 
 
@@ -65,10 +54,10 @@ line-height: 26.5px;
     .inside_text_para{
  color: #282828;
 font-family: "Gordita-Regular", Helvetica;
-font-size: 17px;
+font-size: 14px;
 font-weight: 400;
 letter-spacing: 0;
-line-height: 24.7px;
+line-height: 35.7px;
 text-align: justify;
     }
 
@@ -79,17 +68,17 @@ text-align: justify;
             font-size: 40px;
             font-weight: 400;
             letter-spacing: 0;
-            line-height: 36px;
+            line-height: 45px;
             white-space: nowrap;
+            padding: 5px;
         }
 
 
 
                     .inside_brown {
                         background: linear-gradient(180deg, rgb(83, 83, 83) 0%, rgb(83, 83, 83) 100%);
-                        border-radius: 30px;
-                        padding: 15px;
-                       
+                        border-radius: 40px;
+                        padding: 10px;
                         }
 .tick_image{
 margin-left: 15px;
@@ -99,40 +88,46 @@ width: 28px;
 .second_box{
     background-color: #282828;
     border-radius: 50px;
-    width: 628px;
     padding: 15px;
-   
 }
-
-
 
 
 .blackbox1{
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 50px;
 
 }
 
-.blackbox1 > * + * {
-    margin-left: 6rem; /* Adjust as needed */
-  }
-.labels {
-    height: 85px;
-    width: 920px;
+
+.blackbox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+    
     }
+
+    .blackbox2 > * + * {
+        margin-left: 3rem; /* Adjust as needed */
+      }
+    
+
+.blackbox1 > * + * {
+    margin-left: 3rem; /* Adjust as needed */
+  }
+
 .faq_sub{
     color: #282828;
     font-family: "Gordita-Regular", Helvetica;
     font-size: 30px;
     font-weight: 400;
-   
     letter-spacing: -1.2px;
     line-height: 36.6px;
     opacity: 0.6;
-   
     text-align: center;
-
     white-space: nowrap;
    
 
