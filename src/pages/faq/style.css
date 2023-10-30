@@ -67,7 +67,6 @@ line-height: 26.5px;
 font-family: "Gordita-Regular", Helvetica;
 font-size: 17px;
 font-weight: 400;
-left: 0;
 letter-spacing: 0;
 line-height: 24.7px;
 text-align: justify;
@@ -112,9 +111,12 @@ width: 28px;
 display: flex;
 justify-content: center;
 align-items: center;
-gap: 6rem;
 
 }
+
+.blackbox1 > * + * {
+    margin-left: 6rem; /* Adjust as needed */
+  }
 .labels {
     height: 85px;
     width: 920px;
