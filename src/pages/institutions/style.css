@@ -10,12 +10,22 @@
     margin-top: 200px;
    
     }
+
+    .box_it{
+             background-color: #282828;
+             display: inline-block;
+            border-radius: 60px;
+            margin-top: 40px;
+            padding: 20px;
+            margin-left: 220px;
+            background: linear-gradient(180deg, rgb(10, 210, 46) 5.21%, rgb(2, 8, 0) 24.4%);
+    }
     .cardz {
         background: linear-gradient(180deg, rgb(40, 40, 40) 5.21%, rgb(51, 204, 0) 24.4%);
         border-radius: 60px;
         box-shadow: var(--shadow);
-        padding: 17px;
-        margin-right: 10px;
+        padding: 15px;
+     margin-top: -90px;
         }
 
         .cardz > * + * {
@@ -78,16 +88,7 @@ padding-right: 20px;
         margin-left: 5rem; /* Adjust as needed */
       }
 
-    .long {
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        margin-top: 60px;
-        z-index: 0;
-        margin-left: 130px;
-      
-        
-        }
+   
 
         .green_globe{
             display: flex;
@@ -144,25 +145,19 @@ padding-right: 20px;
 
         .imagetrs {
             z-index: 1;
-            justify-content: center !important;
-            display: flex !important;
-            justify-content: center !important;
+           
             }
 
             
  .second_imagep{
-display: flex ;
-justify-content: center;
 z-index: 1;
-margin-top: -1500px;
-margin-right: 60px;
             }
 
             .write_div{
              justify-content: center !important;
              z-index: 1;
-            margin-left: 240px;
-             margin-top: 50px;
+             margin-top: 40px;
+             margin-left: 20px;
             }
 
             .span_class1 {

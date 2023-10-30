@@ -17,10 +17,8 @@ const Institutions = () => {
         <div className='options2'>Company</div>
       </div>
 
-      <div className=''>
-        <img src={long} alt="img" className='long' />
-        <div className='second_imagep'> <img src={imagetrs} alt="img" className='imagetrs'/>
-        </div>
+      <div className='box_it'>
+        <div className='second_imagep'> <img src={imagetrs} alt="img" className='imagetrs'/></div>
        
         <div className='write_div'>
           <div className='spanl'> <span className='span_class1'>Step 1: </span>Contact CICATE</div>
