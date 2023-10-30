@@ -34,6 +34,7 @@ const UserPass = () => {
             </form>
           </div>
 </div>
+<div className='yui'></div>
 <BlackFooter/>
         </div>
       </div>

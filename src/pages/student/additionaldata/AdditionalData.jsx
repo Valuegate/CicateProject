@@ -48,6 +48,7 @@ const AdditionalData = () => {
         </div>
       
       </div>
+      <div className='yui'></div>
       <BlackFooter/>
     </div>
   )
