@@ -47,7 +47,7 @@ margin-top: 200px
             line-height: 60px;
             width: 700px;
             margin-left: 1400px;
-          margin-top: -920px;
+            margin-top: -920px;
             }
             .gate_wrapper {
                 line-height: 66px;
@@ -120,11 +120,11 @@ margin-top: 200px
                             font-family: "Monument Extended-Regular", Helvetica;
                             font-size: 40px;
                             font-weight: bold;
-                            left: 0;
+                
                             letter-spacing: 0;
                             line-height: 48px;
                             margin-left: 1400px;
-                            top: 0;
+        
                             width: 685px;
                             margin-top: -440px;
                             }
@@ -133,11 +133,11 @@ margin-top: 200px
                                 font-family: "Monument Extended-Regular", Helvetica;
                                 font-size: 40px;
                                 font-weight: bold;
-                                left: 0;
+                             
                                 letter-spacing: 0;
                                 line-height: 48px;
                                 margin-left: 1400px;
-                                top: 0;
+                              
                                 width: 685px;
                                 margin-top: -40px;
                                 }
@@ -147,11 +147,11 @@ margin-top: 200px
                                     font-family: "Monument Extended-Regular", Helvetica;
                                     font-size: 40px;
                                     font-weight: bold;
-                                    left: 0;
+                                  
                                     letter-spacing: 0;
                                     line-height: 48px;
                                     margin-left: 730px;
-                                    top: 0;
+                                  
                                     width: 685px;
                                     margin-top: 140px;
                                     }
@@ -201,8 +201,7 @@ margin-top: 200px
             border-color: #ffffff;
             border-radius: 43px;
             height: 502px;
-            left: 0;
-            top: 0;
+           
             transform: rotate(90deg);
             width: 779px;
             margin-top: 300px;
@@ -215,15 +214,17 @@ margin-top: 200px
       align-items: center;
       font-size: larger;
       font-weight: bold;
-      gap: 5rem;
       margin-top: 90px;
-      color: #282828;
+    color: #282828;
   font-family: "Monument Extended-Regular", Helvetica;
   font-size: 60px;
   letter-spacing: 0;
   line-height: 57.3px;
   text-align: center;
   padding-top: 50px;
+    }
+    .gate__container > * + * {
+      margin-left: 5rem; /* Adjust as needed */
     }
 
     .move_gate{
