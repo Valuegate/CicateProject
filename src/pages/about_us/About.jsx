@@ -79,9 +79,8 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
             </div>
 
 
-            <div className='right_cont'>
-            <div><img src={tick2} alt="img" className='goal_img' /></div>
-                <p className='all_para'>4.  Continuous Innovation: We are dedicated to continuously improving  our
+            <div className=''>
+                <p className='all_para'><img src={tick2} alt="img" className='goal_img' /> <br />4.  Continuous Innovation: We are dedicated to continuously improving  our
                      assessment methodologies, incorporating the latest research 
                       and technology to provide even more accurate evaluations.</p>
 
