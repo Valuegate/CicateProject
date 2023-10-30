@@ -17,9 +17,10 @@ const Institutions = () => {
         <div className='options2'>Company</div>
       </div>
 
-      <div>
+      <div className=''>
         <img src={long} alt="img" className='long' />
-        <div className='second_imagep'> <img src={imagetrs} alt="img" className='imagetrs'/></div>
+        <div className='second_imagep'> <img src={imagetrs} alt="img" className='imagetrs'/>
+        </div>
        
         <div className='write_div'>
           <div className='spanl'> <span className='span_class1'>Step 1: </span>Contact CICATE</div>
@@ -51,7 +52,7 @@ const Institutions = () => {
 
   <div className='left_green'>
     <div className='not_enough'>Not enough?</div>
-    <div className='apply1'>Apply for partnership</div>
+    <div className='apply1'>Apply for <br />partnership</div>
     <div><a href="/" className='form_but'>Fill The Form</a></div>
   </div>
 
