@@ -27,8 +27,9 @@ const UniversityLogin = () => {
  <form action="">
   <img src={mail_black} alt="img" className='icon_immg'/><input type="email" className='email' placeholder='Email'/> <br />
   <img src={greenskey} alt="img" className='icon_immg'/> <input type="password" className='pwd' placeholder='Password'/> <br />
-  <a href="/" className='forgot_password'>Forgot Password</a> <br /> <br />
-  <button type='submit' className='green_login'>Login</button>
+  <button type='submit' className='green_login'>Login</button> <br />
+  <a href="/" className='forgot_password'>Forgot Password</a> 
+ 
  </form>
 </div>
 

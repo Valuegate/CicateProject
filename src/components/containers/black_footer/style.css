@@ -14,7 +14,7 @@
 
 
 .second_nav_list > * + * {
-  margin-left: 6rem; /* Adjust as needed */
+  margin-left: 3rem; /* Adjust as needed */
 }
 
 
