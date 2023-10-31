@@ -25,11 +25,11 @@
         border-radius: 60px;
         box-shadow: var(--shadow);
         padding: 15px;
-     margin-top: -90px;
+     margin-top: -100px;
         }
 
         .cardz > * + * {
-            margin-left: 4rem; /* Adjust as needed */
+            margin-left: 6rem; /* Adjust as needed */
           }
 .move_card{
 display: flex;
@@ -109,12 +109,15 @@ padding-right: 20px;
                 line-height: 34.8px;
                 
                 }
+
+                .not_move{
+                    margin-left: 10rem;
+                }
                 .apply1{
                     color: #ffffff;
                     font-family: "Monument Extended-Regular", Helvetica;
                     font-size: 48px;
                     font-weight: 400;
-                    left: 0;
                     letter-spacing: 0;
                     line-height: 51.8px;
                 }
@@ -129,8 +132,9 @@ padding-right: 20px;
             justify-content: center;
             overflow: hidden;
             padding: 13px 0px;
+            padding-left: 35px;
+            padding-right: 35px;
             position: relative;
-            width: 457px;
             font-family: "PP Monument Extended-Light", Helvetica;
             font-size: 28px;
             font-weight: 300;

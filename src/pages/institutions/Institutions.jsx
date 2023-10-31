@@ -49,9 +49,11 @@ const Institutions = () => {
 <div className='green_globe'>
 
   <div className='left_green'>
-    <div className='not_enough'>Not enough?</div>
-    <div className='apply1'>Apply for <br />partnership</div>
-    <div><a href="/" className='form_but'>Fill The Form</a></div>
+    <div className='not_move'><p className='not_enough'>Not enough?</p> 
+    <p className='apply1'>Apply for <br />partnership</p>
+    <a href="/" className='form_but'>Fill The Form Now</a>
+    </div>
+   
   </div>
 
   <div className='right_green'><img src={paperhold} alt="img" /></div>

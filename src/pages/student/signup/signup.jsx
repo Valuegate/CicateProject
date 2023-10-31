@@ -32,6 +32,7 @@ const Signup = () => {
 </div>
 
 </div>
+<div className='yui'></div>
  <BlackFooter/>
 
      </div>
