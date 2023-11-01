@@ -9,14 +9,10 @@
 
 .images__style{
 height: 15px;
-left: 0;
-top: 0;
 width: 18px;
 }
 
 .button_shift{
-    margin-left: 90px;
-    margin-top: 80px;
-   margin-bottom: 50px;
-    
+    margin-top: 4rem;
+    margin-left: 1rem;
 }

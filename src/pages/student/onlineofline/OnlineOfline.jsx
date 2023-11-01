@@ -15,13 +15,10 @@ const OnlineOfline = () => {
        </div>
        <div className='try'>
        <div className='second_block'>
-      <div>
         <TestCarousel/>
-      </div>
-
-      <div>
+    
         <div className='questions'>Which format of the <br /> test you prefer?</div>
-        </div>
+        
 
         <div className='onsie'>
           <a href="/" className='onsite-online'><img src={wifi} alt="img" className='images__style' />Onsite</a>

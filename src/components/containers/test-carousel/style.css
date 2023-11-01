@@ -13,43 +13,41 @@
             }
 
             .onsite-online{
-color: #ffffff;
-font-family: "PP Monument Extended-Regular", Helvetica;
-font-size: 50px;
-font-weight: bold;
-letter-spacing: -0.54px;
-line-height: 32.5px;
-text-align: center;
-background-color: black;
-border-radius: 45px;
-padding: 20px;
-padding-left: 40px;
-padding-right: 40px;
-
-
+                color: #ffffff;
+                font-family: "PP Monument Extended-Regular", Helvetica;
+                font-size: 18px;
+                font-weight: 400;
+                letter-spacing: -0.54px;
+                line-height: 32.5px;
+                border-radius: 8rem;
+                text-align: center;
+              padding: 7px;
+                padding-left: 15px;
+                padding-right: 15px;
+                
             }
 
             .onsite-online1{
                 color: #ffffff;
                 font-family: "PP Monument Extended-Regular", Helvetica;
-                font-size: 50px;
-                font-weight: bold;
-                left: 0;
+                font-size: 18px;
+                font-weight: 400;
                 letter-spacing: -0.54px;
                 line-height: 32.5px;
-                text-align: center;
                 background-color: #33cc00;
-                border-radius: 45px;
-                padding: 20px;
-                padding-left: 40px;
-                padding-right: 40px;
+                border-radius: 8rem;
+                text-align: center;
+                padding: 7px;
+                padding-left: 15px;
+                padding-right: 15px;
+                
+              
                             }
             .onsie{
                 display: flex;
                 justify-content: left;
                 align-items: center;
-                margin-left: 60px;
-                margin-top: 80px;
+                margin-top: 3rem;
             }
 
             .onsie > * + * {
@@ -96,12 +94,11 @@ padding-right: 40px;
                 .questions {
                     color: #ffffff;
                     font-family: "Monument Extended-Regular", Helvetica;
-                    font-size: 80px;
-                    font-weight: bold;
+                    font-size: 30px;
+                    font-weight: 400;
                     letter-spacing: 0;
-                    line-height: 80.1px;
-                    margin-top: 100px;
-                    margin-left: 60px;
+                    line-height: 32.1px;
+                    margin-top: 7rem;
 
                     }
 
@@ -110,7 +107,8 @@ padding-right: 40px;
                 justify-content: center;
                 align-items: center;
                 border-radius: 60px;
-                width: 1900px;
+                padding: 3rem;
+                
             }
 
            

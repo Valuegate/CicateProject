@@ -13,11 +13,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:8rem;
-    margin-top: 100px;
+   margin-top: 4rem;
     line-height: 50px;
 }
 
+.review_flex1 > * + * {
+    margin-left: 7rem; /* Adjust as needed */
+  }
+
+  .push_button{
+    padding-top: 4rem;
+  }
+
 .choose1{
-    margin-bottom: 180px;
+  
 }

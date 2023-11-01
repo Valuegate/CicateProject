@@ -30,11 +30,12 @@ const PhotoValidation = () => {
       <span className='please_wrapper'>Please upload your <br /> recent photo</span>
       <br />
       <br />
-      <br />
+     
     <span className='so_wrapper'>This is for us to know how <br />you look before we meet <br /> you</span>
+    <div className='push_button'> <button className='next_big'>Next</button></div>
     </div>
   </div>
-  <div className='button_position'> <button className='next_big'>Next</button></div>
+ 
 </div>
 </div>
 <Footer/>
