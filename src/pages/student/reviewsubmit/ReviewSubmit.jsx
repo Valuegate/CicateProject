@@ -39,14 +39,27 @@ const ReviewSubmit = () => {
 
                 <br /><label htmlFor="" className='all_info'>Info 
                 <br /><input type="text" className='inputs' placeholder='Select'/></label>
+                
                 </div>
                 </form>
             </div>
-            <div className='button_position'><button className='next_big'>Next</button></div>
-            <div className='terms'>Reviewed all the Terms and Conditions</div>
-            <div className='terms'> <span className='checkbox'><input type="checkbox"/></span>Agreeing with Privacy Conditions</div>
-        </div>
-      </div>
+            <div className='dun_flex'> 
+          
+            <div className='terms'>Reviewed all the Terms and Conditions <br /> 
+            <span className='checkbox'>
+              <input type="checkbox"/>
+              </span>Agreeing with Privacy Conditions
+              </div>
+
+              <button className='next_big'>Next</button>
+            </div>
+
+            </div>
+          
+            </div>
+           
+   
+
       <Footer/>
     </div>
   )
