@@ -17,10 +17,13 @@
             justify-content: center;
             display: flex;
             align-items: center;
-            gap: 7rem;
             margin-top: 50px;
             margin-left: 100px;
         }
+        .ask_flex > * + * {
+            margin-left: 7rem; /* Adjust as needed */
+          }
+        
         
 
         .colleague {
@@ -119,7 +122,6 @@
                         font-family: "PP Monument Extended-Regular", Helvetica;
                         font-size: 45px;
                         font-weight: bold;
-                        left: 0;
                         letter-spacing: -2.1px;
                         line-height: 50.5px;
                         padding: 8px;
@@ -163,9 +165,6 @@
         padding: 20px;
         }
 
-.blak_two{
-    
-}
 
 .test_invitation {
     color: #ffffff;
