@@ -40,7 +40,6 @@ const Cart = () => {
    
         </div>
         <div className='justify_black1'>
-        <div className='black_pay2'>
             <div className='payment_fle2'>
            
             <div className='total_pay'>Total: <span className='green_money2'>950$</span></div>
@@ -49,8 +48,8 @@ const Cart = () => {
            
         </div>
       
-       </div>
-<div className='bottom0'>
+    
+<div>
   <Footer/>
 </div>
       </div>

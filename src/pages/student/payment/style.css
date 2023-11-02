@@ -18,8 +18,10 @@ white-space: nowrap;
 .payment_fle{
     display: flex;
     justify-content: center;
-    gap: 6rem;
 }
+.payment_fle > * + * {
+    margin-left: 6rem; /* Adjust as needed */
+  }
 
 .john_oliver{
         color: #ffffff;
@@ -42,17 +44,28 @@ white-space: nowrap;
 .payment_fle2{
     display: flex;
     justify-content: space-around;
-    gap: 80rem;
+    margin-right: 5rem;
+    background-color: #282828;
+    border-radius: 60px;
+     line-height: 40px;
+     padding: 3rem;
 }
+
+.payment_fle2 > * + * {
+    margin-left: 40rem; /* Adjust as needed */
+  }
 
 .payment_fle3{
     display: flex;
     justify-content: right;
-    gap: 80rem;
     margin-top: 200px;
     margin-right: 700px;
     padding-bottom: 40px;
 }
+
+.payment_fle3 > * + * {
+    margin-left: 10rem; /* Adjust as needed */
+  }
 
 .black_pay{
     background-color: #282828;
@@ -68,7 +81,7 @@ white-space: nowrap;
     line-height: 40px;
     padding: 30px;
    margin-top: 70px;
-   width: 1450px;
+ 
 }
 
 .justify_black{
@@ -77,13 +90,13 @@ white-space: nowrap;
 }
 
 .green_money2 {
-    color: #33cc00;
-    font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 75px;
-    font-weight: bold;
-    letter-spacing: -0.75px;
-    line-height: 80.3px;
-    white-space: nowrap;
+color: #33cc00;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 75px;
+font-weight: 400;
+letter-spacing: -0.75px;
+line-height: 80.3px;
+
     }
 
 .button_pay{
@@ -91,22 +104,21 @@ background-color: #33cc00;
 border-radius: 80px;
 color: #ffffff;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 45px;
-font-weight: bold;
+font-size: 40px;
+font-weight: 400;
 letter-spacing: -0.4px;
 line-height: 42.8px;
 text-align: center;
 white-space: nowrap;
-padding: 30px;
+padding: 2rem;
 cursor: pointer;
 }
 
 .total_pay{
     color: #ffffff;
-    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-family: "Monument Extended-Regular", Helvetica;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: -0.4px;
     line-height: 42.8px;
-    white-space: nowrap;
 }
