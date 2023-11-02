@@ -35,7 +35,7 @@ import UniversityDashboard from './pages/institution/dashboard/UniversityDashboa
 import UniversityLogin from './pages/institution/login/login';
 import Payment from './pages/student/payment/Payment';
 import Review from './pages/student/review/review';
-
+import PurchaseTest from './pages/student/purchasetest/PurchaseTest';
 
 
 
@@ -73,6 +73,7 @@ function App() {
         <Route path='/student/onlineofline' element={<OnlineOfline/>}/>
         <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
+        <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
         <Route path='/student/paymentcompletion' element={<PaymentCompletion/>}/>
         <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/username-password' element={<UserPass/>}/>
