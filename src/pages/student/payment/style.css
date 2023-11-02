@@ -1,11 +1,10 @@
 .pay_bold{
-color: #282828;
-font-family: "Monument Extended-Regular", Helvetica;
-font-size: 100px;
-font-weight: bold;
-letter-spacing: -0.9px;
-line-height: 96.3px;
-white-space: nowrap;
+    color: #282828;
+    font-family: "Monument Extended-Regular", Helvetica;
+    font-size: 90px;
+    font-weight: 400;
+    letter-spacing: -0.9px;
+    line-height: 96.3px;
 }
 
 .pay_div{
@@ -18,9 +17,25 @@ white-space: nowrap;
 .payment_fle{
     display: flex;
     justify-content: center;
+    margin-right: 5rem;
+    background-color: #282828;
+  
 }
 .payment_fle > * + * {
-    margin-left: 6rem; /* Adjust as needed */
+    margin-left: 7rem; /* Adjust as needed */
+  }
+
+  .payment_fle5 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #282828;
+    border-radius: 60px;
+     line-height: 40px;
+     padding: 2rem;
+  }
+
+  .payment_fle5 > * + * {
+    margin-left: 40rem; /* Adjust as needed */
   }
 
 .john_oliver{
@@ -57,15 +72,12 @@ white-space: nowrap;
 
 .payment_fle3{
     display: flex;
-    justify-content: right;
-    margin-top: 200px;
-    margin-right: 700px;
+    justify-content: center;
+    margin-top: 100px;
     padding-bottom: 40px;
+    margin-left: 25rem;
 }
 
-.payment_fle3 > * + * {
-    margin-left: 10rem; /* Adjust as needed */
-  }
 
 .black_pay{
     background-color: #282828;
@@ -87,6 +99,8 @@ white-space: nowrap;
 .justify_black{
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
+
 }
 
 .green_money2 {

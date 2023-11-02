@@ -44,13 +44,12 @@ const Payment = () => {
         </div>
         </div>
        <div className='justify_black'>
-        <div className='black_pay2'>
-            <div className='payment_fle2'>
+            <div className='payment_fle5'>
             <div><button className='button_pay'>Pay</button></div>
             <div className='total_pay'>Total: <span className='green_money2'>950$</span></div>
             </div>
            
-        </div>
+       
        </div>
 
        <div className='payment_fle3'>

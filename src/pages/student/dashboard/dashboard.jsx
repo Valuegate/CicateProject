@@ -47,17 +47,17 @@ const StudentDashboard = () => {
 
      <div className=''>
       <div>
-        <span className='my_test'><img src={quatre} alt="" className='img_set'/>Test Preparation <br /> & Tools</span>
+        <span className='my_test'><img src={quatre} alt="" className='img_set'/>Test Preparation <br /> & Tools</span> <br />
         <p className='less_text'>Free Test Preparation <br /> Shop for test Preparation <br /> My Test Preparation</p>
       </div>
-
+ <br />
       <div>
         <span className='my_test'><img src={cinq} alt="" className='img_set'/>Getting Ready <br />
-for Test Day</span>
+for Test Day</span> <br />
         <p className='less_text'>Identification Requirements <br />
 Test Center Procedures & <br /> Regulations</p>
       </div>
-
+  <br />
       <div>
         <span className='my_test'><img src={seize} alt="" className='img_set'/>Order</span>
         <p className='less_text'>View My Orders</p>
