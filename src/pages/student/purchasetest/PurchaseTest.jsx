@@ -21,7 +21,12 @@ const PurchaseTest = () => {
         </div>
 
         <div className='cart_box'>
-            <span className='span_test'>POCAS</span>
+            <span className='span_test'>POCAS</span> <br />
+            <div className='pocas_flex1'>
+                <div className='added_in'>Added</div>
+                <div className='plus_one'>+1</div>
+                <div className='minus_one'>-1</div>
+            </div>
            
         </div>
         <div className='cart_box'>

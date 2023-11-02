@@ -60,3 +60,48 @@ background-color: #33cc00;
 border-radius: 48px;
 padding: 1.5rem;
 }
+
+.pocas_flex1{
+    display: flex;
+    justify-content: center;
+}
+
+.pocas_flex1 > * + * {
+    margin-left: 1rem; /* Adjust as needed */
+  }
+
+.plus_one{
+    color: #282828;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -0.46px;
+    line-height: 25.1px;
+    background-color: #33cc00;
+    border-radius: 48px;
+    padding: 1rem;
+}
+
+.minus_one{
+    color: #282828;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -0.46px;
+    line-height: 25.1px;
+    background-color: #f9034d;
+    border-radius: 48px;
+    padding: 1rem;
+}
+
+.added_in{
+    color: #282828;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: -0.46px;
+    line-height: 25.1px;
+    background-color: #ffffff;
+    border-radius: 48px;
+    padding: 1rem;
+}
