@@ -181,6 +181,11 @@ white-space: nowrap;
     border-radius: 1rem;
   }
 
+  .app_button:hover{
+    background-color: #33cc00;
+    border-radius: 3rem;
+  }
+
 .bl_green{
     align-items: center;
 background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 0%, rgb(51, 204, 0) 86.04%);
@@ -196,6 +201,11 @@ line-height: 17.4px;
 text-align: center;
 white-space: nowrap;
 
+}
+.bl_to_apply:hover{
+    background-color: #33cc00;
+    border-radius: 2rem;
+    color:#ffffff;
 }
 
 .top_bl{
