@@ -31,9 +31,9 @@ text-align: center;
     position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .wrapper_main {
-        width: 50%;
+        width: 90%;
         background-color: aquamarine;
     }
 
@@ -45,6 +45,14 @@ text-align: center;
         line-height: 50.5px;
         text-align: center;
         }
+        .top_boxone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 200px;
+            width: 100%;
+        }
 
         .empower{
             color: #282828;
@@ -53,12 +61,12 @@ text-align: center;
             font-weight: 100;
             letter-spacing: 0;
             line-height: 40.2px;
+            width: 100%;
             }
         .empower_box{
             border-radius: 30px;
-            height: 40px;
             background-color: #282828;
-            width: 40px;
+            width: 10px;
             }
             .cicate_offerz{
                 color: #282828;
@@ -84,17 +92,45 @@ text-align: center;
 
             .top_bl{
                 justify-content: center;
-                right: 0;
                 display: flex;
                 margin-top: 30px;
-               flex-direction: column;
                line-height: 20px;
                width: 100%;
+               display: inline-block;
             }
+            .bl_black{
+                align-items: center;
+                background-color: #282828;
+                border-radius: 10px;
+                color: #ffffff;
+                font-family: "Monument Extended-Regular", Helvetica;
+                font-size: 5px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 10.4px;
+                text-align: center;
+                white-space: nowrap;
+                }
+                
+                .bl_green{
+                align-items: center;
+                background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 0%, rgb(51, 204, 0) 86.04%);
+                background-color: rgba(255, 255, 255, 1);
+                border-radius: 10px;
+                color: #ffffff;
+                font-family: "Monument Extended-Regular", Helvetica;
+                font-size: 5px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 10.4px;
+                text-align: center;
+                white-space: nowrap;
+                
+                }
             .top_empower{
-                width: 20%;
                 display: flex;
                 flex-direction: column;
+                width: 50%;
 }
 }
 
