@@ -5,6 +5,11 @@ const Footer = () => {
   return (
     
       <footer className="footer">
+         <div className='foot__headers'>CICATE
+              <br />
+              <p className='foot__content'>Copyright (C) 2023 by <br /> Educational Testing Service. <br /> All Rights reserved. <br /></p>
+             <br /> <p className='foot__content'>All trademarks are the property <br /> of their respective owners</p>
+            </div>
         <ul className='foot__headers'> Test takers
           <br />
           <br />
@@ -34,11 +39,7 @@ const Footer = () => {
          <li><a href="/"className='foot__content'>FAQ</a></li>
          <li><a href="/"className='foot__content'>Gain More Knowledge</a></li>
          </ul>
-              <div className='foot__headers'>CICATE
-              <br />
-              <p className='foot__content'>Copyright (C) 2023 by Educational Testing Service. All Rights reserved</p>
-              <p className='foot__content'>All trademarks are the property of their respective owners</p>
-            </div>
+             
           </footer>
      
        

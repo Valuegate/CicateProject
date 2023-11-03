@@ -8,6 +8,8 @@ font-family: "Monument Extended-Regular", Helvetica;
 bottom: 0;
 z-index: 2;
 width: 100%;
+border-top-right-radius: 7rem;
+border-top-left-radius: 7rem;
 }
 
 .footer > * + * {
