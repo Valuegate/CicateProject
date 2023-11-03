@@ -30,7 +30,7 @@ const PersonalData = () => {
       <input type="text"  placeholder='enter surname' className='inputs'/>
     </label>
 
-    <br /><label htmlFor="" className='labels'>Position: <br />
+    <br /><label htmlFor="" className='labels'>Degree: <br />
       <input type="text" placeholder=' enter position' className='inputs'/>
     </label>
      </div>
