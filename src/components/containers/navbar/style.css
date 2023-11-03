@@ -254,8 +254,8 @@ cursor: pointer;
     .testFormat{
       color: #282828;
       font-family: "PP Monument Extended-Regular", Helvetica;
-      font-size: 18px;
-     font-weight: 400;
+      font-size: 20px;
+     font-weight: bold;
       letter-spacing: -0.36px;
       all: unset;
       align-items: center;
@@ -300,20 +300,19 @@ cursor: pointer;
       display: flex;
       text-decoration: none;
       z-index: 0;
-      position: relative;
+      padding: 0.3rem;
      background-color:#ffffff;
-     border-radius: 10px;
    line-height: 17.4px;
-   box-sizing: border-box;
-   white-space: nowrap;
-   height: 14vh;
+   height: 13vh;
    width: 100%;
    margin-top: 1rem;
+   font-size: 18px;
+   font-weight: 400;
     
      }
      
      .under__Header > * + * {
-        margin-left: 4rem; /* Adjust as needed */
+        margin-left: 6rem; /* Adjust as needed */
       }
    
      .box .gradient {

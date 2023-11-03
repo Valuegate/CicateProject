@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../../components/containers/navbar/navbar'
-import Footer from '../../components/containers/footer/footer'
+import Foooter from '../../components/foooter/foooter'
 import CICATE from '../../assets/CICATE.png'
 import union from '../../assets/union.png'
 import unionx from '../../assets/Unionx.png'
@@ -112,7 +112,7 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
 </div>
 </div>
 
-<Footer/>
+<Foooter/>
     </div>
   )
 }

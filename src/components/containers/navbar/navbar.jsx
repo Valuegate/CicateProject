@@ -21,7 +21,7 @@ const Navbar = () => {
   }
   **/
   return (
-    <div className='maxwidth'>
+    <div className=''>
       <nav className='navv'>
         <a href="/" className='nav_brand'>CICATE </a>
           <ul className='nav__menu'>

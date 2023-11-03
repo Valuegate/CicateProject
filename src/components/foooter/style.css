@@ -1,0 +1,50 @@
+.footer1{
+    display: flex;
+    align-items: center;
+    background: #282828;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "Monument Extended-Regular", Helvetica;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    }
+    
+    .footer > * + * {
+        margin-left: 6rem; /* Adjust as needed */
+      }
+    
+    .foot__headers {
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 27.3px;
+        white-space: nowrap;
+        z-index: 2;
+        padding-top: 18px;
+      
+     
+     
+        }
+    
+        .foot__content {
+            color: #ffffff;
+            font-family: "Gordita-Regular", Helvetica;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 26.2px;
+            opacity: 0.5;
+            top: 0;
+           
+            }
+    
+    ul{
+        padding: 0;
+        
+    }
+    
+    
+    
