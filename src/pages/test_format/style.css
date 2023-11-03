@@ -31,10 +31,11 @@ text-align: center;
     position: relative;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .wrapper_main {
-        width: 90%;
-        background-color: aquamarine;
+        width: 100%;
+        margin: auto;
+        background-color:red !important;
     }
 
     .abilities{
@@ -165,6 +166,20 @@ line-height: 17.4px;
 text-align: center;
 white-space: nowrap;
 }
+
+.bl_black:hover{
+    color:#ffffff;
+    background-color:  #33cc00;
+   
+    border-radius: 1rem;
+}
+
+.bl_green:hover{
+    color:#ffffff;
+    background-color:   #282828;
+  
+    border-radius: 1rem;
+  }
 
 .bl_green{
     align-items: center;

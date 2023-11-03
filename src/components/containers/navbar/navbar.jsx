@@ -28,7 +28,6 @@ const Navbar = () => {
             <li><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
             <li><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
-            <li><a href="/" className='nav__link'><img alt='img' src={seperator} /></a> </li>
             <li><a href="/institution/university-login" className='login'>login</a></li>
             <li><a href="/student/signup" className='signUp'>sign Up</a> </li>
             <li ><a href="/"  className='nav__link'><img alt='img' src={search} /> Search</a> </li>

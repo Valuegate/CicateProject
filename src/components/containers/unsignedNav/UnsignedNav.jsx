@@ -29,7 +29,6 @@ const UnsignedNav = () => {
             <li className='nav_item'><a href="/" className='nav__link2' > <img alt='img' src={tee} className='vector0'/>Test Takers</a> </li>
             <li className='nav_item'><a href="/institutions" className='nav__link2'><img alt='img' src={caa} className='vector0'/>Institutions</a> </li>
             <li className='nav_item'><a href="/about" className='nav__link2'><img alt='img' src={mac} className='vector0'/>About Us</a> </li>
-            <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={white_seperator}/></a> </li>
             <li className='nav_item'><a href="/institution/university-login" className='login_black'>Login</a></li>
             <li className='nav_item'><a href="/student/signup" className='signUp'>Sign Up</a> </li>
             <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={search} /> Search</a> </li>
