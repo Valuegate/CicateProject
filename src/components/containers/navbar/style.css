@@ -17,6 +17,7 @@ li{
 
 body {
   font-size: 1rem;
+  
 }
 
 
@@ -162,6 +163,8 @@ font-family: "PP Monument Extended-Regular", Helvetica;
 cursor: pointer;
 font-size: 10px;
 }
+
+
 
 .nav__menu > * + * {
     margin-left: 6rem; /* Adjust as needed */

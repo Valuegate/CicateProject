@@ -18,7 +18,7 @@ import Footer from '../../components/containers/footer/footer'
 
 const TestFormat = () => {
   return (
-    <div>
+    <div className='wrapper_main'>
       <div>
         <Navbar/>
       </div>
