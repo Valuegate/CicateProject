@@ -47,8 +47,6 @@ body {
     .vector0 {
         margin-right: 5px;
         height: 20px;
- 
-        
         }
 
 
@@ -78,7 +76,21 @@ cursor: pointer;
       cursor: pointer;
       font-size: 10px;
       }
-      
+
+      .navv ul li a:hover{
+        color:#ffffff;
+        background-color:  #33cc00;
+        padding: 1rem;
+        border-radius: 1rem;
+    
+      }
+      .navvv ul li a:hover{
+        color:#ffffff;
+        background-color:  #33cc00;
+        padding: 1rem;
+        border-radius: 1rem;
+    
+      }
       
       
       .nav__menu > * + * {
@@ -104,15 +116,12 @@ cursor: pointer;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
-  }
-  .nav__menu > * + * {
-    margin-left: 6rem; /* Adjust as needed */
-  }
 }
 
   .nav__active{
       transform: translateX(0);
   }
+}
 .nav_brand{
     font-weight: bold;
     font-size: 18px;
@@ -136,7 +145,7 @@ cursor: pointer;
     display: inline-flex;
     overflow: hidden;
     padding: 11px 18px;
- color: #ffffff;
+    color: #ffffff;
   font-family: "Monument Extended-Regular", Helvetica;
   font-size: 16px;
   font-weight: 400;
@@ -212,6 +221,9 @@ cursor: pointer;
     cursor: pointer;
 }
 
+.toggleIcon{
+  display: none;
+}
 
 
     .nav__link{
@@ -318,6 +330,7 @@ cursor: pointer;
          white-space: nowrap;
          width: fit-content;
          }
+        
 
 
 
