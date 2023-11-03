@@ -27,6 +27,22 @@
                     padding-left: 60px;
                     padding-right: 60px;
                     }
+
+                    .input_country{
+                      color: #ffffff;
+                      font-family: "PP Monument Extended-Light", Helvetica;
+                      font-size: 18px;
+                      font-weight: 300;
+                      letter-spacing: 0;
+                      line-height: 32.5px;
+                      text-align: center;
+                        white-space: nowrap;
+                        background-color: #282828;
+                      border-color: #ffffff;
+                        border-radius: 30px;
+                        padding: 2px;
+                     
+                        }
       .justify_bluk{
         justify-content: center;
         display: flex;

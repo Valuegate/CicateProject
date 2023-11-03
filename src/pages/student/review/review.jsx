@@ -69,7 +69,7 @@ const Review = () => {
 
               <div className=''>
               <label htmlFor="" className='labels'> Country of Citizenship: <br />
-              <select id="country" name="country" class="form-control" className='inputs'>
+              <select id="country" name="country" class="form-control" className='input_country'>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
