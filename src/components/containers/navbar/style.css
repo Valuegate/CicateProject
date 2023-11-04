@@ -127,6 +127,10 @@ cursor: pointer;
   /* CSS hack for Safari */
   -webkit-column-gap: 6rem;
 }
+
+.nav__menu > * + * {
+  margin-left: 6rem; /* Adjust as needed */
+}
 }
 
 
