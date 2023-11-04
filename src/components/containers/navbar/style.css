@@ -118,11 +118,15 @@ cursor: pointer;
       display: flex;
       gap: 6rem;
       flex-direction: column;
-      background: green;
+      background-color: #33cc00;
       flex-direction: column;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
+}
+
+.nav__menu > * + * {
+  margin-left: 6rem; /* Adjust as needed */
 }
 
   .nav__active{
