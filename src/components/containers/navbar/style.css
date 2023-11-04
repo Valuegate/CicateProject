@@ -76,6 +76,7 @@ cursor: pointer;
       font-family: "PP Monument Extended-Regular", Helvetica;
       cursor: pointer;
       font-size: 16px;
+      flex-direction: row;
       }
 
       .navv ul li a:hover{
@@ -115,18 +116,18 @@ cursor: pointer;
       height: 100%;
       right: 0;
       gap: 6rem;
+
+    /* Safari bug workaround */
+    margin-left: -6rem; /* Adjust as needed */
+    margin-right: -6rem; /* Adjust as needed */
       display: flex;
       flex-direction: column;
       background-color: #33cc00;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
-       /* Safari 14.1 and later */
- @supports (display: grid) {
-  grid-gap: 6rem;
-  /* CSS hack for Safari */
-  -webkit-column-gap: 6rem;
-}
+  }
+
 
 .nav__menu > * + * {
   margin-left: 6rem; /* Adjust as needed */
@@ -138,10 +139,11 @@ cursor: pointer;
 
 
 
+
   .nav__active{
       transform: translateX(0);
   }
-}
+
 
 
 
