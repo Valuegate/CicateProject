@@ -40,6 +40,7 @@
 
     .right_side{
 line-height: 20px;
+margin-top: -1.6rem;
     }
     .flex_green_sign{
         display: flex;
