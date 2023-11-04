@@ -11,7 +11,7 @@ import seperator from '../../../assets/separator.svg'
 
 const Navbar = () => {
   const [select, setSelect] = useState('')
-/** 
+
   const [active, setActive] = useState('nav__menu')
   const [toggleIcon, setToogleIcon] = useState('nav__toggler')
 
@@ -19,12 +19,12 @@ const Navbar = () => {
     active === 'nav__menu' ? setActive('nav__menu nav__active') : setActive('nav__menu')
     toggleIcon === 'nav__toggler' ? setToogleIcon('nav__toggler toggle' ): setToogleIcon('nav__toggler');
   }
-  **/
+
   return (
     <div className=''>
       <nav className='navv'>
         <a href="/" className='nav_brand'>CICATE </a>
-          <ul className='nav__menu'>
+          <ul className={active}>
             <li><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
             <li><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
@@ -34,7 +34,7 @@ const Navbar = () => {
           </ul>
          <ul>
          </ul>
-          <div className='toggleIcon' onClick='navToggle'>
+          <div className={toggleIcon} onClick={navToggle}>
             <div className='line1'></div>
             <div className='line2'></div>
             <div className='line3'></div>
