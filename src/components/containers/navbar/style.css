@@ -114,6 +114,7 @@ cursor: pointer;
       width: 50%;
       height: 100%;
       right: 0;
+      gap: 6rem;
       display: flex;
       flex-direction: column;
       background-color: #33cc00;
