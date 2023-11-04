@@ -19,7 +19,7 @@
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 100px;
-font-weight: 400;
+font-weight: bold !important;
 line-height: 95.5px;
 text-align: center;
 }
@@ -253,7 +253,7 @@ width: 500px;
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 74px;
-font-weight: 400;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 76.2px;
 }
@@ -262,8 +262,7 @@ line-height: 76.2px;
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 80px;
-font-weight: 400;
-left: 0;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 101.6px;
 text-align: center;
@@ -303,7 +302,7 @@ padding: 20px;
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
     font-size: 80px;
-    font-weight: 400;
+    font-weight: bold;
     letter-spacing: 0;
     line-height: 101.6px;
 }
@@ -390,7 +389,7 @@ font-weight: 400;
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 40px;
-font-weight: 400;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 40px;
 margin-top: 30px;
@@ -450,7 +449,7 @@ width: 249px;
 color: #282828;
 font-family: "PP Monument Extended-Regular", Helvetica;
 font-size: 24px;
-font-weight: 400;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 21.6px;
 opacity: 0.5;
@@ -472,7 +471,7 @@ opacity: 0.5;
  color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 75px;
-font-weight: 400;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 76.1px;
 }
@@ -486,7 +485,7 @@ width: 217px;
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 59px;
-font-weight: 400;
+font-weight: bold;
 letter-spacing: 0;
 line-height: 64.3px;
 text-align: center;
@@ -529,7 +528,7 @@ font-weight: 400;
 letter-spacing: 0;
 line-height: 50.7px;
 text-align: center;
-margin-left: 70px;
+margin-left: 90px;
 
 }
 
