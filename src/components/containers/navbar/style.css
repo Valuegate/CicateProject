@@ -31,7 +31,6 @@ body {
     width: 100%;
     top: 0;
     background-color: #ffffff;
-    padding: 1.4rem;
    
     
 }
@@ -133,6 +132,9 @@ cursor: pointer;
       transform: translateX(0);
   }
 }
+
+
+
 .nav_brand{
     font-weight: bold;
     font-size: 18px;
@@ -308,10 +310,11 @@ cursor: pointer;
      background-color:#ffffff;
    line-height: 17.4px;
    height: 13vh;
-   width: 100%;
+   width: 100%; 
    margin-top: 1rem;
-   font-size: 18px;
+   font-size: 19px;
    font-weight: 400;
+ margin: auto;
     
      }
      
