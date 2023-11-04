@@ -116,10 +116,6 @@ cursor: pointer;
       height: 100%;
       right: 0;
       gap: 6rem;
-
-    /* Safari bug workaround */
-    margin-left: -6rem; /* Adjust as needed */
-    margin-right: -6rem; /* Adjust as needed */
       display: flex;
       flex-direction: column;
       background-color: #33cc00;
@@ -128,10 +124,13 @@ cursor: pointer;
       z-index: 3;
   }
 
-
-.nav__menu > * + * {
-  margin-left: 6rem; /* Adjust as needed */
-}
+  .nav__menu >  *  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+  
+  }
+ 
 }
 
 
