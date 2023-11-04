@@ -103,7 +103,7 @@ cursor: pointer;
         }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 600px) {
   .nav__toggler {
     display: block;
     cursor: pointer;
@@ -115,18 +115,21 @@ cursor: pointer;
       height: 100%;
       right: 0;
       display: flex;
-      gap: 6rem;
       flex-direction: column;
       background-color: #33cc00;
-      flex-direction: column;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
+       /* Safari 14.1 and later */
+ @supports (display: grid) {
+  grid-gap: 6rem;
+}
 }
 
-.nav__menu > * + * {
-  margin-left: 6rem; /* Adjust as needed */
-}
+
+
+
+
 
   .nav__active{
       transform: translateX(0);
