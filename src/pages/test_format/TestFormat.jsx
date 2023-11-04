@@ -144,6 +144,8 @@ Reliable Tests</p>
     <a href="/" className='app_button'>Login</a>
 </div>
   </div>
+
+  <div className='gradient_div'><img src={gradient} alt="img" className='gradient_design'/></div>
  <div className='set_black'>
     <div className='links_board'>
         <div className='follow__us'>Follow Us</div>
