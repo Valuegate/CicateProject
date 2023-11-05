@@ -75,6 +75,7 @@ cursor: pointer;
       text-decoration: none;
       font-family: "PP Monument Extended-Regular", Helvetica;
       cursor: pointer;
+      gap: 4rem;
       font-size: 16px;
       flex-direction: row;
       }
@@ -92,8 +93,8 @@ cursor: pointer;
       }
       
       
-      .nav__menu > * + * {
-          margin-left: 5rem; /* Adjust as needed */
+      .nav__menu > *  {
+          margin-left: 6rem; /* Adjust as needed */
         }
       
 
@@ -115,7 +116,7 @@ cursor: pointer;
       width: 50%;
       height: 100%;
       right: 0;
-      gap:0.7rem;
+      gap:3rem;
       display: flex;
       flex-direction: column;
       background-color: #33cc00;
@@ -151,7 +152,8 @@ cursor: pointer;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    margin-right: 45px;
+    margin-right: 20px;
+    color: #282828;
 }
 
 
