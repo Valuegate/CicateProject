@@ -102,14 +102,16 @@ text-align: center;
             width: 100%;
             }
 
-            .top_bl{
-                justify-content: center;
-                display: flex;
-                margin-top: 30px;
-               line-height: 20px;
+            .top_bl {
                width: 100%;
-               display: inline-block;
+              gap: 2rem;
+              flex-wrap: wrap;
             }
+            .top_bl > * + * + *{
+                margin-left: 3rem; /* Adjust as needed */
+              }
+
+
             .bl_black{
                 align-items: center;
                 background-color: #282828;
