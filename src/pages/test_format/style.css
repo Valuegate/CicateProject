@@ -304,6 +304,8 @@ box-shadow: var(--shadow);
 justify-content: center;
 align-items: center;
 padding: 20px;
+border: #282828;
+border: 0.3px solid;
 }
 
 
@@ -378,6 +380,8 @@ box-shadow: var(--shadow);
 display: flex;
 justify-content: center;
 padding: 30px;
+border: #282828;
+border: 0.3px solid;
 }
 
 
