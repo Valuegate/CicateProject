@@ -23,7 +23,10 @@ const TestFormat = () => {
       <Navbar/>
       </div>
       <div className='top_boxone'>
-     <div className='new1'></div>
+     <div className='new1'>
+      
+    
+     </div>
       </div>
 
       <div className='top_abiities'>

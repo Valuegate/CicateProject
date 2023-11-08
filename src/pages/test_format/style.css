@@ -1,10 +1,10 @@
 .new1{
     height: 200px;
     width: 250px;
-    border-color: black;
     border: #282828;
-    background-color: black;
+    border: 2px solid;
     border-radius: 30px;
+    background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
 }
 .top_boxone{
     display: flex;
@@ -13,6 +13,12 @@
     position: relative;
     margin-top: 220px;
 }
+.inside_new{
+        background: radial-gradient(50% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+        border-radius: 362px;
+        height: 400px;
+        width: 400px;
+        } 
 
 
 .abilities{
@@ -247,8 +253,10 @@ text-align: justify;
 .empower_box{
 border-radius: 30px;
 height: 400px;
-background-color: #282828;
 width: 500px;
+border: #282828;
+border: 2px solid;
+background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
 }
 
 
