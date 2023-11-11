@@ -102,8 +102,17 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
 <div className='last'>
 
 <div className='image_slant'>
-    <div className='uniondiv'> </div>
-    <div className='unionx'></div>
+    <div className='uniondiv'>
+       <div className='test_imgg'>
+        <div className='testad'>Test Ad <br />
+Here!</div>
+<div className='make_sure'>Make sure to reach <br />
+ out to our ads here! <br /></div>
+<div className='rea_div'><a href="/" className='rea_more'>Read More</a></div>
+</div> </div>
+    <div className='unionx'>
+
+    </div>
     
 </div>
 
