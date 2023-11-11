@@ -46,10 +46,29 @@ max-height: 617px;
         position: absolute;
         }
 
+       .uniondiv{
+       z-index:3;
+     width: 100%; /* Set the width of the div */
+      height: 300px; /* Set the height of the div */
+      background-image: url('../../assets/union.png'); /* Replace 'your-image-path.jpg' with the path to your image */
+      background-size: cover; /* Cover the entire div with the background image */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+   
+    }
+    
+       
+
         .unionx{
-            height: 600px;
-            width: 1000px;
-            z-index: 1;
+            width: 100%; /* Set the width of the div */
+      height: 300px; /* Set the height of the div */
+      background-image: url('../../assets/Unionx.png'); /* Replace 'your-image-path.jpg' with the path to your image */
+      background-size: cover; /* Cover the entire div with the background image */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+            z-index: 0;
+        margin-left: -30rem;
+           
         }
 
         .make_test{
@@ -186,14 +205,14 @@ line-height: 63px;
      .image_slant{
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 5rem;
         z-index: 0;
-        margin-bottom: 245px;
+        margin-bottom: 25rem;
    
      }
 
      .image_slant > * + * {
-        margin-left: 44rem; /* Adjust as needed */
+       
       }
 
 

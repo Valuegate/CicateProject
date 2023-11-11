@@ -102,8 +102,9 @@ abilities, we aim to break down barriers and open doors to a world of opportunit
 <div className='last'>
 
 <div className='image_slant'>
-    <div>  <img src={union} alt="" className='union'/> </div>
-    <div><img src={unionx} alt="" className='unionx'/></div>
+    <div className='uniondiv'> </div>
+    <div className='unionx'></div>
+    
 </div>
 
 

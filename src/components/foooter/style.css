@@ -10,7 +10,7 @@
     width: 100%;
     }
     
-    .footer > * + * {
+    .footer1 > * + * {
         margin-left: 6rem; /* Adjust as needed */
       }
     
