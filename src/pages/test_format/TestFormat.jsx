@@ -20,7 +20,7 @@ const TestFormat = () => {
   return (
     <div className='wrapper_main'>
       <div>
-      <Navbar/>
+    <Navbar/>
       </div>
       <div className='top_boxone'>
      <div className='new1'>
@@ -61,6 +61,7 @@ Reliable Tests</p>
     </div>
 
     <div className='top_bl_white'>
+
         <div className='bl_white'>
             <div className='inside_black_bl'></div>
             <p className='bl_tests'>G.A.T.E</p>
