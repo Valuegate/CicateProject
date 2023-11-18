@@ -49,10 +49,10 @@ text-align: center;
 }
 
 .gradient_design{
-    width: 75rem;
+   max-width: 75rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     .wrapper_main {
         width: 100%;
         margin: auto;
@@ -60,6 +60,13 @@ text-align: center;
     .top_abilities{
         justify-content: center;
         position: relative;
+    }
+
+    .gradient_design {
+        width: 60rem;
+    }
+   body  .top_bl_white2{
+        display: none;
     }
 
     .top_our{
@@ -179,7 +186,9 @@ text-align: center;
                     display: grid;
                     flex-direction: column;
                 }
-
+              body .bl_white3{
+                display: none !important;
+               }
                 .the_bar{
                     display: grid;
                     flex-direction: column;
@@ -371,6 +380,17 @@ padding: 4rem;
 border: #282828;
 border: 0.3px solid;
 }
+
+.bl_white3{
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(232.69, 232.69, 232.69) 100%);
+   border-radius: 57px;
+   box-shadow: var(--shadow);
+   justify-content: center;
+   align-items: center;
+   padding: 4rem;
+   border: #282828;
+   border: 0.3px solid;
+   }
 
 
 .top_bl_white{
@@ -683,10 +703,7 @@ width: 80px;
     z-index: 0;
 }
 
-.gradient_img{
-height: 2394px;
-width: 1980px;
-}
+
 
 
 

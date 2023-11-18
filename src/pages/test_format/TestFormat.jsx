@@ -73,7 +73,7 @@ Reliable Tests</p>
               <a href="/" className='bl_to_apply'>How to Apply</a>
         </div>
 
-        <div className='bl_white'>
+        <div className='bl_white3'>
         <div className='inside_black_bl'></div>
             <p className='bl_tests'>P.O.C.A.S</p>
             <p className='bl_para'>This trusted evaluation covers language <br />
