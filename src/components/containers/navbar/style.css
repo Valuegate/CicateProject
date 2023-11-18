@@ -125,6 +125,10 @@ cursor: pointer;
       z-index: 3;
   }
 
+  .under__Header{
+    display: none;
+  }
+
   .nav__menu >  *  {
     display: flex;
     flex-direction: column;
