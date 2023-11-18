@@ -125,7 +125,7 @@ cursor: pointer;
       z-index: 3;
   }
 
-  .under__Header{
+  body .under__Header{
     display: none;
   }
 
