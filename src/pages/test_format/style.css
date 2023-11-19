@@ -62,9 +62,7 @@ text-align: center;
         position: relative;
     }
 
-    .gradient_design {
-        width: 60rem;
-    }
+  
    body  .top_bl_white2{
         display: none;
     }
@@ -75,13 +73,15 @@ text-align: center;
     }
 
     .our_test{
-        font-size: 1rem;
+        font-size: 2rem;
     }
+
+
 
     .abilities{
         color: #282828;
         font-family: "Monument Extended-Regular", Helvetica;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: 300;
         line-height: 34.5px;
         text-align: center;
@@ -90,16 +90,16 @@ text-align: center;
             justify-content: center;
             position: relative;
             margin-top: 200px;
-        
         }
 
         .empower{
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 10px;
-            font-weight: 100;
+            font-size: 20px;
+            font-weight: 200;
             letter-spacing: 0;
             line-height: 40.2px;
+           
          
             }
             .bl_white2{
@@ -114,8 +114,8 @@ text-align: center;
         .empower_box{
             border-radius: 30px;
             background-color: #282828;
-            padding: 4rem;
-        
+            width: 2rem;
+            height: 10rem;
             }
             .cicate_offerz{
                 color: #282828;
@@ -178,9 +178,13 @@ text-align: center;
                 }
 
                 .flex_links{
-                    display: grid;
+                    display: flex;
                     flex-direction: column;
+
                 }
+                .flex_links > * + * {
+                    margin-left: 0.1rem; /* Adjust as needed */
+                  }
 
                 .top_reasons{
                     display: grid;
@@ -192,6 +196,10 @@ text-align: center;
                 .the_bar{
                     display: grid;
                     flex-direction: column;
+                }
+
+                .reasons_to{
+                    font-size: 1rem;
                 }
                 .bl_green{
                 align-items: center;
@@ -215,14 +223,25 @@ text-align: center;
                     align-items: center;
                   
                 }
+
+                .follow__us {
+                    font-size: 2rem;
+                }
+
+        .links__img{
+            max-width: 1rem;
+            max-height: 1rem;
+        }
+                
                 .img_fl{ flex-direction: column;
-                display: grid;}
+                display: grid;
+            }
+
             .top_empower{
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
-                width: 50%;
-              
+                align-items: center;  
+                width: 100%;           
 }
 }
 
@@ -317,14 +336,15 @@ font-family: "Gordita-Regular", Helvetica;
 font-size: 30px;
 font-weight: 400;
 letter-spacing: 0;
-line-height: 41.9px;
+line-height: 34.9px;
 text-align: justify;
 }
 
 
 .empower_box{
 border-radius: 30px;
-padding: 20rem;
+padding: 5rem;
+width: 30rem;
 border: #282828;
 border: 2px solid;
 background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
@@ -345,16 +365,16 @@ background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 21
 .empower{
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 74px;
+font-size: 5rem;
 font-weight: bold;
 letter-spacing: 0;
-line-height: 76.2px;
+line-height: 60.2px;
 }
 
 .our_test{
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 7rem;
+font-size: 5rem;
 font-weight: bold;
 letter-spacing: 0;
 line-height: 101.6px;
@@ -672,7 +692,7 @@ z-index: 1;
 .follow__us{
 color: #ffffff;
 font-family: "PP Monument Extended-Regular", Helvetica;
-font-size: 70px;
+font-size: 7rem;
 font-weight: 400;
 letter-spacing: 0;
 line-height: 63px;
@@ -692,8 +712,8 @@ margin-top:10px;
   }
 
 .links__img{
-height: 80px;
-width: 80px;
+max-height: 8rem;
+max-width: 8rem;
 }
 
 .gradient_flex{

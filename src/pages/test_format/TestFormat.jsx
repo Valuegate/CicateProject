@@ -49,9 +49,9 @@ to Success!</div>
             <p className='empower'>Empowering <br />
 Individuals With <br />
 Reliable Tests</p>
-            <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
-            G.A.T.E and CCA, ensuring accurate evaluations <br />
-             for your success. Discover how our products can <br />
+            <p className='cicate_offerz'>CICATE offers cutting-edge testing <br /> solutions like 
+            G.A.T.E and CCA, <br /> ensuring accurate evaluations <br />
+             for your success. Discover how our <br /> products can 
               propel you towards your goals.</p>
         </div>
       </div>
@@ -157,7 +157,8 @@ Reliable Tests</p>
             <img src={instagram} alt="img" className='links__img' />
             <img src={linkedin} alt="img" className='links__img' />
             <img src={youtube} alt="img" className='links__img'/>
-            <img src={facebook} alt="img" className='links__img'/></div>
+            <img src={facebook} alt="img" className='links__img'/>
+            </div>
     </div>
  </div>
 
