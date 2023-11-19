@@ -68,7 +68,7 @@ text-align: center;
     }
 
     .top_our{
-        width: 50%;
+        width: 10px;
         display: inline-block;
     }
 
@@ -89,7 +89,7 @@ text-align: center;
         .top_boxone{
             justify-content: center;
             position: relative;
-            margin-top: 200px;
+            margin-top: 100px;
         }
 
         .empower{
@@ -137,6 +137,14 @@ text-align: center;
             opacity: 0.7;
             text-align: center;
            
+            }
+
+            .if_flex{
+                justify-content: center;
+                display: flex;
+                align-items: center;
+        
+                width: 100%;
             }
             .top_bl_white{
              display: grid;
@@ -235,6 +243,15 @@ text-align: center;
                 
                 .img_fl{ flex-direction: column;
                 display: grid;
+            }
+
+            .gradient_div{
+               display: none;
+            }
+
+            .set_black{
+               
+                display: none !important;
             }
 
             .top_empower{
@@ -377,9 +394,9 @@ font-family: "Monument Extended-Regular", Helvetica;
 font-size: 5rem;
 font-weight: bold;
 letter-spacing: 0;
-line-height: 101.6px;
-text-align: center;
+line-height: 50.6px;
 white-space: nowrap;
+
 }
 
 .top_our{
@@ -387,7 +404,7 @@ white-space: nowrap;
     display: flex;
     align-items: center;
     margin-top: 30px;
-    width: 100%;
+    width: 100%
 }
 
 .bl_white{
@@ -568,6 +585,7 @@ width: 249px;
     display: flex;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 .if_reasons{
@@ -578,6 +596,7 @@ font-weight: bold;
 letter-spacing: 0;
 line-height: 21.6px;
 opacity: 0.5;
+
 }
 
 .why_flex{
