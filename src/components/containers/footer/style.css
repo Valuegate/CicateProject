@@ -67,6 +67,7 @@ ul{
       justify-content: center;
       width: 100%;
      padding: 3rem;
+     border-radius: 0%;
     }
 
 body .foot__headers1{
