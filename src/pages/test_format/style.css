@@ -71,6 +71,9 @@ text-align: center;
         width: 10px;
         display: inline-block;
     }
+   .app_line{
+    margin-top: -8rem;
+   }
 
     .our_test{
         font-size: 2rem;
