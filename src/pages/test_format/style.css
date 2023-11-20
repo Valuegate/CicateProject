@@ -251,13 +251,27 @@ text-align: center;
             max-width: 1rem;
             max-height: 1rem;
         }
-                
+
+       body .if_flex{
+            display: none;
+        }
+               body .img_fl{
+                    display: none;
+                }
+
+               body .if_reasons{
+                    display: none;
+                }
                 .img_fl{ flex-direction: column;
                 display: grid;
             }
 
             .gradient_div{
                display: none;
+            }
+
+           body .the_bar {
+                display: none !important;
             }
 
             .set_black{
@@ -424,7 +438,7 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 justify-content: center;
 align-items: center;
-padding: 3rem;
+padding: 2.5rem;
 border: #282828;
 border: 0.3px solid;
 width: 39vh;
@@ -508,7 +522,7 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 display: flex;
 justify-content: center;
-padding: 5rem;
+padding: 2rem;
 border: #282828;
 border: 0.3px solid;
 }
