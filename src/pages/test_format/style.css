@@ -205,6 +205,7 @@ text-align: center;
                 }
               body .bl_white3{
                margin-top: 3rem;
+               width: 40vh;
                }
                 .the_bar{
                     display: grid;
@@ -422,10 +423,10 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 justify-content: center;
 align-items: center;
-padding: 4rem;
+padding: 3rem;
 border: #282828;
 border: 0.3px solid;
-width: 38vh;
+width: 39vh;
 }
 
 .bl_white3{
@@ -434,10 +435,10 @@ width: 38vh;
    box-shadow: var(--shadow);
    justify-content: center;
    align-items: center;
-   padding: 4rem;
+   padding: 3rem;
    border: #282828;
    border: 0.3px solid;
-   width: 38vh;
+   width: 39vh;
    }
 
 
@@ -456,7 +457,7 @@ width: 38vh;
 .bl_tests{
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 65px;
+    font-size: 60px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 101.6px;
@@ -466,8 +467,8 @@ width: 38vh;
 .bl_para{
     color: #282828;
     font-family: "Gordita-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 200;
     letter-spacing: 0;
     line-height: 26.5px;
     text-align: justify; 
