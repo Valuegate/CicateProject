@@ -275,7 +275,9 @@ text-align: center;
            body .the_bar {
                 display: none !important;
             }
-
+            .app_line1{
+                margin-right: 3.3rem;
+            }
             .set_black{
                
                 display: none !important;
@@ -710,7 +712,14 @@ margin-left: 90px;
     align-items: center;
     flex-direction: column;
     padding: 10px;
+}
 
+
+.app_line1{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 

@@ -140,7 +140,7 @@ Reliable Tests</p>
     <a href="/" className='app_button'>Login</a>
 </div>
 
-<div className='app_line'>
+<div className='app_line1'>
 <img src={zicon} alt="img" className='img_right' /> 
     <p className='applicant_black'>Institution</p> 
     <p className='applicant_opac'>Log in to your <br /> dashboard</p>
