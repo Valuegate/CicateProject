@@ -265,7 +265,9 @@ text-align: center;
                 .img_fl{ flex-direction: column;
                 display: grid;
             }
-
+   body .top_reasons{
+    display: none;
+   }
             .gradient_div{
                display: none;
             }
