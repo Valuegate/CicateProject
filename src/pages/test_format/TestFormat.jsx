@@ -45,13 +45,14 @@ to Success!</div>
 
       <div className='top_empower'>
         <div className='empower_box'></div>
-        <div>
+       
+        <div className=''>
             <p className='empower'>Empowering <br />
 Individuals With <br />
 Reliable Tests</p>
-            <p className='cicate_offerz'>CICATE offers cutting-edge testing <br /> solutions like 
-            G.A.T.E and CCA, <br /> ensuring accurate evaluations <br />
-             for your success. Discover how our <br /> products can 
+            <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
+            G.A.T.E and CCA, ensuring accurate evaluations <br />
+             for your success. Discover how our products can <br />
               propel you towards your goals.</p>
         </div>
       </div>
@@ -61,14 +62,12 @@ Reliable Tests</p>
     </div>
 
     <div className='top_bl_white'>
-
         <div className='bl_white'>
             <div className='inside_black_bl'></div>
             <p className='bl_tests'>G.A.T.E</p>
-            <p className='bl_para'>This trusted evaluation covers language <br />
-            proficiency, academic aptitude, and job-specific <br />
-             skills, boosting your chances for visa approval <br />
-             and showcasing your competence for studying <br />
+            <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude, and job-specific 
+             skills, boosting your chances for visa approval 
+             and showcasing your competence for studying 
               or working abroad.</p>
               <a href="/" className='bl_to_apply'>How to Apply</a>
         </div>
@@ -76,10 +75,9 @@ Reliable Tests</p>
         <div className='bl_white3'>
         <div className='inside_black_bl'></div>
             <p className='bl_tests'>P.O.C.A.S</p>
-            <p className='bl_para'>This trusted evaluation covers language <br />
-            proficiency, academic aptitude, and job-specific <br />
-             skills, boosting your chances for visa approval <br />
-             and showcasing your competence for studying <br />
+            <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude,and job-specific 
+             skills, boosting your chances for visa approval 
+             and showcasing your competence for studying 
               or working abroad.</p>
               <a href="/" className='bl_to_apply'>How to Apply</a>
         </div>
@@ -141,6 +139,7 @@ Reliable Tests</p>
     <p className='applicant_opac'>Log in to your <br /> dashboard</p>
     <a href="/" className='app_button'>Login</a>
 </div>
+
 <div className='app_line'>
 <img src={zicon} alt="img" className='img_right' /> 
     <p className='applicant_black'>Institution</p> 

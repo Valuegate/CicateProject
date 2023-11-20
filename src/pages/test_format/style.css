@@ -74,6 +74,7 @@ text-align: center;
 
     .our_test{
         font-size: 2rem;
+        margin-left: 2.7rem;
     }
 
 
@@ -116,6 +117,7 @@ text-align: center;
             background-color: #282828;
             width: 2rem;
             height: 10rem;
+            margin-left: 3rem;
             }
             .cicate_offerz{
                 color: #282828;
@@ -151,14 +153,13 @@ text-align: center;
              flex-direction: column;
             }
             .top_bl {
-               width: 100%;
+            width: 100%;
               gap: 2rem;
               flex-wrap: wrap;
             }
-            .top_bl > * + * + *{
+            .top_bl > * + * + * {
                 margin-left: 3rem; /* Adjust as needed */
               }
-
 
             .bl_black{
                 align-items: center;
@@ -174,6 +175,8 @@ text-align: center;
                 white-space: nowrap;
                 }
 
+               
+
                 .why_flex{
                     display: grid;
                     flex-direction: column;
@@ -183,6 +186,8 @@ text-align: center;
                 .app_flex{
                     display: grid;
                     flex-direction: column;
+                    margin-top: 60px;
+                    margin-bottom: 30px;
                 }
 
                 .flex_links{
@@ -199,11 +204,15 @@ text-align: center;
                     flex-direction: column;
                 }
               body .bl_white3{
-                display: none !important;
+               margin-top: 3rem;
                }
                 .the_bar{
                     display: grid;
                     flex-direction: column;
+                }
+
+                .bl_white{
+                    margin-left: 3.7rem;
                 }
 
                 .reasons_to{
@@ -351,7 +360,7 @@ white-space: nowrap;
 color: #282828;
 font-family: "Gordita-Regular", Helvetica;
 font-size: 30px;
-font-weight: 400;
+font-weight: 200;
 letter-spacing: 0;
 line-height: 34.9px;
 text-align: justify;
@@ -361,7 +370,7 @@ text-align: justify;
 .empower_box{
 border-radius: 30px;
 padding: 5rem;
-width: 30rem;
+width: 30vh;
 border: #282828;
 border: 2px solid;
 background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
@@ -373,7 +382,6 @@ background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 21
     display: flex;
     margin-top: 30px;
     width: 100%;
-  
 }
 .top_empower > * + * {
     margin-left: 4rem; /* Adjust as needed */
@@ -391,11 +399,12 @@ line-height: 60.2px;
 .our_test{
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 5rem;
+font-size: 4.2rem;
 font-weight: bold;
 letter-spacing: 0;
 line-height: 50.6px;
 white-space: nowrap;
+
 
 }
 
@@ -416,6 +425,7 @@ align-items: center;
 padding: 4rem;
 border: #282828;
 border: 0.3px solid;
+width: 40vh;
 }
 
 .bl_white3{
@@ -427,6 +437,7 @@ border: 0.3px solid;
    padding: 4rem;
    border: #282828;
    border: 0.3px solid;
+   width: 40vh;
    }
 
 
@@ -445,7 +456,7 @@ border: 0.3px solid;
 .bl_tests{
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 80px;
+    font-size: 65px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 101.6px;
