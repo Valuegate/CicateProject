@@ -64,6 +64,7 @@ text-align: center;
 
    body .bl_to_apply{
         font-size: 2rem;
+        margin-left: 6rem;
     }
 
   
@@ -115,6 +116,7 @@ text-align: center;
             font-weight: 200;
             letter-spacing: 0;
             line-height: 40.2px;
+            margin-left: 2rem;
            
          
             }
