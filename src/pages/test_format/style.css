@@ -120,10 +120,11 @@ text-align: center;
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
             font-size: 20px;
-            font-weight: 400;
+            font-weight: bold !important;
             letter-spacing: 0;
             line-height: 30.2px;
             margin-left: 2rem;
+            margin-top: 2rem;
             margin-bottom: 2rem;
            
          
