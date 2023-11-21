@@ -247,20 +247,22 @@ text-align: center;
                    gap: 1rem;
                     background-color: #33cc00;
                     padding: 2rem;
+                  
+                
                     
                 }
 
                 .app_flex > * {
-                    margin-right: -15rem; /* Adjust the negative margin as needed */
+                    margin-right: -14rem; /* Adjust the negative margin as needed */
                 }
 
                 .app_line{
-                    margin-top: 3rem;
+                    margin-top: -14rem;
+                    
                     
                 }
                 .app_line1{
-                    margin-top: 3rem;
-                    
+                    margin-top: -15rem;
                 }
 
               body  .applicant_black{
