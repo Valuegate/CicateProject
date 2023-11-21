@@ -61,17 +61,19 @@ ul{
 }
 @media screen and (max-width: 600px) {
     .footer{
-    display: flex;
+    display: flex-end;
     flex-direction: column;
-      align-items: center;
-      justify-content: center;
       width: 100%;
-    
      border-radius: 0%;
     }
 
 body .foot__headers1{
-      margin-right: 10.3rem;
+      width: 100%;
+      margin-right: 6rem;
+    }
+
+   body .foot__headers{
+  width: 100%;
     }
 }
 
