@@ -112,9 +112,7 @@ text-align: center;
             margin-top: 100px;
         }
 
-        .why_flex{
-          
-        }
+       
 
        body   .empower{
             color: #282828;
@@ -212,11 +210,17 @@ text-align: center;
                 .why_flex{
                     display: grid;
                     flex-direction: column;
+                    background-color: #282828;
+                    padding: 2rem;
+                   
                 }
 
                body .why__not{
                     font-size: 4rem;
                     line-height: 45px;
+                    color: #ffffff;
+                  
+                    
                 }
 
                 body .bl_tests{
@@ -236,15 +240,16 @@ text-align: center;
                 .app_flex{
                     display: flex;
                    gap: 1rem;
-                    margin-top: 60px;
                     background-color: #33cc00;
-                    padding: 1rem;
+                    padding: 2rem;
                     
-                   
                 }
+                
+
+               
 
                 .app_flex > * {
-                    margin-right: -12rem; /* Adjust the negative margin as needed */
+                    margin-right: -13rem; /* Adjust the negative margin as needed */
                   }
 
                 .app_line{
