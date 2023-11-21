@@ -234,10 +234,19 @@ text-align: center;
                     }
 
                 .app_flex{
-                    display: grid;
-                    flex-direction: column;
+                    display: flex;
+                   gap: 1rem;
                     margin-top: 60px;
+                    background-color: #33cc00;
+                    padding: 1rem;
                    
+                }
+
+                .app_line{
+                    margin-top: 3rem;
+                }
+                .app_line1{
+                    margin-top: 3rem;
                 }
 
               body  .applicant_black{
@@ -254,11 +263,7 @@ text-align: center;
 
                 }
 
-                .app_flex{
-                    background-color: #33cc00;
-                    padding: 1.4rem;
-                    
-                }
+                
                 .flex_links > * + * {
                     margin-left: 0.1rem; /* Adjust as needed */
                   }
