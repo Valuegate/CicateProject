@@ -73,7 +73,7 @@ body .foot__headers1{
     }
 
    body .foot__headers{
-  width: 100%;
+ display: none;
     }
 }
 
