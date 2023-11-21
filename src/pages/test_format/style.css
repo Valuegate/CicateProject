@@ -244,7 +244,7 @@ text-align: center;
                 }
 
                 .app_flex > * {
-                    margin-right: -15rem; /* Adjust the negative margin as needed */
+                    margin-right: -10rem; /* Adjust the negative margin as needed */
                   }
 
                 .app_line{
