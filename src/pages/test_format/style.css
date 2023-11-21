@@ -248,8 +248,12 @@ text-align: center;
                     flex-direction: column;
                 }
 
-                .bl_white{
+               body .bl_white{
                     margin-left: 2rem;
+                    padding: 1.5rem;
+                }
+                body .bl_white3{
+                    padding: 1.5rem;
                 }
 
                 .reasons_to{
