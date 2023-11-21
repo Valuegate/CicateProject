@@ -185,11 +185,16 @@ text-align: center;
             .top_bl {
             width: 100%;
               gap: 2rem;
-              flex-wrap: wrap;
+              display: flex;
+              flex-direction: column;
+              
             }
-            .top_bl > * + * + * {
+           
+
+            .top_bl > *  {
                 margin-left: 3rem; /* Adjust as needed */
-              }
+                margin-top: 2rem;
+            }
 
             .bl_black{
                 align-items: center;
@@ -244,9 +249,6 @@ text-align: center;
                     padding: 2rem;
                     
                 }
-                
-
-               
 
                 .app_flex > * {
                     margin-right: -13rem; /* Adjust the negative margin as needed */
