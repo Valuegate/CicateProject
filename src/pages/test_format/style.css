@@ -220,8 +220,13 @@ text-align: center;
                 }
 
                 body .bl_tests{
-                    font-size: 5rem;
-                    margin-left: 3rem;
+                    font-size: 4rem;
+                    background-color: #33cc00;
+                    border-radius: 4rem;
+                    line-height: 55px;
+                    padding: 1rem;
+                    justify-content: center;
+                    text-align: center;
                 }
                 
                 .cross__img{
