@@ -67,6 +67,12 @@ text-align: center;
         margin-left: 6rem;
     }
 
+    body .grey_heades{
+        font-size: 13px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
   
    body  .top_bl_white2{
         display: none;
