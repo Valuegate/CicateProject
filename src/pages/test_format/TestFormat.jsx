@@ -38,8 +38,8 @@ to Success!</div>
         <div className='grey_heades'>Discover our innovative test formats <br /> designed to assess your competencies and <br />unlock exciting opportunities</div>
       </div>
       <div className='top_bl'>
-        <a href="/gate" className='bl_black'>GATE test</a>
-        <a href="/gate" className='bl_green'>POCAS test</a>
+        <a href="/gate" className='bl_black'>GATE Test</a>
+        <a href="/gate" className='bl_green'>POCAS Test</a>
         <a href="/gate" className='bl_black'>Lisa Test</a>
       </div>
 
