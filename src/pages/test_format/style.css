@@ -239,14 +239,21 @@ text-align: center;
                     margin-top: 60px;
                     background-color: #33cc00;
                     padding: 1rem;
+                    
                    
                 }
 
+                .app_flex > * {
+                    margin-right: -15rem; /* Adjust the negative margin as needed */
+                  }
+
                 .app_line{
                     margin-top: 3rem;
+                    
                 }
                 .app_line1{
                     margin-top: 3rem;
+                    
                 }
 
               body  .applicant_black{
