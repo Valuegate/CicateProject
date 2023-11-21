@@ -97,13 +97,14 @@ text-align: center;
 
 
 
-    .abilities{
+   body .abilities{
         color: #282828;
         font-family: "Monument Extended-Regular", Helvetica;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 300;
         line-height: 34.5px;
         text-align: center;
+        margin-top: 2rem;
         }
         .top_boxone{
             justify-content: center;
