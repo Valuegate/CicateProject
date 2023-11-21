@@ -251,8 +251,8 @@ text-align: center;
                 }
 
                 .app_flex > * {
-                    margin-right: -16rem; /* Adjust the negative margin as needed */
-                  }
+                    margin-right: -15rem; /* Adjust the negative margin as needed */
+                }
 
                 .app_line{
                     margin-top: 3rem;
@@ -264,11 +264,13 @@ text-align: center;
                 }
 
               body  .applicant_black{
-                    font-size: 3rem;
+                    font-size: 2.1rem;
+                    line-height: 25px;
                 }
 
               body  .applicant_opac{
-                    font-size: 2rem;
+                    font-size: 1.3rem;
+                    line-height: 20px;
                 }
 
                 .flex_links{
