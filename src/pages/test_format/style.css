@@ -237,7 +237,7 @@ text-align: center;
                     display: grid;
                     flex-direction: column;
                     margin-top: 60px;
-                    margin-bottom: 30px;
+                   
                 }
 
               body  .applicant_black{
@@ -252,6 +252,12 @@ text-align: center;
                     display: flex;
                     flex-direction: column;
 
+                }
+
+                .app_flex{
+                    background-color: #33cc00;
+                    padding: 1rem;
+                    
                 }
                 .flex_links > * + * {
                     margin-left: 0.1rem; /* Adjust as needed */
