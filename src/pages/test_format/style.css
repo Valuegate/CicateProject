@@ -116,14 +116,15 @@ text-align: center;
           
         }
 
-        .empower{
+       body   .empower{
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
             font-size: 20px;
-            font-weight: 200;
+            font-weight: 400;
             letter-spacing: 0;
-            line-height: 40.2px;
+            line-height: 30.2px;
             margin-left: 2rem;
+            margin-bottom: 2rem;
            
          
             }
@@ -143,11 +144,12 @@ text-align: center;
             height: 10rem;
             margin-left: 3rem;
             }
-            .cicate_offerz{
+           body .cicate_offerz{
                 color: #282828;
                 font-family: "Gordita-Regular", Helvetica;
-                font-size: 4px;
-                font-weight: 200;
+                font-size: 15px;
+                font-weight: 400;
+                opacity: 0.5;
                 letter-spacing: 0;
                 line-height: 20.9px;
                 text-align: justify;

@@ -47,12 +47,12 @@ to Success!</div>
         <div className='empower_box'></div>
        
         <div className=''>
-            <p className='empower'>Empowering <br />
-Individuals With <br />
+            <p className='empower'>Empowering 
+Individuals With 
 Reliable Tests</p>
-            <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
-            G.A.T.E and CCA, ensuring accurate evaluations <br />
-             for your success. Discover how our products can <br />
+            <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like 
+            G.A.T.E and CCA, ensuring accurate evaluations 
+             for your success. Discover how our products can 
               propel you towards your goals.</p>
         </div>
       </div>
