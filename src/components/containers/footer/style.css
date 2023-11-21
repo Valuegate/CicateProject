@@ -61,7 +61,7 @@ ul{
 }
 @media screen and (max-width: 600px) {
     .footer{
-    display: flex-end;
+    display: flex;
     flex-direction: column;
       width: 100%;
      border-radius: 0%;
