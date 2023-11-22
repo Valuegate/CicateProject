@@ -36,7 +36,7 @@ const UniversityLogin = () => {
 </div>
 <div className='yui'></div>
 
-   <BlackFooter/>
+  
      </div>
    </div>
     </div>
