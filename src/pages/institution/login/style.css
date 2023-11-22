@@ -82,6 +82,7 @@ font-size: 24px;
         display: grid;
         flex-direction: column;
         width: 100%;
+        margin-top: 6rem;
     }
 
     .grening{
@@ -97,14 +98,27 @@ font-size: 24px;
     }
 
     body .email{
-    font-size: 10px;
-    padding: 13px;
+    font-size: 1.5rem;
+    padding: 1.2rem;
   
     }
 
+    body .icon_immg{
+       margin-right: 1rem;
+       width: 3.5vh;
+    }
+
+body .down_sign{
+margin-left: -3rem;
+}
+ .yui{
+    display: none !important;
+ }
+  
+
     body .pwd{
-        font-size: 10px;
-        padding: 13px;
+        font-size: 1.5rem;
+        padding: 1.2rem;
     }
 
     .green_login{

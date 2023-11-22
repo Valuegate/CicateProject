@@ -141,6 +141,16 @@ cursor: pointer;
          width: fit-content;
          }
 
+         @media screen and (max-width: 600px) {
+          body .nav__toggler {
+            display: block;
+            cursor: pointer;
+            margin-right: auto;
+            display: grid;
+            justify-content: flex-end;
+          }
+         }
+
 
 
 

@@ -17,16 +17,16 @@ const UniversityLogin = () => {
 
   <div className='sign_flex'>
 <div className=''>
-<div><img src={iconsgreen} alt="img" /></div>
+<div><img src={iconsgreen} alt="img" className='grening'/></div>
 <div className='sign_white'>Sign In</div>
 <div className='sign_opac'>Sign in to schedule a test, view <br /> scores, update your profile and <br /> more.</div>
 </div>
 
 
-<div className=''>
- <form action="">
-  <img src={mail_black} alt="img" className='icon_immg'/><input type="email" className='email' placeholder='Email'/> <br />
-  <img src={greenskey} alt="img" className='icon_immg'/> <input type="password" className='pwd' placeholder='Password'/> <br />
+<div className='down_sign'>
+ <form action="" className='inside_form'>
+  <div> <img src={mail_black} alt="img" className='icon_immg'/><input type="email" className='email' placeholder='Email'/> <br /> </div>
+ <div> <img src={greenskey} alt="img" className='icon_immg'/> <input type="password" className='pwd' placeholder='Password'/> <br /> </div> 
   <button type='submit' className='green_login'>Login</button> <br />
   <a href="/" className='forgot_password'>Forgot Password</a> 
  

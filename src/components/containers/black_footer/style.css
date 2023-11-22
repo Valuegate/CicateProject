@@ -79,13 +79,14 @@
         body  .second_footer{
           display: flex !important;
           flex-direction: column !important;
+          width: 100%;
+          background-color: #33cc00;
           }
 
           body .second_nav_list{
             display: grid !important;
             flex-direction: column !important;
             background-color: #33cc00;
-            width: 100%;
             bottom: 0;
           }
 
