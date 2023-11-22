@@ -74,3 +74,27 @@
         margin-left: 20px;
         line-height: 70px;
     }
+
+    @media screen and (max-width: 600px){
+        body  .second_footer{
+          display: flex !important;
+          flex-direction: column !important;
+          }
+
+          body .second_nav_list{
+            display: grid !important;
+            flex-direction: column !important;
+            background-color: #33cc00;
+            width: 100%;
+            bottom: 0;
+          }
+
+          .manage{
+            display: none !important;
+          }
+
+          .dis{
+            display: none !important;
+          }
+    }
+     

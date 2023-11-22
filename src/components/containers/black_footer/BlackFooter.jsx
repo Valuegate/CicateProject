@@ -5,11 +5,11 @@ const BlackFooter = () => {
       <div className='second_footer'>
       <ul className='second_nav_list'>
         <li><a href="/" className='black-foot_header'>Contact Us</a></li>
-        <li>I</li>
+        <li className='dis'>I</li>
         <li><a href="/" className='black-foot_header'>Legal</a></li>
-        <li>I</li>
+        <li className='dis'>I</li>
         <li><a href="/" className='black-foot_header'>Privacy and Security</a></li>
-        <li>I</li>
+        <li className='dis'>I</li>
         <li> <a href="/" className='black-foot_header'>CICATE Trademarks</a></li>
       </ul>
       <div className='manage'> 

@@ -10,7 +10,7 @@ import mail_black from '../../../assets/mail_black.png'
 const UniversityLogin = () => {
 
   return (
-   <div>
+   <div className='darker'>
     <UnsignedNav/>
     <div className='black_page'>
       <div className='div'>

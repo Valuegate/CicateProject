@@ -55,6 +55,7 @@ text-align: center;
 
 .wrapper_main{
     max-width: 100%;
+  
 }
 @media screen and (max-width: 600px) {
     .wrapper_main {
@@ -125,10 +126,10 @@ text-align: center;
        body   .empower{
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 20px;
+            font-size: 3.2rem;
             font-weight: bold !important;
             letter-spacing: 0;
-            line-height: 30.2px;
+            line-height: 39.2px;
             margin-left: 1rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
@@ -146,8 +147,7 @@ text-align: center;
             }
        body .empower_box{
             border-radius: 30px;
-           
-           width: 18vh;
+           width: 25vh;
            height: 10vh;
             margin-left: 3rem;
             }
@@ -158,7 +158,7 @@ text-align: center;
            body .cicate_offerz{
                 color: #282828;
                 font-family: "Gordita-Regular", Helvetica;
-                font-size: 15px;
+                font-size: 1.3rem;
                 font-weight: 400;
                 opacity: 0.5;
                 letter-spacing: 0;
