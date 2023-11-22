@@ -121,7 +121,7 @@ text-align: center;
             font-weight: bold !important;
             letter-spacing: 0;
             line-height: 30.2px;
-            margin-left: 2rem;
+            margin-left: 1rem;
             margin-top: 2rem;
             margin-bottom: 2rem;
            
@@ -136,11 +136,11 @@ text-align: center;
                 flex-direction: column;
                 display: grid;
             }
-        .empower_box{
+       body .empower_box{
             border-radius: 30px;
-            background-color: #282828;
-            width: 2rem;
-            height: 10rem;
+           
+           width: 18vh;
+           height: 10vh;
             margin-left: 3rem;
             }
 
@@ -293,7 +293,7 @@ text-align: center;
               body .bl_white3{
                margin-top: 3rem;
                margin-right: 3rem;
-               width: 40vh;
+               width: 38vh;
                }
                 .the_bar{
                     display: grid;
@@ -301,8 +301,8 @@ text-align: center;
                 }
 
                body .bl_white{
-                  
                     padding: 1.5rem;
+                    width: 38vh;
                 }
                 body .bl_white3{
                     padding: 1.5rem;
