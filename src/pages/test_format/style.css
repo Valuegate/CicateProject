@@ -52,15 +52,23 @@ text-align: center;
    max-width: 75rem;
 }
 
+
+.wrapper_main{
+    max-width: 100%;
+}
 @media screen and (max-width: 600px) {
     .wrapper_main {
         width: 100%;
-        margin: auto;
+       
     }
+
+   
     .top_abilities{
         justify-content: center;
         position: relative;
     }
+
+
 
    body .bl_to_apply{
         font-size: 2rem;
@@ -242,28 +250,22 @@ text-align: center;
                     width: 5vh;
                     }
 
-                .app_flex{
+              body  .app_flex{
                     display: flex;
-                   gap: 1rem;
+                     gap: 1rem;
+                     flex-direction: column;
                     background-color: #33cc00;
-                    padding: 2rem;
+                    padding: 7rem;
+                    margin-top: -1rem;
+                    padding-top: 9rem;
                   
                 
                     
                 }
 
-                .app_flex > * {
-                    margin-right: -14rem; /* Adjust the negative margin as needed */
-                }
+               
 
-                .app_line{
-                    margin-top: -14rem;
-                    
-                    
-                }
-                .app_line1{
-                    margin-top: -15rem;
-                }
+               
 
               body  .applicant_black{
                     font-size: 2.5rem;
