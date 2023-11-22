@@ -201,6 +201,8 @@ z-index: 1;
                                 flex-direction: column;
                                 background-color: #33cc00;
                                 padding: 4rem;
+                               
+                               
                             }
 
 
@@ -212,7 +214,8 @@ z-index: 1;
                             font-size: 30px;
                             margin-top: 60px;
                             background-color:#ffffff;
-                           }
+                             width: 100%;
+                        }
 
                            body .options1{
                             font-size: 20px;
@@ -236,9 +239,6 @@ z-index: 1;
                             justify-content: center;
                             align-items: center;
                             margin-left: -10rem;
-                           
-                         
-                          
                             
                           
                            }
@@ -270,7 +270,7 @@ z-index: 1;
                            }
 
                            .right_green{
-                            
+                         
                            
                             
                            }
@@ -279,6 +279,7 @@ z-index: 1;
                             border-radius: 0;
                             padding: 1px;
                             margin-top: -10px;
+                            width: 100%;
                            
                         }
 
