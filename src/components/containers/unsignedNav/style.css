@@ -70,21 +70,6 @@ cursor: pointer;
     }
 
 
-
-.nav__toggler div{
- width:2.5rem;
- height: 0.2rem;
- margin: 0.4rem;
- background: darkgray;
- transition: 0.4s ease-in;
-}
-
-.nav__toggler {
-    display: none;
-    cursor: pointer;
-}
-
-
     .nav__active{
         transform: translateX(0);
     }

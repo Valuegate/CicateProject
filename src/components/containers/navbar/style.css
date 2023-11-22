@@ -106,9 +106,14 @@ cursor: pointer;
 
 
 @media screen and (max-width: 600px) {
-  .nav__toggler {
+ body .nav__toggler {
     display: block;
     cursor: pointer;
+    margin-right: auto;
+      display: grid;
+      justify-content: flex-end;
+ 
+    
   }
   .nav__menu {
       position: fixed;
@@ -135,6 +140,10 @@ cursor: pointer;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 5rem;
+  }
+
+ body .toggleIcon{
+    
   }
  
 }
