@@ -12,9 +12,9 @@ const Institutions = () => {
       <Navbar/>
       <div className='first_header'>How To Apply For <br /> Partnership as a...</div>
       <div className='flex_options'>
-        <div className='options2'>Government</div>
-        <div className='options1'>University</div>
-        <div className='options2'>Company</div>
+        <div><a href="/" className='options2' >Government</a></div>
+        <div className='options1'> <a href="/" className='options1'>University</a></div>
+        <div><a href="/"  className='options2'>Company</a></div>
       </div>
 
       <div className='box_it'>
@@ -53,10 +53,9 @@ const Institutions = () => {
     <p className='apply1'>Apply for <br />partnership</p>
     <a href="/" className='form_but'>Fill The Form Now</a>
     </div>
-   
   </div>
 
-  <div className='right_green'><img src={paperhold} alt="img" /></div>
+  <div className='right_green'><img src={paperhold} alt="img" className='paper_now' /></div>
 
   </div> 
   </div>
