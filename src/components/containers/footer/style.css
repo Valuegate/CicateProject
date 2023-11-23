@@ -67,8 +67,12 @@ ul{
     }
 
 body .foot__headers1{
-      width: 50%;
+     
     }
+
+    .footer > * + * {
+        margin-left: -18rem; /* Adjust as needed */
+      }
 
    body .foot__headers{
  display: none;
