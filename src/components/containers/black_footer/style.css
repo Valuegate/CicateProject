@@ -86,9 +86,9 @@
           .black-foot_header{
             border-radius: 4rem;
            border-style: solid !important;
-           border: 1px solid #33cc00;
+          
            padding: 0.8rem;
-           background-color: #33cc00;
+           
            
            
           }
@@ -101,7 +101,7 @@
           }
 
           .second_nav_list > *  {
-            margin-left: 3rem; /* Adjust as needed */
+            margin-left: -8.5rem; /* Adjust as needed */
             margin-top: 2rem; /* Adjust as needed */
           }
 
