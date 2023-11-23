@@ -12,7 +12,7 @@ const AdditionalData = () => {
       <div className='div'>
           <RegCarousel/>
           <div className='justify_bluk'>
-          <div className='bluk'>
+          <div className='bluk_pad'>
             <form action="" className='form_class'>
 
               <div className='fall'>
