@@ -127,11 +127,10 @@ cursor: pointer;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
-      
   }
 
-  .signUp{
-    display: none !important;
+ body .signUp{
+    display: none;
   }
 
   body .under__Header{
