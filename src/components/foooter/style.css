@@ -22,7 +22,6 @@
         letter-spacing: 0;
         line-height: 27.3px;
         white-space: nowrap;
-        z-index: 2;
         padding-top: 18px;
       
      
@@ -36,9 +35,7 @@
             font-weight: 400;
             letter-spacing: 0;
             line-height: 26.2px;
-            opacity: 0.5;
             top: 0;
-           
             }
     
     ul{

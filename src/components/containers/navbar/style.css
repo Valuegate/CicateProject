@@ -120,7 +120,6 @@ cursor: pointer;
       top: 7vh;
       width: 50%;
       height: 100%;
-      right: 0;
       gap:3rem;
       display: flex;
       flex-direction: column;
@@ -128,6 +127,7 @@ cursor: pointer;
       transform: translateX(100%);
       text-decoration: none;
       z-index: 3;
+      
   }
 
   body .under__Header{
