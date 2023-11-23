@@ -1,6 +1,5 @@
 .CICATE {
     height: 207px;
-    left: 0;
     width: 1285px;
     }
     
@@ -9,6 +8,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 180px;
+        width: 100%;
     }
 
 .black{
@@ -21,7 +21,7 @@ max-height: 617px;
 }
 
 .green{
-    background-color: #33cc00;
+ background-color: #33cc00;
 border-radius: 60px;
 padding: 20px;
 max-width: 628px;
@@ -157,10 +157,10 @@ padding: 1.5rem;
 .weheader {
  color: #ffffff;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 70px;
-font-weight: 400;
+font-size: 6.5rem;
+font-weight: bold;
 letter-spacing: 0;
-line-height: 63px;
+line-height: 69px;
    }
                         .shift{
                             margin-left: 50px;
@@ -224,10 +224,10 @@ line-height: 63px;
                         .wepara {
                             color: #ffffff;
                             font-family: "Gordita-Medium", Helvetica;
-                            font-size: 17px;
-                            font-weight: 400;
+                            font-size: 2rem;
+                            font-weight: 300;
                             letter-spacing: 0;
-                            line-height: 27.2px;
+                            line-height: 31.2px;
                             text-align: justify;
                             
                             }
@@ -282,7 +282,44 @@ line-height: 70.2px;
 
         .last{
            margin-bottom: -250px;
-        
             z-index: 0;
+        }
 
+        @media screen  and (max-width:600px) {
+            .CICATE {
+                height: 5.5rem;
+                width: 28rem;
+                }
+
+                .color_div{
+                    margin-top: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3rem;
+                }
+
+                .down_boxx{
+                    display: none !important;
+                }
+
+                .weheader{
+                    font-size: 3rem;
+                    margin-top: -6rem;
+                }
+
+                .wepara{
+                    font-size: 1.2rem;
+                    line-height: 18px;
+                }
+               
+                .shift{
+                    margin-left: 20px;
+                    padding-top: 40px;
+                }
+
+                .green{
+                    padding: 22px;
+                }
+
+               
         }

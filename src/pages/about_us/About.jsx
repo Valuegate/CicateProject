@@ -19,8 +19,8 @@ const About = () => {
     <div className='black'>
         <div className='shift'>
             <div className='weheader'>Who We Are?</div>
-            <p className='wepara'>At CICATE (Competent International Candidates Assessment, <br />
-            Tests, and Exams), we are a globally recognised organisation <br />
+            <p className='wepara'>At CICATE (Competent International Candidates Assessment, 
+            Tests, and Exams), we are a globally recognised organisation 
                 dedicated to providing cutting-edge assessment solutions for individuals 
                 seeking educational and career opportunities abroad. With a commitment to competence and fairness, we offer a range of assessment products, including G.A.T.E, POCAS, and L.I.S.A, designed to identify candidates' true potential.
 <br />
