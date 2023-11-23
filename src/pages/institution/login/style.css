@@ -6,12 +6,18 @@ font-weight: 400;
 letter-spacing: 0;
 line-height: 107px;
     }
+ body.darker{
+    background-color: #282828;
+    margin: 0;
+    padding: 0;
+  }
 
-   body .darker{
-        background-color: #282828;
-        width: 100%;
-        height: 100%;
-    }
+  body.special-page {
+    background-color:#282828; /* Replace 'your_color' with the desired color code or name */
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+  }
+  
 
     .sign_opac {
  color: #ffffff;
@@ -89,15 +95,18 @@ font-size: 24px;
     }
 
    body .sign_opac{
-     font-size: 1.5rem;
+     font-size: 2rem;
+     line-height: 2.4rem;
     }
 
    body .sign_white{
-  font-size: 5rem;
+  font-size: 6rem;
+  font-weight: bold !important;
+ 
     }
 
     body .email{
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 1.2rem;
   
     }
@@ -116,15 +125,15 @@ margin-left: -4rem;
   
 
     body .pwd{
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding: 1.2rem;
     }
 
     .green_login{
-     font-size: 13px;
+     font-size: 2rem;
     }
 
     .forgot_password{
-      font-size: 10px;
+      font-size: 1.2rem;
     }
 }
