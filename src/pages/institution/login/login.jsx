@@ -27,8 +27,8 @@ const UniversityLogin = () => {
  <form action="" className='inside_form'>
   <div> <img src={mail_black} alt="img" className='icon_immg'/><input type="email" className='email' placeholder='Email'/> <br /> </div>
  <div> <img src={greenskey} alt="img" className='icon_immg'/> <input type="password" className='pwd' placeholder='Password'/> <br /> </div> 
-  <button type='submit' className='green_login'>Login</button> <br />
-  <a href="/" className='forgot_password'>Forgot Password</a> 
+  <button type='submit' className='green_login'>Login</button> <br /> <span ><a href="http://localhost:3000/student/signup" className='already_register'>Not yet registered?</a></span>
+  <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
  
  </form>
 </div>
