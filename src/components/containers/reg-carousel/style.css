@@ -44,6 +44,7 @@ margin-top: -1rem;
         align-items: center;
         margin-top: 180px;
        margin-right: 300px;
+     
        
         
     }
@@ -84,52 +85,6 @@ margin-top: -1rem;
 
 
 
-.next_big{
-background-color: #33CC00;
-color: #ffffff;
-font-family: "Monument Extended-Regular", Helvetica;
-font-size: 30px;
-font-weight: 400;
-letter-spacing: 0;
-line-height: 17.4px;
-text-align: center;
-border-radius: 20px;
-white-space: nowrap;
-padding: 10px;
-}
-
-.submit_section{
-    margin-top: 30px;
-}
-.already_register{
-    color: #33cc00;
-font-family: "Gordita-Regular", Helvetica;
-font-size: 16px;
-font-weight: 400;
-letter-spacing: 0;
-line-height: 17.4px;
-white-space: nowrap;
-margin-left: 20px;
-}
-
-.subtract_img {
-    height: 41px;
-    width: 46px;
-    }
-           
-
-                        .form_class{
-                          display: flex;
-                          justify-content: center;
-                          align-items: center;
-                          line-height: 50px;
-                        
-                        }
-
-                        .form_class > * + * {
-                            margin-left: 5rem; /* Adjust as needed */
-                          }
-                        
                       
             
         .personal {
@@ -191,9 +146,13 @@ line-height: 56.7px;
 
                 @media screen and (max-width: 600px) {
                  body .signup_white{
-                    font-size:2.2rem ;
-                    line-height: 35px;
+                    font-size:2rem ;
+                    line-height: 26px;
                     color: #33CC00;
+                  }
+
+                  .flex_green_sign > * {
+                    margin-right: -4rem; /* Adjust as needed */
                   }
 
                   .flex_green_sign{
@@ -238,7 +197,7 @@ line-height: 56.7px;
                     }
         
                     .personal_unselected {
-                        font-size: 10px;
+                        font-size: 11px;
                         font-weight: 400;
                         letter-spacing: 0;
                         line-height: 10.3px;
@@ -246,7 +205,7 @@ line-height: 56.7px;
                         opacity: 0.5;
                         }
                         .information_unselected {
-                            font-size: 10px;
+                            font-size: 11px;
                             font-weight: bold;
                             letter-spacing: 0;
                             line-height: 10.3px;

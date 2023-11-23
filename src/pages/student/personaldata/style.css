@@ -1,4 +1,51 @@
 
+.next_big{
+  background-color: #33CC00;
+  color: #ffffff;
+  font-family: "Monument Extended-Regular", Helvetica;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 17.4px;
+  text-align: center;
+  border-radius: 20px;
+  white-space: nowrap;
+  padding: 10px;
+  }
+  
+  .submit_section{
+      margin-top: 30px;
+      margin-bottom: 1rem;
+  }
+  .already_register{
+   color: #33cc00;
+  font-family: "Gordita-Regular", Helvetica;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 17.4px;
+  white-space: nowrap;
+  margin-left: 20px;
+  }
+  
+  .subtract_img {
+      height: 41px;
+      width: 46px;
+      }
+             
+  
+                          .form_class{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            line-height: 50px;
+                          
+                          }
+  
+                          .form_class > * + * {
+                              margin-left: 5rem; /* Adjust as needed */
+                            }
+                          
 
         .labels{
           color: #ffffff;
@@ -68,6 +115,32 @@
                           .form_class{
                             display: grid !important;
                             flex-direction: column;
+                          }
+
+                          .bluk{
+                            padding: 2.3rem;
+                          
+                          }
+
+                          .labels{
+                            font-size: 14px;
+                          }
+
+                          .inputs{
+                          font-size: 10px;
+                          }
+
+                          .input_country{
+                            font-size: 10px;
+                          }
+
+                          .form_class > *  {
+                            margin-left: 0rem; /* Adjust as needed */
+                          }
+                          
+
+                          .right_side{
+                            margin-top: 1rem; /* Adjust */
                           }
                         }
     
