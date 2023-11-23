@@ -80,14 +80,26 @@
           display: flex !important;
           flex-direction: column !important;
           width: 100%;
-          background-color: #33cc00;
+         
+          }
+
+          .black-foot_header{
+            border-radius: 4rem;
+           border-color: #33cc00;
+           
+           
           }
 
           body .second_nav_list{
             display: grid !important;
             flex-direction: column !important;
-            background-color: #33cc00;
             bottom: 0;
+            padding: auto !important;
+          }
+
+          .second_nav_list > *  {
+            margin-left: 3rem; /* Adjust as needed */
+            margin-top: 2rem; /* Adjust as needed */
           }
 
           .manage{
