@@ -14,9 +14,9 @@ const Signup = () => {
     <div className='black_page'>
       <div className='div'>
 <div className='just'>
-<div className='sign_flex'>
+<div className='sign_flexx'>
 
-<div>
+<div className='ontop_img'>
   <div><img src={whitehead} alt="img" className='whitehead'/></div>
   <div><img src={greybody} alt="img" className='greybody'/></div>
   <div><img src={crusader} alt="img" className='crusader'/></div>
