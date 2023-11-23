@@ -266,7 +266,7 @@ const AdditionalData = () => {
                   </label>
 
                 <label htmlFor="" className='labels'> <br />Native Language: <br />
-                <select name="" id="" className='inputs_select'>
+                <select name="" id="" className='inputs'>
                   <option value="select" className=''>French</option>
                   <option value="select" className=''>English</option>
                   <option value="select" className=''>Russian</option>
