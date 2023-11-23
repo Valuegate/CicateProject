@@ -85,7 +85,10 @@
 
           .black-foot_header{
             border-radius: 4rem;
-           border-color: #33cc00;
+           border-style: solid !important;
+           border: 1px solid #33cc00;
+           padding: 0.8rem;
+           background-color: #33cc00;
            
            
           }
