@@ -5,7 +5,6 @@
         flex-direction: row;
         justify-content: center;
         width: 100%;
-        
     }
 
     .current-position {
@@ -18,9 +17,6 @@
         .pic1{
            margin-right: 8px;
             }
-
-           
-
             .inside_flex{
                 display: flex;
                 justify-content: center;
@@ -59,7 +55,7 @@ margin-top: -1rem;
     .personal_information {
         color: #ffffff;
         font-family: "PP Monument Extended-Light", Helvetica;
-        font-size: 20px;
+        font-size: 10px;
         font-weight: 400;
         letter-spacing: 0;
         line-height: 22.3px;
@@ -69,7 +65,6 @@ margin-top: -1rem;
           display: flex;
           justify-content: center;
           align-items: center;
-         
         }
         .flex_end > * + * {
             margin-left: 4rem; /* Adjust as needed */
@@ -140,7 +135,6 @@ margin-left: 20px;
         .personal {
             font-size: 20px;
                 font-weight: 400;
-                left: 0;
                 letter-spacing: 0;
                 line-height: 22.3px;
                 font-family: "PP Monument Extended-Light", Helvetica;
@@ -188,13 +182,79 @@ margin-left: 20px;
 .signup_white{
 color: #ffffff;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 53px;
+font-size: 6rem;
 font-weight: 400;
-height: 57px;
-left: 0;
 letter-spacing: 0;
 line-height: 56.7px;
+                }
 
+
+                @media screen and (max-width: 600px) {
+                 body .signup_white{
+                    font-size:2.2rem ;
+                    line-height: 35px;
+                    color: #33CC00;
+                  }
+
+                  .flex_green_sign{
+                    margin-top: 80px;
+                  }
+                  .green_body{
+                    display: none;
+                  }
+
+                  .inside_flex{
+                  }
+
+                  .personal {
+                    font-size: 10px;
+                        font-weight: 400;
+                        left: 0;
+                        letter-spacing: 0;
+                        line-height: 22.3px;
+                        font-family: "PP Monument Extended-Light", Helvetica;
+                    }
+
+                    .flex_end > * + * {
+                        margin-left: 1rem; /* Adjust as needed */
+                      }
+                    .information {
+                        font-size: 10px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 22.3px;
+                        font-family: "PP Monument Extended-Light", Helvetica;
+                    
+                    }
+                   .pic1{
+                    display: none !important;
+                   }
+
+                   .current-position {
+                    background-color: #33cc00;
+                    border-radius: 30px;
+                    height: 10px;
+                    width: 60px;
+                    }
+        
+                    .personal_unselected {
+                        font-size: 10px;
+                        font-weight: 400;
+                        letter-spacing: 0;
+                        line-height: 10.3px;
+                        font-family: "PP Monument Extended-Light", Helvetica;
+                        opacity: 0.5;
+                        }
+                        .information_unselected {
+                            font-size: 10px;
+                            font-weight: bold;
+                            letter-spacing: 0;
+                            line-height: 10.3px;
+                             opacity: 0.5;
+                        }
+
+                        .next{
+                            margin-left: 10px;
+                        }
 
                 }
-                

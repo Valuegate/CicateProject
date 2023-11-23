@@ -18,7 +18,6 @@ const RegCarousel = () => {
         </div>
 
         <div className='flex_end'>
-
           <div className='inside_flex'>
             <img src={pic1} alt="img" className='pic1'/>
            <p className='personal_information'>
@@ -28,7 +27,7 @@ const RegCarousel = () => {
           </p>
           <div className='green_arrow_box'> <img src={greenArrow} alt='img' className='next' /></div>
           </div>
-
+             
           <div className='inside_flex'>
             <img src={pic2} alt="img" className='pic1'/>
            <p className='personal_information'>
@@ -40,10 +39,9 @@ const RegCarousel = () => {
           </div>
 
            <div className='inside_flex'>
-            <img src={pic3} alt="img" className='pic1'/>
+          <img src={pic3} alt="img" className='pic1'/>
            <p className='personal_information'>
-            <span className='personal_unselected'>Username  </span> <br />
-          
+          <span className='personal_unselected'>Username  </span> <br />
           <span className='information_unselected'> Password </span>
           </p>
           <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
@@ -51,7 +49,7 @@ const RegCarousel = () => {
 
           <div className='inside_flex'>
             <img src={pic4} alt="img" className='pic1'/> 
-          <span className='information_unselected'>Done!</span> 
+          <span className='personal_unselected'>Done!</span> 
           </div>
         </div>
     </div>
