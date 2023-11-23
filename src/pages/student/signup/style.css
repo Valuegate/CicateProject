@@ -102,17 +102,18 @@ line-height: 50px;
          }
 
          .sign_opacity{
-          font-size: 3.6rem;
-          line-height: 50px;
+          font-size: 6.5rem;
+          line-height: 90px;
+          font-weight: bold !important;
          }
 
          .dont{
-         font-size: 2.5rem;
-         line-height: 30px;
+         font-size: 4.5rem;
+         line-height: 50px;
          }
 
          .create_button{
-          font-size: 1.8rem;
+          font-size: 2.5rem;
          }
 
          .whitehead{
