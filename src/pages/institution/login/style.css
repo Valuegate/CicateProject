@@ -87,7 +87,8 @@ font-size: 24px;
     body .sign_flex{
         display: grid;
         flex-direction: column;
-        margin-top: 8rem;
+        margin-top: 10rem;
+        margin-bottom: 4.5rem;
     }
 
     .grening{
