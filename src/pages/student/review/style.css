@@ -4,5 +4,11 @@ padding-bottom: 20px;
 }
 
 @media screen  and (max-width:600px){
-    
-}
+    .inputs1{
+   
+    width: 80%;
+    height: 80px;
+  }
+    }
+
+

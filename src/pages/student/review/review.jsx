@@ -11,10 +11,8 @@ const Review = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
-          <div className='justify_bluk'>
-          <div className='bluk_pad'>
-            <div className='master_div'>
-
+          <div className='bluk'>
+         
               <div className=''>
                 <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
@@ -343,9 +341,9 @@ const Review = () => {
 
           </div>
          </div>
-        </div>
      
-      </div>
+     
+    
       <BlackFooter/>
     </div>
   )
