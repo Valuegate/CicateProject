@@ -146,9 +146,11 @@ line-height: 56.7px;
 
                 @media screen and (max-width: 600px) {
                  body .signup_white{
-                    font-size:2rem ;
-                    line-height: 26px;
+                    font-size :1.8rem; 
+                    line-height: 25px;
                     color: #33CC00;
+                    display: none;
+                   
                   }
 
                   .flex_green_sign > * {
