@@ -10,11 +10,11 @@
     }
  @media screen and (max-width: 600px){
     .bluk_pad{
-        padding: 4rem;
+        padding: 3.6rem;
     }
 
    body .input_country{
-        font-size: 12px;
+        font-size: 10.5px;
         font-weight: 400;
     }
  }

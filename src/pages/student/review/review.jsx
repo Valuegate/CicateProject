@@ -12,7 +12,7 @@ const Review = () => {
         <div className='div'>
           <RegCarousel/>
           <div className='justify_bluk'>
-          <div className='bluk'>
+          <div className='bluk_pad'>
             <div className='master_div'>
 
               <div className=''>
