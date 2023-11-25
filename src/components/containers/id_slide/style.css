@@ -8,13 +8,24 @@ line-height: 26.8px;
 white-space: nowrap;
 }
 
+.slide_text:hover{
+    background-color:#282828;
+    border-radius: 3rem;
+    padding: 1rem;
+    color: #ffffff;
+}
+
 .pad{
     margin-top: 70px;
     position: relative;
 }
+
+
 .img_gren{
 margin-right: 10px;
 }
+
+
 .black_id{
     color: #ffffff;
     font-family: "Monument Extended-Regular", Helvetica;
@@ -26,6 +37,13 @@ text-align: center;
 margin-right: 300px;
 text-align: center;
 background-color: #282828;
+}
+
+.black_id:hover{
+    background-color:yellowgreen !important;
+    border-radius: 3rem;
+    padding: 1rem;
+    color: #ffffff;
 }
 
 .row_flex3{
