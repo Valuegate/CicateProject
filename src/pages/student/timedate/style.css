@@ -28,3 +28,16 @@
 .choose1{
   
 }
+
+@media screen  and (max-width:600px){
+
+  .review_flex1{
+    display: grid !important;
+    flex-direction: column;
+  }
+
+  .choose1{
+    margin-left: 0rem;
+  }
+  
+}

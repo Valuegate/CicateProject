@@ -19,7 +19,7 @@ const Footer = () => {
           <li><a href="/"className='foot__content'>Why Us</a></li>
           <li><a href="/"className='foot__content'>Gain More Knowledge</a></li>
         </ul>
-
+         
          <ul className='foot__headers1'>Institutions
          <br />
           <br />
