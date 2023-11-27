@@ -13,7 +13,7 @@ const TestCarousel = () => {
     <div>
        <div className='regfor'>
         
-        <div>
+        <div className='line-hat'>
           <span className='registering'>Registering</span> <br />
         <span className='for'>For Testing</span>
         </div>

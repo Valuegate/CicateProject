@@ -170,6 +170,10 @@
                     font-size: 2rem;
                     margin-top: 2rem;
                   }
+
+                  .line-hat{
+                    line-height: 30px;
+                  }
                 
             }
 
