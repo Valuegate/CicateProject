@@ -222,6 +222,12 @@
                 display: none !important;
             }
 
+            .lecturer_img{
+                margin-right: 4px;
+             width: 3vh;
+               
+            }
+
             .view_all{
                 
                 font-size: 20px;
@@ -257,6 +263,7 @@
                     line-height: 20.9px;
                     opacity: 0.6;
                     white-space: nowrap;
+                    margin-left: 10px;
                   
                     }
 
