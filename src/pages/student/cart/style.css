@@ -114,6 +114,7 @@ line-height: 96.3px;
 
                  .button_display{
                     display: flex;
+                    margin-top: 0.5rem;
                  }
 
                  .pay_flex{
