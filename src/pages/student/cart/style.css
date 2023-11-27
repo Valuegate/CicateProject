@@ -118,9 +118,9 @@ line-height: 96.3px;
 
                  .pay_flex{
        
-                    margin-top: 4rem;
+                    margin-top: 3rem;
                     line-height: 30px;
-
+                    gap: 0rem;
                     margin-left: 1rem;
                    
                 }
@@ -144,7 +144,7 @@ line-height: 96.3px;
             }
 
             .self_dev{
-                font-size: 18px;
+                font-size: 15px;
                 font-weight: 400;
                 opacity: 0.7;
             }
