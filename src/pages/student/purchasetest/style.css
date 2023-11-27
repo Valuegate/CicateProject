@@ -106,3 +106,14 @@ padding: 1.5rem;
     border-radius: 48px;
     padding: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+    .cart_flex{
+        display: grid;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .cart_flex > *  {
+        margin-left: 3rem; /* Adjust as needed */
+      }
+}
