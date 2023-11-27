@@ -188,7 +188,7 @@ cursor: pointer;
       }
     
       .payment_fle5 > * + * {
-        margin-left: 12rem; /* Adjust as needed */
+        margin-left: 13rem; /* Adjust as needed */
       }
 
       body .total_pay{
