@@ -150,6 +150,19 @@ margin-top: 50px;
         font-weight: bold;
       
     }
+    .inside_text {
+        color: #ffffff;
+        font-family: "Gordita-Regular", Helvetica;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: -0.6px;
+        line-height: 30.5px;
+                }
+
+                .tick_image{
+                    display: none;
+                }
+        
     
     .faq_up{
       margin-top: 50px;
