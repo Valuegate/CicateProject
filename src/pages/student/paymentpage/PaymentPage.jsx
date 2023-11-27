@@ -14,7 +14,7 @@ const PaymentPage = () => {
 
           
             <form action="" className='review_flex'>
-              <div className=''>
+              <div className='against2'>
                 <label htmlFor="" className='labels'>Card Number: <br />
                 <input type="text" className='inputs'placeholder='4153 6544 7888 9877'/></label>
                 <br />
