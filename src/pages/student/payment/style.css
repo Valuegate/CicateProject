@@ -136,3 +136,45 @@ cursor: pointer;
     letter-spacing: -0.4px;
     line-height: 42.8px;
 }
+
+@media screen and (max-width: 600px) {
+    .payment_fle{
+        display: grid;
+        flex-direction: column;
+        margin-right: 0rem;
+    }
+
+    .payment_fle > * + * {
+        margin-left: 0rem; /* Adjust as needed */
+      }
+
+      .pay_bold{
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+      }
+      .pay_div{
+        margin-top: 20px;
+      }
+
+      .black_pay{
+        background-color: #282828;
+       border-radius: 60px;
+        line-height: 40px;
+        padding: 30px;
+       margin-top: 10px;
+    }
+  
+    
+    .justify_black{
+        margin-top: 2rem;
+    
+    }
+
+    .payment_fle3{
+       
+        margin-top: 30px;
+        padding-bottom: 40px;
+        margin-left: 25rem;
+    }
+}
