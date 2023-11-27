@@ -6,7 +6,7 @@ import './style.css'
 
 const IdSlide = () => {
   return (
-    <div>
+   
       <div className='pad'>
         <ul className='row_flex3'>
             <li className='black_id'>ID:123456789</li>
@@ -15,7 +15,7 @@ const IdSlide = () => {
             <li className=''><a href="/" className='slide_text'><img src={su} alt="img" className='img_gren'/>Support Chat</a></li>
         </ul>
       </div>
-    </div>
+  
   )
 }
 

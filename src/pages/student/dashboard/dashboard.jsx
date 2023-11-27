@@ -33,7 +33,6 @@ const StudentDashboard = () => {
       <br />
       <div className='mon'><a href="/" className='my_test'>My Tests</a>   <a href="/" className='view'>view all Tests</a></div>
       <div className='block_functions'>
-
         <div className='green_white'><a href="/" className='reg_find'>Register/Find Test Centers</a></div>
         <div className='green_white'><span className='fill_text'><img src={yuu} alt="img" className='img_jk' />Upcoming Tests</span></div>
         <div className='green_white'> <span className='reg_find2'>No Test For now!</span></div>
@@ -45,7 +44,7 @@ const StudentDashboard = () => {
 
 
 
-     <div className=''>
+     <div className='dist'>
       <div>
         <span className='my_test'><img src={quatre} alt="" className='img_set'/>Test Preparation <br /> & Tools</span> <br />
         <p className='less_text'>Free Test Preparation <br /> Shop for test Preparation <br /> My Test Preparation</p>

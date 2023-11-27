@@ -182,8 +182,8 @@ text-align: right;
     .bold_dashboard {
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 60px;
-font-weight: 400;
+font-size: 6rem;
+font-weight: bold;
 letter-spacing: -1.8px;
 line-height: 64.2px;
 white-space: nowrap;
@@ -238,6 +238,102 @@ white-space: nowrap;
                 }
                 .img_jk{
              margin-right: 15px;
+                }
+
+
+                @media screen and (max-width: 600px) {
+                    .dashboard_flex{
+                        display: grid;
+                        flex-direction: column;
+                        margin-bottom: 5rem;
+                        margin-top: 20px;
+                    }
+
+                    .just{
+                        margin-top: 80px;
+                    }
+
+                    .img_jk{
+                        display: none;
+                       
+                           }
+
+                    .dist{
+                        display: none !important;
+                    }
+
+                    .foto_flex{
+                        display: none !important;
+                    }
+
+                    .bold_dashboard{
+                    font-size: 2rem;
+                    line-height: 30px;
+                    }
+
+                    .img_set{
+                        margin-right: 0px;
+                    }
+
+                    .block_functions {
+                        line-height: 20px;
+                        padding: 30px;
+                        }
+
+                    .mon{
+                        display: flex;
+                    }
+               
+                    .mon > * + * {
+                        margin-left: 9rem; /* Adjust as needed */
+                      }
+
+                      .my_test{
+                        font-size: 20px;
+                      }
+
+                      .view{
+                        font-size: 15px;
+                      }
+
+                      .green_white{
+                        padding-top: 5px;
+                    }
+
+                    .reg_find {
+                      
+                        font-size: 15px;
+                        font-weight: bold;
+            
+                        line-height: 15.8px;
+                        
+                        padding: 6px;
+                      
+                        }
+
+                        .reg_find2 {
+                      
+                            font-size: 15px;
+                            font-weight: bold;
+                
+                            line-height: 15.8px;
+                            
+                            padding: 6px;
+                          
+                            }
+
+                            .fill_text{
+                                font-family: "PP Monument Extended-Regular", Helvetica;
+                                font-size: 20px;
+                               font-weight: bold;
+                               letter-spacing: 0;
+                              line-height: 26.8px;
+                              color: #ffffff;
+                             text-align: center;
+                             white-space: nowrap;
+                            }
+
+
                 }
 
 

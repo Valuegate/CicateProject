@@ -56,3 +56,37 @@ background-color: #282828;
     margin-left: 4rem; /* Adjust as needed */
   }
 
+  @media screen and (max-width: 600px) {
+
+
+    .row_flex3{
+  gap: 0rem;
+    }
+
+    .img_gren{
+        margin-right: 0px;
+    }
+
+    .slide_text{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .img_gren{
+        display: none !important;
+    }
+
+    .black_id{
+        margin-right: 0px;
+        font-size: 8px;
+        padding: 4px;
+    }
+
+    .pad{
+        margin-top: 10px;
+    }
+
+    .row_flex3 > * + * {
+        margin-left: 1rem; /* Adjust as needed */
+      }
+  }
+
