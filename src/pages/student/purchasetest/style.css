@@ -114,6 +114,6 @@ padding: 1.5rem;
         gap: 2rem;
     }
     .cart_flex > *  {
-        margin-left: 3rem; /* Adjust as needed */
+        margin-left: 0rem; /* Adjust as needed */
       }
 }
