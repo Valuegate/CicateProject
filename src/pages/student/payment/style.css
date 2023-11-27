@@ -184,7 +184,7 @@ cursor: pointer;
         background-color: #282828;
         border-radius: 60px;
          line-height: 10px;
-         padding: 0.7rem;
+         padding: 0.9rem;
       }
     
       .payment_fle5 > * + * {
@@ -192,8 +192,8 @@ cursor: pointer;
       }
 
       body .total_pay{
-       margin-top: 1.4rem;
-        line-height: 10.8px;
+       margin-top: 1.7rem;
+        line-height: 8.8px;
     }
 
     body .green_money2 {
@@ -202,5 +202,6 @@ cursor: pointer;
             }
       body  .button_pay{
           line-height: 20px;
+          margin-bottom: 0.7rem;
         }
 }
