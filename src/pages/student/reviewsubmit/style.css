@@ -1,7 +1,7 @@
 .all_info{
-    color: #ffffff;
+color: #ffffff;
 font-family: "Gordita-Regular", Helvetica;
-font-size: 25px;
+font-size: 3rem;
 font-weight: bold;
 letter-spacing: 0;
 line-height: 32.5px;
@@ -71,10 +71,12 @@ padding: 4px;
             display: grid !important;
             flex-direction: column;
             margin-left: 0rem;
+            line-height: 35px;
         }
 
         .mid_right{
             margin-left: 0rem;
+            line-height: 35px;
         }
         .dun_flex{
             margin-bottom: 2rem;
@@ -87,6 +89,11 @@ padding: 4px;
 
         .checkbox{
             padding: 5px;
+        }
+
+        .all_info{
+            font-size: 1.4rem;
+            line-height: 20px;
         }
     }
 
