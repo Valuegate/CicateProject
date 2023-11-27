@@ -216,4 +216,124 @@
             padding-left: 5px;
             
         }
+
+        @media screen and (max-width: 600px) {
+            .ask_flex{
+                display: none !important;
+            }
+
+            .view_all{
+                
+                font-size: 20px;
+               
+                line-height: 16.1px;
+              
+                margin-left: 10px;
+                }
+
+          
+    
+    
+            .names_lecturer {
+               
+                font-size: 20px;
+               
+                line-height: 25.4px;
+               
+                margin-left: 5px;
+                }
+
+                .colleague {
+                    
+                    font-size: 20px;
+                  
+                    line-height: 20.1px;
+                }
+
+                .positions_lecturer {
+                   
+                    font-size: 15px;
+                   
+                    line-height: 20.9px;
+                    opacity: 0.6;
+                    white-space: nowrap;
+                  
+                    }
+
+                    .fill-in-uni {
+                        background-color: #282828;
+                        border-radius: 30px;
+                        margin-top: 10px;
+                     
+                        }
+
+
+        .mail_list {
+            
+            font-size: 23px;
+        
+            line-height: 20.1px;
+          
+           padding-left: 0px;
+            
+        }
+
+        .fill-in-uni2 {
+
+            margin-top: 20px;
+            padding: 10px;
+            }
+
+            .fill-in-uni3 {
+          
+                padding: 15px;
+                margin-bottom: 50px;
+           
+                }
+
+                .write_code{
+                    color: #ffffff;
+                    font-family: "Gordita-Regular", Helvetica;
+                    font-size: 16px;
+                    line-height: 10.6px;
+              
+               
+                    }
+
+                    .blak_two{
+                        margin-left: 0rem;
+                        margin-top: 3rem;
+                    }
+    
+                    .write_code1 {
+                        color: #ffffff;
+                        font-family: "PP Monument Extended-Regular", Helvetica;
+                        font-size: 20px;
+                        line-height: 10.1px;
+                        }
+                        .input9{
+                            margin-left: 5px;
+                             height: 25px;
+    
+                        }
+
+                .test_invitation {
+                  
+                    font-size: 25px;
+                  
+                    line-height: 45.8px;
+                    }
+                
+                 
+                    .send_invitation {
+                      
+                        font-size: 20px;
+                     
+                        line-height: 25px;
+                   
+                        }
+                        .invite_img{
+                            margin-right: 0px;
+                        }
+        }
         

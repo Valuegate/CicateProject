@@ -25,7 +25,7 @@ const Success = () => {
 
 <div className='bottom_wg'>
   <div className='wid'><a href="/" className='white_flex'>Dashboard Tutorial</a></div>
-  <div className='wid'><a href="/" className='green_flex'>My Dashboard</a></div>
+  <div className='wid'><a href="/student/student-dashboard" className='green_flex'>My Dashboard</a></div>
 </div>
 </div>
 </div>
