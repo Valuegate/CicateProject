@@ -67,15 +67,17 @@ ul{
     }
 
 body .foot__headers1{
-     
+    line-height: 13px;
     }
 
-    .footer > * + * {
+    .footer >  *+* {
         margin-left: -18.3rem; /* Adjust as needed */
       }
 
    body .foot__headers{
  display: none;
     }
+
+   
 }
 
