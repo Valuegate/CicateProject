@@ -16,9 +16,9 @@ const PaymentCompletion = () => {
         <div className='second_block'>
           <TestCarousel/>
           <div className='cup_you'>
-      <img src={cup_green} alt="img" />
+      <img src={cup_green} alt="img"  className='cupa'/>
 
-      <div>
+      <div className='line_you'>
         <span className='you_are'>You are all set!</span> <br />
         <span className='regarding'>All the info regarding test is in your dashboard</span>
         <div className='finish'>
