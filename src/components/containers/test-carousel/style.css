@@ -115,7 +115,7 @@
                 
 
                 .registering{
-                  font-size: 2rem;
+                  font-size: 1.7rem;
                   line-height: 10px;
                 }
 
@@ -123,9 +123,15 @@
                     margin-top: 0rem;
                 }
 
+               
+
                 .second_block{
-                    padding: 1.3rem;
+                    padding: 0.5rem;
                 }
+
+               .inside_flex{
+                gap: 0rem;
+               }
 
                 .for{
                   font-size: 2rem;
@@ -133,7 +139,7 @@
                 }
 
                 .green_money{
-                  font-size: 1.8rem;
+                  font-size: 1.3rem;
                 }
 
                 .regfor > * + * {
@@ -167,7 +173,7 @@
                   }
 
                   .questions{
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                     margin-top: 2rem;
                   }
 
