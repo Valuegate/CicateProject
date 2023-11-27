@@ -110,7 +110,6 @@ font-size: 75px;
 font-weight: 400;
 letter-spacing: -0.75px;
 line-height: 80.3px;
-
     }
 
 .button_pay{
@@ -174,7 +173,33 @@ cursor: pointer;
     .payment_fle3{
        
         margin-top: 30px;
-        padding-bottom: 40px;
-        margin-left: 25rem;
+        padding-bottom: 10px;
+        margin-left: 0rem;
     }
+
+   body .payment_fle5 {
+        display: flex;
+        justify-content: space-around;
+        background-color: #282828;
+        border-radius: 60px;
+         line-height: 10px;
+         padding: 0.7rem;
+      }
+    
+      .payment_fle5 > * + * {
+        margin-left: 12rem; /* Adjust as needed */
+      }
+
+      body .total_pay{
+       margin-top: 1.4rem;
+        line-height: 10.8px;
+    }
+
+    body .green_money2 {
+      
+        line-height: 30.3px;
+            }
+      body  .button_pay{
+          line-height: 20px;
+        }
 }
