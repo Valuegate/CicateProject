@@ -26,7 +26,7 @@ white-space: nowrap;
 .terms {
     color: #ffffff;
     font-family: "Gordita-Regular", Helvetica;
-    font-size: 17px;
+    font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0;
     line-height: 32.5px;
@@ -64,5 +64,29 @@ padding: 4px;
     .dun_flex{
         display: flex;
         justify-content: space-around;
+    }
+
+    @media screen and (max-width: 600px) {
+        .review_flex{
+            display: grid !important;
+            flex-direction: column;
+            margin-left: 0rem;
+        }
+
+        .mid_right{
+            margin-left: 0rem;
+        }
+        .dun_flex{
+            margin-bottom: 2rem;
+        }
+
+        .terms{
+            font-size: 1rem;
+            line-height: 26px;
+        }
+
+        .checkbox{
+            padding: 5px;
+        }
     }
 
