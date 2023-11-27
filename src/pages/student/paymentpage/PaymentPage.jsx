@@ -12,7 +12,7 @@ const PaymentPage = () => {
         <div className='second_block'>
           <TestCarousel/>
 
-          <div>
+          
             <form action="" className='review_flex'>
               <div className=''>
                 <label htmlFor="" className='labels'>Card Number: <br />
@@ -31,7 +31,7 @@ const PaymentPage = () => {
               </div>
 
 
-              <div className=''>
+              <div className='against'>
               <label htmlFor="" className='labels'>Name & Surname: <br />
               <input type="text" className='inputs' placeholder='JOHN OLIVER'/></label>
               <br />
@@ -46,7 +46,7 @@ const PaymentPage = () => {
             </form>
            
           </div>
-        </div>
+        
       </div>
       <Footer/>
     </div>
