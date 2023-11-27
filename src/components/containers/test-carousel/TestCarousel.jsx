@@ -15,7 +15,7 @@ const TestCarousel = () => {
         
         <div>
           <span className='registering'>Registering</span> <br />
-        <span className='for'>for Testing</span>
+        <span className='for'>For Testing</span>
         </div>
 
         <div className='green_money'>Cost:$150</div>
@@ -65,7 +65,7 @@ const TestCarousel = () => {
 
           <div className='inside_flex'>
             <img src={pic4} alt="img" className='pic1'/>
-            <div className='information_unselected'>Payment</div>
+            <div className='personal_unselected'>Payment</div>
           </div>
         </div>
         </div>

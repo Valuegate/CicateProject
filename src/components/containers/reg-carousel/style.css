@@ -165,6 +165,7 @@ line-height: 56.7px;
                   }
 
                   .inside_flex{
+                    gap: 0.2rem;
                   }
 
                   .personal {

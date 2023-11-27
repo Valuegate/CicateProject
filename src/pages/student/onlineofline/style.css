@@ -16,3 +16,15 @@ width: 18px;
     margin-top: 4rem;
     margin-left: 1rem;
 }
+
+@media screen  and (max-width:600px){
+   .button_shift{
+    margin-top: 1rem;
+    margin-left: 1rem;
+   }
+
+   .try{
+    padding-top: 100px;
+    padding-bottom: 20px;
+   }
+}
