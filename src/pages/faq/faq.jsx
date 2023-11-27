@@ -14,11 +14,6 @@ const Faq = () => {
         <p className='faq_sub'>Questions that might have an answer for you!</p>
       </div>
       <div className='blackbox1'>
-
-
-
-
-
         <div className='first_box'>
         <div className=""><p className='white_header'>General FAQ</p></div>
           <div className='white_box'>
