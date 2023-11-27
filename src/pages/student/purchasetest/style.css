@@ -118,4 +118,12 @@ padding: 1.5rem;
     .cart_flex > *  {
         margin-left: 0rem; /* Adjust as needed */
       }
+
+      .back_to_flex{
+        background-color: #282828;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding-top: 2rem;
+        padding-bottom: 3rem;
+      }
 }
