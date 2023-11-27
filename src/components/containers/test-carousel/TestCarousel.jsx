@@ -12,7 +12,6 @@ const TestCarousel = () => {
   return (
     <div>
        <div className='regfor'>
-        
         <div className='line-hat'>
           <span className='registering'>Registering</span> <br />
         <span className='for'>For Testing</span>
