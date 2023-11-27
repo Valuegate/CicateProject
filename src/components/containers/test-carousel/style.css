@@ -155,6 +155,9 @@
                     display: flex;
                     justify-content: left;
                   }
+                  .onsie {
+                    margin-left: 3rem;
+                  }
 
                   .onsie > * + * {
                     margin-left: 1rem; /* Adjust as needed */
@@ -178,6 +181,8 @@
                   .questions{
                     font-size: 1.6rem;
                     margin-top: 2rem;
+                    margin-left: 3rem;
+                    line-height: 20px;
                   }
 
                   .line-hat{
