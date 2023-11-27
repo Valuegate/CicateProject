@@ -75,7 +75,9 @@ const UniversityDashboard = () => {
     </div>
 
     <div className='fill-in-uni4'>
-      <div className=''> <span className='write_code1'>Write a Code <br />To See Results</span></div>
+      <div className=''>
+         <span className='write_code1'>Write a Code <br />To See Results</span>
+         </div>
       
       
       <label htmlFor="" className='write_code'>
