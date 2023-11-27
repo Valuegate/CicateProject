@@ -2,7 +2,9 @@
 background-color: #282828;
 border-radius: 48px;
 padding: 4rem;
-line-height: 5rem;
+line-height: 2rem;
+display: flex;
+flex-direction: column;
 }
 
 .cart_flex{
