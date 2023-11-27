@@ -88,13 +88,121 @@ line-height: 96.3px;
     .my_cart_div{
        margin-top: 100px;
        display: flex;
-       margin-left: 17rem;
-   
-       
-    
-        
+       margin-left: 17rem;  
     }
 
     .cart_img{
         margin-right: 15px;
     }
+
+    @media screen and (max-width: 600px){
+        .my_cart {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 20.3px;
+                }
+
+                .cart_img{
+                    margin-right: 10px;
+                    width: 6vh;
+                }
+
+                .my_cart_div{
+                    margin-top: 40px;
+                    margin-left: 1rem;  
+                 }
+
+                 .button_display{
+                    display: flex;
+                 }
+
+                 .pay_flex{
+       
+                    margin-top: 4rem;
+                    line-height: 30px;
+
+                    margin-left: 1rem;
+                   
+                }
+
+               
+                .pay_flex > * + * {
+                    margin-left: 4rem; /* Adjust as needed */
+                  }
+
+                .gate_pay{
+                    font-size: 25px;
+                    font-weight: 400;
+                    line-height: 30.2px;
+                    font-weight: bold;
+                }
+
+                .gate_pay2{
+                    font-size: 25px;
+                    font-weight: bold;
+                    line-height: 42.8px;
+            }
+
+            .self_dev{
+                font-size: 18px;
+                font-weight: 400;
+                opacity: 0.7;
+            }
+
+            .justify_black1{
+                display: flex;
+                justify-content: center;
+                margin-right: 0px;
+                margin-bottom: 4rem;
+            }
+             body   .payment_fle2{
+                    display: flex;
+                    justify-content: center;
+                    margin-right: 0rem;
+                    background-color: #282828;
+                    border-radius: 60px;
+                     line-height: 20px;
+                     padding: 1.3rem;
+                }
+                
+              body  .payment_fle2 > * + * {
+                    margin-left: 9rem; /* Adjust as needed */
+                  }
+                
+               body .green_money2 {
+                color: #33cc00;
+                font-family: "Monument Extended-Regular", Helvetica;
+                font-size: 25px;
+                font-weight: 400;
+                letter-spacing: -0.75px;
+                line-height: 80.3px;
+                    }
+
+
+body .button_pay{
+    background-color: #33cc00;
+    border-radius: 80px;
+    color: #ffffff;
+    font-family: "Monument Extended-Regular", Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    line-height: 20.8px;
+    text-align: center;
+    white-space: nowrap;
+    padding: 1rem;
+    cursor: pointer;
+    margin-top: 1.7rem;
+    }
+    
+    body .total_pay{
+        color: #ffffff;
+        font-family: "Monument Extended-Regular", Helvetica;
+        font-size: 25px;
+        font-weight: 400;
+        letter-spacing: -0.4px;
+        line-height: 30.8px;
+    }
+            }
+        
+    
