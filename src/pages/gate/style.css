@@ -37,7 +37,9 @@ margin-top: 200px
     gap: 4rem;
     margin-top: 5rem;
   }
-
+  .gate_display > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
  
  
             
@@ -79,6 +81,10 @@ justify-content: center;
 align-items: center;
 margin-top: 6rem;
 gap: 4rem;
+}
+
+.dispaly_box > * + * {
+  margin-left: 4rem; /* Adjust as needed */
 }
 
 .box_bl{
