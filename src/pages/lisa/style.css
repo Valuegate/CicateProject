@@ -1,0 +1,13 @@
+.coming{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.hw{
+  color: brown;
+  font-size: 100px;
+  font-weight: bolder;
+}

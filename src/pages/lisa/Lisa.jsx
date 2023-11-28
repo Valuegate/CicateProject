@@ -20,7 +20,11 @@ const Lisa = () => {
     <div><a href="/pocas" className='opacity'>POCAS</a></div>
     <div><a href="/lisa" className='pocas'>LISA</a></div>
   </div>
-  
+
+  <div className='coming'>
+   <h1 className='hw'>Coming Soon!!</h1>
+  </div>
+  <Footer/>
     </div>
   )
 }
