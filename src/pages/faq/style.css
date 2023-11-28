@@ -176,6 +176,21 @@ line-height: 26.5px
 
 
   @media screen and (max-width: 600px) {
+
+    .faq_up{
+        margin-top: 70px;
+      }
+
+      .questions_opac{
+        font-size: 1.7rem;
+        line-height: 25px;
+       
+        }
+
+      .faq{
+        font-size: 5rem;
+        line-height: 30px;
+      }
     .flexx_box{
         display: flex;
         justify-content: center;
@@ -209,9 +224,9 @@ line-height: 26.5px
     }
 
     body .ci_header{
-        height: 170px;
+        height: 130px;
         width: 300px;
-        padding: 0.4rem;
+        padding: 0.8rem;
         }
         
     
