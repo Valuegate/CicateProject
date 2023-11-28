@@ -70,7 +70,7 @@ margin-top: 200px
   border-radius: 43px;
   height: 45rem;
   width: 35rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding-bottom: 200px;
     }
 
@@ -199,8 +199,9 @@ body .gate_bos{
     display: flex !important;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 15rem;
+    margin-top: 0rem;
+    margin-bottom: 10rem;
+    gap: 1rem;
   }
 
   .gate_bos_right{
@@ -246,5 +247,9 @@ body .gate_bos{
         line-height: 40px;
       font-size: 25px;
       font-weight: bold;
+      }
+
+      .gate_display > * + *  {
+        margin-right: 4rem; /* Adjust as needed */
       }
 }
