@@ -100,6 +100,7 @@ The GATE test results can <br />be applied in various areas <br /> and situation
 
     </div>
    </div>
+   <Footer/>
   </div>
    
   
