@@ -13,7 +13,7 @@ const Institutions = () => {
       <div className='first_header'>How To Apply For <br /> Partnership as a...</div>
       <div className='flex_options'>
         <div><a href="/" className='options2' >Government</a></div>
-        <div className='options1'> <a href="/" className='options1'>University</a></div>
+        <div> <a href="/" className='options1'>University</a></div>
         <div><a href="/"  className='options2'>Company</a></div>
       </div>
 

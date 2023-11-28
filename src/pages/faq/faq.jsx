@@ -11,9 +11,22 @@ const Faq = () => {
         <div className='faq'>FAQ</div>
       </div>
       <div className='display_faq'>
-        <p className='faq_sub'>Questions that might have an answer for you!</p>
+        <p className='questions_opac'>Questions that might have an answer for you!</p>
       </div>
-    
+    <div className='flexx_box'>
+      <div className='grid_box'>
+        <div className='first_box'></div>
+        <div className='second_box'></div>
+      </div>
+
+      <div className='grid_box'>
+        <div className='third_box'></div>
+        <div className='fourth_box'></div>
+      </div>
+
+
+
+    </div>
     </div>
   )
 }
