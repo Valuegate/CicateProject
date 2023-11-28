@@ -23,6 +23,13 @@ const Faq = () => {
           <div className='ci_flex'>
             <div className='ci_header'></div>
           </div>
+          <div className='questions_flex'>
+          <div className='questions_test1'>What is G.A.T.E?</div>
+          <div className='questions_test1'>How does G.A.T.E benefit Test takers?</div>
+          <div className='questions_test1'>Can G.A.T.E scores be used for multiple university applications?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+         
+          </div>
         </div>
 
 
@@ -30,6 +37,20 @@ const Faq = () => {
         <div className='second_box'>
           <div className='faq_flex'>
             <div className='general_faq'>P.O.C.A.S- Professional <br /> Assessment & <br /> Selection Suite FAQs</div>
+          </div>
+          <div className='questions_flex'>
+          <div className='questions_test1'>What is G.A.T.E?</div>
+          <div className='questions_test1'>How does G.A.T.E benefit Test takers?</div>
+          <div className='questions_test1'>Can G.A.T.E scores be used for multiple university applications?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          
           </div>
         </div>
       </div>
@@ -41,10 +62,37 @@ const Faq = () => {
             G.A.T.E. - Global <br /> Assessment Test for <br /> Education FAQs
             </div>
           </div>
+          <div className='questions_flex'>
+          <div className='questions_test'>What is G.A.T.E?</div>
+          <div className='questions_test1'>How does G.A.T.E benefit Test takers?</div>
+          <div className='questions_test1'>Can G.A.T.E scores be used for multiple university applications?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          </div>
+          
         </div>
+
+
+
         <div className='fourth_box'>
           <div className='faq_flex'>
             <div className='general_faq'>General FAQ</div>
+          </div>
+          <div className='questions_flex'>
+          <div className='questions_test1'>What is G.A.T.E?</div>
+          <div className='questions_test1'>How does G.A.T.E benefit Test takers?</div>
+          <div className='questions_test1'>Can G.A.T.E scores be used for multiple university applications?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          <div className='questions_test1'>How is the G.A.T.E syllabus developed?</div>
+          <div className='questions_test1'>What is the validity period of G.A.T.E scores?</div>
+          
           </div>
         </div>
       </div>

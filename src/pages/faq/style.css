@@ -102,6 +102,43 @@ width: 370px;
     justify-content: center;
 }
 
+.questions_test1{
+background: linear-gradient(180deg, rgb(83, 83, 83) 0%, rgb(83, 83, 83) 100%);
+border-radius: 30px;
+height: 50px;
+width: 100%;
+color: #ffffff;
+font-family: "Gordita-Regular", Helvetica;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: -0.6px;
+line-height: 30.5px;
+text-align: center;
+}
+
+.questions_test{
+    background-color: #33cc00;
+    border-radius: 30px;
+    height: 50px;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Gordita-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    line-height: 30px;
+    text-align: center;
+    }
+
+.questions_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    line-height: 30px;
+    gap: 4.5rem;
+}
+
 
 
 
