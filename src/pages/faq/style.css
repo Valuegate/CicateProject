@@ -176,7 +176,90 @@ line-height: 26.5px
 
 
   @media screen and (max-width: 600px) {
+    .flexx_box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+
+    .competent{
+   
+        font-size: 10px;
+      
+        line-height: 22.7px;
+
+        }
+        
+        .whats{
+        font-size: 17px;
+        line-height: 20.5px
+        }
+        
+
+    .first_box{
+        width: 330px;
+        height: 480px;
+    }
     
+    .second_box{
+        width: 330px;
+        height: 740px;
+    }
+
+    body .ci_header{
+        height: 170px;
+        width: 300px;
+        padding: 0.4rem;
+        }
+        
+    
+    .third_box{
+
+        width: 330px;
+        height: 740px;
+    }
+    
+    .fourth_box{
+        width: 330px;
+        height: 480px;
+    }
+
+    .flexx_box> * + * {
+        margin-left: 4rem; /* Adjust as needed */
+      }
+
+      .grid_box > * + *  {
+        margin-left: 2rem; /* Adjust as needed */
+      }
+
+    .general_faq{
+        font-size: 20px;
+        line-height: 28px;
+        }
+
+        .questions_test1{
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20.5px;
+            height: 40px;
+            }
+
+            .questions_test{
+                background-color: #33cc00;
+                border-radius: 30px;
+                height: 40px;
+                width: 100%;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 28px;
+
+                }
+
+                .questions_flex > * + * {
+                    margin-top: 1.5rem; /* Adjust as needed */
+                  }
   }
 
 
