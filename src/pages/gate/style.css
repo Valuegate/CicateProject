@@ -12,7 +12,7 @@ margin-top: 200px
   .pocas{
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 57.3px;
@@ -22,7 +22,7 @@ margin-top: 200px
   .opacity{
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 57.3px;
@@ -177,6 +177,14 @@ text-align: justify;
 
     .dispaly_box > *   {
       margin-left: 0rem; /* Adjust as needed */
+    }
+
+    .pocas{
+      font-size: 20px;
+    }
+
+    .opacity{
+      font-size: 20px;
     }
 
     .p_class{
