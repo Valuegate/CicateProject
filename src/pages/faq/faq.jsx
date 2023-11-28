@@ -21,7 +21,15 @@ const Faq = () => {
           </div>
 
           <div className='ci_flex'>
-            <div className='ci_header'></div>
+            <div className='ci_header'>
+              <p className='whats'>What is CICATE</p>
+              <p className='competent'>CICATE (Competent International Test takers Assessment,
+               Tests, and Exams) is a pioneering assessment and evaluation
+                platform that assists individuals and organisations
+                 in identifying qualified Test takers for
+                  educational and professional opportunities 
+                  internationally and abroad.</p>
+            </div>
           </div>
           <div className='questions_flex'>
           <div className='questions_test1'>What is G.A.T.E?</div>

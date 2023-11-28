@@ -93,8 +93,9 @@ white-space: nowrap;
 .ci_header{
 background-color: #ffffff;
 border-radius: 30px;
-height: 246px;
+height: 170px;
 width: 370px;
+padding: 1.5rem;
 }
 
 .ci_flex{
@@ -114,6 +115,25 @@ font-weight: 400;
 letter-spacing: -0.6px;
 line-height: 30.5px;
 text-align: center;
+cursor: pointer;
+}
+
+.competent{
+font-family: "Gordita-Regular", Helvetica;
+font-size: 15px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: 22.7px;
+text-align: justify;
+}
+
+.whats{
+color: #282828;
+font-family: "Gordita-Regular", Helvetica;
+font-size: 25px;
+font-weight: 400;
+letter-spacing: -0.75px;
+line-height: 26.5px
 }
 
 .questions_test{
@@ -128,6 +148,7 @@ text-align: center;
     letter-spacing: -0.6px;
     line-height: 30px;
     text-align: center;
+    cursor: pointer;
     }
 
 .questions_flex{
