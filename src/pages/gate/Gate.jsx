@@ -87,7 +87,7 @@ The GATE test results can <br />be applied in various areas <br /> and situation
     </div>
    </div>
 
-   <div className='dispaly_box'>
+   <div className='dispaly_box1'>
    <div className='labelx'>
       <p className='spandown'>Academic Fellowships and Grants:</p>
       <p className='p_class'> GATE test results can also be used as a 
