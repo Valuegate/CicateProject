@@ -1,0 +1,31 @@
+.box_bl1{
+  background-color: #282828;
+  border: 2px solid;
+  border-color: #ffffff;
+  border-radius: 43px;
+  height: 30rem;
+  width:30rem;
+  margin-top: 14rem;
+  padding-bottom: 10rem;
+}
+
+.gate_bigg1{
+  line-height: 30px;
+color: #282828;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 30px;
+font-weight: bold;
+}
+
+.dispaly_box1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 21rem;
+  gap: 4rem;
+  margin-bottom: 15rem;
+  }
+  
+  .dispaly_box1 > * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
