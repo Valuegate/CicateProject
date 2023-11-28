@@ -13,8 +13,8 @@ const Gate = () => {
     </div>
 
     <div className="gate__container">
-    <div><a href="/gate" className='opacity'>G.A.T.E</a></div>
-    <div><a href="/pocas" className='pocas'>POCAS</a></div>
+    <div><a href="/gate" className='pocas'>G.A.T.E</a></div>
+    <div><a href="/pocas" className='opacity'>POCAS</a></div>
     <div><a href="/lisa" className='opacity'>LISA</a></div>
   </div>
 
