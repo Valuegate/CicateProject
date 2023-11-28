@@ -15,13 +15,38 @@ const Faq = () => {
       </div>
     <div className='flexx_box'>
       <div className='grid_box'>
-        <div className='first_box'></div>
-        <div className='second_box'></div>
+        <div className='first_box'>
+          <div className='faq_flex'>
+            <div className='general_faq'>General Faq</div>
+          </div>
+
+          <div className='ci_flex'>
+            <div className='ci_header'></div>
+          </div>
+        </div>
+
+
+
+        <div className='second_box'>
+          <div className='faq_flex'>
+            <div className='general_faq'>P.O.C.A.S- Professional <br /> Assessment & <br /> Selection Suite FAQs</div>
+          </div>
+        </div>
       </div>
 
       <div className='grid_box'>
-        <div className='third_box'></div>
-        <div className='fourth_box'></div>
+        <div className='third_box'>
+          <div className='faq_flex'>
+            <div className='general_faq'>
+            G.A.T.E. - Global <br /> Assessment Test for <br /> Education FAQs
+            </div>
+          </div>
+        </div>
+        <div className='fourth_box'>
+          <div className='faq_flex'>
+            <div className='general_faq'>General FAQ</div>
+          </div>
+        </div>
       </div>
 
 

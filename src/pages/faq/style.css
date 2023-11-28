@@ -36,27 +36,34 @@ text-align: center;
     background-color: #282828;
     border-radius: 50px;
     height: 739px;
-    width: 628px;
+    width: 430px;
 }
 
 .second_box{
     background-color: #282828;
     border-radius: 50px;
     height: 1188px;
-    width: 628px;
+    width: 430px;
 }
 
 .third_box{
-
+    background-color: #282828;
+    border-radius: 50px;
+    height: 1188px;
+    width: 430px;
 }
 
 .fourth_box{
-
+    background-color: #282828;
+    border-radius: 50px;
+    height: 739px;
+    width: 430px;
 }
 
 .grid_box{
 display: grid;
 flex-direction: column;
+gap: 2rem;
 }
 
 .flexx_box{
@@ -64,6 +71,35 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4rem;
+    margin-top: 3rem;
+}
+
+.general_faq{
+color: #ffffff;
+font-family: "Monument Extended-Regular", Helvetica;
+font-size: 27px;
+font-weight: bold;
+letter-spacing: 0;
+line-height: 36px;
+white-space: nowrap;
+}
+
+.faq_flex{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.ci_header{
+background-color: #ffffff;
+border-radius: 30px;
+height: 246px;
+width: 370px;
+}
+
+.ci_flex{
+    display: flex;
+    justify-content: center;
 }
 
 
