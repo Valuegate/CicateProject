@@ -10,7 +10,7 @@
 }
 
 .gate_bigg1{
-  line-height: 30px;
+line-height: 30px;
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
 font-size: 30px;
@@ -28,4 +28,21 @@ font-weight: bold;
   
   .dispaly_box1 > * + * {
     margin-left: 4rem; /* Adjust as needed */
+  }
+
+  @media screen and (max-width:600px){
+    .box_bl1{
+      margin-top: 0rem;
+      padding-bottom: 0rem;
+    }
+
+    
+
+    body .dispaly_box1{
+      display: flex;
+      flex-direction: column;
+      margin-top: 10rem;
+      gap: 4rem;
+      margin-bottom: 5rem;
+      }
   }
