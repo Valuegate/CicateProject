@@ -167,11 +167,16 @@ line-height: 26.5px
     justify-content: center;
     margin-top: 2rem;
     line-height: 30px;
-    gap: 4.5rem;
+   
 }
 
 .questions_flex > * + * {
     margin-top: 4.5rem; /* Adjust as needed */
+  }
+
+
+  @media screen and (max-width: 600px) {
+    
   }
 
 
