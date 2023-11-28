@@ -214,12 +214,12 @@ line-height: 26.5px
         
 
     .first_box{
-        width: 330px;
+        width: 320px;
         height: 480px;
     }
     
     .second_box{
-        width: 330px;
+        width: 320px;
         height: 740px;
     }
 
@@ -232,12 +232,12 @@ line-height: 26.5px
     
     .third_box{
 
-        width: 330px;
+        width: 320px;
         height: 740px;
     }
     
     .fourth_box{
-        width: 330px;
+        width: 320px;
         height: 480px;
     }
 
@@ -245,7 +245,7 @@ line-height: 26.5px
         margin-left: 4rem; /* Adjust as needed */
       }
 
-      .grid_box > * + *  {
+      .grid_box > *  {
         margin-left: 2rem; /* Adjust as needed */
       }
 
