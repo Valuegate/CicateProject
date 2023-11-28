@@ -190,4 +190,10 @@ margin-top: 50px;
                 .white_box {
                    padding: 9px;
                     }
+
+                    .second_box{
+                        padding: 30px;
+                        margin-right: 10px;
+                    }
+                    
 }
