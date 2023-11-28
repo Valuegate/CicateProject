@@ -66,6 +66,10 @@ flex-direction: column;
 gap: 2rem;
 }
 
+.grid_box > * + * {
+    margin-left: 2rem; /* Adjust as needed */
+  }
+
 .flexx_box{
     display: flex;
     justify-content: center;
@@ -73,6 +77,10 @@ gap: 2rem;
     gap: 4rem;
     margin-top: 3rem;
 }
+
+.flexx_box> * + * {
+    margin-left: 4rem; /* Adjust as needed */
+  }
 
 .general_faq{
 color: #ffffff;
@@ -89,6 +97,8 @@ white-space: nowrap;
     justify-content: center;
     margin-top: 2rem;
 }
+
+
 
 .ci_header{
 background-color: #ffffff;
@@ -159,6 +169,10 @@ line-height: 26.5px
     line-height: 30px;
     gap: 4.5rem;
 }
+
+.questions_flex > * + * {
+    margin-top: 4.5rem; /* Adjust as needed */
+  }
 
 
 
