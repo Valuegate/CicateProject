@@ -45,4 +45,9 @@ font-weight: bold;
       gap: 4rem;
       margin-bottom: 5rem;
       }
+
+      .gate_bigg1{
+        line-height: 25px;
+        font-size: 20px;
+        }
   }
