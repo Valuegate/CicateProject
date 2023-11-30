@@ -1,5 +1,6 @@
-import React from 'react';
+
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
 
 import WhyUs from './pages/whyUs/whyUs';
 import Research from './pages/research/research';

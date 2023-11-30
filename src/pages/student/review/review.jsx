@@ -11,22 +11,22 @@ const Review = () => {
       <div className='black_page'>
         <div className='div'>
           <RegCarousel/>
-          <div className='bluk'>
+          <div className='bluk_review'>
          
               <div className=''>
                 <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
               <label htmlFor="" className='labels'>First name & Middle name: <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'> Surname: <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Type of Account: <br />
-                <select name="" id="" className='inputs'>
-                  <option value="" className='inputs'>University Member</option>
-                  <option value="" className='inputs'> Staff Member</option>
-                  <option value="" className='inputs'>Associate Member</option>
+                <select name="" id="" className='inputs0'>
+                  <option value="" className='inputs0'>University Member</option>
+                  <option value="" className='inputs0'> Staff Member</option>
+                  <option value="" className='inputs0'>Associate Member</option>
                 </select>
               </label> <br />
 
@@ -37,31 +37,31 @@ const Review = () => {
                 <textarea className='inputs1' cols={70} rows={10}></textarea>
               </label> <br />
               <label htmlFor="" className='labels'>Institution Details: <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Acronym: <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Location: <br />
-               <input type="text" className='inputs'/>
+               <input type="text" className='inputs0'/>
               </label> <br />
             
             
               <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'>Username</span><br /> <span className='information_unselected'> & Password</span></div> <br />
               <label htmlFor="" className='labels'> Password <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'> Repeat Password <br />
-                <input type="text" className='inputs' />
+                <input type="text" className='inputs0' />
               </label> <br />
 
               <div className=''>
               <div className='email_margin'>
               <label htmlFor="" className='labels'> Date Of Birth: <br />
-                <input type="date" className='inputs' />
+                <input type="date" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Email: <br />
-                <input type="email" className='inputs' />
+                <input type="email" className='inputs0' />
               </label> <br />
               </div>
 

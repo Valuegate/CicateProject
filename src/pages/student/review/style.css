@@ -8,6 +8,71 @@ padding-bottom: 20px;
     width: 80%;
     height: 80px;
   }
+
+  body .inputs0{
+    font-size: 13px;
+    line-height: 25.5px;
+    text-align: center;
+      white-space: nowrap;
+      background-color: #282828;
+      padding: 1px;
+      padding-left: 35px;
+      padding-right: 35px;
+      }
+
+     body .bluk_review {
+        z-index: 0;
+        background-color: #020202;
+        border-radius: 60px;
+        margin-top: 50px;
+        padding: 5px;
+        display: inline-block;
+        margin-bottom: 5rem;
+        }
+
+        .review_terms {
+          font-size: 10px;
+          font-weight: 300;
+          letter-spacing: 0;
+          line-height: 10.5px;
+    
+          }
+
+       
+       
+
+  
     }
+
+    .bluk_review {
+      z-index: 0;
+      background-color: #020202;
+      border-radius: 60px;
+      margin-top: 50px;
+      padding: 20px;
+      display: inline-block;
+      margin-bottom: 5rem;
+      justify-content: center;
+      text-align: center;
+      }
+
+
+
+      .inputs0{
+        color: #ffffff;
+        font-family: "PP Monument Extended-Light", Helvetica;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 32.5px;
+        text-align: center;
+          white-space: nowrap;
+          background-color: #282828;
+        border-color: #ffffff;
+          border-radius: 30px;
+          padding: 2px;
+          padding-left: 60px;
+          padding-right: 60px;
+          }
 
 
