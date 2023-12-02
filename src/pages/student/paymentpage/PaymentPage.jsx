@@ -3,7 +3,7 @@ import Footer from '../../../components/containers/footer/footer'
 import SignedNav from '../../../components/containers/signed/SignedNav'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
 import './style.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const PaymentPage = () => {
   return (
     <div>

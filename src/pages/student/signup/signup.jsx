@@ -5,7 +5,7 @@ import whitehead from '../../../assets/whitehead.svg'
 import greybody from '../../../assets/greybody.svg'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Signup = () => {
 
   return (

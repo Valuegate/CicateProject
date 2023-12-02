@@ -4,6 +4,7 @@ import BlackFooter from '../../../components/containers/black_footer/BlackFooter
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import greenSubtract from '../../../assets/greenSubtract.svg'
 import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 

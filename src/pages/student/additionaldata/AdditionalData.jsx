@@ -3,6 +3,7 @@ import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const AdditionalData = () => {
   return (

@@ -33,4 +33,12 @@ width: 18px;
     font-size: 1.5rem;
     padding: 1rem;
    }
+
+   .inactive_next_big{
+    background-color:gray;
+ 
+    font-size: 1.5rem;
+
+    padding: 1rem;
+    }
 }

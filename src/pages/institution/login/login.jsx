@@ -5,9 +5,19 @@ import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import iconsgreen from '../../../assets/iconsgreen.svg'
 import greenskey from '../../../assets/greenskey.svg'
 import mail_black from '../../../assets/mail_black.png'
-
+import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const UniversityLogin = () => {
+
+
+  const [eml, setEml] = useState("")
+  const [pwd, setPwd] = useState("")
+
+
+const handleSubmit = async (e) => {
+   e.preventDefault()
+}
 
   return (
    <div className='darker' id='darker'>
@@ -25,9 +35,33 @@ const UniversityLogin = () => {
 
 <div className='down_sign'>
  <form action="" className='inside_form'>
-  <div> <img src={mail_black} alt="img" className='icon_immg'/><input type="email" className='email' placeholder='Email'/> <br /> </div>
- <div> <img src={greenskey} alt="img" className='icon_immg'/> <input type="password" className='pwd' placeholder='Password'/> <br /> </div> 
-  <button type='submit' className='green_login'>Login</button> <br /> <span ><a href="/student/signup" className='already_register'>Not yet registered?</a></span>
+  <div> <img src={mail_black} alt="img" className='icon_immg'/>
+  <input 
+  type="email"
+   className='email'
+    placeholder='Email'
+    id='email'
+    onChange={(e)=>{setEml(e.target.value)}}
+    value={eml}
+
+    /> <br /> 
+  </div>
+ <div> <img src={greenskey} alt="img" className='icon_immg'/>
+  <input
+   type="password"
+   className='pwd'
+    placeholder='Password'
+    id='pwd'
+    onChange={(e)=>{setPwd(e.target.value)}}
+    value ={pwd}
+    /> <br />
+  
+  
+   </div> 
+  <button type='submit'
+  onClick={handleSubmit}
+   className='green_login'
+   >Login</button> <br /> <span ><a href="/student/signup" className='already_register'>Not yet registered?</a></span>
   <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
  
  </form>

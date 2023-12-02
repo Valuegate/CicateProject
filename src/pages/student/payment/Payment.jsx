@@ -3,6 +3,7 @@ import IdSlide from '../../../components/containers/id_slide/IdSlide'
 import SignedNav from '../../../components/containers/signed/SignedNav'
 import Footer from '../../../components/containers/footer/footer'
 import './style.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Payment = () => {
   return (
     <div>
