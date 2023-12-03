@@ -6,10 +6,9 @@ import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import Register from '../../../auth/Register'
+
 
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_Regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
 const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
 const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;

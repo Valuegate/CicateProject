@@ -67,7 +67,7 @@ const handleSubmit = (e) => {
                 <span className={validPwd ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validPwd || !pwd ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
                  <br /><input
-                 type="text"
+                 type="password"
                  id='pwd'
                  className={validPwd ? "input_valid" : !pwd ? "inputs" : "input_invalid"}
                   placeholder='password'
@@ -86,7 +86,7 @@ const handleSubmit = (e) => {
                 <span className={validCfmPwd ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validCfmPwd || !cfmPwd ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
                 
-                 <br /><input type="text"
+                 <br /><input type="password"
                  className={validCfmPwd ? "input_valid" : !cfmPwd ? "inputs" : "input_invalid"}
                    placeholder='confirm password'
                    id='confirm'
