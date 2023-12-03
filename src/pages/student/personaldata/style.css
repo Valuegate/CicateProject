@@ -126,20 +126,7 @@
                             padding-right: 60px;
                             }
 
-                    .input_country{
-                      color: #ffffff;
-                      font-family: "PP Monument Extended-Light", Helvetica;
-                      font-size: 18px;
-                      font-weight: 300;
-                      letter-spacing: 0;
-                      line-height: 32.5px;
-                      text-align: center;
-                        white-space: nowrap;
-                        background-color: #282828;
-                      border-color: #ffffff;
-                        border-radius: 30px;
-                        padding: 2px;
-                        }
+                   
       .justify_bluk{
         justify-content: center;
         display: flex;
@@ -180,19 +167,26 @@
                           .input_invalid{
                             font-size: 13px;
                             border-color:red;
+                            line-height: 20.5px;
+                           
                               }
       
                               .input_valid{
                                 font-size: 13px;
                                 border-color:#33CC00;
+                                line-height: 20.5px;
+                                
+                               
                                   }
 
                           .inputs{
                           font-size: 13px;
+                          line-height: 20.5px;
                           }
 
                           .input_country{
                             font-size: 10px;
+                            line-height: 20.5px;
                           }
 
                           .form_class > *  {
