@@ -7,7 +7,7 @@ import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
-import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faCheck, faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
@@ -72,9 +72,15 @@ const handleSubmit = (e) => {
                   placeholder='password'
                   autoComplete='off'
                   onChange={(e) => setPwd(e.target.value)}
+                  aria-describedby='pwd_note'
 
 
-                  /></label> <br />
+                  /></label>
+                   <p id='pwd_note' className={pwd && !validPwd ? "instructions": "offscreen"}>
+      <FontAwesomeIcon icon={faInfoCircle}/>
+  8 to 24 characters . <br />
+  must include uppercase and lowercase letters, numbers ad special characters,
+      </p> <br />
                 <label htmlFor="confirm" className='labels'>Confirm Password:
                 <span className={validCfmPwd ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validCfmPwd || !cfmPwd ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -85,8 +91,15 @@ const handleSubmit = (e) => {
                    id='confirm'
                    autoComplete='off'
                    onChange={(e)=> SetCfmPassword(e.target.value)}
+                   aria-describedby='cfm_password'
                    
                    /></label>
+
+<p id='cfm_password' className={cfmPwd && pwd !== cfmPwd ? "instructions": "offscreen"}>
+      <FontAwesomeIcon icon={faInfoCircle}/>
+  Confirm passwords must match <br />
+
+      </p>
               </div>
 
 
@@ -100,7 +113,12 @@ const handleSubmit = (e) => {
                 placeholder='Username'
                 id='user'
                 onChange={(e)=> setUser(e.target.value)}
+                aria-describedby='user_note'
                 /></label>
+                 <p className={user && !validUser ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens  are not allowed </p>
+
               <div className='submit_section'>
       <button
       onClick={handleSubmit}

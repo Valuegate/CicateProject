@@ -130,6 +130,8 @@ const Navigate = useNavigate();
         aria-describedby='user_note'
         />
     </label>
+
+    
     <p className={userSurname && !validUserSurname ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         must begin with a letter. <br />
         letters, numbers, underscores, hyphens are not allowed </p>
@@ -146,8 +148,13 @@ const Navigate = useNavigate();
        className={validUserDegree ? 'input_valid' : !userDegree ? "inputs" : 'input_invalid'}
        id='student_degree'
        onChange={(e) =>setUserDegree(e.target.value)}
+       aria-describedby='user_note'
        />
     </label>
+
+    <p className={userDegree && !validUserDegree ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens  are not allowed </p>
      </div>
 
 
@@ -181,8 +188,11 @@ const Navigate = useNavigate();
          className={validUserEmail ? 'input_valid' : !userEmail ? "inputs" : 'input_invalid'}
           id='student_eml'
           onChange={(e)=> setUserEmail(e.target.value)}
+          aria-describedby='email_note'
           />
       </label>
+      <p className={userEmail && !validUserEmail ? "instructions" : "offscreen"}  id='email_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        Only email format required </p>
 
       <div className='submit_section'>
         <button
