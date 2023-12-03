@@ -108,8 +108,13 @@ const Navigate = useNavigate();
        id='student_name'
        onChange={(e)=> setUserName(e.target.value)}
        required
+       aria-describedby='user_note'
        />
+      
       </label>
+      <p className={userName && !validUser ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens  are not allowed </p>
 
     <br /><label htmlFor="student_surname" className='labels'>Surname:
     
@@ -121,8 +126,14 @@ const Navigate = useNavigate();
         className={validUserSurname ? "input_valid" : !userSurname ? "inputs" : "input_invalid"}
         id='student_surname'
         onChange={(e)=> setUserSurname(e.target.value)}
+        required
+        aria-describedby='user_note'
         />
     </label>
+    <p className={userSurname && !validUserSurname ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens are not allowed </p>
+
 
     <br /><label htmlFor="student_degree" className='labels'>Degree:
     
