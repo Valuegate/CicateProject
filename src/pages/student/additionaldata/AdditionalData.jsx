@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 
-const Lang_regex = /^[a-zA-Z\s+][a-zA-Z0-9-_,\\.]{3,23}$/;
+const Lang_regex = /^[a-zA-Z\s+][a-zA-Z0-9-_,\\.]{2,23}$/;
 
 
 const AdditionalData = () => {
