@@ -6,7 +6,7 @@ import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
-
+import BackButton from '../../../components/backbutton/BackButton'
 
 const Lang_regex = /^[a-zA-Z\s+][a-zA-Z0-9-_,\\.]{2,23}$/;
 
@@ -61,6 +61,7 @@ const handleSubmit = (e)=>{
           <RegCarousel/>
           <div className='justify_bluk'>
           <div className='bluk_pad'>
+            <BackButton/>
             <form action="" className='form_class'>
 
               <div className='fall'>

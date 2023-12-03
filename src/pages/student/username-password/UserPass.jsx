@@ -8,7 +8,7 @@ import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 import { faCheck, faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons'
-
+import BackButton from '../../../components/backbutton/BackButton'
 
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const PWD_Regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -59,6 +59,7 @@ const handleSubmit = (e) => {
           <RegCarousel/>
           <div className='justify_bluk'>
           <div className='bluk'>
+            <BackButton/>
             <form action="" className='form_class'>
 
               <div className='fall'>
