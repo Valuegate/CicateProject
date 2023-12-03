@@ -147,15 +147,15 @@ const Navigate = useNavigate();
     <span className={validUserAccount || !userAccount ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
       <br />
        <select name="act_type"  
-      className={validUserAccount ? 'input_valid' : !userAccount ? "inputs" : 'input_invalid'}
+      className={validUserAccount ? 'valid_input_country' : !userAccount ? "inputs" : 'invalid_input_country'}
        autoComplete='off'
        onChange={(e)=>
          setUserAccount(e.target.value)}
          required
          id="act_type"
        >
-        <option value="university">Student</option>
-        <option value="staff">Registered student</option>
+        <option value="Student">New Student</option>
+        <option value="Registered-Student">Registered student</option>
        </select>
       </label>
 
