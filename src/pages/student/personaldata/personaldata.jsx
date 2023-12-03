@@ -95,7 +95,7 @@ const Navigate = useNavigate();
     <form action="" className='form_class'>
 
      <div className='fall'>
-     <label htmlFor="student_name" className='labels'>First name & Middle name:
+     <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
      <span className={validUser || !userName? "hide" : "invalid"}><FontAwesomeIcon icon= {faTimes}/></span>
