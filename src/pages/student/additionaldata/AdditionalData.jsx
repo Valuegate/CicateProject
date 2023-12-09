@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
           
             <form action="" className='form_class'>
           
-              <div className='fall'>
+              <div className='fall1'>
               <BackButton/>
                 <label htmlFor="student_country" className='labels'>Country of Birth:
                 <span className={validBirthCountry ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
@@ -327,7 +327,7 @@ const handleSubmit = (e) => {
               </div>
 
 
-              <div className='right_side1'>
+              <div className='right_side4'>
               <label htmlFor="student_lang"
                className='labels'
              
