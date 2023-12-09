@@ -6,3 +6,8 @@
     line-height: 10px;
     border-radius: 3rem;
 }
+
+.backbutton{
+    display: flex;
+    justify-content: center;
+}

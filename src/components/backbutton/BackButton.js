@@ -12,7 +12,7 @@ const BackButton = () => {
 
 
   return (
-    <div>
+    <div className='backbutton'>
       <button className='back' onClick={handleSubmit}>Back</button>
     </div>
   )

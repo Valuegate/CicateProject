@@ -20,7 +20,7 @@ white-space: nowrap;
 }
 
 
-.review_flex > * + * {
+.review_flex > * + *  {
     margin-left: 7rem; /* Adjust as needed */
   }
 .terms {
@@ -73,6 +73,12 @@ padding: 4px;
             margin-left: 0rem;
             line-height: 35px;
         }
+
+        .review_flex > *  {
+            margin-right: 2rem; /* Adjust as needed */
+          }
+       
+
 
         .mid_right{
             margin-left: 0rem;

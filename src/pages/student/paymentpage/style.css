@@ -1,5 +1,5 @@
 .against{
-    margin-top: -3rem;
+    margin-top: 2rem;
 }
 
 
@@ -14,7 +14,10 @@
       }
 
       .against2{
-   margin-left: 7rem;
+   margin-left: 3rem;
+      }
+      body .against{
+        margin-left: 3rem;
       }
 
     

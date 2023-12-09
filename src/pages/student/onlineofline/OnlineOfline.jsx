@@ -25,7 +25,7 @@ Navigate('/student/timedate')
        </div>
        <div className='try'>
        <div className='second_block'>
-       <BackButton/>
+    
         <TestCarousel/>
       
     
@@ -38,8 +38,9 @@ Navigate('/student/timedate')
         </div>
         <div className='button_shift'>
         <button className='next_big' onClick={handleSubmit}>Next</button>
+        <BackButton/>
         </div>
-      
+     
        </div>
 
     </div>

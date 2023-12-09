@@ -30,7 +30,7 @@ Navigate('/student/photovalidation')
       <div>
         <div className='try'>
           <div className='second_block'>
-            <BackButton/>
+      
           <TestCarousel/>
         <div className='review_flex1'>
 
@@ -42,12 +42,18 @@ Navigate('/student/photovalidation')
           <div className='choose1'><label htmlFor="" className='labels'> <span className='numbers_green'>3</span>Choose Available Time:
            <br /><input type="time" className='inputs'/></label>
             <br />
-        <div className='push_button'><button className='next_big'  onClick={handleSubmit}>Next</button></div>  
+     
+            <div className='push_button'>
+              <button className='next_big' onClick={handleSubmit}>Next</button>
+</div>
           </div>
+          
         </div>
-       
+      <BackButton/>
           </div>
+         
         </div>
+   
         <Footer />
       </div>
     </div>

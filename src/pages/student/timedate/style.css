@@ -13,8 +13,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-top: 4rem;
+    margin-top: 4rem;
     line-height: 50px;
+}
+.choose1{
+  margin-top: 3rem;
 }
 
 .review_flex1 > * + * {
@@ -25,9 +28,7 @@
     padding-top: 4rem;
   }
 
-.choose1{
-  
-}
+
 
 @media screen  and (max-width:600px){
 

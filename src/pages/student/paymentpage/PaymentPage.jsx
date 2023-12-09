@@ -23,7 +23,7 @@ Navigate('/student/paymentcompletion')
       <div><SignedNav/></div>
       <div className='try'>
         <div className='second_block'>
-          <BackButton/>
+     
           <TestCarousel/>
 
           
@@ -55,6 +55,7 @@ Navigate('/student/paymentcompletion')
               </label>
               <div className='push_button'>
               <button className='next_big' onClick={handleSubmit}>Next</button>
+              <BackButton/>
             </div>
               </div>
             </form>

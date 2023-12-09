@@ -55,12 +55,13 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
 
 <div className='justify_bluk'>
-  <div className='bluk'>
-  <BackButton/>
-    <form action="" className='form_class'>
 
+  <div className='bluk'>
+
+    <form action="" className='form_class'>
+ 
      <div className='fall'>
-  
+     <BackButton/>
      <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
