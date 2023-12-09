@@ -28,6 +28,8 @@ padding-bottom: 20px;
         padding: 5px;
         display: inline-block;
         margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
         }
 
         .review_terms {
