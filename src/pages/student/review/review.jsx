@@ -53,17 +53,20 @@ const Review = () =>
   return (
     <div>
        <UnsignedNav/>
+      
       <div className='black_page'>
         <div className='div'>
+      
          <RegCarousel/>
           <div className='bluk_review'>
          
          <form action="">   
-         <BackButton/>
+        
               <div className=''>
                 <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
-              <label htmlFor="" className='labels'>First name: <br />
+                <BackButton/>
+               <label htmlFor="" className='labels'>First name: <br />
                 <input type="text"
                 className='inputs0'
                 value={userName}
@@ -167,8 +170,7 @@ const Review = () =>
                </div>
                <br />
                <div className='nexty'>
-                <button className='next_big' onClick={handleSubmit}>Create</button>
-
+                <button className='next_big' onClick={handleSubmit}>Create</button> 
                </div>
               
              

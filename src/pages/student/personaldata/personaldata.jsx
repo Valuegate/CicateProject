@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { useRegisterContext } from '../../../auth/Register';
 import {useNavigate } from 'react-router-dom'
-
+import BackButton from '../../../components/backbutton/BackButton';
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
 const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
@@ -56,9 +56,11 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
 <div className='justify_bluk'>
   <div className='bluk'>
+  <BackButton/>
     <form action="" className='form_class'>
 
      <div className='fall'>
+  
      <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
