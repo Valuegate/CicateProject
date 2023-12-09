@@ -31,14 +31,14 @@ Navigate()
           <BackButton/>
          <form action="" className='form_class'>
         
-          <div className='fall1'>
+          <div className='fallp'>
           <label htmlFor="" className='labels'>Institution Details: <br /><input type="text" className='inputs' placeholder='Name'/></label> <br />
          <label htmlFor="" className='labels'> <br />Acronym: <br /><input type="text" className='inputs' placeholder='Acronym' /></label> <br />
           <label htmlFor="" className='labels'> <br />Biography: Max 500 words: <br />
-          <textarea name="" id="" cols="40" rows="10" className='inputs1' placeholder=''></textarea></label>
+          <textarea name="" id="" cols="30" rows="8" className='inputs1' placeholder=''></textarea></label>
           </div>
 
-          <div className='right_side'>
+          <div className='right_sidep'>
             <label htmlFor="" className='labels'>Type of University: <br />
            <input type="text" className='inputs' />
               </label> <br />
