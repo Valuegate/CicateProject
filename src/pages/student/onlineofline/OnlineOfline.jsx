@@ -33,8 +33,8 @@ Navigate('/student/timedate')
         
 
         <div className='onsie'>
-          <a href="/" className='onsite-online'><img src={wifi} alt="img" className='images__style' />Onsite</a>
-          <a href="/" className='onsite-online1'><img src={houser} alt="img" className='images__style'/>Online</a>
+          <a href="#" className='onsite-online'><img src={wifi} alt="img" className='images__style' />Onsite</a>
+          <a href="#" className='onsite-online1'><img src={houser} alt="img" className='images__style'/>Online</a>
         </div>
         <div className='button_shift'>
         <button className='next_big' onClick={handleSubmit}>Next</button>

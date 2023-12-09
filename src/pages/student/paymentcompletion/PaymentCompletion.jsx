@@ -23,7 +23,7 @@ const PaymentCompletion = () => {
         <span className='regarding'>All the info regarding test is in your dashboard</span>
         <div className='finish'>
           <a href="/" className='receipt'><img src={printer} alt="img" />Download Reciept</a>
-          <a href="/" className='dash'>To Dashboard</a>
+          <a href="/student/student-dashboard" className='dash'>To Dashboard</a>
         </div>
       </div>
           </div>
