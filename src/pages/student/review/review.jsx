@@ -3,8 +3,32 @@ import './style.css'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
+import BackButton from '../../../components/backbutton/BackButton'
 
-const Review = () => {
+
+
+const Review = ({
+  setUserAccount,
+  setUserDegree,
+  setUserEmail,
+  setUserName,
+  setUserSurname,
+  validUser,
+  validUserAccount,
+  validUserEmail,
+  validUserSurname,
+  validUserDegree,
+  handleSubmit,
+  userAccount,
+  userDegree,
+  userEmail,
+  userName,
+  userSurname
+}) =>
+
+{
+
+
   return (
     <div>
        <UnsignedNav/>
@@ -12,18 +36,21 @@ const Review = () => {
         <div className='div'>
           <RegCarousel/>
           <div className='bluk_review'>
-         
+         <BackButton/>
               <div className=''>
                 <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
               <label htmlFor="" className='labels'>First name & Middle name: <br />
-                <input type="text" className='inputs0' />
+                <input type="text"
+                className='inputs0'
+                onChange={()=>setUserName(userSurname)}
+                />
               </label> <br />
               <label htmlFor="" className='labels'> Surname: <br />
                 <input type="text" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Type of Account: <br />
-                <select name="" id="" className='inputs0'>
+                <select name="" id="" className='inputs0' onChange={()=> setUserAccount(userAccount)}>
                   <option value="" className='inputs0'>University Member</option>
                   <option value="" className='inputs0'> Staff Member</option>
                   <option value="" className='inputs0'>Associate Member</option>
@@ -61,7 +88,10 @@ const Review = () => {
                 <input type="date" className='inputs0' />
               </label> <br />
               <label htmlFor="" className='labels'>Email: <br />
-                <input type="email" className='inputs0' />
+                <input type="email"
+                 className='inputs0' 
+                 onChange={()=> setUserEmail(userEmail)}
+                 />
               </label> <br />
               </div>
 

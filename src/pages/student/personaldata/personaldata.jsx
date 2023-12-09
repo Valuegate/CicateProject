@@ -1,12 +1,12 @@
-import React,{useEffect, useState, usereq} from 'react'
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
 import './style.css'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-
+import { useState, useEffect } from 'react';
+import {useNavigate } from 'react-router-dom'
 
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
@@ -14,9 +14,9 @@ const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
 const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
 
-const PersonalData = () => {
-
-const Navigate = useNavigate();
+    const PersonalData = () => {
+     
+      const Navigate = useNavigate();
 
 
   const [userName, setUserName ] = useState("")
@@ -77,6 +77,7 @@ const Navigate = useNavigate();
       Navigate('/student/additionaldata')
   }
 
+     
 
 
   return (
@@ -105,8 +106,10 @@ const Navigate = useNavigate();
       className={validUser ? "input_valid": !userName ? "inputs" :"input_invalid"}
        autoComplete='off'
        id='student_name'
-       onChange={(e)=> setUserName(e.target.value)}
-       required
+       onChange={(e)=>setUserName(e.target.value)
+    
+      }
+       requireds
        aria-describedby='user_note'
        />
       
@@ -211,8 +214,6 @@ const Navigate = useNavigate();
     </form>
   </div>
   </div>
-       
-          
        
 
    <BlackFooter/>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
+
 import greenshield from '../../../assets/greenshield.svg'
 import pic1 from  '../../../assets/1.svg'
 import pic2 from  '../../../assets/2.svg'
@@ -10,6 +11,10 @@ import './style.css'
 
 
 const RegCarousel = () => {
+
+
+  const [activeState, setActiveState] = useState(false);
+
   return (
     <div>
         <div className='flex_green_sign'>
@@ -23,7 +28,7 @@ const RegCarousel = () => {
            <p className='personal_information'>
             <span className='personal'>Personal </span> <br />
           <span className='information'>Information </span>
-          <div className="current-position" />
+          <div className={activeState ? "current-position" :"non-current-position" } />
           </p>
           <div className='green_arrow_box'> <img src={greenArrow} alt='img' className='next' /></div>
           </div>
@@ -33,7 +38,7 @@ const RegCarousel = () => {
            <p className='personal_information'>
             <span className='personal_unselected'>Additional </span> <br />
            <span className='information_unselected'>Information </span>
-         
+           <div className={activeState ? "current-position" :"non-current-position" } />
           </p>
           <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
           </div>
@@ -43,6 +48,7 @@ const RegCarousel = () => {
            <p className='personal_information'>
           <span className='personal_unselected'>Username  </span> <br />
           <span className='information_unselected'> Password </span>
+          <div className={activeState ? "current-position" :"non-current-position" } />
           </p>
           <div className='green_arrow_box'> <img src={normal} alt='img' className='next' /></div>
           </div>
@@ -51,7 +57,9 @@ const RegCarousel = () => {
             <img src={pic4} alt="img" className='pic1'/> 
           <span className='personal_unselected'>Done!</span> 
           </div>
+          
         </div>
+        
     </div>
   )
 }
