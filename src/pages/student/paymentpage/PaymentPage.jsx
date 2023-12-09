@@ -4,12 +4,26 @@ import SignedNav from '../../../components/containers/signed/SignedNav'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
 import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {useNavigate} from 'react-router-dom'
+import BackButton from '../../../components/backbutton/BackButton'
+
+
 const PaymentPage = () => {
+
+  const Navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+Navigate('/student/paymentcompletion')
+  }
+
+
   return (
     <div>
       <div><SignedNav/></div>
       <div className='try'>
         <div className='second_block'>
+          <BackButton/>
           <TestCarousel/>
 
           
@@ -40,7 +54,7 @@ const PaymentPage = () => {
               <input type="text" className='inputs' placeholder='Johnathan@info.com'/>
               </label>
               <div className='push_button'>
-              <button className='next_big'>Next</button>
+              <button className='next_big' onClick={handleSubmit}>Next</button>
             </div>
               </div>
             </form>

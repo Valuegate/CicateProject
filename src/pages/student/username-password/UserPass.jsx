@@ -44,10 +44,11 @@ const handleSubmit = (e) => {
           <RegCarousel/>
           <div className='justify_bluk'>
           <div className='bluk'>
-            <BackButton/>
+          
             <form action="" className='form_class'>
-
-              <div className='fall01'>
+          
+              <div className='fall'>
+                 <BackButton/>
                 <label htmlFor="pwd" className='labels'>Password:
                 <span className={validPwd ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validPwd || !pwd ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -89,7 +90,7 @@ const handleSubmit = (e) => {
               </div>
 
 
-              <div className='right_side2'>
+              <div className='right_side1'>
               <label htmlFor="user" className='labels'>Username:
               <span className={validUserr ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
               <span className={validUserr || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>

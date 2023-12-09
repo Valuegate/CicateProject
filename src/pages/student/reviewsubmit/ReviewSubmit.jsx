@@ -4,8 +4,21 @@ import Footer from '../../../components/containers/footer/footer'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
+import {useNavigate} from 'react-router-dom'
+import BackButton from '../../../components/backbutton/BackButton'
+
 
 const ReviewSubmit = () => {
+  const Navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+Navigate('/student/paymentpage')
+  }
+
+
+
+
   return (
     <div>
       <div>
@@ -13,6 +26,7 @@ const ReviewSubmit = () => {
       </div>
       <div className='try'>
         <div className='second_block'>
+          <BackButton/>
             <TestCarousel/>
             <div>
                 <form action="" className='review_flex'>
@@ -52,7 +66,9 @@ const ReviewSubmit = () => {
               </span>Agreeing with Privacy Conditions
               </div>
 
-              <button className='next_big'>Next</button>
+              <div className='push_button'>
+              <button className='next_big' onClick={handleSubmit}>Next</button>
+            </div>
             </div>
 
             </div>

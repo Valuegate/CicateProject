@@ -3,6 +3,8 @@ import './style.css'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
+import BackButton from '../../../components/backbutton/BackButton'
+
 
 const Done = () => {
   return (
@@ -12,9 +14,11 @@ const Done = () => {
         <div className='div'>
           <RegCarousel/>
           <div className='bluk3'>
+          
             <div className=''>
+            <BackButton/>
               <div className=''><img src="" alt="" /><span className='personal_unselected'>Personal </span><br /><span className='information_unselected'>Information</span></div> <br />
-              <label htmlFor="" className='labels'>First name & Middle name: <br />
+              <label htmlFor="" className='labels'>First name: <br />
                 <input type="text" className='inputs' />
               </label> <br />
               <label htmlFor="" className='labels'> Surname: <br />
@@ -30,7 +34,7 @@ const Done = () => {
 
               <div className='add_margin'><img src="" alt="" /> <span className='personal_unselected'>Additional </span> <br /> <span className='information_unselected'>Information</span></div> <br />
               <label htmlFor="" className='labels'  >Biography: <br />
-                <textarea className='inputs1' cols="70" rows="10"></textarea>
+                <textarea className='inputs1' cols="35" rows="7"></textarea>
               </label> <br />
               <label htmlFor="" className='labels'>Institution Details: <br />
                 <input type="text" className='inputs' />
@@ -101,6 +105,7 @@ const Done = () => {
           </div>
         </div>
       </div>
+      <BlackFooter/>
     </div>
   )
 }

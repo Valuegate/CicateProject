@@ -52,10 +52,11 @@ const Navigate = useNavigate()
 
 <div className='justify_bluk'>
   <div className='bluk'>
-    <BackButton/>
+   
     <form action="" className='form_class'>
-
+   
      <div className='fall1'>
+     <BackButton/>
      <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>

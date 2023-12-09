@@ -4,10 +4,20 @@ import SignedNav from '../../../components/containers/signed/SignedNav'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
 import wifi from '../../../assets/wiifii.svg'
 import houser from '../../../assets/houser.svg'
-
+import {useNavigate} from 'react-router-dom'
+import BackButton from '../../../components/backbutton/BackButton'
 import './style.css'
 
 const OnlineOfline = () => {
+const Navigate = useNavigate()
+
+
+const handleSubmit = (e) => {
+e.preventDefault();
+Navigate('/student/timedate')
+
+};
+  
   return (
     <div>
        <div>
@@ -15,7 +25,9 @@ const OnlineOfline = () => {
        </div>
        <div className='try'>
        <div className='second_block'>
+       <BackButton/>
         <TestCarousel/>
+      
     
         <div className='questions'>Which format of the <br /> test you prefer?</div>
         
@@ -25,7 +37,7 @@ const OnlineOfline = () => {
           <a href="/" className='onsite-online1'><img src={houser} alt="img" className='images__style'/>Online</a>
         </div>
         <div className='button_shift'>
-        <button className='next_big'>Next</button>
+        <button className='next_big' onClick={handleSubmit}>Next</button>
         </div>
       
        </div>

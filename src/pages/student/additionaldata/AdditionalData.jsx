@@ -40,10 +40,11 @@ const handleSubmit = (e) => {
           <RegCarousel/>
           <div className='justify_bluk'>
           <div className='bluk_pad'>
-            <BackButton/>
+          
             <form action="" className='form_class'>
-
-              <div className='fall1'>
+          
+              <div className='fall'>
+              <BackButton/>
                 <label htmlFor="student_country" className='labels'>Country of Birth:
                 <span className={validBirthCountry ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validBirthCountry || !birthCountry ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
