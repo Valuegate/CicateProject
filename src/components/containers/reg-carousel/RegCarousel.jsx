@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 
 import greenshield from '../../../assets/greenshield.svg'
 import pic1 from  '../../../assets/1.svg'
@@ -7,13 +7,13 @@ import pic3 from  '../../../assets/3.svg'
 import pic4 from  '../../../assets/4.svg'
 import normal from  '../../../assets/normal.svg'
 import greenArrow from '../../../assets/green_arrows.svg'
+
+import { useRegisterContext } from '../../../auth/Register'
 import './style.css'
 
+const RegCarousel = ({handleClick}) => {
 
-const RegCarousel = () => {
-
-
-  const [activeState, setActiveState] = useState(false);
+const {activeState} = useRegisterContext()
 
   return (
     <div>

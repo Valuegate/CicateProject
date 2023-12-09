@@ -9,38 +9,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './style.css'
 import { faCheck, faInfoCircle, faTimes } from '@fortawesome/free-solid-svg-icons'
 import BackButton from '../../../components/backbutton/BackButton'
+import { useRegisterContext } from '../../../auth/Register'
 
-const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_Regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
+
 
 const UserPass = () => {
 
-const [pwd, setPwd] = useState("")
-const [validPwd, setValidPwd] = useState(false)
 
-const [cfmPwd, SetCfmPassword] = useState("")
-const [validCfmPwd, SetValidCfmPassword] = useState(false)
-
-const [user, setUser] = useState("")
-const [validUser, SetValidUser] = useState(false)
-
-useEffect(() => {
- const validate = PWD_Regex.test(pwd)
- console.log(validate)
- console.log(pwd)
- setValidPwd(validate)
- const match = pwd === cfmPwd && pwd ? true : false
-SetValidCfmPassword(match)
-}, [pwd, cfmPwd])
-
-
-useEffect(()=>{
-const validate = User_regex.test(user)
-console.log(validate)
-console.log(user)
-SetValidUser(validate)
-},[user]);
-
+const {
+  validUserr,
+  validCfmPwd,
+  validPwd,
+  user,
+  SetCfmPassword,
+  pwd,
+  setPwd,
+  setUser,
+  cfmPwd} = useRegisterContext()
 
 const Navigate = useNavigate()
 
@@ -62,7 +47,7 @@ const handleSubmit = (e) => {
             <BackButton/>
             <form action="" className='form_class'>
 
-              <div className='fall'>
+              <div className='fall01'>
                 <label htmlFor="pwd" className='labels'>Password:
                 <span className={validPwd ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validPwd || !pwd ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -104,27 +89,27 @@ const handleSubmit = (e) => {
               </div>
 
 
-              <div className='right_side'>
+              <div className='right_side2'>
               <label htmlFor="user" className='labels'>Username:
-              <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
-              <span className={validUser || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
+              <span className={validUserr ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+              <span className={validUserr || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
               
                <br /><input type="text" 
-               className={validUser ? "input_valid" : !user ? "inputs" : "input_invalid"}
+               className={validUserr ? "input_valid" : !user ? "inputs" : "input_invalid"}
                 placeholder='Username'
                 id='user'
                 onChange={(e)=> setUser(e.target.value)}
                 aria-describedby='user_note'
                 /></label>
-                 <p className={user && !validUser ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+                 <p className={user && !validUserr ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         must begin with a letter. <br />
         letters, numbers, underscores, hyphens  are not allowed </p>
 
               <div className='submit_section'>
       <button
       onClick={handleSubmit}
-      disabled={!validUser || !validPwd || !validCfmPwd ? true : false} 
-      className={!validUser || !validPwd || !validCfmPwd  ? "inactive_next_big" : "next_big"}>Next</button>
+      disabled={!validUserr || !validPwd || !validCfmPwd ? true : false} 
+      className={!validUserr || !validPwd || !validCfmPwd  ? "inactive_next_big" : "next_big"}>Next</button>
        
       </div>
               </div>

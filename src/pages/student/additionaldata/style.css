@@ -9,6 +9,14 @@
     margin-bottom: 5rem;
     }
 
+    .right_side1{
+      line-height: 10px;
+      margin-top: 0rem;
+        }
+        .fall1{
+          line-height: 25px;
+          margin-top: 0rem;
+        }
     .input_country{
         color: #ffffff;
         font-family: "PP Monument Extended-Light", Helvetica;

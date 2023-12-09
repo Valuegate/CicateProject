@@ -5,7 +5,7 @@ import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { useState, useEffect } from 'react';
+import { useRegisterContext } from '../../../auth/Register';
 import {useNavigate } from 'react-router-dom'
 
 const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
@@ -16,69 +16,33 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
     const PersonalData = () => {
      
-      const Navigate = useNavigate();
+  const {validUser, 
+    userDegree,
+    userAccount, 
+    userName,
+    setUserAccount,
+    setUserName,
+    setUserSurname, 
+    validUserAccount,
+    validUserEmail,
+    validUserSurname,
+    validUserDegree,
+    userSurname,
+    setUserDegree,
+    userEmail,
+    setUserEmail,
+    birthDay,
+    setBirthDay,
+    setValidBirthDay,
+    validBirthDay,
+           } = useRegisterContext()
 
+           const Navigate = useNavigate()
 
-  const [userName, setUserName ] = useState("")
-  const [validUser, setValidUser] = useState(false)
-  
-  const [userSurname, setUserSurname] = useState("")
-  const [validUserSurname, setValidUserSurname] = useState(false)
-  
-  const[userDegree, setUserDegree] = useState("")
-  const [validUserDegree, setValidUserDegree] = useState(false) 
-  
-  const [userAccount, setUserAccount] = useState("")
-  const [validUserAccount, setValidUserAccount] = useState(false)
-  
-  const [userEmail, setUserEmail] = useState("")
-  const [validUserEmail, setValidUserEmail] = useState(false)
-  
-  
-  
-  useEffect(() => {
-  const validate = User_regex.test(userName) 
-  console.log(validate)
-  console.log(userName)
-  setValidUser(validate)
-  },[userName])
-  
-  useEffect(() => {
-      const validate = Degree_Regex.test(userDegree)
-      console.log(validate)
-      console.log(userDegree)
-      setValidUserDegree(validate)
-  },[userDegree])
-  
-  useEffect(() => {
-  const validate = Surname_Regex.test(userSurname)
-  console.log(validate)
-  console.log(userSurname)
-  setValidUserSurname(validate)
-  },[userSurname])
-  
-  useEffect(() => {
-      const validate = User_regex.test(userAccount) 
-      console.log(validate)
-      console.log(userAccount)
-      setValidUserAccount(validate)
-      },[userAccount])
-      
-  useEffect(() => {
-      const validate = Email_Regex.test(userEmail)
-      console.log(validate)
-      console.log(userEmail)
-      setValidUserEmail(validate)
-  },[userEmail])
-
-
-  const handleSubmit = (e) => {
-      e.preventDefault()
-      Navigate('/student/additionaldata')
-  }
-
-     
-
+           const handleSubmit = (e) => {
+               e.preventDefault()
+               Navigate('/student/additionaldata')
+           }
 
   return (
     <div>
@@ -174,12 +138,13 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
          required
          id="act_type"
        >
-        <option value="Student">New Student</option>
-        <option value="Registered-Student">Registered student</option>
+        <option value="Existing-Student">Existing Student</option>
+        <option value="New-Student">New Student</option>
        </select>
       </label>
 
-      <br /><label htmlFor="student_eml" className='labels'>E-mail:
+      <br />
+      <label htmlFor="student_eml" className='labels'>E-mail:
       
     <span className={validUserEmail ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
     <span className={validUserEmail || !userEmail ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
@@ -196,15 +161,34 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
       <p className={userEmail && !validUserEmail ? "instructions" : "offscreen"}  id='email_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         Only email format required </p>
 
+
+        <br />
+      <label htmlFor="student_eml" className='labels'>Date of Birth:
+      
+    <span className={validBirthDay ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+    <span className={validBirthDay || !birthDay ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
+       <br />
+        <input
+         type="date" 
+         placeholder='enter email'
+         className={validBirthDay ? 'input_valid' : !birthDay ? "inputs" : 'input_invalid'}
+          id='student_eml'
+          onChange={(e)=> setBirthDay(e.target.value)}
+          aria-describedby='email_note'
+          />
+      </label>
+      <p className={birthDay && !validBirthDay ? "instructions" : "offscreen"}  id='email_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        Only email format required </p>
+
       <div className='submit_section'>
         <button
-         className={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree ? "inactive_next_big" : "next_big"}
-        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree ? true : false}
+         className={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
+        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree || !validBirthDay ? true : false}
         onClick={handleSubmit}>Next</button>
 
        
        
-        <span className=''><a href="/institution/university-login" className='already_register'>Already Registered?</a></span>
+        <span><a href="/institution/university-login" className='already_register'>Already Registered?</a></span>
       </div>
 
      </div>
@@ -215,7 +199,6 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
   </div>
   </div>
        
-
    <BlackFooter/>
 </div>
 

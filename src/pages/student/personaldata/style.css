@@ -12,6 +12,19 @@
   white-space: nowrap;
   padding: 10px;
   }
+  .fall{
+    line-height: 25px;
+    margin-top: -4rem;
+  }
+
+
+  .right_side{
+line-height: 10px;
+margin-top: 1.5rem;
+  }
+  .nonet{
+    display: none;
+  }
 
 
 
@@ -30,8 +43,8 @@
     }
   
   .submit_section{
-      margin-top: 30px;
-      margin-bottom: 1rem;
+      margin-top: 20px;
+    
   }
   .already_register{
    color: #33cc00;
@@ -55,12 +68,14 @@
                             justify-content: center;
                             align-items: center;
                             line-height: 50px;
-                          
+                            margin-top: 1.5rem;
                           }
   
-                          .form_class > * + * {
+                          .form_class > *   {
                               margin-left: 5rem; /* Adjust as needed */
                             }
+
+                            
                           
 
         .labels{
@@ -152,6 +167,7 @@
                           .form_class{
                             display: grid !important;
                             flex-direction: column;
+                            justify-content: center;
                           }
 
                           .bluk{
@@ -189,13 +205,15 @@
                             line-height: 20.5px;
                           }
 
+                          
+
                           .form_class > *  {
-                            margin-left: 0rem; /* Adjust as needed */
+                            margin-left: 2rem; /* Adjust as needed */
                           }
                           
 
                           .right_side{
-                            margin-top: 1rem; /* Adjust */
+                            margin-top: 0rem; /* Adjust */
                           }
                         }
     

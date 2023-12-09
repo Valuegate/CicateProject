@@ -37,17 +37,23 @@ import UniversityLogin from './pages/institution/login/login';
 import Payment from './pages/student/payment/Payment';
 import Review from './pages/student/review/review';
 import PurchaseTest from './pages/student/purchasetest/PurchaseTest';
-
-
+import { RegisterContext } from './auth/Register';
+import ReviewInstitution from './pages/institution/review-institution/ReviewInstitution';
+import StudentSuccess from './pages/student/success/StudentSuccess';
 
 
 function App() {
 
   return (
     <div className="App">
+
+
+
      <Router>
+     <RegisterContext>
       <Routes>
-       
+   
+     
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
         <Route path='/online' element={<Online/>}/>
@@ -81,10 +87,16 @@ function App() {
         <Route path='/student/username-password' element={<UserPass/>}/>
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
         <Route path='/student/review' element={<Review/>}/>
+        <Route path='/student/success' element={<StudentSuccess/>}/>
         <Route path='/institution/success' element={<Success/>}/>
+        <Route path='/institution/review-institution' element={<ReviewInstitution/>}/>
         <Route path='/institution/done' element={<Done/>}/>
+      
+      
       </Routes>
+      </RegisterContext>
      </Router>
+   
     </div>
   );
 }

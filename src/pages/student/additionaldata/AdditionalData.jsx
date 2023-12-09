@@ -7,52 +7,31 @@ import './style.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons'
 import BackButton from '../../../components/backbutton/BackButton'
+import { useRegisterContext } from '../../../auth/Register'
 
-const Lang_regex = /^[a-zA-Z\s+][a-zA-Z0-9-_,\\.]{2,23}$/;
+
 
 
 const AdditionalData = () => {
 
-const [birthCountry, setBirthCountry] = useState("");
-const [validBirthCountry, setValidBirthCountry] = useState(false);
-
-const [nativeLang, setNativeLang] = useState("");
-const [validNativeLang, setValidNativeLang] = useState(false)
-
-const [citizenship, setCitizenship] = useState("");
-const [validCitizenhip, setValidCitizenhip] = useState(false)
-
-
-useEffect(() => {
-const validate = Lang_regex.test(birthCountry)
-console.log(validate);
-console.log(birthCountry);
-setValidBirthCountry(validate);
-},[birthCountry]);
-
-
-useEffect(() =>{
-const validate = Lang_regex.test(nativeLang)
-console.log(validate);
-console.log(nativeLang);
-setValidNativeLang(validate);
-},[nativeLang]);
-
-useEffect(() =>{
-const validate = Lang_regex.test(citizenship)
-console.log(validate);
-console.log(citizenship)
-setValidCitizenhip(validate);
-},[citizenship]);
+const {validBirthCountry, 
+  birthCountry,
+  setBirthCountry,
+  validNativeLang,
+  validCitizenhip,
+  nativeLang,
+  setNativeLang,
+  citizenship,
+  setCitizenship,
+} = useRegisterContext()
 
 
 const Navigate = useNavigate()
 
-const handleSubmit = (e)=>{
- e.preventDefault();
-  Navigate('/student/username-password');
+const handleSubmit = (e) => {
+    e.preventDefault()
+    Navigate('/student/username-password')
 }
-
   return (
     <div>
        <UnsignedNav/>
@@ -64,7 +43,7 @@ const handleSubmit = (e)=>{
             <BackButton/>
             <form action="" className='form_class'>
 
-              <div className='fall'>
+              <div className='fall1'>
                 <label htmlFor="student_country" className='labels'>Country of Birth:
                 <span className={validBirthCountry ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validBirthCountry || !birthCountry ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -347,7 +326,7 @@ const handleSubmit = (e)=>{
               </div>
 
 
-              <div className='right_side'>
+              <div className='right_side1'>
               <label htmlFor="student_lang"
                className='labels'
              
