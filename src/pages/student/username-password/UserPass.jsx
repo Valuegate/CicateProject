@@ -90,7 +90,7 @@ const handleSubmit = (e) => {
               </div>
 
 
-              <div className='right_side1'>
+              <div className='right_side2'>
               <label htmlFor="user" className='labels'>Username:
               <span className={validUserr ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
               <span className={validUserr || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
