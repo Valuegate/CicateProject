@@ -25,7 +25,7 @@ const Choose = () => {
 </div>
 <div className='box_university' onClick={() => window.location.href = "/institution/personal-information"}>
   <div className=''><img src={university} alt="img_university" /></div>
-  <a className='sign_font' href='/student/personaldata'>Sign up as an Institution</a>
+  <a className='sign_font' href='/institution/personal-information'>Sign up as an Institution</a>
 </div>
 
 
