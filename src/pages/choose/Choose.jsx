@@ -20,12 +20,12 @@ const Choose = () => {
 
 <div className='box_university' onClick={() => window.location.href = "/student/personaldata"}>
   <div className=''><img src={student} alt="img_student" /></div>
-  <a className='sign_font' href='/'>Sign up as a Student</a>
+  <a className='sign_font' href='/student/personaldata'>Sign up as a Student</a>
 
 </div>
 <div className='box_university' onClick={() => window.location.href = "/institution/personal-information"}>
   <div className=''><img src={university} alt="img_university" /></div>
-  <a className='sign_font' href='/'>Sign up as an Institution</a>
+  <a className='sign_font' href='/student/personaldata'>Sign up as an Institution</a>
 </div>
 
 
