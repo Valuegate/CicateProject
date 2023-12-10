@@ -40,6 +40,9 @@ import PurchaseTest from './pages/student/purchasetest/PurchaseTest';
 import { RegisterContext } from './auth/Register';
 import ReviewInstitution from './pages/institution/review-institution/ReviewInstitution';
 import StudentSuccess from './pages/student/success/StudentSuccess';
+import Choose from './pages/choose/Choose';
+
+
 
 
 function App() {
@@ -52,7 +55,7 @@ function App() {
      <Router>
      <RegisterContext>
       <Routes>
-   
+  
      
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
@@ -63,6 +66,7 @@ function App() {
         <Route path='/research' element={<Research/>}/>
         <Route path='/institutions' element={<Institutions/>}/>
         <Route path='/results' element={<Results/>}/>
+        <Route path='/choose' element={<Choose/>}/>
         <Route path='/' element={<TestFormat/>}/>
         <Route path='/faq' element={<Faq/>}/>
         <Route path='/about' element={<About/>}/>
@@ -89,6 +93,7 @@ function App() {
         <Route path='/student/review' element={<Review/>}/>
         <Route path='/student/success' element={<StudentSuccess/>}/>
         <Route path='/institution/success' element={<Success/>}/>
+
         <Route path='/institution/review-institution' element={<ReviewInstitution/>}/>
         <Route path='/institution/done' element={<Done/>}/>
       

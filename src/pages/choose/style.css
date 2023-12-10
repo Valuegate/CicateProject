@@ -1,0 +1,123 @@
+
+
+.box_university{
+    border: 1px solid;
+    border-color: #727272;
+    border-radius: 8px;
+    height: 222px;
+    width: 501px;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_university a:hover{
+    background-color:  #33cc00;
+  }
+
+  .box_university:hover {
+    background-color: #33cc00;
+  }
+
+.or_span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dont1 {
+    color: #ffffff;
+  font-family: "Monument Extended-Regular", Helvetica;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 50px;
+   
+              }
+              
+              .create_button1 {
+                color: #282828;
+                font-family: "PP Monument Extended-Regular", Helvetica;
+                font-size: 3rem;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 30.5px;
+                text-align: center;
+                white-space: nowrap;
+                  background-color: #33CC00;
+                  border-radius: 40px;
+                 padding: 10px;
+                  cursor: pointer;
+                  padding-left: 30px;
+                  padding-right: 30px;
+                  }
+  
+
+.or{
+    font-size: 2rem;
+    color: white;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+}
+
+
+.sign_font{
+    font-size: 3rem;
+    color: white;
+    font-family: "PP Monument Extended-Regular", Helvetica;
+}
+.gridd_boxx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    cursor: pointer;
+}
+
+
+.or_box{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    margin-top: 5rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px){
+    .gridd_boxx{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_university{
+        height: 150px;
+        width: 180px;
+        gap: 2rem;
+    }
+    .sign_font{
+        font-size: 1.5rem;
+        color: white;
+        font-family: "PP Monument Extended-Regular", Helvetica;
+    }
+    .dont1{
+        font-size: 2rem;
+        line-height: 50px;
+        line-height: 25px;
+        }
+
+        .create_button1{
+         font-size: 1.5rem;
+        }
+
+
+.or_box{
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.or{
+    font-size: 1rem;
+}
+}

@@ -61,7 +61,7 @@ const handleSubmit = async (e) => {
   <button type='submit'
   onClick={handleSubmit}
    className='green_login'
-   >Login</button> <br /> <span ><a href="/student/signup" className='already_register'>Not yet registered?</a></span>
+   >Login</button> <br /> <span ><a href="/choose" className='already_register'>Not yet registered?</a></span>
   <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
  
  </form>
