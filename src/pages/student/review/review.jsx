@@ -63,7 +63,7 @@ const Review = () =>
          <form action="">   
         
               <div className=''>
-                <img src="" alt="" /><span className='personal_unselected'>Personal </span><br />
+                <img src="" alt="" /><span className='personal_unselected'>Confirm your Information </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
                 <BackButton/>
                <label htmlFor="" className='labels'>First name: <br />
@@ -94,7 +94,7 @@ const Review = () =>
               </label> <br />
 
               <div className='add_margin'><img src="" alt="" /> 
-              <span className='personal_unselected'>Additional </span> <br /> 
+              <span className='personal_unselected'></span> <br /> 
               <span className='information_unselected'>Information</span></div> <br />
              
               <label htmlFor="" className='labels'>Country of Birth: <br />
@@ -122,7 +122,7 @@ const Review = () =>
               </label> <br />
             
             
-              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'>Username</span><br /> <span className='information_unselected'> & Password</span></div> <br />
+              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
               <label htmlFor="" className='labels'> Password <br />
                 <input type="text"
                  className='inputs0'
