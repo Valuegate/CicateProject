@@ -143,8 +143,9 @@ line-height: 56.7px;
 
                 @media screen and (max-width: 600px) {
                  body .signup_white{
-                    font-size :2rem; 
-                    line-height: 25px;
+                    font-size :1.2rem; 
+                    line-height: 20px;
+                    font-weight: bold;
                     color: #33CC00;
                     
                    
@@ -213,7 +214,7 @@ line-height: 56.7px;
                         }
 
                         .next{
-                            margin-left: 5px;
+                            margin-left: 1px;
                         }
 
                 }
