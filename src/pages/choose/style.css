@@ -7,11 +7,11 @@
     height: 222px;
     width: 501px;
     display: flex;
-    gap: 3rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .box_university a:hover{
     background-color:  #33cc00;
@@ -71,30 +71,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
     cursor: pointer;
 }
+
+
+.gridd_boxx > * {
+    margin-left: 4rem;
+}
+
+.or_box > * + *  {
+    margin-top: 3rem;
+
+}
+
+.box_university > *  {
+    margin-top: 2rem;
+}
+
+
 
 
 .or_box{
     display: flex;
     justify-content: center;
-    gap: 3rem;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 3rem;
     align-items: center;
+
 }
 
 @media screen and (max-width: 600px){
     .gridd_boxx{
         display: flex;
         flex-direction: column;
+        gap: 3rem;
     }
+
+
+.gridd_boxx > * {
+    margin-left: 0rem;
+}
 
     .box_university{
         height: 150px;
-        width: 180px;
-        gap: 2rem;
+        width: 180px
     }
     .sign_font{
         font-size: 1.5rem;
@@ -113,11 +133,15 @@
 
 
 .or_box{
-    gap: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+  
 }
 
 .or{
     font-size: 1rem;
+   
 }
+
+
+
 }
