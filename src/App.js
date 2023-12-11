@@ -33,7 +33,7 @@ import ReviewSubmit from './pages/student/reviewsubmit/ReviewSubmit';
 import Cart from './pages/student/cart/cart';
 import StudentDashboard from './pages/student/dashboard/dashboard';
 import UniversityDashboard from './pages/institution/dashboard/UniversityDashboard';
-import UniversityLogin from './pages/institution/login/login';
+import Login from './pages/login/login';
 import Payment from './pages/student/payment/Payment';
 import Review from './pages/student/review/review';
 import PurchaseTest from './pages/student/purchasetest/PurchaseTest';
@@ -74,7 +74,7 @@ function App() {
         <Route path='/institution/additional-information' element={<AdditionalInformation/>}/>
         <Route path='/institution/user-pass' element={<UsernamePassword/>}/>
         <Route path='/institution/university-dashboard' element={<UniversityDashboard/>}/>
-        <Route path='/institution/university-login' element={<UniversityLogin/>}/>
+        <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>
         <Route path='/student/signup' element={<Signup/>}/>
         <Route path='/student/student-dashboard' element={<StudentDashboard/>}/>

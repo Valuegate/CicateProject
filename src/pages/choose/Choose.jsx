@@ -33,9 +33,9 @@ const Choose = () => {
 <div className='or_box'>
   
   <div className='dont1'>Already have <br /> an account?</div>
-  <div><a href="/student/personaldata" className='create_button1'>Sign In As Student</a></div>
+  <div><a href="/login" className='create_button1'>Sign In As Student</a></div>
   <div className='or_span'><span className='or'> OR</span></div>
-  <div><a href="/student/personaldata" className='create_button1'>Sign In As Institution</a></div>
+  <div><a href="/login" className='create_button1'>Sign In As Institution</a></div>
 </div>
 
 </div>

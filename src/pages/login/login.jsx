@@ -1,14 +1,16 @@
 import React from 'react'
 import './style.css'
-import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
-import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
-import iconsgreen from '../../../assets/iconsgreen.svg'
-import greenskey from '../../../assets/greenskey.svg'
-import mail_black from '../../../assets/mail_black.png'
+import BlackFooter from '../../components/containers/black_footer/BlackFooter'
+import UnsignedNav from '../../components/containers/unsignedNav/UnsignedNav'
+
+
+import iconsgreen from '../../assets/iconsgreen.svg'
+import greenskey from '../../assets/greenskey.svg'
+import mail_black from '../../assets/mail_black.png'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const UniversityLogin = () => {
+const Login = () => {
 
 
   const [eml, setEml] = useState("")
@@ -77,4 +79,4 @@ const handleSubmit = async (e) => {
   )
 }
 
-export default UniversityLogin
+export default Login
