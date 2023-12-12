@@ -86,34 +86,19 @@ const handleSubmit = (e) => {
       <FontAwesomeIcon icon={faInfoCircle}/>
   Confirm passwords must match <br />
 
-      </p>
-              </div>
-
-
-              <div className='right_side2'>
-              <label htmlFor="user" className='labels'>Username:
-              <span className={validUserr ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
-              <span className={validUserr || !user ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
-              
-               <br /><input type="text" 
-               className={validUserr ? "input_valid" : !user ? "inputs" : "input_invalid"}
-                placeholder='Username'
-                id='user'
-                onChange={(e)=> setUser(e.target.value)}
-                aria-describedby='user_note'
-                /></label>
-                 <p className={user && !validUserr ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
-        must begin with a letter. <br />
-        letters, numbers, underscores, hyphens  are not allowed </p>
-
-              <div className='submit_section'>
+      </p>     <div className='submit_section'>
       <button
       onClick={handleSubmit}
-      disabled={!validUserr || !validPwd || !validCfmPwd ? true : false} 
-      className={!validUserr || !validPwd || !validCfmPwd  ? "inactive_next_big" : "next_big"}>Next</button>
+      disabled={ !validPwd || !validCfmPwd ? true : false} 
+      className={ !validPwd || !validCfmPwd  ? "inactive_next_big" : "next_big"}>Next</button>
        
       </div>
               </div>
+
+
+
+         
+            
 
             </form>
           </div>

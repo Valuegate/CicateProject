@@ -128,25 +128,7 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
 
      <div className='right_side'>
-      <label htmlFor="act_type" className='labels'>Type of Account: 
       
-    <span className={validUserAccount ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
-    <span className={validUserAccount || !userAccount ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
-      <br />
-       <select name="act_type"  
-      className={validUserAccount ? 'valid_input_country' : !userAccount ? "inputs" : 'invalid_input_country'}
-       autoComplete='off'
-       onChange={(e)=>
-         setUserAccount(e.target.value)}
-         required
-         id="act_type"
-       >
-        <option value="Existing-Student">Existing Student</option>
-        <option value="New-Student">New Student</option>
-       </select>
-      </label>
-
-      <br />
       <label htmlFor="student_eml" className='labels'>E-mail:
       
     <span className={validUserEmail ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
@@ -185,8 +167,8 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
       <div className='submit_section'>
         <button
-         className={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
-        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserAccount || !validUserDegree || !validBirthDay ? true : false}
+         className={!validUserEmail || !validUserSurname || !validUser   || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
+        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserDegree || !validBirthDay ? true : false}
         onClick={handleSubmit}>Next</button>
 
        

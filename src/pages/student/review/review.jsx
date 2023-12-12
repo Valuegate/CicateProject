@@ -18,29 +18,25 @@ const Review = () =>
       }
   
   const {
-  setUserAccount,
   setUserEmail,
   setUserName,
   setUserSurname,
-  userAccount,
   userDegree,
   userEmail,
   setUserPwd,
   userName,
   pwd,
+  setUserDegree,
   userSurname,
   birthCountry,
   setBirthCountry,
-  validNativeLang,
-  validCitizenhip,
   nativeLang,
   setNativeLang,
   citizenship,
   setCitizenship,
   birthDay,
   setBirthDay,
-  setValidBirthDay,
-  validBirthDay,
+ 
   
   
 
@@ -81,17 +77,20 @@ const Review = () =>
                   onChange={(e)=>setUserSurname(e.target.userSurname)}
                    />
               </label> <br />
-              <label htmlFor="" className='labels'>Type of Account: <br />
-                <select 
-                name=""
-                 id="" 
-                 value={userAccount}
-                className='inputs0'
-                onChange={(e)=> setUserAccount(e.target.userAccount)}>
-                  <option value="Existing-Student" className='inputs0'>Existing Student</option>
-                  <option value="New-Student" className='inputs0'> New Student</option>
-                </select>
+
+
+              <label htmlFor="" className='labels'>User Degree: <br />
+              <input
+                 type="text"
+                  className='inputs0'
+                  value={userDegree}
+                  onChange={(e)=>setUserDegree(e.target.userDegree)}
+                   />
               </label> <br />
+
+
+
+
 
               <div className='add_margin'><img src="" alt="" /> 
               <span className='personal_unselected'></span> <br /> 

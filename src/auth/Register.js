@@ -1,6 +1,6 @@
 import React, {useState, useEffect, createContext, useContext} from "react";
 import {useNavigate} from 'react-router-dom'
-import RegCarousel from "../components/containers/reg-carousel/RegCarousel";
+
 
 
 const Date_Regex = /^\d{4}-\d{2}-\d{2}$/;
@@ -9,6 +9,9 @@ const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
 const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
 const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
+
+
+
 const PWD_Regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
 const Context = createContext();
