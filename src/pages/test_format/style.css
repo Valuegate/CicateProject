@@ -573,10 +573,10 @@ width: 39vh;
 .bl_tests{
     color: #282828;
     font-family: "Monument Extended-Regular", Helvetica;
-    font-size: 60px;
+    font-size: 4.5rem;
     font-weight: bold;
     letter-spacing: 0;
-    line-height: 101.6px;
+    line-height: 68.6px;
 }
 
 
@@ -588,7 +588,7 @@ width: 39vh;
     letter-spacing: 0;
     line-height: 26.5px;
     text-align: justify; 
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -606,7 +606,7 @@ background-color: #282828;
 border-radius: 37px;
 color: #ffffff;
 font-family: "PP Monument Extended-Light", Helvetica;
-font-size: 4rem;
+font-size: 3rem;
 font-weight: 300;
 letter-spacing: 0;
 line-height: 43.6px;
@@ -615,6 +615,12 @@ white-space: nowrap;
 margin-top: 20px;
 margin-bottom: 10px;
 padding: 1.2rem;
+}
+
+.to_apply_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bl_white2{

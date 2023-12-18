@@ -64,22 +64,24 @@ Reliable Tests</p>
     <div className='top_bl_white'>
         <div className='bl_white'>
             <div className='inside_black_bl'></div>
-            <p className='bl_tests'>G.A.T.E</p>
+            <div className='to_apply_flex'>  <p className='bl_tests'>G.A.T.E</p> </div>
+           
             <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude, and job-specific 
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <a href="/" className='bl_to_apply'>How to Apply</a>
+              <div className='to_apply_flex'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
         </div>
 
         <div className='bl_white3'>
         <div className='inside_black_bl'></div>
-            <p className='bl_tests'>P.O.C.A.S</p>
+        <div className='to_apply_flex'>  <p className='bl_tests'>P.O.C.A.S</p> </div>
             <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude,and job-specific 
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <a href="/" className='bl_to_apply'>How to Apply</a>
+              <div className='to_apply_flex'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
+             
         </div>
     </div>
 <div className='top_bl_white2'>
@@ -87,7 +89,7 @@ Reliable Tests</p>
         <div className='bl_block'></div>
 
         <div>
-            <p className='bl_tests'>LISA</p>
+            <div className='to_apply_flex'><p className='bl_tests'>LISA</p></div>
             <p className='bl_para'>This trusted evaluation covers language <br />
              proficiency, academic aptitude, and job-specific <br /> 
              skills, boosting your chances for visa approval <br />
