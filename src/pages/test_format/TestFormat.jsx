@@ -70,7 +70,7 @@ Reliable Tests</p>
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <div className='to_apply_flex'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
+              <div className='to_apply_flex1'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
         </div>
 
         <div className='bl_white3'>
@@ -80,7 +80,7 @@ Reliable Tests</p>
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <div className='to_apply_flex'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
+              <div className='to_apply_flex1'> <a href="/" className='bl_to_apply'>How to Apply</a> </div>
              
         </div>
     </div>
