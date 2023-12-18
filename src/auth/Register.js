@@ -68,6 +68,7 @@ const [validCfmPwd, SetValidCfmPassword] = useState(false)
 const [user, setUser] = useState("")
 const [validUserr, SetValidUser] = useState(false)
 
+ const [errMsg, setErrMsg] = useState('')
 
 
 useEffect(() =>{
@@ -191,6 +192,8 @@ SetValidUser(validate)
  userEmail,
  userName,
  position,
+ errMsg,
+  setErrMsg,
  validPosition,
  setPosition,
  userSurname,

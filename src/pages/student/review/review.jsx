@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './style.css'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
@@ -7,16 +7,19 @@ import BackButton from '../../../components/backbutton/BackButton'
 import { useRegisterContext } from '../../../auth/Register'
 import {useNavigate} from 'react-router-dom'
 
-const Review = () =>
+import { Client } from '../../../api/axios'
+
+
+
+const Url = 'https://cicate-production.up.railway.app/user/register/';
+
+const Review =  () =>
 
     {
 
-     const Navigate = useNavigate()
-      const handleSubmit = (e) => {
-        e.preventDefault();
-        Navigate('/student/success');
-      }
-  
+  const Navigate = useNavigate();
+
+
   const {
   setUserEmail,
   setUserName,
@@ -36,14 +39,72 @@ const Review = () =>
   setCitizenship,
   birthDay,
   setBirthDay,
+  setSuccess,
+  setErrMsg
  
-  
-  
-
-
   } = useRegisterContext()
 
+  
+  const submitForm =  async (e) => {
+    e.preventDefault();
 
+  
+    try {
+      const response =  await Client.post(
+      Url,JSON.stringify({
+        name:userName,
+        surname:userSurname,
+        Password:pwd,
+        degree: userDegree,
+         country_of_birth:birthCountry,
+         country_of_citizenship:citizenship,
+          native_language:nativeLang,
+        date_of_birth:birthDay,
+        email:userEmail,
+      }),
+      
+     {
+        headers: { "Content-Type": "application/json" },
+        withCredentials: true,
+        
+      });
+      Navigate('student/dash-board')
+      console.log(response);
+    } catch (e) {
+      console.log('error submitting form',e);
+    }
+}
+
+const [post, setPost] = useState(null)
+
+
+/*
+useEffect=(()=>{
+
+  Client.post(
+    Url,{
+      name:{userName},
+      surname:{userSurname},
+      Password:{pwd},
+      degree: {userDegree},
+       country_of_birth:{birthCountry},
+       country_of_citizenship:{citizenship},
+        native_language:{nativeLang},
+      date_of_birth:{birthDay},
+      email:{userEmail},
+    }
+  )
+  .then(res=> console.log(res))
+  .catch(err => console.error(err))
+},[])
+
+*/
+  
+  
+
+
+    
+     
 
 
   return (
@@ -56,20 +117,21 @@ const Review = () =>
          <RegCarousel/>
           <div className='bluk_review'>
          
-         <form action="">   
+         <form>   
         
-              <div className=''>
-                <img src="" alt="" /><span className='personal_unselected'>Confirm your Information </span><br />
+              <div>
+               <span className='personal_unselected'>Confirm your Information </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
                 <BackButton/>
-               <label htmlFor="" className='labels'>First name: <br />
+               <label  className='labels'>First name: <br />
                 <input type="text"
                 className='inputs0'
                 value={userName}
                 onChange={(e)=>setUserName(e.target.userName)}
                 />
               </label> <br />
-              <label htmlFor="" className='labels'> Surname: <br />
+              <label
+                className='labels'> Surname: <br />
                 <input
                  type="text"
                   className='inputs0'
@@ -79,7 +141,7 @@ const Review = () =>
               </label> <br />
 
 
-              <label htmlFor="" className='labels'>User Degree: <br />
+              <label  className='labels'>User Degree: <br />
               <input
                  type="text"
                   className='inputs0'
@@ -96,7 +158,7 @@ const Review = () =>
               <span className='personal_unselected'></span> <br /> 
               <span className='information_unselected'>Information</span></div> <br />
              
-              <label htmlFor="" className='labels'>Country of Birth: <br />
+              <label className='labels'>Country of Birth: <br />
                 <input type="text"
                  className='inputs0'
                  value={birthCountry}
@@ -104,7 +166,7 @@ const Review = () =>
                  />
               </label> <br />
              
-              <label htmlFor="" className='labels'>Country of Citizenship: <br />
+              <label  className='labels'>Country of Citizenship: <br />
                <input type="text"
                 className='inputs0'
                 value={citizenship}
@@ -112,7 +174,7 @@ const Review = () =>
                 />
               </label> <br />
 
-              <label htmlFor="" className='labels'>Native Language: <br />
+              <label  className='labels'>Native Language: <br />
                <input type="text"
                 className='inputs0'
                 value={nativeLang}
@@ -122,7 +184,7 @@ const Review = () =>
             
             
               <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
-              <label htmlFor="" className='labels'> Password <br />
+              <label  className='labels'> Password <br />
                 <input type="text"
                  className='inputs0'
                  value={pwd}
@@ -131,9 +193,9 @@ const Review = () =>
               </label> <br />
              
 
-              <div className=''>
+              <div>
               <div className='email_margin'>
-              <label htmlFor="" className='labels'> Date Of Birth: <br />
+              <label  className='labels'> Date Of Birth: <br />
                 <input type="date"
                  className='inputs0'
                  value={birthDay}
@@ -141,7 +203,7 @@ const Review = () =>
                 
                  />
               </label> <br />
-              <label htmlFor="" className='labels'>Email: <br />
+              <label className='labels'>Email: <br />
                 <input type="email"
                  className='inputs0' 
                  value={userEmail}
@@ -158,18 +220,18 @@ const Review = () =>
                <div  className='form_review'>
                <div>
                 <input type="checkbox"
-                className=''
+                
                 required
-                /> <label htmlFor="" className="review_terms"> Reviewed all the terms and conditions</label>
+                /> <label  className="review_terms"> Reviewed all the terms and conditions</label>
                 <div> <br />
                 <input type="checkbox"
-                 className=''
+             
                  required
-                 /> <label htmlFor="" className="review_terms"> Agreeing with Privacy Conditions</label>
+                 /> <label className="review_terms"> Agreeing with Privacy Conditions</label>
                </div>
                <br />
                <div className='nexty'>
-                <button className='next_big' onClick={handleSubmit}>Create</button> 
+                <button className='next_big' onClick={submitForm}>Create</button> 
                </div>
               
              
@@ -193,5 +255,6 @@ const Review = () =>
     </div>
   )
 }
+    
 
 export default Review

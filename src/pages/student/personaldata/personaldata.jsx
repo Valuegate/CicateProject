@@ -155,7 +155,7 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
        <br />
         <input
          type="date" 
-         placeholder='enter email'
+         placeholder="yyyy-mm-dd"
          className={validBirthDay ? 'input_valid' : !birthDay ? "inputs" : 'input_invalid'}
           id='student_eml'
           onChange={(e)=> setBirthDay(e.target.value)}

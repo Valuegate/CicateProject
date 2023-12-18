@@ -17,14 +17,11 @@ const UserPass = () => {
 
 
 const {
-  validUserr,
   validCfmPwd,
   validPwd,
-  user,
   SetCfmPassword,
   pwd,
   setPwd,
-  setUser,
   cfmPwd} = useRegisterContext()
 
 const Navigate = useNavigate()
