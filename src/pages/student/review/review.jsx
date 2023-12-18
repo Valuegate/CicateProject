@@ -47,8 +47,9 @@ const Review =  () =>
   
   const submitForm =  async (e) => {
     e.preventDefault();
-
-  
+    Navigate('/student/student-dashboard')
+  }
+  /*
     try {
       const response =  await Client.post(
       Url,JSON.stringify({
@@ -68,8 +69,8 @@ const Review =  () =>
         withCredentials: true,
         
       });
-      Navigate('student/dash-board')
-      console.log(response);
+      
+      
     } catch (e) {
       console.log('error submitting form',e);
     }
@@ -78,7 +79,7 @@ const Review =  () =>
 const [post, setPost] = useState(null)
 
 
-/*
+?*
 useEffect=(()=>{
 
   Client.post(
