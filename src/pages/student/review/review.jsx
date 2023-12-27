@@ -21,6 +21,14 @@ const Review =  () =>
 
 
   const {
+    setUser,
+    user,
+    cfmPwd, 
+    SetCfmPassword,
+    validUserr,
+    validCfmPwd,
+     SetValidCfmPassword,
+    setValidUserr,
   setUserEmail,
   setUserName,
   setUserSurname,
@@ -40,15 +48,55 @@ const Review =  () =>
   birthDay,
   setBirthDay,
   setSuccess,
-  setErrMsg
+  setErrMsg,
  
   } = useRegisterContext()
 
-  
+  const [post, setPost] = useState(null)
+
+
   const submitForm =  async (e) => {
+   
+try {
+      const response =  await Client.post(
+      Url, {
+       
+        name:userName,
+        surname:userSurname,
+        Username:user,
+        password:pwd,
+        passsword2:cfmPwd,
+        date_of_birth:birthDay,
+        degree: userDegree,
+        email:userEmail,
+         country_of_birth:birthCountry,
+         native_language:nativeLang,
+         country_of_citizenship:citizenship,
+          
+       
+       
+      },
+     
+     {
+        headers: { "Content-Type": "application/json" },
+     
+        
+      });
+      
+      
+    } 
+    
+    catch (e) {
+      console.log('error submitting form',e);
+  
+      Navigate('/student/review')
+    }
+  
     e.preventDefault();
-    Navigate('/student/student-dashboard')
-  }
+}
+
+
+  
   /*
     try {
       const response =  await Client.post(
@@ -75,25 +123,25 @@ const Review =  () =>
       console.log('error submitting form',e);
     }
 }
+*/
 
-const [post, setPost] = useState(null)
 
+/*
 
-?*
 useEffect=(()=>{
 
   Client.post(
-    Url,{
-      name:{userName},
-      surname:{userSurname},
-      Password:{pwd},
-      degree: {userDegree},
-       country_of_birth:{birthCountry},
-       country_of_citizenship:{citizenship},
-        native_language:{nativeLang},
-      date_of_birth:{birthDay},
-      email:{userEmail},
-    }
+    Url,JSON.stringify({
+      name:userName,
+      surname:userSurname,
+      Password:pwd,
+      degree: userDegree,
+       country_of_birth:birthCountry,
+       country_of_citizenship:citizenship,
+        native_language:nativeLang,
+      date_of_birth:birthDay,
+      email:userEmail,
+    })
   )
   .then(res=> console.log(res))
   .catch(err => console.error(err))
@@ -186,10 +234,28 @@ useEffect=(()=>{
             
               <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
               <label  className='labels'> Password <br />
-                <input type="text"
+                <input 
+                type="text"
                  className='inputs0'
                  value={pwd}
                  onChange={(e) => setUserPwd(e.target.pwd)}
+                 />
+              </label> <br />
+
+              <label  className='labels'> Confirm Password <br />
+                <input
+                 type="text"
+                 className='inputs0'
+                 value={cfmPwd}
+                 onChange={(e) => SetCfmPassword(e.target.cfmPwd)}
+                 />
+              </label> <br />
+
+              <label  className='labels'> Username <br />
+                <input type="text"
+                 className='inputs0'
+                 value={user}
+                 onChange={(e) => setUser(e.target.user)}
                  />
               </label> <br />
              

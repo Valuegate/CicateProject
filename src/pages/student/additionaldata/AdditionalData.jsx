@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import UnsignedNav from '../../../components/containers/unsignedNav/UnsignedNav'
 import BlackFooter from '../../../components/containers/black_footer/BlackFooter'
@@ -51,7 +51,7 @@ const handleSubmit = (e) => {
                  <br />
                 <select id="country"
                  name="country"
-                  class="form-control"
+                 
                   className={validBirthCountry ? 'valid_input_country' : !birthCountry ? "input_country" : 'invalid_input_country'}
                    onChange={(e)=> setBirthCountry(e.target.value)}
                    >
@@ -337,7 +337,7 @@ const handleSubmit = (e) => {
                 <br />
               <select id="country"
                name="country"
-                class="form-control" 
+               
                 className={validCitizenhip ? 'valid_input_country' : !citizenship ? "input_country" : 'invalid_input_country'}
                 onChange={(e)=> setCitizenship(e.target.value)}
                 >

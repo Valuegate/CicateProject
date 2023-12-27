@@ -59,14 +59,13 @@ const [citizenship, setCitizenship] = useState("");
 const [validCitizenhip, setValidCitizenhip] = useState(false)
 
 const [pwd, setPwd] = useState("")
-
 const [validPwd, setValidPwd] = useState(false)
 
 const [cfmPwd, SetCfmPassword] = useState("")
 const [validCfmPwd, SetValidCfmPassword] = useState(false)
 
 const [user, setUser] = useState("")
-const [validUserr, SetValidUser] = useState(false)
+const [validUserr, setValidUserr] = useState(false)
 
  const [errMsg, setErrMsg] = useState('')
 
@@ -138,6 +137,7 @@ setValidBirthDay(validate);
       console.log(userAccount)
       setValidUserAccount(validate)
       },[userAccount])
+
       
   useEffect(() => {
       const validate = Email_Regex.test(userEmail)
@@ -146,6 +146,19 @@ setValidBirthDay(validate);
       setValidUserEmail(validate)
   },[userEmail])
 
+  useEffect(() => {
+    const validate = User_regex.test(user)
+    console.log(validate)
+    console.log(user)
+    setValidUser(validate)
+  },[user])
+
+  useEffect(() => {
+    const validate = PWD_Regex.test(cfmPwd)
+    console.log(validate)
+    console.log(cfmPwd)
+    setValidUser(validate)
+  },[cfmPwd])
 
 
 
@@ -153,6 +166,7 @@ useEffect(() => {
  const validate = PWD_Regex.test(pwd)
  console.log(validate)
  console.log(pwd)
+ console.log(cfmPwd)
  setValidPwd(validate)
  const match = pwd === cfmPwd && pwd ? true : false
 SetValidCfmPassword(match)
@@ -163,7 +177,7 @@ useEffect(()=>{
 const validate = User_regex.test(user)
 console.log(validate)
 console.log(user)
-SetValidUser(validate)
+setValidUserr(validate)
 },[user]);
 
 
@@ -202,6 +216,8 @@ SetValidUser(validate)
  setUserDegree,
  setUserName,
  setValidUser,
+ user,
+ setValidUserr,
  setValidUserAccount,
  setValidUserDegree,
  setValidUserSurname,
@@ -230,6 +246,7 @@ birthCountry,
       setPwd,
       validPwd,
       validCfmPwd,
+      cfmPwd,
       setUser,
       validUserr,
       SetCfmPassword,

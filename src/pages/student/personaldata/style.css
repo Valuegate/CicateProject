@@ -17,11 +17,13 @@
     line-height: 25px;
     margin-top: -4rem;
   }
-
+.downBackbutton{
+  margin-bottom: -4rem;
+}
 
   .right_side{
-line-height: 10px;
-margin-top: 1.5rem;
+line-height: 25px;
+margin-top: 1.4rem;
   }
   .nonet{
     display: none;

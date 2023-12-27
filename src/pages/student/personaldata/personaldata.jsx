@@ -18,6 +18,10 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
      
   const {validUser, 
     userDegree,
+    user,
+    setUser,
+    setValidUserr,
+    validUserr,
     userAccount, 
     userName,
     setUserAccount,
@@ -61,7 +65,7 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
     <form action="" className='form_class'>
  
      <div className='fall'>
-     <BackButton/>
+   
      <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
@@ -119,8 +123,10 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
        onChange={(e) =>setUserDegree(e.target.value)}
        aria-describedby='user_note'
        />
+      
     </label>
 
+  
     <p className={userDegree && !validUserDegree ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         must begin with a letter. <br />
         letters, numbers, underscores, hyphens  are not allowed </p>
@@ -128,6 +134,26 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
 
      <div className='right_side'>
+
+     <label htmlFor="user" className='labels'>Username:
+      
+      <span className={validUserr ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+      <span className={validUserr || !user ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
+         <br />
+          <input
+           type="text" 
+           placeholder='Enter Username'
+           className={validUserr ? 'input_valid' : !user ? "inputs" : 'input_invalid'}
+            id='user'
+            onChange={(e)=> setUser(e.target.value)}
+            aria-describedby='user_note'
+            />
+        </label>
+        <p className={user && !validUserr ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+          Only email format required </p>
+  
+  
+          <br />
       
       <label htmlFor="student_eml" className='labels'>E-mail:
       
@@ -167,8 +193,8 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 
       <div className='submit_section'>
         <button
-         className={!validUserEmail || !validUserSurname || !validUser   || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
-        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserDegree || !validBirthDay ? true : false}
+         className={!validUserEmail || !validUserSurname || !validUser || !validUserr  || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
+        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserDegree || !validUserr|| !validBirthDay ? true : false}
         onClick={handleSubmit}>Next</button>
 
        
