@@ -16,9 +16,7 @@ const Url = 'https://cicate-production.up.railway.app/user/register/';
 const Review =  () =>
 
     {
-
-  const Navigate = useNavigate();
-
+      const Navigate = useNavigate()
 
   const {
     setUser,
@@ -59,8 +57,7 @@ const Review =  () =>
    
 try {
       const response =  await Client.post(
-      Url, {
-       
+      Url, JSON.stringify({
         name:userName,
         surname:userSurname,
         Username:user,
@@ -72,10 +69,8 @@ try {
          country_of_birth:birthCountry,
          native_language:nativeLang,
          country_of_citizenship:citizenship,
-          
        
-       
-      },
+      }),
      
      {
         headers: { "Content-Type": "application/json" },
@@ -89,10 +84,11 @@ try {
     catch (e) {
       console.log('error submitting form',e);
   
-      Navigate('/student/review')
+     
     }
   
     e.preventDefault();
+    Navigate('/student/student-dashboard')
 }
 
 
