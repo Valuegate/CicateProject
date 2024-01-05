@@ -54,7 +54,7 @@ const Review =  () =>
 
 
   const submitForm =  async (e) => {
-   
+    Navigate('/student/student-dashboard')
 try {
       const response =  await Client.post(
       Url, JSON.stringify({
@@ -86,9 +86,10 @@ try {
   
      
     }
+   
   
     e.preventDefault();
-    Navigate('/student/student-dashboard')
+   
 }
 
 
