@@ -8,10 +8,7 @@ import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icon
 import { useRegisterContext } from '../../../auth/Register';
 import {useNavigate } from 'react-router-dom'
 import BackButton from '../../../components/backbutton/BackButton';
-const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
-const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
-const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
+
 
 
     const PersonalData = () => {
@@ -19,6 +16,26 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
   const {validUser, 
     userDegree,
     user,
+    location,
+    instName,
+    linkedin,
+    address,
+    unitype,
+    validAddress,
+    validUnitype,
+    validLinkedin,
+    validInstName,
+    validLocation,
+      setAddress,
+      setLocation,
+      setInstName,
+      setLinkedin,
+      setUnitype,
+    setValidAddress,
+    setValidLinkedin,
+    setValidInstName,
+    setValidLocation,
+    setValidUnitype, 
     setUser,
     setValidUserr,
     validUserr,
@@ -130,7 +147,30 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
     <p className={userDegree && !validUserDegree ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         must begin with a letter. <br />
         letters, numbers, underscores, hyphens  are not allowed </p>
+
+        <br /><label htmlFor="student_degree" className='labels'>Address:
+    
+    <span className={validAddress ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+    <span className={validAddress || !address ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
+     <br />
+      <input 
+      type="text" 
+      placeholder=' enter address'
+       className={validAddress ? 'input_valid' : !address ? "inputs" : 'input_invalid'}
+       id='student_degree'
+       onChange={(e) =>setAddress(e.target.value)}
+       aria-describedby='user_note'
+       />
+      
+    </label>
+
+  
+    <p className={userDegree && !validUserDegree ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens  are not allowed </p>
      </div>
+
+     
 
 
      <div className='right_side'>
@@ -191,15 +231,39 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
       <p className={birthDay && !validBirthDay ? "instructions" : "offscreen"}  id='email_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
         Only email format required </p>
 
+
+        <br /><label htmlFor="student_degree" className='labels'>Location:
+    
+    <span className={validLocation ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+    <span className={validLocation || !location ? "hide" : 'invalid'}><FontAwesomeIcon icon={faTimes}/></span> 
+     <br />
+      <input 
+      type="text" 
+      placeholder=' enter location'
+       className={validLocation ? 'input_valid' : !location ? "inputs" : 'input_invalid'}
+       id='student_degree'
+       onChange={(e) =>setLocation(e.target.value)}
+       aria-describedby='user_note'
+       />
+      
+    </label>
+
+  
+    <p className={userDegree && !validUserDegree ? "instructions" : "offscreen"}  id='user_note'><FontAwesomeIcon icon={faInfoCircle}/>  4 to 24 characters. <br />
+        must begin with a letter. <br />
+        letters, numbers, underscores, hyphens  are not allowed </p>
+
       <div className='submit_section'>
         <button
-         className={!validUserEmail || !validUserSurname || !validUser || !validUserr  || !validUserDegree || !validBirthDay? "inactive_next_big" : "next_big"}
-        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserDegree || !validUserr|| !validBirthDay ? true : false}
+         className={!validUserEmail || !validUserSurname || !validUser || !validUserr  || !validUserDegree || !validBirthDay || !validAddress || !validLocation ? "inactive_next_big" : "next_big"}
+        disabled={!validUserEmail || !validUserSurname || !validUser  || !validUserDegree || !validUserr|| !validBirthDay || !validAddress || !validLocation? true : false}
         onClick={handleSubmit}>Next</button>
 
        
        
         <span><a href="/institution/university-login" className='already_register'>Already Registered?</a></span>
+
+        
       </div>
 
      </div>

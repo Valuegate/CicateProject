@@ -14,11 +14,15 @@ import { useRegisterContext } from '../../../auth/Register'
 
 const AdditionalData = () => {
 
-const {validBirthCountry, 
+const {
+  validBirthCountry, 
   birthCountry,
   setBirthCountry,
   validNativeLang,
   validCitizenhip,
+  validUnitype,
+  setUnitype,
+  unitype,
   nativeLang,
   setNativeLang,
   citizenship,
@@ -43,8 +47,8 @@ const handleSubmit = (e) => {
           
             <form action="" className='form_class'>
           
-              <div className='fall1'>
-              <BackButton/>
+              <div className='fall'>
+            
                 <label htmlFor="student_country" className='labels'>Country of Birth:
                 <span className={validBirthCountry ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
                 <span className={validBirthCountry || !birthCountry ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
@@ -587,10 +591,32 @@ const handleSubmit = (e) => {
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
                 </label>
+
+<br />
+                <label htmlFor="student_lang"
+               className='labels'
+             
+               >Institution Type:
+                <span className={validCitizenhip ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+                <span className={validCitizenhip || !citizenship ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
+                <br />
+              <select id="country"
+               name="country"
+               
+                className={validUnitype ? 'valid_input_country' : !unitype ? "input_country" : 'invalid_input_country'}
+                onChange={(e)=> setUnitype(e.target.value)}
+                >
+                <option value="Research-university">Research University</option>
+                <option value="Online-university">Åland Islands</option>
+                <option value="project-based-university">Albania</option>
+                <option value="Conventional-university">Algeria</option>
+
+            </select>
+                </label>
               <div className='submit_section'>
               <button 
-               className={!validBirthCountry || !validCitizenhip || !nativeLang  ? "inactive_next_big" : "next_big"}
-              disabled={!validBirthCountry || !validCitizenhip || !validNativeLang ? true : false}
+               className={!validBirthCountry || !validCitizenhip || !nativeLang || !validUnitype  ? "inactive_next_big" : "next_big"}
+              disabled={!validBirthCountry || !validCitizenhip || !validNativeLang || !validUnitype ? true : false}
               onClick={handleSubmit}
               >Next</button>
              

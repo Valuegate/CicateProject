@@ -9,6 +9,10 @@ const User_regex = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
 const Email_Regex = /^([a-zA-Z0-9.-_+])+(@[a-zA-Z0-9-]+).[a-zA-Z]{2,}$/;
 const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
 const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
+const Url_regex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/
+const Location_regex = /^[a-zA-Z0-9 ]+$/
+
+
 
 
 
@@ -49,7 +53,7 @@ export const RegisterContext = ({children}) => {
   const [validUserEmail, setValidUserEmail] = useState(false)
 
 
-  const [birthCountry, setBirthCountry] = useState("");
+const [birthCountry, setBirthCountry] = useState("");
 const [validBirthCountry, setValidBirthCountry] = useState(false);
 
 const [nativeLang, setNativeLang] = useState("");
@@ -67,7 +71,63 @@ const [validCfmPwd, SetValidCfmPassword] = useState(false)
 const [user, setUser] = useState("")
 const [validUserr, setValidUserr] = useState(false)
 
+const [location, setLocation] = useState("")
+const [validLocation, setValidLocation] = useState(false)
+
+const [address, setAddress] = useState("")
+const [validAddress, setValidAddress] = useState(false);
+
+const [instName, setInstName] = useState("")
+const [validInstName, setValidInstName] = useState(false);
+
+const [unitype, setUnitype] = useState("")
+const [validUnitype, setValidUnitype] = useState(false)
+
+const [linkedin, setLinkedin] = useState("");
+const [validLinkedin, setValidLinkedin] = useState(false)
+
+
+
  const [errMsg, setErrMsg] = useState('')
+
+
+useEffect(()=>{
+const validate = User_regex.test(unitype)
+  console.log(validate)
+  console.log(unitype)
+  setValidUnitype(validate)
+},[unitype])
+
+
+useEffect(()=>{
+const validate = User_regex.test(instName)
+console.log(validate)
+console.log(instName)
+setValidInstName(validate)
+},[instName])
+
+
+useEffect(()=>{
+  const validate = Location_regex.test(address)
+  console.log(validate)
+  console.log(address)
+  setValidAddress(validate)
+},[address]);
+
+useEffect(()=>{
+  const validate = Location_regex.test(location)
+  console.log(validate)
+  console.log(location)
+  setValidLocation(validate)
+
+},[location]);
+
+useEffect(()=>{
+  const validate = Url_regex.test(linkedin)
+  console.log(validate)
+  console.log(linkedin)
+  setValidLinkedin(validate)
+},[linkedin]);
 
 
 useEffect(() =>{
@@ -242,6 +302,26 @@ birthCountry,
      setNativeLang,
       citizenship, 
       setCitizenship,
+      location,
+      instName,
+      linkedin,
+      address,
+      unitype,
+      validAddress,
+      validUnitype,
+      validLinkedin,
+      validInstName,
+      validLocation,
+      setValidAddress,
+      setValidLinkedin,
+      setValidInstName,
+      setValidLocation,
+      setValidUnitype,
+      setAddress,
+      setLocation,
+      setInstName,
+      setLinkedin,
+      setUnitype,
       pwd,
       setPwd,
       validPwd,

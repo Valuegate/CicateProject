@@ -18,6 +18,10 @@ const UserPass = () => {
 
 const {
   validCfmPwd,
+  linkedin,
+  setValidLinkedin,
+  setLinkedin,
+  validLinkedin,
   validPwd,
   SetCfmPassword,
   pwd,
@@ -79,6 +83,21 @@ const handleSubmit = (e) => {
                    
                    /></label>
 
+<br />
+                <label htmlFor="confirm" className='labels'>Linkedin:
+                <span className={validLinkedin ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>
+                <span className={validLinkedin || !linkedin ? "hide" : "invalid"}><FontAwesomeIcon icon={faTimes}/></span>
+                
+                 <br /><input type="url"
+                 className={validLinkedin ? "input_valid" : !linkedin ? "inputs" : "input_invalid"}
+                   placeholder='enter linkedin url'
+                   id='confirm'
+                   autoComplete='off'
+                   onChange={(e)=> setLinkedin(e.target.value)}
+                   aria-describedby='cfm_password'
+                   
+                   /></label>
+
 <p id='cfm_password' className={cfmPwd && pwd !== cfmPwd ? "instructions": "offscreen"}>
       <FontAwesomeIcon icon={faInfoCircle}/>
   Confirm passwords must match <br />
@@ -86,8 +105,8 @@ const handleSubmit = (e) => {
       </p>     <div className='submit_section'>
       <button
       onClick={handleSubmit}
-      disabled={ !validPwd || !validCfmPwd ? true : false} 
-      className={ !validPwd || !validCfmPwd  ? "inactive_next_big" : "next_big"}>Next</button>
+      disabled={ !validPwd || !validCfmPwd || !validLinkedin ? true : false} 
+      className={ !validPwd || !validCfmPwd || !validLinkedin  ? "inactive_next_big" : "next_big"}>Next</button>
        
       </div>
               </div>

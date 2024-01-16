@@ -6,27 +6,17 @@ import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel
 import BackButton from '../../../components/backbutton/BackButton'
 import { useRegisterContext } from '../../../auth/Register'
 import {useNavigate} from 'react-router-dom'
-
+import axios from 'axios'
 import { Client } from '../../../api/axios'
 
 
 
-const Url = 'https://cicate-production.up.railway.app/user/register/';
+const Url = 'https://ciccate2-production.up.railway.app/api/api/candidate/';
 
 const Review =  () =>
 
     {
-      const Navigate = useNavigate()
-
   const {
-    setUser,
-    user,
-    cfmPwd, 
-    SetCfmPassword,
-    validUserr,
-    validCfmPwd,
-     SetValidCfmPassword,
-    setValidUserr,
   setUserEmail,
   setUserName,
   setUserSurname,
@@ -44,113 +34,52 @@ const Review =  () =>
   citizenship,
   setCitizenship,
   birthDay,
+  linkedin,
+  unitype,
+  address,
+  location,
+  setLocation,
+  setAddress,
+  setUnitype,
+  setLinkedin,
   setBirthDay,
   setSuccess,
   setErrMsg,
  
   } = useRegisterContext()
 
-  const [post, setPost] = useState(null)
 
-
-  const submitForm =  async (e) => {
-    Navigate('/student/student-dashboard')
-try {
-      const response =  await Client.post(
-      Url, JSON.stringify({
-        name:userName,
-        surname:userSurname,
-        Username:user,
-        password:pwd,
-        passsword2:cfmPwd,
-        date_of_birth:birthDay,
-        degree: userDegree,
-        email:userEmail,
-         country_of_birth:birthCountry,
-         native_language:nativeLang,
-         country_of_citizenship:citizenship,
-       
-      }),
-     
-     {
-        headers: { "Content-Type": "application/json" },
-     
-        
-      });
-      
-      
-    } 
-    
-    catch (e) {
-      console.log('error submitting form',e);
-  
-     
-    }
-   
-  
-    e.preventDefault();
-   
-}
-
-
-  
-  /*
-    try {
-      const response =  await Client.post(
-      Url,JSON.stringify({
-        name:userName,
-        surname:userSurname,
-        Password:pwd,
-        degree: userDegree,
-         country_of_birth:birthCountry,
-         country_of_citizenship:citizenship,
-          native_language:nativeLang,
-        date_of_birth:birthDay,
-        email:userEmail,
-      }),
-      
-     {
-        headers: { "Content-Type": "application/json" },
-        withCredentials: true,
-        
-      });
-      
-      
-    } catch (e) {
-      console.log('error submitting form',e);
-    }
-}
-*/
-
-
-/*
-
-useEffect=(()=>{
-
+const submitForm = (e) => { 
+e.preventDefault()
   Client.post(
-    Url,JSON.stringify({
-      name:userName,
-      surname:userSurname,
-      Password:pwd,
-      degree: userDegree,
-       country_of_birth:birthCountry,
-       country_of_citizenship:citizenship,
-        native_language:nativeLang,
-      date_of_birth:birthDay,
-      email:userEmail,
-    })
-  )
-  .then(res=> console.log(res))
-  .catch(err => console.error(err))
-},[])
+    Url, JSON.stringify({
+          email:userEmail,
+          name:userName,
+          surname:userSurname,
+          date_of_birth:birthDay,
+          degree: userDegree,
+          country_of_birth:birthCountry,
+          native_language:nativeLang,
+          country_of_citizenship:citizenship,
+          password:pwd,
+          address:address,
+          institution_name:'sweeter',
+          type_of_univerity:unitype,
+          location:location,
+          linkedin:linkedin,
+      }), {
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      }
+   ).then((response) => {
+    console.log(response);
+}).catch((error) => {
+  console.log('error', error);
+});
 
-*/
-  
-  
-
-
-    
-     
+}
+      
 
 
   return (
@@ -163,7 +92,7 @@ useEffect=(()=>{
          <RegCarousel/>
           <div className='bluk_review'>
          
-         <form>   
+         <form onSubmit={submitForm}>   
         
               <div>
                <span className='personal_unselected'>Confirm your Information </span><br />
@@ -173,7 +102,7 @@ useEffect=(()=>{
                 <input type="text"
                 className='inputs0'
                 value={userName}
-                onChange={(e)=>setUserName(e.target.userName)}
+                onChange={(e)=>setUserName(e.target.value)}
                 />
               </label> <br />
               <label
@@ -182,7 +111,7 @@ useEffect=(()=>{
                  type="text"
                   className='inputs0'
                   value={userSurname}
-                  onChange={(e)=>setUserSurname(e.target.userSurname)}
+                  onChange={(e)=>setUserSurname(e.target.value)}
                    />
               </label> <br />
 
@@ -192,7 +121,7 @@ useEffect=(()=>{
                  type="text"
                   className='inputs0'
                   value={userDegree}
-                  onChange={(e)=>setUserDegree(e.target.userDegree)}
+                  onChange={(e)=>setUserDegree(e.target.value)}
                    />
               </label> <br />
 
@@ -208,7 +137,7 @@ useEffect=(()=>{
                 <input type="text"
                  className='inputs0'
                  value={birthCountry}
-                 onChange={(e)=> setBirthCountry(e.target.birthCountry)}
+                 onChange={(e)=> setBirthCountry(e.target.value)}
                  />
               </label> <br />
              
@@ -216,7 +145,7 @@ useEffect=(()=>{
                <input type="text"
                 className='inputs0'
                 value={citizenship}
-                onChange={(e) => setCitizenship(e.target.citizenship)}
+                onChange={(e) => setCitizenship(e.target.value)}
                 />
               </label> <br />
 
@@ -224,7 +153,7 @@ useEffect=(()=>{
                <input type="text"
                 className='inputs0'
                 value={nativeLang}
-                onChange={(e) => setNativeLang(e.target.nativeLang)}
+                onChange={(e) => setNativeLang(e.target.value)}
                 />
               </label> <br />
             
@@ -235,26 +164,51 @@ useEffect=(()=>{
                 type="text"
                  className='inputs0'
                  value={pwd}
-                 onChange={(e) => setUserPwd(e.target.pwd)}
+                 onChange={(e) => setUserPwd(e.target.value)}
                  />
               </label> <br />
 
-              <label  className='labels'> Confirm Password <br />
-                <input
-                 type="text"
+              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
+              <label  className='labels'> Address: <br />
+                <input 
+                type="text"
                  className='inputs0'
-                 value={cfmPwd}
-                 onChange={(e) => SetCfmPassword(e.target.cfmPwd)}
+                 value={address}
+                 onChange={(e) => setAddress(e.target.value)}
                  />
               </label> <br />
 
-              <label  className='labels'> Username <br />
-                <input type="text"
+              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
+              <label  className='labels'> Location: <br />
+                <input 
+                type="text"
                  className='inputs0'
-                 value={user}
-                 onChange={(e) => setUser(e.target.user)}
+                 value={location}
+                 onChange={(e) => setLocation(e.target.value)}
                  />
               </label> <br />
+
+              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
+              <label  className='labels'> Password <br />
+                <input 
+                type="text"
+                 className='inputs0'
+                 value={linkedin}
+                 onChange={(e) => setLinkedin(e.target.value)}
+                 />
+              </label> <br />
+              <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
+              <label  className='labels'> Institution Type: <br />
+                <input 
+                type="text"
+                 className='inputs0'
+                 value={unitype}
+                 onChange={(e) => setUnitype(e.target.value)}
+                 />
+              </label> <br />
+
+              
+
              
 
               <div>
@@ -263,7 +217,7 @@ useEffect=(()=>{
                 <input type="date"
                  className='inputs0'
                  value={birthDay}
-                 onChange={(e)=> setBirthDay(e.target.birthDay)}
+                 onChange={(e)=> setBirthDay(e.target.value)}
                 
                  />
               </label> <br />
@@ -271,7 +225,7 @@ useEffect=(()=>{
                 <input type="email"
                  className='inputs0' 
                  value={userEmail}
-                 onChange={()=> setUserEmail(userEmail)}
+                 onChange={(e)=> setUserEmail(e.target.value)}
                  />
               </label> <br />
               </div>
@@ -295,7 +249,7 @@ useEffect=(()=>{
                </div>
                <br />
                <div className='nexty'>
-                <button className='next_big' onClick={submitForm}>Create</button> 
+                <button className='next_big'  type='submit'>Create</button> 
                </div>
               
              
