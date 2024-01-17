@@ -8,14 +8,18 @@ import { useRegisterContext } from '../../../auth/Register'
 import {useNavigate} from 'react-router-dom'
 import axios from 'axios'
 import { Client } from '../../../api/axios'
-
+import Alert from '../../../components/alert/Alert'
 
 
 const Url = 'https://ciccate2-production.up.railway.app/api/api/candidate/';
 
-const Review =  () =>
+const Review =  () => {
 
-    {
+
+const Navigate = useNavigate()
+  const [alertMessage, setAlertMessage] = useState(null)
+  
+  
   const {
   setUserEmail,
   setUserName,
@@ -49,6 +53,7 @@ const Review =  () =>
   } = useRegisterContext()
 
 
+
 const submitForm = (e) => { 
 e.preventDefault()
   Client.post(
@@ -73,14 +78,48 @@ e.preventDefault()
         }
       }
    ).then((response) => {
-    console.log(response);
+  
+setAlertMessage({
+  type: 'success',
+  message:'Account Sucessfully created',
+})
+setTimeout(() => {
+  Navigate('/login')
+  console.log(response);
+}, 2000)
+
+
 }).catch((error) => {
+
+  if(error.response){
+    const responseData = error.response.data;
+if(responseData && responseData.errors){
+  const errorMessages = Object.values(responseData.errors).flat()
+
+  console.log(errorMessages);
+  
+  setAlertMessage({
+    type: 'error',
+    message: JSON.stringify(errorMessages)
+  })
+}
+
+}
+else {
+setAlertMessage({
+  type: 'error',
+  message: 'Network error. please try again'
+})
+}
   console.log('error', error);
 });
 
 }
-      
 
+
+const endAlert = () => {
+  setAlertMessage(null);
+};
 
   return (
     <div>
@@ -88,16 +127,22 @@ e.preventDefault()
       
       <div className='black_page'>
         <div className='div'>
-      
-         <RegCarousel/>
+       
+        <RegCarousel/>
           <div className='bluk_review'>
-         
+        
          <form onSubmit={submitForm}>   
         
               <div>
                <span className='personal_unselected'>Confirm your Information </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
                 <BackButton/>
+                { alertMessage && (<Alert
+          type={alertMessage.type}
+          message={alertMessage.message}
+          value={alertMessage.value}
+          onClose={endAlert}/>)}
+
                <label  className='labels'>First name: <br />
                 <input type="text"
                 className='inputs0'

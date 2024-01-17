@@ -90,7 +90,7 @@ const handleSubmit = (e) => {
                 
                  <br /><input type="url"
                  className={validLinkedin ? "input_valid" : !linkedin ? "inputs" : "input_invalid"}
-                   placeholder='enter linkedin url'
+                   placeholder='enter valid linkedin url'
                    id='confirm'
                    autoComplete='off'
                    onChange={(e)=> setLinkedin(e.target.value)}

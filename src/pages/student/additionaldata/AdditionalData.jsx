@@ -607,9 +607,9 @@ const handleSubmit = (e) => {
                 onChange={(e)=> setUnitype(e.target.value)}
                 >
                 <option value="Research-university">Research University</option>
-                <option value="Online-university">Åland Islands</option>
-                <option value="project-based-university">Albania</option>
-                <option value="Conventional-university">Algeria</option>
+                <option value="Online-university">Online University</option>
+                <option value="project-based-university">Project based University</option>
+                <option value="Conventional-university">Conventional University</option>
 
             </select>
                 </label>

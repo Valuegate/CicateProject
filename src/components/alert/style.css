@@ -1,0 +1,45 @@
+.custom-alert-overlay {
+    position: fixed;
+    top: 0;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+
+  }
+
+  .custom-alert-overlay.error {
+    background: rgba(255, 0, 0, 0.5);
+  }
+  
+  .custom-alert-overlay.success {
+    background: rgba(0, 255, 0, 0.5);
+  }
+  .error_text{
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .custom-alert {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border:solid 1px;
+  
+
+  }
+  
+  .custom-alert button {
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
