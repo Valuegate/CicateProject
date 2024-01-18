@@ -17,7 +17,7 @@ const Review =  () => {
 
 
 const Navigate = useNavigate()
-  const [alertMessage, setAlertMessage] = useState(null)
+const [alertMessage, setAlertMessage] = useState(null)
   
   
   const {
@@ -26,7 +26,7 @@ const Navigate = useNavigate()
   setUserSurname,
   userDegree,
   userEmail,
-  setUserPwd,
+  setPwd,
   userName,
   pwd,
   setUserDegree,
@@ -56,6 +56,7 @@ const Navigate = useNavigate()
 
 const submitForm = (e) => { 
 e.preventDefault()
+
   Client.post(
     Url, JSON.stringify({
           email:userEmail,
@@ -137,10 +138,9 @@ const endAlert = () => {
                <span className='personal_unselected'>Confirm your Information </span><br />
                 <span className='information_unselected'>Information</span></div> <br />
                 <BackButton/>
-                { alertMessage && (<Alert
+              { alertMessage && (<Alert
           type={alertMessage.type}
           message={alertMessage.message}
-          value={alertMessage.value}
           onClose={endAlert}/>)}
 
                <label  className='labels'>First name: <br />
@@ -209,7 +209,7 @@ const endAlert = () => {
                 type="text"
                  className='inputs0'
                  value={pwd}
-                 onChange={(e) => setUserPwd(e.target.value)}
+                 onChange={(e) => setPwd(e.target.value)}
                  />
               </label> <br />
 
@@ -234,7 +234,7 @@ const endAlert = () => {
               </label> <br />
 
               <div className='add_margin'><img src="" alt="" /><span className='personal_unselected'></span><br /> <span className='information_unselected'> & Password</span></div> <br />
-              <label  className='labels'> Password <br />
+              <label  className='labels'> Linkedin: <br />
                 <input 
                 type="text"
                  className='inputs0'

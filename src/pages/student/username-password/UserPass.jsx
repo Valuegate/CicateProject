@@ -15,11 +15,9 @@ import { useRegisterContext } from '../../../auth/Register'
 
 const UserPass = () => {
 
-
 const {
   validCfmPwd,
   linkedin,
-  setValidLinkedin,
   setLinkedin,
   validLinkedin,
   validPwd,

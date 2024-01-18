@@ -41,7 +41,7 @@ import { RegisterContext } from './auth/Register';
 import ReviewInstitution from './pages/institution/review-institution/ReviewInstitution';
 import StudentSuccess from './pages/student/success/StudentSuccess';
 import Choose from './pages/choose/Choose';
-
+import { AuthProvider } from './auth/AuthProvider';
 
 
 
@@ -51,12 +51,10 @@ function App() {
     <div className="App">
 
 
-
-     <Router>
+<AuthProvider>
+<Router>
      <RegisterContext>
       <Routes>
-  
-     
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
         <Route path='/online' element={<Online/>}/>
@@ -93,14 +91,13 @@ function App() {
         <Route path='/student/review' element={<Review/>}/>
         <Route path='/student/success' element={<StudentSuccess/>}/>
         <Route path='/institution/success' element={<Success/>}/>
-
         <Route path='/institution/review-institution' element={<ReviewInstitution/>}/>
         <Route path='/institution/done' element={<Done/>}/>
-      
-      
       </Routes>
       </RegisterContext>
      </Router>
+</AuthProvider>
+    
    
     </div>
   );
