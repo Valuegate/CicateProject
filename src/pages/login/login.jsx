@@ -1,4 +1,4 @@
-import React,{useContext, useState, useEffect} from 'react'
+import React,{useContext, useState} from 'react'
 import './style.css'
 import BlackFooter from '../../components/containers/black_footer/BlackFooter'
 import UnsignedNav from '../../components/containers/unsignedNav/UnsignedNav'
@@ -6,9 +6,7 @@ import { useRegisterContext } from '../../auth/Register'
 import iconsgreen from '../../assets/iconsgreen.svg'
 import greenskey from '../../assets/greenskey.svg'
 import mail_black from '../../assets/mail_black.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {useNavigate} from 'react-router-dom'
-import axios from 'axios'
 import { AuthContext } from '../../auth/AuthProvider'
 import { Client } from '../../api/axios'
 import Alert from '../../components/alert/Alert'
@@ -16,8 +14,7 @@ import Alert from '../../components/alert/Alert'
 
 const Login = () => {
 
-const {auth, setAuth} = useContext(AuthContext)
-const [errMsg, setErrMsg] = useState('')
+const {setAuth,setAuthData, setAuthId} = useContext(AuthContext)
 const [alertMessage, setAlertMessage] = useState(null)
 
 const Navigate = useNavigate()
@@ -30,6 +27,7 @@ const {
   setPwd,
   setUserEmail,
   pwd,
+  userName,
 } = useRegisterContext()
 
 
@@ -43,7 +41,8 @@ const response = await Client.post(
   Url, JSON.stringify({
     
     email:userEmail,
-    password:pwd
+    password:pwd,
+    name:userName
   }),
   {
     headers: { 'Content-Type': 'application/json' },
@@ -55,13 +54,20 @@ console.log(JSON.stringify(response?.data));
 const access = response?.data?.access;
 const id = response?.data?.id;
 const token = response?.data?.token;
+const truncatedId = id ? id.substring(0, 8).toUpperCase() : '';
 
-setAuth({userEmail,pwd,access,id,token});
-setSuccess(true);
+setAuth({userEmail,pwd,access,id,token,userName});
+setAuthData(userEmail)
+setAuthId(truncatedId);
+
 setAlertMessage({
   type: 'success',
-  message: 'logged in successfully',
+  message: `welcome ${userEmail}`,
 })
+
+setSuccess(true);
+
+
 setTimeout(() => {
   Navigate('/student/student-dashboard')
 }, 2000);

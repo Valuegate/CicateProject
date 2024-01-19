@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import './style.css'
 import vector1 from '../../../assets/Vector1.svg'
 import vector2 from '../../../assets/Vector2.svg'
@@ -7,9 +7,11 @@ import search from '../../../assets/Search.svg'
 import phone from '../../../assets/group-648.png'
 import world from '../../../assets/vector.svg'
 import seperator from '../../../assets/separator.svg'
-
+import { AuthContext } from '../../../auth/AuthProvider'
 
 const Navbar = () => {
+  const {userEmail} = useContext(AuthContext)
+
   const [select, setSelect] = useState('')
 
   const [active, setActive] = useState('nav__menu')
@@ -28,8 +30,8 @@ const Navbar = () => {
             <li><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
             <li><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
-            <li ><a href="/login" className='login'>Login</a></li>
-            <li><a href="/choose" className='signUp'>Sign up</a> </li>
+            <li ><a href="/login" className='login'>{userEmail ? userEmail : 'Login'}</a></li>
+            <li><a href="/choose" className='signUp'>{userEmail ? 'Sign Out' : 'Sign up'}</a> </li>
             <li className='move_search' ><a href="/"  className='nav__link'><img alt='img' src={search} /> Search</a> </li>
           </ul>
          <ul>

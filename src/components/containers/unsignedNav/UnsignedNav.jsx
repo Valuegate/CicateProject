@@ -1,16 +1,15 @@
 
-import React,{useState} from 'react'
+import React,{useContext, useState} from 'react'
 import './style.css'
 import mac from '../../../assets/mac.svg'
 import caa from '../../../assets/caa.svg'
 import tee from '../../../assets/tee.svg'
 import search from '../../../assets/set.svg'
-import phone from '../../../assets/group-648.png'
-import world from '../../../assets/vector.svg'
-import white_seperator from '../../../assets/white_seperator.svg'
+import { AuthContext } from '../../../auth/AuthProvider'
 
 
 const UnsignedNav = () => {
+const {userEmail} = useContext(AuthContext)
 
   const [active, setActive] = useState('nav__menu')
   const [toggleIcon, setToogleIcon] = useState('nav__toggler')
@@ -29,8 +28,8 @@ const UnsignedNav = () => {
             <li className='nav_item'><a href="/" className='nav__link2' > <img alt='img' src={tee} className='vector0'/>Test Takers</a> </li>
             <li className='nav_item'><a href="/institutions" className='nav__link2'><img alt='img' src={caa} className='vector0'/>Institutions</a> </li>
             <li className='nav_item'><a href="/about" className='nav__link2'><img alt='img' src={mac} className='vector0'/>About Us</a> </li>
-            <li className='nav_item'><a href="/login" className='login_black'>Login</a></li>
-            <li className='nav_item'><a href="/choose" className='signUp'>Sign Up</a> </li>
+            <li className='nav_item'><a href="/login" className='login_black'>{userEmail ? userEmail : 'Login'}</a></li>
+            <li className='nav_item'><a href="/choose" className='signUp'>{userEmail ? 'Sign Out': 'Sign Up'}</a> </li>
             <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={search} /></a> </li>
           </ul>
          <ul>

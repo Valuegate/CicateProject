@@ -42,19 +42,29 @@ import ReviewInstitution from './pages/institution/review-institution/ReviewInst
 import StudentSuccess from './pages/student/success/StudentSuccess';
 import Choose from './pages/choose/Choose';
 import { AuthProvider } from './auth/AuthProvider';
-
+import ProtectedRoutes from './auth/ProtectedRoutes';
 
 
 function App() {
 
   return (
     <div className="App">
-
-
 <AuthProvider>
 <Router>
      <RegisterContext>
       <Routes>
+        <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
+        <Route path='/student/paymentpage' element={<PaymentPage/>}/>
+        <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
+        <Route path='/student/timedate' element={<TimeDate/>}/>
+        <Route path='/student/cart' element={<Cart/>}/>
+        <Route path='/student/onlineofline' element={<OnlineOfline/>}/>
+        <Route path='/student/student-dashboard' element={<StudentDashboard/>}/>
+        <Route path='/results' element={<Results/>}/>
+        <Route path='/student/payment' element={<Payment/>}/>
+        <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
+
+        
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
         <Route path='/online' element={<Online/>}/>
@@ -63,7 +73,6 @@ function App() {
         <Route path='/pocas' element={<Pocas/>}/>
         <Route path='/research' element={<Research/>}/>
         <Route path='/institutions' element={<Institutions/>}/>
-        <Route path='/results' element={<Results/>}/>
         <Route path='/choose' element={<Choose/>}/>
         <Route path='/' element={<TestFormat/>}/>
         <Route path='/faq' element={<Faq/>}/>
@@ -75,19 +84,12 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>
         <Route path='/student/signup' element={<Signup/>}/>
-        <Route path='/student/student-dashboard' element={<StudentDashboard/>}/>
         <Route path='/student/additionaldata' element={<AdditionalData/>}/>
-        <Route path='/student/timedate' element={<TimeDate/>}/>
-        <Route path='/student/cart' element={<Cart/>}/>
         <Route path='/student/personaldata' element={<PersonalData/>}/>
-        <Route path='/student/onlineofline' element={<OnlineOfline/>}/>
-        <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
-        <Route path='/student/paymentpage' element={<PaymentPage/>}/>
-        <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
+       
+       
         <Route path='/student/paymentcompletion' element={<PaymentCompletion/>}/>
-        <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/username-password' element={<UserPass/>}/>
-        <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
         <Route path='/student/review' element={<Review/>}/>
         <Route path='/student/success' element={<StudentSuccess/>}/>
         <Route path='/institution/success' element={<Success/>}/>
