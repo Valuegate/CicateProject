@@ -97,7 +97,7 @@ export const AuthLogin = ({children}) => {
   else{
    setAlertMessage({
     type: 'error',
-    message: 'faild to login'
+    message: 'faild to login properly: '
   
    })
   }
