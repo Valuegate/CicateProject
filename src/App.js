@@ -45,7 +45,7 @@ import { AuthProvider } from './auth/AuthProvider';
 import ProtectedRoutes from './auth/ProtectedRoutes';
 import UserAuth from './auth/userAuth';
 import Password from './pages/institution/password/Password';
-import { AuthLogin } from './auth/Login';
+import { AuthLogin } from './auth/login';
 import Profile from './pages/student/profile/Profile';
 
 

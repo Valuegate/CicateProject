@@ -6,7 +6,7 @@ import vector3 from '../../../assets/Vector3.svg'
 import search from '../../../assets/Search.svg'
 import { Link } from 'react-router-dom'
 import { AuthContext } from '../../../auth/AuthProvider'
-import { useAuthLogin } from '../../../auth/Login'
+import { useAuthLogin } from '../../../auth/login'
 const SignedNav = () => {
 
  const {getUser, handleLogout } = useAuthLogin()

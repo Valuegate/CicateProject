@@ -7,7 +7,7 @@ import search from '../../../assets/Search.svg'
 import { Link } from 'react-router-dom'
 import seperator from '../../../assets/separator.svg'
 import { AuthContext } from '../../../auth/AuthProvider'
-import { useAuthLogin} from '../../../auth/Login'
+import { useAuthLogin} from '../../../auth/login'
 import { useRegisterContext } from '../../../auth/Register'
 
 

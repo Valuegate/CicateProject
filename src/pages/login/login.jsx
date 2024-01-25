@@ -7,7 +7,7 @@ import iconsgreen from '../../assets/iconsgreen.svg'
 import greenskey from '../../assets/greenskey.svg'
 import mail_black from '../../assets/mail_black.png'
 import Alert from '../../components/alert/Alert'
-import { useAuthLogin } from '../../auth/Login'
+import { useAuthLogin } from '../../auth/login'
 
 const Login = () => {
   
