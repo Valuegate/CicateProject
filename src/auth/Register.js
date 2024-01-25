@@ -11,6 +11,7 @@ const Surname_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{1,23}$/;
 const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 const Url_regex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/
 const Location_regex = /^[a-zA-Z0-9 ]+$/
+const Text_area = /^(?=(\b\w+\b\s*){5,})([a-zA-Z\s]{1,500})$/
 
 
 
@@ -86,10 +87,69 @@ const [validUnitype, setValidUnitype] = useState(false)
 const [linkedin, setLinkedin] = useState("");
 const [validLinkedin, setValidLinkedin] = useState(false)
 
+const [facebook, setFacebook] = useState("")
+const [validFacebook, setValidFacebook] = useState(false)
+
+const [twitter, setTwitter] = useState("")
+const [validTwitter, setValidTwitter] = useState(false)
+
+const [instagram, setInstagram] = useState("")
+const [validInstagram, setValidInstagram] = useState(false)
+
+const [acronym, setAcronym] = useState("")
+const [validAcronym, setValidAcronym] = useState(false)
+
+const [biography, setBiography] = useState("")
+const [validBiography, setValidBiography] = useState(false)
+
+ const [name, setName] = useState("")
+ const [validName, setValidName] = useState(false)
 
 
  const [errMsg, setErrMsg] = useState('')
 
+
+ useEffect(() =>{
+const validate = Url_regex.test(twitter)
+console.log(validate)
+console.log(twitter)
+setValidTwitter(validate)
+ },[twitter])
+
+ useEffect(() =>{
+  const validate = Url_regex.test(facebook)
+  console.log(validate)
+  console.log(facebook)
+  setValidFacebook(validate)
+   },[facebook])
+
+useEffect(() =>{
+    const validate = Url_regex.test(instagram)
+    console.log(validate)
+    console.log(instagram)
+    setValidInstagram(validate)
+     },[instagram])
+
+useEffect(() =>{
+      const validate = User_regex.test(acronym)
+      console.log(validate)
+      console.log(acronym)
+      setValidAcronym(validate)
+       },[acronym])
+
+useEffect(() =>{
+        const validate = Text_area.test(biography)
+        console.log(validate)
+        console.log(biography)
+        setValidBiography(validate)
+        },[biography])
+
+         useEffect(() =>{
+          const validate = User_regex.test(name)
+          console.log(validate)
+          console.log(name)
+          setValidName(validate)
+           },[name])
 
 useEffect(()=>{
 const validate = User_regex.test(unitype)
@@ -332,6 +392,25 @@ birthCountry,
       SetCfmPassword,
       activeState,
       setActiveState,
+      facebook,
+      twitter,
+      instagram,
+      name,
+      biography,
+      acronym,
+      setFacebook,
+      setTwitter,
+      setInstagram,
+      setName,
+      setBiography,
+      setAcronym,
+      setValidName,
+      validAcronym,
+      validBiography,
+      validFacebook,
+      validTwitter,
+      validName,
+      validInstagram,
       }}>
 
       {children}

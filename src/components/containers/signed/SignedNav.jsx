@@ -1,15 +1,25 @@
-import React,{useState, useContext} from 'react'
+import React,{useState, useContext, useEffect} from 'react'
 import './style.css'
 import vector1 from '../../../assets/Vector1.svg'
 import vector2 from '../../../assets/Vector2.svg'
 import vector3 from '../../../assets/Vector3.svg'
 import search from '../../../assets/Search.svg'
+import { Link } from 'react-router-dom'
 import { AuthContext } from '../../../auth/AuthProvider'
-
+import { useAuthLogin } from '../../../auth/Login'
 const SignedNav = () => {
 
+ const {getUser, handleLogout } = useAuthLogin()
   const {userEmail} = useContext(AuthContext)
+const [user, setUser] = useState('')
 
+useEffect(() => {
+
+  const user = getUser()
+  if (user) {
+    setUser(user)
+  }
+},[])
 
   const [active, setActive] = useState('nav__menu')
   const [toggleIcon, setToogleIcon] = useState('nav__toggler')
@@ -28,9 +38,11 @@ const SignedNav = () => {
             <li className='nav_item'><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li className='nav_item'><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
             <li className='nav_item'><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
-            <li className='nav_item'><a href="/login" className='login'>{userEmail ? userEmail : 'Login'}</a></li>
-            <li className='nav_item'><a href="/choose" className='signUp'>{userEmail ? 'Sign out' : 'Sign Up'}</a> </li>
-            <li className='nav_item'><a href="/" className='nav__link'><img alt='img' src={search} /> Search</a> </li>
+           
+           <li className='nav-item'>{user ? (<Link to={'/student/profile'} className='login'>Profile</Link>):(<Link to={'/login'} className='login'>Login</Link>)}</li>
+           <li><a href="/choose" className='signUp'>{user ? (<button onClick={handleLogout} className='signUp'>Sign Out</button>) : 'Sign up'}</a> </li>
+            <li className='nav_item'>{user ? (<Link to={'/student/student-dashboard'} className='login'>Dashboard</Link>):(<Link className='nav__link'> <img src={search} alt="img" />Search</Link>)}</li>
+
           
           </ul>
          <ul>

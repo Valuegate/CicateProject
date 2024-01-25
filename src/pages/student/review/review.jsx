@@ -6,7 +6,6 @@ import RegCarousel from '../../../components/containers/reg-carousel/RegCarousel
 import BackButton from '../../../components/backbutton/BackButton'
 import { useRegisterContext } from '../../../auth/Register'
 import {useNavigate} from 'react-router-dom'
-import axios from 'axios'
 import { Client } from '../../../api/axios'
 import Alert from '../../../components/alert/Alert'
 
@@ -17,8 +16,8 @@ const Review =  () => {
 
 
 const Navigate = useNavigate()
+
 const [alertMessage, setAlertMessage] = useState(null)
-  
   
   const {
   setUserEmail,

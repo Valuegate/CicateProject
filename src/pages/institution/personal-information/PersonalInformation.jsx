@@ -16,9 +16,6 @@ const Navigate = useNavigate()
   const {validUser,
      userEmail, 
      setUserEmail,
-      userDegree,
-       setUserDegree,
-        validUserDegree, 
         userAccount,
          setUserAccount,
            validUserEmail,
@@ -28,7 +25,6 @@ const Navigate = useNavigate()
              setUserSurname,
               validUserSurname, 
               validUserAccount,
-               validBirthDay,
                 validPosition,
                  setPosition,
                   position} = useRegisterContext()
@@ -56,7 +52,7 @@ const Navigate = useNavigate()
     <form action="" className='form_class'>
    
      <div className='fall1'>
-     <BackButton/>
+
      <label htmlFor="student_name" className='labels'>First name:
     
      <span className={validUser ? "valid" : "hide"}><FontAwesomeIcon icon={faCheck}/></span>

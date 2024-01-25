@@ -43,6 +43,11 @@ import StudentSuccess from './pages/student/success/StudentSuccess';
 import Choose from './pages/choose/Choose';
 import { AuthProvider } from './auth/AuthProvider';
 import ProtectedRoutes from './auth/ProtectedRoutes';
+import UserAuth from './auth/userAuth';
+import Password from './pages/institution/password/Password';
+import { AuthLogin } from './auth/Login';
+import Profile from './pages/student/profile/Profile';
+
 
 
 function App() {
@@ -52,7 +57,11 @@ function App() {
 <AuthProvider>
 <Router>
      <RegisterContext>
+      <AuthLogin>
+
+     
       <Routes>
+       
         <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
         <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
@@ -63,8 +72,10 @@ function App() {
         <Route path='/results' element={<Results/>}/>
         <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
+     
+       
 
-        
+
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
         <Route path='/online' element={<Online/>}/>
@@ -80,14 +91,15 @@ function App() {
         <Route path='/whyUs' element={<WhyUs/>}/>
         <Route path='/institution/additional-information' element={<AdditionalInformation/>}/>
         <Route path='/institution/user-pass' element={<UsernamePassword/>}/>
-        <Route path='/institution/university-dashboard' element={<UniversityDashboard/>}/>
+        <Route path='/institution/dashboard' element={<UniversityDashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>
         <Route path='/student/signup' element={<Signup/>}/>
         <Route path='/student/additionaldata' element={<AdditionalData/>}/>
         <Route path='/student/personaldata' element={<PersonalData/>}/>
+        <Route path='/institution/password' element={<Password/>}/>
        
-       
+        <Route path='/student/profile' element={<Profile/>}/>
         <Route path='/student/paymentcompletion' element={<PaymentCompletion/>}/>
         <Route path='/student/username-password' element={<UserPass/>}/>
         <Route path='/student/review' element={<Review/>}/>
@@ -96,6 +108,7 @@ function App() {
         <Route path='/institution/review-institution' element={<ReviewInstitution/>}/>
         <Route path='/institution/done' element={<Done/>}/>
       </Routes>
+      </AuthLogin>
       </RegisterContext>
      </Router>
 </AuthProvider>

@@ -6,106 +6,24 @@ import { useRegisterContext } from '../../auth/Register'
 import iconsgreen from '../../assets/iconsgreen.svg'
 import greenskey from '../../assets/greenskey.svg'
 import mail_black from '../../assets/mail_black.png'
-import {useNavigate} from 'react-router-dom'
-import { AuthContext } from '../../auth/AuthProvider'
-import { Client } from '../../api/axios'
 import Alert from '../../components/alert/Alert'
-
+import { useAuthLogin } from '../../auth/Login'
 
 const Login = () => {
+  
+  const {handleLogin, endAlert,alertMessage} = useAuthLogin()
 
-const {setAuth,setAuthData, setAuthId} = useContext(AuthContext)
-const [alertMessage, setAlertMessage] = useState(null)
 
-const Navigate = useNavigate()
-const [success, setSuccess] = useState(false)
-
-const Url = 'https://ciccate2-production.up.railway.app/api/api/login/'
 
 const {
   userEmail,
   setPwd,
   setUserEmail,
   pwd,
-  userName,
 } = useRegisterContext()
 
 
 
-
-const handleSubmit = async (e) => {
-   e.preventDefault();
-
-   try{
-const response = await Client.post(
-  Url, JSON.stringify({
-    
-    email:userEmail,
-    password:pwd,
-    name:userName
-  }),
-  {
-    headers: { 'Content-Type': 'application/json' },
-  }
-);
-console.log(JSON.stringify(response?.data));
-
-
-const access = response?.data?.access;
-const id = response?.data?.id;
-const token = response?.data?.token;
-const truncatedId = id ? id.substring(0, 8).toUpperCase() : '';
-
-setAuth({userEmail,pwd,access,id,token,userName});
-setAuthData(userEmail)
-setAuthId(truncatedId);
-
-setAlertMessage({
-  type: 'success',
-  message: `welcome ${userEmail}`,
-})
-
-setSuccess(true);
-
-
-setTimeout(() => {
-  Navigate('/student/student-dashboard')
-}, 2000);
-console.log(success)
-}
-
-
-catch(err){
-
-  const responseData = (err.response.data);
-if( responseData && responseData.detail){
-const errorMessages = Object.values(responseData.detail).flat()
-console.log(errorMessages)
-  setAlertMessage({
-    type: 'error',
-    message: `${errorMessages.join('')} create an account`
-  })
-}
-
-else if(err.response.status === 401){
-setAlertMessage('user not exist invalid credentials')
-console.log('User with account does not exist')
-}
-else{
- setAlertMessage({
-  type: 'error',
-  message: 'faild to login'
-
- })
-}
-
-}
-
-
-}
-const endAlert = () => {
-  setAlertMessage(null);
-};
 
   return (
 
@@ -130,7 +48,7 @@ onClose={endAlert}
 
 <div className='down_sign'>
 
- <form  className='inside_form' onSubmit={handleSubmit}>
+ <form  className='inside_form' onSubmit={handleLogin}>
   <div> <img src={mail_black} alt="img" className='icon_immg'/>
   <input 
   type="email"
@@ -156,11 +74,10 @@ onClose={endAlert}
   
   
    </div> 
-  <button type='submit'
-  onClick={handleSubmit}
-   className='green_login'
-   >Login</button> <br /> <span ><a href="/choose" className='already_register'>Not yet registered?</a></span>
-  <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
+  <button type='submit' className='green_login'>Login</button>
+    <br /> 
+    <span ><a href="/choose" className='already_register'>Not yet registered?</a></span>
+    <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
  
  </form>
 </div>
