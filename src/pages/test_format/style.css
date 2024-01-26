@@ -431,14 +431,12 @@ white-space: nowrap;
 .bl_black:hover{
     color:#ffffff;
     background-color:  #33cc00;
-   
     border-radius: 1rem;
 }
 
 .bl_green:hover{
     color:#ffffff;
     background-color:   #282828;
-  
     border-radius: 1rem;
   }
 
@@ -624,6 +622,30 @@ margin-top: 20px;
 margin-bottom: 10px;
 padding: 1.5rem;
 }
+
+.button_to_apply{
+    align-items: center;
+    background-color: #282828;
+    border-radius: 37px;
+    color: #ffffff;
+    font-family: "PP Monument Extended-Light", Helvetica;
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 43.6px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 1rem;
+    padding-left: 6.5rem;
+    padding-right: 6.5rem;
+  
+    }
+
+    .button_to_apply:hover {
+        color: #ffffff;
+        background-color: #33cc00;
+
+    }
 
 .to_apply_flex{
     display: flex;

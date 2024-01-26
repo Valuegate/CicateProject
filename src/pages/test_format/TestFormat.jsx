@@ -71,7 +71,7 @@ Reliable Tests</p>
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <div className='to_apply_flex1'> <a href="/gate" className='bl_to_apply'>How to Apply</a> </div>
+              <div className='to_apply_flex1'> <button className='button_to_apply'>Apply</button> </div>
         </div>
 
         <div className='bl_white3'>

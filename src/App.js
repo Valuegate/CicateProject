@@ -47,6 +47,7 @@ import UserAuth from './auth/userAuth';
 import Password from './pages/institution/password/Password';
 import { AuthLogin } from './auth/login';
 import Profile from './pages/student/profile/Profile';
+import Test from './Test/Test';
 
 
 
@@ -99,6 +100,7 @@ function App() {
         <Route path='/student/personaldata' element={<PersonalData/>}/>
         <Route path='/institution/password' element={<Password/>}/>
        
+        <Route path='/student/product' element={<Test/>}/>
         <Route path='/student/profile' element={<Profile/>}/>
         <Route path='/student/paymentcompletion' element={<PaymentCompletion/>}/>
         <Route path='/student/username-password' element={<UserPass/>}/>

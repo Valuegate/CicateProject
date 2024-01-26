@@ -174,7 +174,7 @@ cursor: pointer;
   }
 
  body .signUp{
-    display: none;
+  padding: 0.5rem;
   }
 
   body .under__Header{
@@ -191,11 +191,6 @@ cursor: pointer;
 
 
 }
-
-
-
-
-
 
 
   .nav__active{
