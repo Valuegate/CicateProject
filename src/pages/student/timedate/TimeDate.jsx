@@ -35,13 +35,13 @@ Navigate('/student/photovalidation')
         <div className='review_flex1'>
 
           <div className='choose2'>
-            <label htmlFor="" className='labels'> <span className='numbers_green'>1</span>Choose Month: <br /><input type="month" className='inputs'/></label> <br /> 
-            <label htmlFor="" className='labels'><span className='numbers_green'>2</span>Select Day: <br /><input type="date" className='inputs' /></label>
+            <label htmlFor="" className='labels'> <span className='numbers_green'>1</span>Choose Month: <br /><input type="month" className='inputs'  placeholder="yyyy-mm-dd"/></label> <br /> 
+            <label htmlFor="" className='labels'><span className='numbers_green'>2</span>Select Day: <br /><input type="date" className='inputs'  placeholder="yyyy-mm-dd" /></label>
           </div>
 
           <div className='choose1'>
             <label htmlFor="" className='labels'> <span className='numbers_green'>3</span>Choose Available Time:
-           <br /><input type="time" className='inputs'/></label>
+           <br /><input type="time" className='inputs'  placeholder="hh-mm-ss"/></label>
             <br />
      
             <div className='push_button'>
