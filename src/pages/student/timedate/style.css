@@ -16,16 +16,14 @@
     margin-top: 4rem;
     line-height: 50px;
 }
-.choose1{
-  margin-top: 3rem;
-}
+
 
 .review_flex1 > * + * {
     margin-left: 7rem; /* Adjust as needed */
   }
 
   .push_button{
-    padding-top: 4rem;
+    padding-top: 5rem;
   }
 
 

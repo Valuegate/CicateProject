@@ -31,28 +31,28 @@ Navigate('/student/paymentpage')
             <div>
                 <form action="" className='review_flex'>
                 <div className=''>
-                    <label htmlFor="" className='all_info'>Info
+                    <label htmlFor="" className='all_info'>Month
                     <br /> 
                     <input type="text" className='inputs' placeholder='Select'/></label>
 
-                    <br /><label htmlFor="" className='all_info'>Info 
+                    <br /><label htmlFor="" className='all_info'>Time 
                     <br />
                     <input type="text" className='inputs' placeholder='Select'/></label>
 
-                   <br /> <label htmlFor="" className='all_info'>Info 
+                   <br /> <label htmlFor="" className='all_info'>Day 
                     <br />
                     <input type="text" className='inputs' placeholder='Select'/></label>
                 </div>
 
 
                 <div className='mid_right'>
-                <label htmlFor="" className='all_info'>Info
+                <label htmlFor="" className='all_info'>Image
                 <br /> <input type="text" className='inputs' placeholder='Select'/></label>
 
-                <br /><label htmlFor="" className='all_info'>Info 
+                <br /><label htmlFor="" className='all_info'>ID
                 <br /><input type="text" className='inputs' placeholder='Select'/></label>
 
-                <br /><label htmlFor="" className='all_info'>Info 
+                <br /><label htmlFor="" className='all_info'>Username 
                 <br /><input type="text" className='inputs' placeholder='Select'/></label>
                 
                 </div>

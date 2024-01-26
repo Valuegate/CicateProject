@@ -34,12 +34,13 @@ Navigate('/student/photovalidation')
           <TestCarousel/>
         <div className='review_flex1'>
 
-          <div>
+          <div className='choose2'>
             <label htmlFor="" className='labels'> <span className='numbers_green'>1</span>Choose Month: <br /><input type="month" className='inputs'/></label> <br /> 
             <label htmlFor="" className='labels'><span className='numbers_green'>2</span>Select Day: <br /><input type="date" className='inputs' /></label>
           </div>
 
-          <div className='choose1'><label htmlFor="" className='labels'> <span className='numbers_green'>3</span>Choose Available Time:
+          <div className='choose1'>
+            <label htmlFor="" className='labels'> <span className='numbers_green'>3</span>Choose Available Time:
            <br /><input type="time" className='inputs'/></label>
             <br />
      
