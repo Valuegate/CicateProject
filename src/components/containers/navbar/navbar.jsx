@@ -5,14 +5,13 @@ import vector2 from '../../../assets/Vector2.svg'
 import vector3 from '../../../assets/Vector3.svg'
 import search from '../../../assets/Search.svg'
 import { Link } from 'react-router-dom'
-import seperator from '../../../assets/separator.svg'
-import { AuthContext } from '../../../auth/AuthProvider'
+
 import { useAuthLogin} from '../../../auth/login'
-import { useRegisterContext } from '../../../auth/Register'
+
 
 
 const Navbar = () => {
-  const {setAuthData, userEmail} = useContext(AuthContext)
+
   const {handleLogout, getUser} = useAuthLogin()
   const [user, setuser] = useState('')
 

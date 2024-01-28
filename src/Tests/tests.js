@@ -6,6 +6,7 @@ id: 1,
 name: 'gate',
 Description:'good test',
 price:'12.99',
+image:''
 
 },
 {

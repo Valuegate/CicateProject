@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import Navbar from '../../components/containers/navbar/navbar'
 import './style.css'
 import block1 from '../../assets/block-1.png'
@@ -15,8 +15,24 @@ import youtube from '../../assets/youtube.png'
 import linkedin from '../../assets/linkedin.png'
 import gradient from '../../assets/gradient.svg'
 import Footer from '../../components/containers/footer/footer'
+import { Link } from 'react-router-dom'
+import { useAuthLogin } from '../../auth/login'
+
 
 const TestFormat = () => {
+
+const [user, setUser] = useState('')
+
+  const {getUser} = useAuthLogin()
+
+  useEffect(() => {
+    const user = getUser()
+    if (user){
+      setUser(user)
+    }
+  },[])
+
+
   return (
     <div className='wrapper_main'>
       <div>
@@ -71,7 +87,10 @@ Reliable Tests</p>
              skills, boosting your chances for visa approval 
              and showcasing your competence for studying 
               or working abroad.</p>
-              <div className='to_apply_flex1'> <button className='button_to_apply'>Apply</button> </div>
+              <div className='to_apply_flex1'>
+                {user ? (<Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>) :(<Link to={'/login'} className='button_to_apply'>Apply </Link>) }
+              
+                </div>
         </div>
 
         <div className='bl_white3'>

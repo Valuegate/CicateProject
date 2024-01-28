@@ -62,8 +62,8 @@ function App() {
 
      
       <Routes>
-       
-        <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
+
+      <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
         <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
         <Route path='/student/timedate' element={<TimeDate/>}/>
@@ -73,6 +73,8 @@ function App() {
         <Route path='/results' element={<Results/>}/>
         <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
+
+ 
      
        
 
