@@ -40,7 +40,7 @@ useEffect(() => {
             <li className='nav_item'><a href="/about" className='nav__link'><img alt='img' src={vector3} className='vector'/>About Us</a> </li>
            
            <li className='nav-item'>{user ? (<Link to={'/student/profile'} className='login'>Profile</Link>):(<Link to={'/login'} className='login'>Login</Link>)}</li>
-           <li><a href="/choose" className='signUp'>{user ? (<button onClick={handleLogout} className='signUp'>Sign Out</button>) : 'Sign up'}</a> </li>
+           <li>{user ? (<button onClick={handleLogout} className='signUp'>Sign Out</button>) : (<Link className='signUp' to={'/choose'}>Sign Up</Link>)} </li>
             <li className='nav_item'>{user ? (<Link to={'/student/student-dashboard'} className='login'>Dashboard</Link>):(<Link className='nav__link'> <img src={search} alt="img" />Search</Link>)}</li>
 
           

@@ -159,6 +159,9 @@ cursor: pointer;
  
     
   }
+
+ 
+    
   .nav__menu {
       position: fixed;
       top: 7vh;
@@ -286,6 +289,9 @@ cursor: pointer;
  
 }
 
+.signUp1 {
+display: none;
+}
 
 
 .nav__toggler div{

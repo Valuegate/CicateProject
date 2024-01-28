@@ -28,8 +28,8 @@ const {userEmail} = useContext(AuthContext)
             <li className='nav_item'><a href="/" className='nav__link2' > <img alt='img' src={tee} className='vector0'/>Test Takers</a> </li>
             <li className='nav_item'><a href="/institutions" className='nav__link2'><img alt='img' src={caa} className='vector0'/>Institutions</a> </li>
             <li className='nav_item'><a href="/about" className='nav__link2'><img alt='img' src={mac} className='vector0'/>About Us</a> </li>
-            <li className='nav_item'><a href="/login" className='login_black'>{userEmail ? userEmail : 'Login'}</a></li>
-            <li className='nav_item'><a href="/choose" className='signUp'>{userEmail ? 'Sign Out': 'Sign Up'}</a> </li>
+            <li className='nav_item'><a href="/login" className='login_black'>Login</a></li>
+            <li className='nav_item'><a href="/choose" className='signUp'>Sign Up</a> </li>
             <li className='nav_item'><a href="/" className='nav__link2'><img alt='img' src={search} /></a> </li>
           </ul>
          <ul>
