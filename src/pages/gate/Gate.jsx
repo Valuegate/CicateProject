@@ -2,6 +2,11 @@ import React from 'react'
 import './style.css'
 import Navbar from '../../components/containers/navbar/navbar'
 import Footer from '../../components/containers/footer/footer'
+import long from '../../assets/long.webp'
+import scholarships from '../../assets/scholarships.jpeg'
+import international from '../../assets/international.webp'
+import admissions from '../../assets/admision.jpeg'
+import grants from '../../assets/grants.jpeg'
 
 const Gate = () => {
   return (
@@ -19,7 +24,7 @@ const Gate = () => {
   </div>
 
 <div className='gate_display'>
-<div className='gate_bos'></div>
+<img src={long} alt="gate photo" className='gate_bos'/>
 <div className='gate_bos_right'>
   <span className='gate_up'> <span className='gate_bigg'>GATE </span> <br />
 Global Assessment and Testing for Education:</span> <br /> <br />
@@ -46,7 +51,7 @@ The GATE test results can <br />be applied in various areas <br /> and situation
 </div>
    
    <div className='dispaly_box'>
-  <div className='box_bl'></div>
+<img src={admissions} alt="admissions" className='box_bl'/>
   <div className='labelx'>
     <p className='spandown'>Higher Education Admissions:</p>
     <p className='p_class'>The primary application area for GATE test results
@@ -68,14 +73,14 @@ The GATE test results can <br />be applied in various areas <br /> and situation
         support to students who perform exceptionally well in the GATE test,
        providing them with opportunities to pursue their studies without financial constraints.</p>
     </div>
-    <div className='box_bl'>
+  <img src={scholarships} alt="scholarships"className='box_bl' />
 
-    </div>
+
    </div>
 
 
    <div className='dispaly_box'>
-    <div className='box_bl'></div>
+   <img src={international} alt="international students" className='box_bl'/>
     <div className='labelx'>
       <p className='spandown'>International Opportunities:</p>
       <p className='p_class'>The primary application area for GATE test 
@@ -96,9 +101,9 @@ The GATE test results can <br />be applied in various areas <br /> and situation
         students who perform exceptionally well in the GATE test, providing them with
        opportunities to pursue their studies without financial constraints.</p>
     </div>
-    <div className='box_bl'>
 
-    </div>
+<img src={grants} alt="grants" className='box_bl'/>
+
    </div>
    <Footer/>
   </div>

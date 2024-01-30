@@ -64,14 +64,13 @@ margin-top: 200px
     }
 
 .gate_bos{
-  background-color: #282828;
   border: 2px solid;
   border-color: #ffffff;
   border-radius: 43px;
-  height: 45rem;
-  width: 35rem;
+  height: 75vh;
+  width: 65vh;
   margin-top: 2rem;
-  padding-bottom: 200px;
+
     }
 
 .dispaly_box{
@@ -92,18 +91,18 @@ gap: 4rem;
   align-items: center;
   margin-top: 7rem;
   gap: 4rem;
+  
   }
   
 
 .box_bl{
-  background-color: #282828;
   border: 2px solid;
   border-color: #ffffff;
   border-radius: 43px;
-  height: 20rem;
-  width:25rem;
+  height: 40vh;
+  width:50vh;
   margin-top: 3rem;
-  padding-bottom: 6rem;
+
 }
 .gate_bos_right{
   text-align: justify;
