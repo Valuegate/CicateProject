@@ -12,6 +12,8 @@ const Degree_Regex = /^[a-zA-Z][a-zA-Z0-9-_]{7,23}$/;
 const Url_regex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/
 const Location_regex = /^[a-zA-Z0-9 ]+$/
 const Text_area = /^(?=(\b\w+\b\s*){5,})([a-zA-Z\s]{1,500})$/
+const Time_regex = /^(?:\d{1,2}|(?:1[0-2]|0?[1-9]))(?:-(?:\d{1,2}|(?:1[0-2]|0?[1-9])))?(?: [0-2]?[0-9]:[0-5][0-9](?::[0-5][0-9])?)?$/
+const Img_regex = /^.+\.(jpg|jpeg|png|gif|bmp|tiff|webp|svg|ico)$/
 
 
 
@@ -105,9 +107,58 @@ const [validBiography, setValidBiography] = useState(false)
  const [name, setName] = useState("")
  const [validName, setValidName] = useState(false)
 
+ const [test, setTest] = useState("")
+ const [validTest, setValidTest] = useState(false)
+
+ const [time, setTime] = useState("")
+ const [validTime, setValidTime] = useState(false)
+
+ const [month, setMonth] = useState("")
+ const [validMonth, setValidMonth] = useState(false)
+
+ const [day, setDay] = useState("")
+ const[validDay,setValidDay] = useState(false)
+
+ const  [img, setImg] = useState("")
+ const [validImg, setValidImg] = useState(false)
 
  const [errMsg, setErrMsg] = useState('')
 
+
+ useEffect(()=>{
+const validate = Img_regex.test(img)
+console.log(validate)
+console.log(img)
+setValidImg(validate)
+ },[img])
+
+ useEffect(()=>{
+const validate = Time_regex.test(time)
+console.log(validate)
+console.log(time)
+setValidTime(validate)
+ },[time])
+
+ useEffect(() => {
+  const validate = Time_regex.test(day)
+  console.log(validate)
+  console.log(day)
+  setValidDay(validate)
+ },[day])
+
+ useEffect(()=>{
+const validate = Time_regex.test(month)
+console.log(validate)
+console.log(month)
+setValidMonth(validate)
+ },[month])
+
+ useEffect(() => {
+  const validate = User_regex.test(test)
+  console.log(validate)
+  console.log(test)
+  setValidTest(validate)
+ },[test]);
 
  useEffect(() =>{
 const validate = Url_regex.test(twitter)
@@ -411,6 +462,13 @@ birthCountry,
       validTwitter,
       validName,
       validInstagram,
+      img,setImg, setValidImg, validImg,
+      time, setTime,validTime, setValidTime,
+      test, setTest,validTest, setValidTest,
+      day, setDay, validDay, setValidDay,
+      month, setMonth, validMonth, setValidMonth,
+
+
       }}>
 
       {children}

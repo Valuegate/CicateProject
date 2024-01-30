@@ -15,10 +15,10 @@ import youtube from '../../assets/youtube.png'
 import linkedin from '../../assets/linkedin.png'
 import gradient from '../../assets/gradient.svg'
 import Footer from '../../components/containers/footer/footer'
-import { Link } from 'react-router-dom'
+import emp from '../../assets/emp.jpeg'
 import { useAuthLogin } from '../../auth/login'
-
-
+import Test from '../../Test/Test'
+import front from '../../assets/front.jpeg'
 const TestFormat = () => {
 
 const [user, setUser] = useState('')
@@ -39,9 +39,9 @@ const [user, setUser] = useState('')
     <Navbar/>
       </div>
       <div className='top_boxone'>
-     <div className='new1'>
+     <div className=''>
       
-    
+    <img src={front} alt='front cover' className='new1'/>
      </div>
       </div>
 
@@ -61,7 +61,7 @@ to Success!</div>
       </div>
 
       <div className='top_empower'>
-        <div className='empower_box'></div>
+      <img src={emp} alt="empower" className='empower_box'/>
        
         <div className=''>
             <p className='empower'>Empowering <br />
@@ -78,47 +78,9 @@ Reliable Tests</p>
         <div className='our_test'>Our Test Products</div>
     </div>
 
-    <div className='top_bl_white'>
-        <div className='bl_white'>
-            <div className='inside_black_bl'></div>
-            <div className='to_apply_flex'>  <p className='bl_tests'>G.A.T.E</p> </div>
-           
-            <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude, and job-specific 
-             skills, boosting your chances for visa approval 
-             and showcasing your competence for studying 
-              or working abroad.</p>
-              <div className='to_apply_flex1'>
-                {user ? (<Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>) :(<Link to={'/login'} className='button_to_apply'>Apply </Link>) }
-              
-                </div>
-        </div>
 
-        <div className='bl_white3'>
-        <div className='inside_black_bl'></div>
-        <div className='to_apply_flex'>  <p className='bl_tests'>P.O.C.A.S</p> </div>
-            <p className='bl_para'>This trusted evaluation covers language proficiency, academic aptitude,and job-specific 
-             skills, boosting your chances for visa approval 
-             and showcasing your competence for studying 
-              or working abroad.</p>
-              <div className='to_apply_flex1'> <a href="/pocas" className='bl_to_apply'>How to Apply</a> </div>
-             
-        </div>
-    </div>
-<div className='top_bl_white2'>
-<div className='bl_white2'>
-        <div className='bl_block'></div>
+<Test/>
 
-        <div>
-            <div className='to_apply_flex'><p className='bl_tests'>LISA</p></div>
-            <p className='bl_para'>This trusted evaluation covers language <br />
-             proficiency, academic aptitude, and job-specific <br /> 
-             skills, boosting your chances for visa approval <br />
-              and showcasing your competence for studying <br />
-               or working abroad.</p>
-               <a href="/lisa" className='bl_to_apply'>How to Apply</a>
-        </div>
-    </div>
-</div>
    <div className='top_reasons'>
     <div className='reasons_to'>Reasons <br /> To Test <br />Yourself</div>
 

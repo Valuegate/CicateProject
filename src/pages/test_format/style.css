@@ -1,8 +1,7 @@
 .new1{
-    height: 200px;
-    width: 250px;
-    border: #282828;
-    border: 2px solid;
+    height: 38vh;
+    border: 1px solid ;
+    width: 45vh;
     border-radius: 30px;
     background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
 }
@@ -491,12 +490,12 @@ text-align: justify;
 
 
 .empower_box{
-border-radius: 30px;
-padding: 5rem;
-width: 30vh;
-border: #282828;
-border: 2px solid;
-background: radial-gradient(70% 50% at 50% 50%, rgb(51, 204, 0) 0%, rgba(217, 217, 217, 0) 100%);
+border-radius: 20px;
+
+width: 44vh;
+height: 40vh;
+
+
 }
 
 
@@ -545,7 +544,7 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 justify-content: center;
 align-items: center;
-padding: 2.5rem;
+padding: 1.5rem;
 border: #282828;
 border: 0.3px solid;
 width: 39vh;
@@ -568,12 +567,12 @@ width: 39vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    align-items: center;
+    cursor: pointer;
+
 }
 
 .top_bl_white > * + * {
-    margin-left: 4rem; /* Adjust as needed */
+    margin-left: 2rem; /* Adjust as needed */
   }
 
 .bl_tests{

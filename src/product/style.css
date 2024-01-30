@@ -1,0 +1,11 @@
+.imgSize{
+    height: 31vh;
+    width: 40vh;
+    border-radius: 20px;
+}
+
+.center_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -25,7 +25,7 @@ export const AuthLogin = ({children}) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   
-  
+
   const handleLogin = async (e) => {
      e.preventDefault();
 
@@ -76,7 +76,8 @@ export const AuthLogin = ({children}) => {
   }, 2000);
   console.log(success)
   }
-  
+
+
   
   catch(err){
   
@@ -107,6 +108,10 @@ export const AuthLogin = ({children}) => {
   
   }
 
+  const createProduct =() => {
+
+  }
+
   const handleLogout = (err) => {
     localStorage.removeItem('access')
     localStorage.removeItem('refresh')
@@ -126,10 +131,14 @@ export const AuthLogin = ({children}) => {
     setAlertMessage(null);
   };
 
+
+
   const getUser = () => {
 return JSON.parse(localStorage.getItem('user'));
   }
  
+
+
     
   return (
     <div>

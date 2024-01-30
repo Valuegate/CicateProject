@@ -1,17 +1,73 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
+import { useAuthLogin } from '../auth/login'
 import './style.css'
+import { Client } from '../api/axios'
 
+const Url = 'https://ciccate2-production.up.railway.app/api/api/create/'
 const Product = (props) => {
+ 
+  useEffect(() => {
+    const user = getUser()
+    if (user){
+      setUser(user)
+    }
+  },[])
+  const {id, name, Description,price,uploaded_images} = props.data
+  
 
-const {id, name, description,price} = props.data
+  const [user, setUser] = useState('')
 
+  const {getUser} = useAuthLogin()
+  
+  
+
+  const HandleClick = (e) => {
+
+
+ Client.post(Url,JSON.stringify({
+  name:name,
+  description:Description,
+  price:price,
+  uploaded_images:uploaded_images
+ }),
+ {
+  headers:{'Content-Type': 'application/json'}
+ }
+
+ ).then((response) => {
+console.log(response.data)
+ }).catch((error) => {
+  if (error){
+    console.log(error)
+  }
+ });
+
+}
+
+  
   return (
-    <div>
-      <h1>{id}</h1>
-      <h1>{name}</h1>
-      <h1>{description}</h1>
-      <h1>{price}</h1>
+
+       <div className='top_bl_white' onClick={()=>HandleClick()}>
+        <div className='bl_white'>
+          <div className='center_image'> 
+            <img src={uploaded_images} alt="test" className='imgSize'/>
+          </div>
+         
+            <div className='to_apply_flex'>  <p className='bl_tests'>{name}</p> </div>
+           
+            <p className='bl_para'>{Description}</p>
+            <br />
+            <p>${price}</p>
+              <div className='to_apply_flex1'>
+                {user ? (<Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>) :(<Link to={'/login'} className='bl_to_apply'>Apply </Link>) }
+              
+                </div>
+        </div>
+
+       
     </div>
+
   )
 }
 
