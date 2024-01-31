@@ -5,15 +5,18 @@
     justify-content: center;
     flex-direction: row;
     margin-top: 40px;
+
 }
 
 @media screen and (max-width:600px){
     .display_tests {
         display: flex;
         flex-direction: column;
+        background-color: #282828;
     }
 }
 
-.display_tests > * + * {
+.display_tests > * {
     margin-left: 2rem; /* Adjust as needed */
-  }
+    margin-top: 2rem;
+}

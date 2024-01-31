@@ -244,13 +244,15 @@ text-align: center;
                 }
 
                 body .bl_tests{
-                    font-size: 4rem;
+                    font-size: 2rem;
                     background-color: #33cc00;
-                    border-radius: 4rem;
+                    border-radius: 1rem;
                     line-height: 55px;
-                    padding: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                     justify-content: center;
                     text-align: center;
+                   margin-top: 0.5rem;
                 }
                 
                 .cross__img{
@@ -293,7 +295,6 @@ text-align: center;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    margin-right: 5rem;
                 }
 
                 
@@ -316,7 +317,7 @@ text-align: center;
                 }
 
                body .bl_white{
-                    padding: 1.5rem;
+                    padding: 0rem;
                     width: 38vh;
                 }
                 body .bl_white3{
@@ -340,6 +341,11 @@ text-align: center;
                 text-align: center;
                 white-space: nowrap;
                 
+                }
+
+                body .bl_para{
+                    font-size: 11px;
+                   font-weight: bold !important;
                 }
                 body .app_button{
                     font-size:20px ;
@@ -380,6 +386,10 @@ text-align: center;
    }
             .gradient_div{
                display: none;
+            }
+
+            .button_to_apply{
+                
             }
 
            body .the_bar {
@@ -550,7 +560,7 @@ border-radius: 57px;
 box-shadow: var(--shadow);
 justify-content: center;
 align-items: center;
-padding: 1.5rem;
+padding: 0rem;
 border: #282828;
 border: 0.3px solid;
 width: 39vh;
@@ -574,6 +584,7 @@ width: 39vh;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+   
 
 }
 
@@ -600,7 +611,6 @@ width: 39vh;
     line-height: 26.5px;
     text-align: justify; 
     padding-bottom: 10px;
-    
 }
 
 .inside_black_bl{
@@ -631,19 +641,18 @@ padding: 1.5rem;
 .button_to_apply{
     align-items: center;
     background-color: #282828;
-    border-radius: 37px;
+    border-radius: 30px;
     color: #ffffff;
     font-family: "PP Monument Extended-Light", Helvetica;
     font-size: 3rem;
     font-weight: 200;
     line-height: 43.6px;
-    margin-top: 20px;
+    margin-top: 10px;
     cursor: pointer;
     margin-bottom: 10px;
-    padding: 1rem;
-    padding-left: 6.5rem;
-    padding-right: 6.5rem;
-  
+    padding-left: 3rem;
+    padding-right: 3rem;
+
     }
 
     .button_to_apply:hover {

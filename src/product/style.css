@@ -1,11 +1,18 @@
 .imgSize{
-    height: 31vh;
-    width: 40vh;
-    border-radius: 20px;
+    height: 28.5vh;
+    width: 39vh;
+    border-radius: 53px;
 }
 
 .center_image{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and  (max-width: 600px){
+    .imgSize{
+        height: 28vh;
+        width: 38vh;
+    }
 }
