@@ -140,7 +140,8 @@ text-align: center;
                 display: grid;
             }
 .new1{
-    height: 35vh;
+    height: 30vh;
+    width: 33vh;
 }
             .top_bl_white2{
                 flex-direction: column;
@@ -148,9 +149,9 @@ text-align: center;
             }
        body .empower_box{
             border-radius: 30px;
-           width: 25vh;
-           height: 10vh;
-            margin-left: 3rem;
+           width: 35vh;
+           height: 30vh;
+   
             }
 
             body .inside_black_bl{
@@ -180,7 +181,11 @@ text-align: center;
            
             }
 
-          
+          .justify_image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
 
             .if_flex{
                 justify-content: center;
@@ -195,7 +200,6 @@ text-align: center;
             }
             .top_bl {
             width: 100%;
-              gap: 2rem;
               display: flex;
               flex-direction: column;
               
@@ -203,7 +207,7 @@ text-align: center;
            
 
             .top_bl > *  {
-                margin-left: 3rem; /* Adjust as needed */
+                margin-left: 2rem; /* Adjust as needed */
                 margin-top: 2rem;
             }
 
@@ -476,8 +480,8 @@ white-space: nowrap;
 }
 
 
-.top_bl > * + * {
-    margin-left: 3rem; /* Adjust as needed */
+.top_bl > *  {
+    margin-right: 2rem; /* Adjust as needed */
   }
 
 .cicate_offerz{

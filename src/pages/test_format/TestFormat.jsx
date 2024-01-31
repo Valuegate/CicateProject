@@ -61,7 +61,9 @@ to Success!</div>
       </div>
 
       <div className='top_empower'>
+
       <img src={emp} alt="empower" className='empower_box'/>
+     
        
         <div className=''>
             <p className='empower'>Empowering <br />
