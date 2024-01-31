@@ -58,7 +58,7 @@ console.log(response.data)
            
             <p className='bl_para'>{Description}</p>
 
-            <p>Price: ${price}</p>
+            <p className='price'>Price: ${price}</p>
               <div className='to_apply_flex1'>
                 {user ? (<Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>) :(<Link to={'/login'} className='bl_to_apply'>Apply </Link>) }
               

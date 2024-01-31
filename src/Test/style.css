@@ -12,7 +12,7 @@
     .display_tests {
         display: flex;
         flex-direction: column;
-        background-color: #282828;
+     
     }
 }
 
