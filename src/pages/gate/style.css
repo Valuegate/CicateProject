@@ -198,18 +198,17 @@ line-height: 20.3px;
 padding-top: 0px;
   }
   .gate__container > * + * {
-    margin-left: 7rem; /* Adjust as needed */
+    margin-left: 4rem; /* Adjust as needed */
   }
 .box_bl{
   display: none !important;
 }
 
 body .gate_bos{
+  height: 38vh;
+  width: 40vh;
+  margin-top: 1rem;
 
-  height: 10rem;
-  width: 30rem;
-  margin-top: 3rem;
-  padding-bottom: 90px;
     }
   .gate_display{
     display: flex !important;
