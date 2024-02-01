@@ -6,10 +6,8 @@
     border-radius: 8px;
     height: 222px;
     width: 501px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  
+  
 }
 
 
@@ -47,7 +45,7 @@
                 text-align: center;
                 white-space: nowrap;
                   background-color: #33CC00;
-                  border-radius: 40px;
+                  border-radius: 10px;
                  padding: 10px;
                   cursor: pointer;
                   padding-left: 30px;
@@ -66,6 +64,11 @@
     font-size: 3rem;
     color: white;
     font-family: "PP Monument Extended-Regular", Helvetica;
+    margin-left: 3rem;
+}
+
+.img_font{
+margin-left: 3rem;
 }
 .gridd_boxx{
     display: flex;
@@ -95,7 +98,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 5rem;
     align-items: center;
 
 }

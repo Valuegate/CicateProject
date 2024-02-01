@@ -19,23 +19,26 @@ const Choose = () => {
 
 
 <div className='box_university' onClick={() => window.location.href = "/student/personaldata"}>
-  <div className=''><img src={student} alt="img_student" /></div>
-  <a className='sign_font' href='/student/signup'>Sign up as a Student</a>
-
+  <div className='img_font'><img src={student} alt="img_student" /></div>
+  <br />
+  <br />
+  <a className='sign_font' href='/student/signup'>I'm a Student</a>
 </div>
+
 <div className='box_university' onClick={() => window.location.href = "/institution/personal-information"}>
-  <div className=''><img src={university} alt="img_university" /></div>
-  <a className='sign_font' href='/institution/personal-information'>Sign up as an Institution</a>
+  <div className='img_font'><img src={university} alt="img_university" /></div>
+  <br />
+  <br />
+  <a className='sign_font' href='/institution/personal-information'>I'm an Institution</a>
 </div>
 
 
 </div>
 <div className='or_box'>
-  
-  <div className='dont1'>Already have <br /> an account?</div>
-  <div><a href="/login" className='create_button1'>Sign In As Student</a></div>
-  <div className='or_span'><span className='or'> OR</span></div>
-  <div><a href="/login" className='create_button1'>Sign In As Institution</a></div>
+
+  <div className='dont1'>Already have an account? </div>
+  <div><a href="/login" className='create_button1'>Sign In</a></div>
+
 </div>
 
 </div>
