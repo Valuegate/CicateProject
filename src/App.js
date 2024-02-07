@@ -48,8 +48,9 @@ import Password from './pages/institution/password/Password';
 import { AuthLogin } from './auth/login';
 import Profile from './pages/student/profile/Profile';
 import Test from './Test/Test';
-
-
+import TestPage from './pages/student/Testpage/TestPage';
+import TimeUp from './pages/student/TimeUp/TimeUp';
+import TestSubmitPop from './pages/student/testsubmit/TestSubmitPop';
 
 function App() {
 
@@ -62,7 +63,7 @@ function App() {
 
      
       <Routes>
-
+      <Route path='/student/testsubmit' element={<TestSubmitPop/>}/>
       <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
         <Route path='/student/purchase-test' element={<PurchaseTest/>}/>
@@ -78,7 +79,7 @@ function App() {
      
        
 
-
+        <Route path='/student/timeup' element={<TimeUp/>}/>
         <Route path='/gate' element={<Gate/>}/>
         <Route path='/lisa' element={<Lisa/>}/>
         <Route path='/online' element={<Online/>}/>
@@ -101,7 +102,7 @@ function App() {
         <Route path='/student/additionaldata' element={<AdditionalData/>}/>
         <Route path='/student/personaldata' element={<PersonalData/>}/>
         <Route path='/institution/password' element={<Password/>}/>
-       
+        <Route path='/student/test' element={<TestPage/>}/>
         <Route path='/student/product' element={<Test/>}/>
         <Route path='/student/profile' element={<Profile/>}/>
         <Route path='/student/paymentcompletion' element={<PaymentCompletion/>}/>

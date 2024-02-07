@@ -6,12 +6,16 @@ import imgupload from '../../../assets/imgupload.svg'
 import './style.css'
 import {useNavigate} from 'react-router-dom'
 import BackButton from '../../../components/backbutton/BackButton'
-
+import { useRegisterContext } from '../../../auth/Register'
 
 
 
 const PhotoValidation = () => {
-
+  const {  img,setImg, setValidImg, validImg,
+    time, setTime,validTime, setValidTime,
+    test, setTest,validTest, setValidTest,
+    day, setDay, validDay, setValidDay,
+    month, setMonth, validMonth, setValidMonth} = useRegisterContext()
 
   const Navigate = useNavigate()
 
@@ -37,8 +41,12 @@ Navigate('/student/reviewsubmit')
 
   <div className='flex_idd'>
     <div className='photo_box'>
-    <input accept="image/*" id="icon-button-file"
-        type="file" style={{ display: 'none' }} />
+    <input 
+    accept="image/*"
+     id="icon-button-file"
+        type="file" style={{ display: 'none' }}
+        onChange={(e)=>setImg(e.target.value)}
+        />
       <label htmlFor="icon-button-file" className='photo_tex'>
         <img src={imgupload} alt="img" />
         <br />

@@ -65,7 +65,7 @@ export const AuthLogin = ({children}) => {
   
   setAlertMessage({
     type: 'success',
-    message: `welcome ${userEmail}`,
+    message: `Welcome ${userEmail}`,
   })
 
   setSuccess(true);
@@ -78,9 +78,14 @@ export const AuthLogin = ({children}) => {
   }
 
 
-  
   catch(err){
-  
+    if (!navigator.onLine) {
+      setAlertMessage({
+        type: 'error',
+        message: 'No internet connection. Please check your phone.'
+      });
+    } else 
+    if(err.response){
     const responseData = (err.response.data);
   if( responseData && responseData.detail){
   const errorMessages = Object.values(responseData.detail).flat()
@@ -90,21 +95,29 @@ export const AuthLogin = ({children}) => {
       message: `${errorMessages.join('')} create an account`
     })
   }
-  
-  else if(err.response.status === 401){
-  setAlertMessage('user not exist invalid credentials')
-  console.log('User with account does not exist')
+  else if(!err.response?.data){
+    setAlertMessage({ 
+      type:'error',
+    message: 'no response from server check your internent'});
   }
-  else{
+  else if(err.response?.status === 401){
+  setAlertMessage({
+    type:'error',
+    message:'user not exist invalid credentials'})
+
+  }
+  else {
    setAlertMessage({
     type: 'error',
     message: 'faild to login properly: '
   
    })
+
   }
   
   }
   
+  }
   
   }
 

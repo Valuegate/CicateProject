@@ -67,7 +67,7 @@ console.log(response.data)
          
             <div className='to_apply_flex'>  <p className='bl_tests'>{name}</p> </div>
            
-            <p className='bl_para'>{Description}{id}</p>
+            <p className='bl_para'>{Description}</p>
 
             <p className='price'>Price: ${price}</p>
               <div className='to_apply_flex1'>

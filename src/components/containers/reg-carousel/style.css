@@ -6,7 +6,11 @@
         justify-content: center;
         width: 100%;
     }
-
+.hro{
+  background: #33CC00;
+  height: 5px;
+  border-radius: 20px;
+}
     .current-position {
         background-color: #33cc00;
         border-radius: 30px;
@@ -56,6 +60,7 @@
         font-weight: 400;
         letter-spacing: 0;
         line-height: 22.3px;
+        cursor: pointer;
         }
 
         .flex_end{
