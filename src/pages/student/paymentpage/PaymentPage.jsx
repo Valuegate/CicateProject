@@ -28,7 +28,7 @@ Navigate('/student/paymentcompletion')
 
           
             <form action="" className='review_flex'>
-              <div className='against2'>
+              <div className=''>
                 <label htmlFor="" className='labels'>Card Number: <br />
                 <input type="text" className='inputs'placeholder='4153 6544 7888 9877'/></label>
                 <br />
@@ -45,7 +45,7 @@ Navigate('/student/paymentcompletion')
               </div>
 
 
-              <div className='against'>
+              <div className=''>
               <label htmlFor="" className='labels'>Name & Surname: <br />
               <input type="text" className='inputs' placeholder='JOHN OLIVER'/></label>
               <br />
@@ -53,13 +53,15 @@ Navigate('/student/paymentcompletion')
               <label htmlFor="" className='labels'>E-mail: <br />
               <input type="text" className='inputs' placeholder='Johnathan@info.com'/>
               </label>
-              <div className='push_button'>
-              <button className='next_big' onClick={handleSubmit}>Next</button>
-              <BackButton/>
-            </div>
+             
               </div>
+              
             </form>
-           
+            <div className='con'>
+      <BackButton/>
+          <button className='next_big' onClick={handleSubmit}>Next</button>
+
+      </div>
           </div>
         
       </div>

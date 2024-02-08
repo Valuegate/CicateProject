@@ -7,7 +7,7 @@ import scholarships from '../../assets/scholarships.jpeg'
 import international from '../../assets/international.webp'
 import admissions from '../../assets/admision.jpeg'
 import grants from '../../assets/grants.jpeg'
-
+import { Link } from 'react-router-dom'
 const Gate = () => {
   return (
   <div>
@@ -16,7 +16,10 @@ const Gate = () => {
     How To Use <br />
     Test Results
     </div>
-
+    <div className='how_apply'>
+                <Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>
+      
+                </div>
     <div className="gate__container">
     <div><a href="/gate" className='pocas'>G.A.T.E</a></div>
     <div><a href="/pocas" className='opacity'>POCAS</a></div>

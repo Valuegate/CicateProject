@@ -9,9 +9,17 @@ import BackButton from '../../../components/backbutton/BackButton'
 import { useRegisterContext } from '../../../auth/Register'
 import { useAuth } from '../../../auth/AuthProvider'
 import { Client } from '../../../api/axios'
-const Exam_Register = 'https://ciccate2-production.up.railway.app/api/api/ExamRegister/'
+import {useAuthLogin}  from '../../../auth/login'
 
+
+
+
+
+
+const Exam_Register = 'https://ciccate2-production.up.railway.app/api/api/ExamRegister/'
 const ReviewSubmit = () => {
+
+
 
   const {  img,setImg, setValidImg, validImg,
     time, setTime,validTime, setValidTime,
@@ -20,7 +28,7 @@ const ReviewSubmit = () => {
     month, setMonth, validMonth, setValidMonth} = useRegisterContext()
  
   const Navigate = useNavigate()
-const {userName, id} = useAuth()
+const {userName, id, userEmail} = useAuth()
   const handleSubmit = (e) => {
 
     e.preventDefault()
@@ -32,7 +40,6 @@ const {userName, id} = useAuth()
         name:test,
         time:time,
         product:'',
-        user:''
       })
     )
 Navigate('/student/paymentpage')
@@ -53,7 +60,7 @@ Navigate('/student/paymentpage')
             <div>
                 <form action="" className='review_flex'>
                 <div className=''>
-                    <label htmlFor="" className='all_info'>Month
+                    <label htmlFor="" className='all_info'>Date
                     <br /> 
                     <input
                      type="text" 
@@ -73,16 +80,24 @@ Navigate('/student/paymentpage')
                      onChange={(e)=>setTime(e.target)}
                      /></label>
 
-                   <br /> <label htmlFor="" className='all_info'>Day 
+                   <br /> <label htmlFor="test" className='all_info'>Test 
                     <br />
-                    <input 
-        
-                    type="text"
-                     className='inputs' 
-                     placeholder='Select'
-                     value={day}
-                     onChange={(e)=>setDay(e.target)}
-                     /></label>
+
+                    <select 
+                    name="test"
+                     id="test" 
+                     className='inputs'
+                      placeholder='select test'
+                      onChange={(e)=>setTest(e.target.value)}
+                      >
+                      <option value="gate">Gate</option>
+                      <option value="pocas">Pocas</option>
+                      <option value="gate">Lisa</option>
+                    </select>
+           </label>
+
+
+
                 </div>
 
 
@@ -125,13 +140,14 @@ Navigate('/student/paymentpage')
               </span>Agreeing with Privacy Conditions
               </div>
 
-              <div className='push_button'>
-              <button className='next_big' onClick={handleSubmit}>Next</button>
-              <BackButton/>
-            </div>
+             
           
             </div>
+            <div className='con'>
+      <BackButton/>
+          <button className='next_big' onClick={handleSubmit}>Continue to payment</button>
 
+      </div>
             </div>
           
             </div>

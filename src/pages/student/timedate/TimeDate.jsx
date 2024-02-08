@@ -40,25 +40,19 @@ Navigate('/student/photovalidation')
           <TestCarousel/>
         <div className='review_flex1'>
 
-          <div className='choose2'>
-            <label htmlFor="" className='labels'> <span className='numbers_green'>1</span>Choose Month: <br />
+          <div className='timex'>
+            <div>
+            <label htmlFor="" className='labels'> <span className='numbers_green'>1</span>Choose Date: <br />
             <input 
-            type="month"
+            type="Date"
             className='inputs'
             placeholder="yyyy-mm-dd"
             onChange={(e)=>setMonth(e.target.value)}/>
             </label> <br /> 
-            <label htmlFor="" className='labels'><span className='numbers_green'>2</span>Select Day: <br />
-            <input 
-            type="date" 
-            className='inputs'
-            placeholder="yyyy-mm-dd"
-            onChange={(e)=>setDay(e.target.value)}
-            /></label>
-          </div>
-
-          <div className='choose1'>
-            <label htmlFor="" className='labels'> <span className='numbers_green'>3</span>Choose Available Time:
+            </div>
+           
+            <div>
+            <label htmlFor="" className='labels'> <span className='numbers_green'>2</span>Choose Available Time:
            <br />
            
            <input
@@ -68,14 +62,19 @@ Navigate('/student/photovalidation')
           onChange={(e)=>setTime(e.target.value)}
           /></label>
             <br />
-     
-            <div className='push_button'>
-              <button className='next_big' onClick={handleSubmit}>Next</button>
-</div>
+            </div>
+           
           </div>
-          
+
+        
         </div>
+      <div className='con'>
       <BackButton/>
+          <button className='next_big' onClick={handleSubmit}>Next</button>
+
+      </div>
+        
+
           </div>
          
         </div>

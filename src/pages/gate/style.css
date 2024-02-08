@@ -8,6 +8,13 @@
   text-align: center;
 margin-top: 200px 
   }
+
+.how_apply{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
   
   .pocas{
     color: #282828;

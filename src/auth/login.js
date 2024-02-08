@@ -82,7 +82,7 @@ export const AuthLogin = ({children}) => {
     if (!navigator.onLine) {
       setAlertMessage({
         type: 'error',
-        message: 'No internet connection. Please check your phone.'
+        message: 'No internet connection. Please check your device.'
       });
     } else 
     if(err.response){

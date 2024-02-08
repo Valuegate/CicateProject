@@ -34,9 +34,36 @@
     display: grid !important;
     flex-direction: column;
   }
-
+  .review_flex1{
+   
+    line-height: 0px;
+}
   .choose1{
     margin-left: 0rem;
   }
+
+
   
+.timex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+}
+
+.timex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.con{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 2rem;
 }

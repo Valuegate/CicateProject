@@ -60,13 +60,17 @@ Navigate('/student/reviewsubmit')
       <br />
      
     <span className='so_wrapper'>This is for us to know how <br />you look before we meet <br /> you</span>
-    <div className='push_button'> <button className='next_big' onClick={handleSubmit}>Next</button>
-    <BackButton/>
-    </div>
+    
+ 
+  
 
     </div>
   </div>
- 
+  <div className='con'>
+      <BackButton/>
+          <button className='next_big' onClick={handleSubmit}>Next</button>
+
+      </div>
 </div>
 </div>
 <Footer/>
