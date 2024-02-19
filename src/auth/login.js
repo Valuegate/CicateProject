@@ -5,7 +5,7 @@ import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
 
 const Context = createContext({});
-
+const url = 'https://ciccate2-production.up.railway.app/api/api/'
 export const AuthLogin = ({children}) => {
 
   const {setAuth,setAuthData, setAuthId} = useAuth();
@@ -151,6 +151,18 @@ return JSON.parse(localStorage.getItem('user'));
   }
  
 
+  const GetExams = (e) => {
+  Client.get(url).then((resp) => {
+    console.log(resp.data);
+    const {message} = resp.data;
+    alert(message);
+  }).catch((err) => {
+    if (err){
+      console.log(err);
+    }
+  });
+  };
+
 
     
   return (
@@ -160,6 +172,7 @@ return JSON.parse(localStorage.getItem('user'));
         handleLogout,
         setAlertMessage,
         alertMessage,
+        GetExams,
         getUser,
         endAlert}}>
         {children}

@@ -42,10 +42,11 @@ Navigate('/student/reviewsubmit')
   <div className='flex_idd'>
     <div className='photo_box'>
     <input 
-    accept="image/*"
-     id="icon-button-file"
-        type="file" style={{ display: 'none' }}
-        onChange={(e)=>setImg(e.target.value)}
+      accept="image/*"
+      id="icon-button-file"
+        type="file" 
+        style={{ display: 'none' }}
+        onChange={(e)=>setImg(e.target.files[0])}
         />
       <label htmlFor="icon-button-file" className='photo_tex'>
         <img src={imgupload} alt="img" />

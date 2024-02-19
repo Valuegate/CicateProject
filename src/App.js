@@ -1,7 +1,8 @@
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
-
+import TestCreation from './pages/testcreation/Testcreation';
+import QuestionRules from './pages/questionrules/QuestionRules';
+import TestResult from './pages/student/test-result/TestResult';
 import WhyUs from './pages/whyUs/whyUs';
 import Research from './pages/research/research';
 import Results from './pages/results/results';
@@ -51,6 +52,7 @@ import Test from './Test/Test';
 import TestPage from './pages/student/Testpage/TestPage';
 import TimeUp from './pages/student/TimeUp/TimeUp';
 import TestSubmitPop from './pages/student/testsubmit/TestSubmitPop';
+import Information from './pages/student/information/Information';
 
 function App() {
 
@@ -63,6 +65,7 @@ function App() {
 
      
       <Routes>
+      <Route path='/student/testresult' element={<TestResult/>}/>
       <Route path='/student/testsubmit' element={<TestSubmitPop/>}/>
       <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
@@ -74,6 +77,7 @@ function App() {
         <Route path='/results' element={<Results/>}/>
         <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
+        <Route path='/student/information' element={<Information/>}/>
 
  
      
@@ -95,6 +99,10 @@ function App() {
         <Route path='/whyUs' element={<WhyUs/>}/>
         <Route path='/institution/additional-information' element={<AdditionalInformation/>}/>
         <Route path='/institution/user-pass' element={<UsernamePassword/>}/>
+
+        <Route path='/institution/rules' element={<QuestionRules/>}/>
+        <Route path='/institution/testcreation' element={<TestCreation/>}/>
+
         <Route path='/institution/dashboard' element={<UniversityDashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>

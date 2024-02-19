@@ -19,6 +19,8 @@ import emp from '../../assets/emp.jpeg'
 import { useAuthLogin } from '../../auth/login'
 import Test from '../../Test/Test'
 import front from '../../assets/front.jpeg'
+
+
 const TestFormat = () => {
 
 const [user, setUser] = useState('')
@@ -40,7 +42,6 @@ const [user, setUser] = useState('')
       </div>
       <div className='top_boxone'>
      <div className=''>
-      
     <img src={front} alt='front cover' className='new1'/>
      </div>
       </div>

@@ -1,0 +1,25 @@
+.below-nav2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    width: 90%;
+  
+}
+
+.h12{
+    color: white;
+}
+
+.below-nav2 button{
+    padding: 10px;
+    color: white;
+    font-family: "Gordita-Regular", Helvetica;
+   font-weight: bold;
+   background-color: #33cc00;
+   background: #33cc00;
+   border: none;
+   border-radius: 5px;
+
+}

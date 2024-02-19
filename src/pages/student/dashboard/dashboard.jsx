@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import SignedNav from '../../../components/containers/signed/SignedNav'
 import Footer from '../../../components/containers/footer/footer'
 import IdSlide from '../../../components/containers/id_slide/IdSlide'
@@ -12,13 +12,20 @@ import reading from '../../../assets/reading.png'
 import reading2 from '../../../assets/reading2.png'
 import read_photo from '../../../assets/read_photo.png'
 import read_photo2 from '../../../assets/read_photo2.png'
-
+import { useAuthLogin } from '../../../auth/login'
 
 
 
 import './style.css'
 
+
+
 const StudentDashboard = () => {
+  const [user, setUser]=useState(false)
+
+const {GetExams} = useAuthLogin();
+
+
   return (
     <div>
       <div>
@@ -31,9 +38,9 @@ const StudentDashboard = () => {
      <div className=''>
       <div className='bold_dashboard'><img src={trois} alt="img" className='img_set'/>My Dashboard</div>
       <br />
-      <div className='mon'><a href="/" className='my_test'>My Tests</a>   <a href="/" className='view'>view all Tests</a></div>
+      <div ><div className='my_test'>My Tests</div>   <a href="/" className='view'>view all Tests</a></div>
       <div className='block_functions'>
-        <div className='green_white'><a href="/student/onlineofline" className='reg_find'>Register/Find Test Centers</a></div>
+        <div className='green_white'  onClick={()=>GetExams()}><div className='reg_find'>Register/Find Test Centers</div></div>
         <div className='green_white'><span className='fill_text'><img src={yuu} alt="img" className='img_jk' />Upcoming Tests</span></div>
         <div className='green_white'> <span className='reg_find2'>No Test For now!</span></div>
         <div className='green_white'><span className='fill_text'><img src={yut} alt="" className='img_jk'/>Scores</span></div>

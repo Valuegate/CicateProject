@@ -20,11 +20,37 @@ font-family: "Gordita-Regular", Helvetica;
     border-radius: 20px;
 }
 
+.black-test1{
+    background-color: #282828;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
 .black-test h1{
     color:#33cc00; 
     font-size: 30px;
     padding-top: 25px;
     font-family: "Gordita-Regular", Helvetica;
+}
+
+.black-test1 h1{
+    font-size: 30px;
+    padding-top: 25px;
+    font-family: "Gordita-Regular", Helvetica;
+}
+
+.black-test1 p{
+
+    color: white;
+    text-align: justify;
+    padding-bottom: 20px;
+    line-height: 20px;
+    padding: 30px;
+  
 }
 
 .black-test p{
@@ -82,4 +108,15 @@ font-family: "Gordita-Regular", Helvetica;
    background: #33cc00;
    border: none;
 
+}
+
+@media screen and (max-width:600px) {
+    .black-test{
+        background-color: #282828;
+        width: 100%;
+    }
+    .black-test1{
+        width: 100%;
+
+    }
 }

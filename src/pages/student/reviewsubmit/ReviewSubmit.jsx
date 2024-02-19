@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import SignedNav from '../../../components/containers/signed/SignedNav'
 import Footer from '../../../components/containers/footer/footer'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
@@ -9,7 +9,7 @@ import BackButton from '../../../components/backbutton/BackButton'
 import { useRegisterContext } from '../../../auth/Register'
 import { useAuth } from '../../../auth/AuthProvider'
 import { Client } from '../../../api/axios'
-import {useAuthLogin}  from '../../../auth/login'
+import Alert from '../../../components/alert/Alert'
 
 
 
@@ -28,25 +28,53 @@ const ReviewSubmit = () => {
     month, setMonth, validMonth, setValidMonth} = useRegisterContext()
  
   const Navigate = useNavigate()
+  const [alertMessage, setAlertMessage] = useState(null)
 const {userName, id, userEmail} = useAuth()
-  const handleSubmit = (e) => {
+  
+const handleSubmit = (e) => {
 
     e.preventDefault()
 
+  const formData = new FormData();
+formData.append('image', img); // Assuming img is a File object
+formData.append('uploaded_images', img); // Assuming img is a File object
+formData.append('name', test);
+formData.append('time', time);
+formData.append('user', id);
+formData.append('date', month);
+
+
     Client.post(
-      Exam_Register,JSON.stringify({
-        image:img,
-        uploaded_images:img,
-        name:test,
-        time:time,
-        product:'',
+      Exam_Register, formData,
+      {
+        headers: { 
+       Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+      },
+    }
+    ).then((res)=>{
+   
+setAlertMessage({
+  type: 'success',
+  message:'Account Sucessfully created',
+})
+setTimeout(() => {
+  Navigate('/student/student-dashboard')
+  console.log(res);
+}, 2000)
+
+    }).catch((err)=>{
+      console.log(err)
+      setAlertMessage({
+        type: 'error',
+        message: `Failed to submit try again please`
       })
-    )
-Navigate('/student/paymentpage')
+    })
   }
 
 
-
+  const endAlert = () => {
+    setAlertMessage(null);
+  };
 
   return (
     <div>
@@ -55,7 +83,11 @@ Navigate('/student/paymentpage')
       </div>
       <div className='try'>
         <div className='second_block'>
-       
+        { alertMessage && (<Alert
+          type={alertMessage.type}
+          message={alertMessage.message}
+          onClose={endAlert}/>)}
+
             <TestCarousel/>
             <div>
                 <form action="" className='review_flex'>

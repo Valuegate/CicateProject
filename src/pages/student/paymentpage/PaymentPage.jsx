@@ -27,7 +27,7 @@ Navigate('/student/paymentcompletion')
           <TestCarousel/>
 
           
-            <form action="" className='review_flex'>
+            <form action="" className='card_pay'>
               <div className=''>
                 <label htmlFor="" className='labels'>Card Number: <br />
                 <input type="text" className='inputs'placeholder='4153 6544 7888 9877'/></label>
@@ -45,7 +45,7 @@ Navigate('/student/paymentcompletion')
               </div>
 
 
-              <div className=''>
+              <div className='card_pay_left'>
               <label htmlFor="" className='labels'>Name & Surname: <br />
               <input type="text" className='inputs' placeholder='JOHN OLIVER'/></label>
               <br />

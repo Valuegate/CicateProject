@@ -3,10 +3,33 @@
 }
 
 
+.card_pay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  line-height: 40px;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.card_pay_left{
+  margin-top: -8rem;
+}
+
 @media screen and (max-width: 600px) {
+  .card_pay_left{
+    margin-top: 0rem;
+
+  }
+  .card_pay{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+  }
 .against{
         margin-top: 2rem;
-
     }
 
     .push_button{
