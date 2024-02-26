@@ -4,7 +4,8 @@ import cartgreen from '../../../assets/cartgreen.svg'
 import guy2 from '../../../assets/guy2.png'
 import IdSlide from '../../../components/containers/id_slide/IdSlide'
 import Footer from '../../../components/containers/footer/footer'
-import ResetPassword from '../../../ResetPassword'
+import ResetPassword from '../../../components/ResetPassword'
+import DeleteAccount from '../../../components/DeleteAccount'
 import './style.css'
 
 const Settings = () => {
@@ -66,6 +67,7 @@ const Settings = () => {
             </div>
   
 <ResetPassword/>
+<DeleteAccount/>
           </div>
    
     

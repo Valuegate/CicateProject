@@ -6,7 +6,7 @@ import cartgreen from '../../../assets/cartgreen.svg'
 import guy3 from '../../../assets/guy3.png'
 import IdSlide from '../../../components/containers/id_slide/IdSlide'
 import Footer from '../../../components/containers/footer/footer'
-import ResetPassword from '../../../ResetPassword'
+import ResetPassword from '../../../components/ResetPassword'
 
 const SettingsUniversity = () => {
   return (
