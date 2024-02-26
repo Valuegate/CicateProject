@@ -25,9 +25,10 @@ const SettingsUniversity = () => {
             <div className='profile_justify'>
               <div className='institution_black'>
                <div className='top_profile'>
-               <div className=''>
+               <div className='insti-profile'>
                     <h1 className='profile_profile'>Institution Settings</h1>
-                    <img src={guy3} alt="profile" /> 
+    
+                    <div> <img src={guy3} alt="profile" /> </div>
                     <div>
                     <button className='profile_btn'>Upload</button>
                     </div>
