@@ -27,11 +27,8 @@ const SettingsUniversity = () => {
                <div className='top_profile'>
                <div className='insti-profile'>
                     <h1 className='profile_profile'>Institution Settings</h1>
-    
                     <div> <img src={guy3} alt="profile" /> </div>
-                    <div>
-                    <button className='profile_btn'>Upload</button>
-                    </div>
+                    <div><button className='profile_btn'>Upload</button></div>
                   
                 </div>
                </div>

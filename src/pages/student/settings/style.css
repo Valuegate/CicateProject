@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    line-height: 35px;
 }
 .profile_black3{
     background: #282828;
@@ -88,7 +89,7 @@
         justify-content: center;
         flex-direction: column;
         gap: 0rem;
-        line-height: 30px;
+        line-height: 25px;
       
     }
 

@@ -19,8 +19,8 @@
 
 @media screen and (max-width: 600px) {
     .institution_black{
-        height:995px;
-        line-height: 35px;
+        height:1080px;
+        line-height: 10px;
         width: 300px;
     }
 
@@ -29,5 +29,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        line-height: 30px;
+        margin-top: 2rem;
     }
 }
