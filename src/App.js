@@ -53,7 +53,8 @@ import TestPage from './pages/student/Testpage/TestPage';
 import TimeUp from './pages/student/TimeUp/TimeUp';
 import TestSubmitPop from './pages/student/testsubmit/TestSubmitPop';
 import Information from './pages/student/information/Information';
-
+import Settings from './pages/student/settings/Settings';
+import SettingsUniversity from './pages/institution/settings/Settings';
 function App() {
 
   return (
@@ -78,6 +79,7 @@ function App() {
         <Route path='/student/payment' element={<Payment/>}/>
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
         <Route path='/student/information' element={<Information/>}/>
+        <Route path='/student/settings' element={<Settings/>}/>
 
  
      
@@ -102,7 +104,7 @@ function App() {
 
         <Route path='/institution/rules' element={<QuestionRules/>}/>
         <Route path='/institution/testcreation' element={<TestCreation/>}/>
-
+        <Route path='/institution/settings' element={<SettingsUniversity/>}/>
         <Route path='/institution/dashboard' element={<UniversityDashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>

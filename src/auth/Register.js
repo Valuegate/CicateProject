@@ -13,7 +13,7 @@ const Url_regex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/
 const Location_regex = /^[a-zA-Z0-9 ]+$/
 const Text_area = /^(?=(\b\w+\b\s*){5,})([a-zA-Z\s]{1,500})$/
 const Time_regex = /^(?:\d{1,2}|(?:1[0-2]|0?[1-9]))(?:-(?:\d{1,2}|(?:1[0-2]|0?[1-9])))?(?: [0-2]?[0-9]:[0-5][0-9](?::[0-5][0-9])?)?$/
-const Img_regex = /^.+\.(jpg|jpeg|png|gif|bmp|tiff|webp|svg|ico)$/
+const Img_regex = /^.+\.(jpg|jpeg|png|gif|bmp|tiff|webp|svg|ico|csv)$/
 
 
 
@@ -121,9 +121,19 @@ const [validBiography, setValidBiography] = useState(false)
 
  const  [img, setImg] = useState("")
  const [validImg, setValidImg] = useState(false)
+ 
+ const [question, setQuestion] = useState("")
+ const [validQuestion, setValidQuestion] = useState(false)
+
 
  const [errMsg, setErrMsg] = useState('')
 
+useEffect(() =>{
+  const validate = Img_regex.test(question)
+  console.log(validate)
+  console.log(question)
+  setValidQuestion(validate)
+},[question])
 
  useEffect(()=>{
 const validate = Img_regex.test(img)
@@ -387,6 +397,10 @@ setValidUserr(validate)
  setUserDegree,
  setUserName,
  setValidUser,
+ question,
+ setValidQuestion,
+ setQuestion,
+ validQuestion,
  user,
  setValidUserr,
  setValidUserAccount,

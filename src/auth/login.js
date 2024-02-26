@@ -3,9 +3,14 @@ import { Client } from "../api/axios";
 import {useNavigate} from 'react-router-dom'
 import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
+import TestPage from "../pages/student/Testpage/TestPage";
+
 
 const Context = createContext({});
 const url = 'https://ciccate2-production.up.railway.app/api/api/'
+const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
+
+
 export const AuthLogin = ({children}) => {
 
   const {setAuth,setAuthData, setAuthId} = useAuth();
@@ -164,6 +169,31 @@ return JSON.parse(localStorage.getItem('user'));
   };
 
 
+  const startExams = (e) => {
+    Client.get(QuestionUrl,{
+      headers: { 
+      Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+     },
+    }).then((resp) => {
+      const {questions} = resp.data;
+      console.log(questions);
+      Navigate({
+        pathname:'/student/test'
+      })
+      questions.forEach(({id, question, question_type}) => {
+        console.log(question);
+      })
+    }).then(()=>{
+console.log('success');
+
+    }).catch((err) => {
+      if (err){
+        console.log(err);
+      }
+    });
+  }
+
+
     
   return (
     <div>
@@ -173,6 +203,7 @@ return JSON.parse(localStorage.getItem('user'));
         setAlertMessage,
         alertMessage,
         GetExams,
+        startExams,
         getUser,
         endAlert}}>
         {children}

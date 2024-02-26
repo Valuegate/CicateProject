@@ -1,0 +1,18 @@
+.institution_black{
+    background: #282828;
+    width: 900px;
+    height:800px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 35px;
+}
+
+.inst_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
