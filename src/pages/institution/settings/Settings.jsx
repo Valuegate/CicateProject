@@ -7,7 +7,7 @@ import guy3 from '../../../assets/guy3.png'
 import IdSlide from '../../../components/containers/id_slide/IdSlide'
 import Footer from '../../../components/containers/footer/footer'
 import ResetPassword from '../../../components/ResetPassword'
-
+import DeleteAccount from '../../../components/DeleteAccount'
 const SettingsUniversity = () => {
   return (
     <div>
@@ -93,6 +93,7 @@ const SettingsUniversity = () => {
               
             </div>
   <ResetPassword/>
+  <DeleteAccount/>
             
       </div>
   )
