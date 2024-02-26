@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    line-height: 35px;
+    line-height: 10px;
 }
 
 
@@ -34,7 +34,7 @@
     justify-content: space-around;
     align-items: center;
     gap: 3rem;
-    line-height: 40px;
+    line-height: 30px;
     width: 100%;
     color: white;
     font-family: Arial, Helvetica, sans-serif
@@ -57,7 +57,7 @@
     display: flex;
     width: 85%;
     margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     gap: 3rem;
 }
 .profile_btn{
@@ -88,20 +88,20 @@
         justify-content: center;
         flex-direction: column;
         gap: 0rem;
-        line-height: 24px;
+        line-height: 30px;
       
     }
 
     .profile_black3{
         background: #282828;
         width: 300px;
-        height:550px;
+        height:590px;
         line-height: 35px;
     }
 
     .profile_black4{
        width: 300px;
-        height:400px;
+        height:430px;
    
     }
     .top_profile{
