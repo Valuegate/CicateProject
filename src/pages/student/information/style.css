@@ -67,6 +67,7 @@ font-family: "Gordita-Regular", Helvetica;
    background: #33cc00;
    border: none;
    border-radius: 5px;
+   cursor: pointer;
 
 }
 
@@ -85,4 +86,31 @@ font-family: "Gordita-Regular", Helvetica;
     line-height: 20px;
     padding: 30px;
   
+}
+
+@media screen and (max-width: 600px) {
+    .black-test1{
+        background-color: #282828;
+        width: 300px;
+        height: 400px;
+       
+    }
+
+    .black-test1 p{
+        padding-bottom: 0px;
+        line-height: 20px;
+        padding: 20px;
+        font-size: 13px;
+      
+    }
+
+    .below-nav1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 10px;
+   
+      
+    }
 }

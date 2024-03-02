@@ -1,6 +1,6 @@
 import React, {useContext, useState, createContext} from "react";
 import { Client } from "../api/axios";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, useHistory} from 'react-router-dom'
 import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
 import TestPage from "../pages/student/Testpage/TestPage";
@@ -15,7 +15,7 @@ export const AuthLogin = ({children}) => {
 
   const {setAuth,setAuthData, setAuthId} = useAuth();
   const [alertMessage, setAlertMessage] = useState(null)
-  
+  const [questions, setQuestions] = useState([]);
   const Navigate = useNavigate()
   
   const [success, setSuccess] = useState(false)
@@ -114,7 +114,7 @@ export const AuthLogin = ({children}) => {
   else {
    setAlertMessage({
     type: 'error',
-    message: 'faild to login properly: '
+    message: 'failed to login properly: '
   
    })
 
@@ -126,9 +126,7 @@ export const AuthLogin = ({children}) => {
   
   }
 
-  const createProduct =() => {
-
-  }
+ 
 
   const handleLogout = (err) => {
     localStorage.removeItem('access')
@@ -176,13 +174,13 @@ return JSON.parse(localStorage.getItem('user'));
      },
     }).then((resp) => {
       const {questions} = resp.data;
+      setQuestions(questions);
       console.log(questions);
-      Navigate({
-        pathname:'/student/test'
-      })
-      questions.forEach(({id, question, question_type}) => {
+      Navigate('/student/information')
+     questions.forEach(({id, question, que_type}) => {
         console.log(question);
       })
+      
     }).then(()=>{
 console.log('success');
 
@@ -193,10 +191,22 @@ console.log('success');
     });
   }
 
+  const submitTest = () => {
+    const response = async (req, res) => {
+      Client.post(url,{
+     
+      }).then(response.data)
+      .catch((err) => {
+        console.log(err);
+      });
+    };
+  }
 
     
   return (
+   
     <div>
+  
       <Context.Provider value={{
         handleLogin,
         handleLogout,
@@ -204,10 +214,12 @@ console.log('success');
         alertMessage,
         GetExams,
         startExams,
+        submitTest,
         getUser,
         endAlert}}>
         {children}
       </Context.Provider>
+     
     </div>
   )
 }

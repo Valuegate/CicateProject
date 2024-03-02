@@ -4,7 +4,7 @@ import './style.css'
 
 const Information = () => {
 
-
+const Navigate = useNavigate()
   return (
     <div>
   <div className='test-container'>
@@ -12,10 +12,10 @@ const Information = () => {
        <div className='info-test'>
         <h1 className='h11'>Information</h1>
         <p>
-        The user, Kelly, is a jazz music lover living in Paris. 
-        They attend a jazz concert most weeks.
-         Kelly wants an easy way to find out about new artists and purchase
-          tickets to their shows on Kelly’s free weeknights. 
+        The test takes approximately the same amount of time
+        you will use to have a good meal so i advice you to
+        enjoy yourself while on the test and have a good look
+        at all the questions promptly before you answer them
         </p>
        </div>
        
@@ -27,7 +27,7 @@ const Information = () => {
 
       <div className='below-nav1'>
    
-   <button>Next</button>
+   <button onClick={()=>{Navigate('/student/test')}}>Start</button>
   
 
  </div>
