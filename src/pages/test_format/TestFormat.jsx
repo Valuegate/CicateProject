@@ -48,7 +48,7 @@ const [user, setUser] = useState('')
 
       <div className='top_abiities'>
     
-        <div className='abilities'>Testing Your Abilities12<br />
+        <div className='abilities'>Testing Your Abilities<br />
 to Success!</div>
       </div>
 
