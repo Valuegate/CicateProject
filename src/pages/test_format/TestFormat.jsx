@@ -42,7 +42,7 @@ const [user, setUser] = useState('')
       </div>
       <div className='top_boxone'>
      <div className=''>
-    <img src={front} alt='front cover' className='new1'/>
+    <img src={front} alt='front cover' className='new1'/> 
      </div>
       </div>
 
