@@ -48,7 +48,7 @@ const [user, setUser] = useState('')
 
       <div className='top_abiities'>
     
-        <div className='abilities'>Test Your Abilities <br />
+        <div className='abilities'>Testing1 Your Abilities <br />
 to Success!</div>
       </div>
 
@@ -69,7 +69,7 @@ to Success!</div>
         <div className=''>
             <p className='empower'>Empowering <br />
 Individuals With <br />
-Reliable Tests and black</p>
+Reliable Tests </p>
             <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
             G.A.T.E and CCA, ensuring accurate evaluations <br />
              for your success. Discover how our products can <br />
