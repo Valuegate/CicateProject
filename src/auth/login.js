@@ -5,7 +5,7 @@ import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
 import TestPage from "../pages/student/Testpage/TestPage";
 
-
+const submitUrl = 'https://ciccate2-production.up.railway.app//api/api/exam/submit/'
 const Context = createContext({});
 const url = 'https://ciccate2-production.up.railway.app/api/api/'
 const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
@@ -193,8 +193,8 @@ console.log('success');
 
   const submitTest = () => {
     const response = async (req, res) => {
-      Client.post(url,{
-     
+      Client.post(submitUrl,{
+     name: 'test'
       }).then(response.data)
       .catch((err) => {
         console.log(err);

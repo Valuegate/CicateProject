@@ -7,11 +7,25 @@ import './style.css'
 const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
 
 const TestPage = () => {
-const {submitTest} = useAuthLogin()
+  const submitUrl = 'https://ciccate2-production.up.railway.app//api/api/exam/submit/'
 const [timer, setTimer] = useState(0);
 const [currentQuestions, setCurrentQuestions] = useState(-1)
 const [questions, setQuestions] = useState([])
 
+
+const submitTest =  async () => {
+  try{
+    const response = await  
+       Client.post(submitUrl,{
+      Agree:'5',
+      
+       })
+       console.log(response.data)
+      }
+    catch (err) {
+      console.log(err);
+    }
+};
 
 
   const startExams = () => {
@@ -96,7 +110,7 @@ startExams()
 
       <div className='below-nav'>
        <button onClick={()=>{if(currentQuestions !== 0){ setCurrentQuestions(currentQuestions -1)}}}>Back</button>
-      { currentQuestions < 7 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 7 && (<button onClick={()=>{submitTest()}}>Submit</button>)}
+      { currentQuestions < 41 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 41 && (<button onClick={()=>submitTest()}>Submit</button>)}
       </div>
       </div>
   </div>
