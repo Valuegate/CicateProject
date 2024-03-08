@@ -84,6 +84,9 @@ console.log('success');
         })
        console.log(response.data);
           setModalOpen(true)
+          setTimeout(() => {
+            Navigate('/student/student-dashboard')
+          },3000)
         
         }
       catch (err) {
