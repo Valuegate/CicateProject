@@ -76,7 +76,7 @@ height: 150px;
 .rules1{
     background: #878787;
     border-radius: 20px;
-    height: 1260px;
+    height: 700px;
     width: 90vh;
     margin-top: 4rem;
     display: flex;
@@ -137,7 +137,8 @@ background:#33cc00;
 border: none;
 border-radius: 10px;
 padding: 5px;
-font-size: 20px;
+font-size: 25px;
+font-size: 15px;
 cursor: pointer;
 
    }
@@ -164,6 +165,10 @@ cursor: pointer;
  
    }
 
+   .plus_black{
+    height: 25px;
+}
+
    .adding2{
     background: #3A3A3A;
     border: 1px solid #878787;
@@ -176,6 +181,10 @@ cursor: pointer;
       
         width: 70%;
         margin: 45px;
+    }
+
+    .plus_black{
+        height: 25px;
     }
 
     .img-optional{
@@ -194,7 +203,7 @@ cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 1350px;
+            height: 600px;
             }
             .rules-main1{
                 background: #3A3A3A;
@@ -207,4 +216,7 @@ cursor: pointer;
             .launch{
                gap: 2.8rem;
                }
+
+               
+
    }

@@ -1,32 +1,29 @@
 import React, { useState, useEffect, useContext } from 'react'
 import {useNavigate, useLocation} from 'react-router-dom'
-import { useAuthLogin } from '../../../auth/login'
 import { Client } from '../../../api/axios'
+import TestSubmitPop from '../testsubmit/TestSubmitPop'
+import TimeUp from '../TimeUp/TimeUp'
 import './style.css'
 
 const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
 
 const TestPage = () => {
-  const submitUrl = 'https://ciccate2-production.up.railway.app//api/api/exam/submit/'
+const submitUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/submit/'
 const [timer, setTimer] = useState(0);
 const [currentQuestions, setCurrentQuestions] = useState(-1)
 const [questions, setQuestions] = useState([])
+const [answers, setAnswers] = useState({})
+const [isModalOpen, setModalOpen] = useState(false)
+const [timeUp, setTimeUp] = useState(false)
+const Navigate =  useNavigate()
 
+const handleModalClose = () => {
+  setModalOpen(false)
+}
 
-const submitTest =  async () => {
-  try{
-    const response = await  
-       Client.post(submitUrl,{
-      Agree:'5',
-      
-       })
-       console.log(response.data)
-      }
-    catch (err) {
-      console.log(err);
-    }
-};
-
+const handleTimeUpClose = () => {
+  setTimeUp(false)
+}
 
   const startExams = () => {
   
@@ -52,6 +49,48 @@ console.log('success');
       }
     });
   }
+  
+  const submitTest =  async () => {
+    try{
+      const formData = questions.map((question, index) => {
+        const {question: questionText, que_type} = question;
+        const selected_option = answers[questionText];
+        
+
+        const queTypetirm = que_type ? que_type.trim():'';
+        const selecteTrim = selected_option ? selected_option.trim() : ''
+        return{
+          question: questionText,
+          que_type: queTypetirm,
+          selected_option: selecteTrim
+        };
+      })
+      
+     
+      const accessToken = localStorage.getItem('accesstoken');
+      console.log('Access Token:', accessToken);
+  
+
+    // Check if access token exists
+    if (!accessToken) {
+      throw new Error('Access token not found');
+    }
+
+      const response = await  
+         Client.post(submitUrl, formData,{
+          headers: { 
+          Authorization: 'Bearer ' + accessToken 
+         },
+        })
+       console.log(response.data);
+          setModalOpen(true)
+        
+        }
+      catch (err) {
+        console.log(err);
+      }
+  };
+  
 
   const testTimer = (seconds)=>{
     const hrs = Math.floor(seconds / 3600);
@@ -63,10 +102,20 @@ console.log('success');
 
 useEffect(() => {
   const interval = setInterval(() => {
-    setTimer((prev)=> prev + 1)}, 1000);
+    setTimer((prev)=> prev + 1)
+    if(timer === 200){
+      setTimeUp(true);
+      setTimeout(() => {
+        Navigate('/student/student-dashboard')
+      },3000)
+     
+    
+      clearInterval(interval);
+    }
+    }, 1000);
 
     return ()=> clearInterval(interval);
-  },[]);
+  },[timer]);
 
  
 
@@ -77,33 +126,72 @@ startExams()
  }
  },[])
 
+ const handleAnswers = ({questionID, answer})=>{
+  setAnswers(prev => ({
+    ...prev,
+    [questionID]: answer
+  }))
+};
+
+
+
   return (
     <div>
       <div className='timer'>
        <h1>{testTimer(timer)}</h1>
       </div>
   <div className='test-container'>
-  <div className='black-test'>
+    <TestSubmitPop isOpen={isModalOpen} onClose={handleModalClose}/>
+    <TimeUp isOpen={timeUp} onClose={handleTimeUpClose}/>
+  <div className='black-test' >
       {currentQuestions > -1 && questions.length > 0 && (  <h1>{currentQuestions + 1}/{questions.length}</h1>)}
       <br />
      
-  
+ 
        {currentQuestions > -1 && questions[currentQuestions].question && ( <p className='pick'>{questions[currentQuestions].question}<br /></p>)}
        
-      
+
       <form className='test-questions'>
-        <div>
-        <input type="radio" id='checkbox1' name='answer'/>  <label htmlFor="checkbox1">agree</label>
+        <div >
+        <input 
+        type="radio"
+        id='checkbox1'
+        name='answer'
+        value='agree'
+        onChange={() => handleAnswers({questionID: questions[currentQuestions].question, answer: 'agree'})}
+          
+          
+          />  <label htmlFor="checkbox1">agree</label>
         </div>
 
         <div>
-        <input type="radio" id='checkbox2' name='answer'/> <label htmlFor='checkbox2'>Disagree</label>
+        <input
+         type="radio"
+          id='checkbox2'
+           name='answer'
+           value='disagree'
+           onChange={() => handleAnswers({questionID: questions[currentQuestions].question, answer: 'disagree'})}
+           
+           /> <label htmlFor='checkbox2'>Disagree</label>
         </div>
-        <div>
-        <input type="radio" id='checkbox3' name='answer'/> <label htmlFor='checkbox3'>partially agree</label>
+        <div >
+        <input
+         type="radio"
+          id='checkbox3'
+           name='answer'
+           value='partially-agree'
+           onChange={() => handleAnswers({questionID: questions[currentQuestions].question, answer: 'partially-agree'})}
+
+           /> <label htmlFor='checkbox3'>partially agree</label>
         </div>
-        <div>
-        <input type="radio" id='checkbox4' name='answer'/> <label htmlFor='checkbox4'>partially disagree</label>
+        <div >
+        <input
+         type="radio"
+          id='checkbox4'
+           name='answer'
+           value='partially-disagree'
+           onChange={() => handleAnswers({questionID: questions[currentQuestions].question, answer: 'partially-disagree'})}
+           /> <label htmlFor='checkbox4'>partially disagree</label>
         </div>
    
       </form>
