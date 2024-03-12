@@ -85,7 +85,7 @@ console.log('success');
        console.log(response.data);
           setModalOpen(true)
           setTimeout(() => {
-            Navigate('/student/student-dashboard')
+            Navigate('/student/testresult')
           },3000)
         
         }
@@ -106,7 +106,7 @@ console.log('success');
 useEffect(() => {
   const interval = setInterval(() => {
     setTimer((prev)=> prev + 1)
-    if(timer === 200){
+    if(timer === 100){
       setTimeUp(true);
       setTimeout(() => {
         Navigate('/student/student-dashboard')

@@ -49,7 +49,7 @@ if (user){
       <div className='block_functions'>
         <div className='green_white'  onClick={()=>GetExams()}><div className='reg_find'>Register/Find Test Centers</div></div>
         <div className='green_white'><span className='fill_text'><img src={yuu} alt="img" className='img_jk' />Upcoming Tests</span></div>
-        <div className='green_white'> <span className={!user ? 'reg_find2' : ''}>{user ? (<button className={user ? 'reg_find' : 'reg_find2'} onClick={()=> startExams()}>Start Gate Test</button>): 'No Test For now!'}</span></div>
+        <div className='green_white'> <span className={!user ? 'reg_find2' : ''}>{user ? (<button className={user ? 'reg_find' : 'reg_find2'} onClick={()=> startExams()}>Clicking Here to Start Gate Test</button>): 'No Test For now!'}</span></div>
         <div className='green_white'><span className='fill_text'><img src={yut} alt="" className='img_jk'/>Scores</span></div>
         <div className='green_white'><a href="/" className='reg_find2'>Press to see the list</a></div>
       </div>
