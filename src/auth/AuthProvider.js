@@ -17,6 +17,11 @@ return storeAuth ? JSON.parse(storeAuth) : {};
 const [userEmail, setUserEmail] = useState('')
 const [id, setUserId] = useState('')
 
+const mail = (data)=>{
+   setUserEmail(data)
+   localStorage.setItem('email', JSON.stringify(userEmail))
+}
+/** 
 const setAuthData = (email) =>{
 setUserEmail(email);
 setAuth((prevAuth)=>({...prevAuth, userEmail: email}))
@@ -26,6 +31,8 @@ const setAuthId = (Id)=>{
 setUserId(Id);
 setAuth((prevAuth)=>({...prevAuth, id: Id}))
 }
+
+**/
 
 const checkAuth = (data) =>{
   setAuth(data);
@@ -42,7 +49,7 @@ const logOut = () =>{
 
     <div>
       <AuthContext.Provider 
-      value={{auth, userEmail, setAuth, setAuthData, setAuthId,id, logOut, checkAuth}}>
+      value={{auth, mail, setAuth, id, logOut, checkAuth}}>
        {children}
       </AuthContext.Provider>
     </div>

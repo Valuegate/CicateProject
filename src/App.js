@@ -55,6 +55,9 @@ import TestSubmitPop from './pages/student/testsubmit/TestSubmitPop';
 import Information from './pages/student/information/Information';
 import Settings from './pages/student/settings/Settings';
 import SettingsUniversity from './pages/institution/settings/Settings';
+import QuestionsList from './pages/questionslist/QuestionsList';
+
+
 function App() {
 
   return (
@@ -101,7 +104,7 @@ function App() {
         <Route path='/whyUs' element={<WhyUs/>}/>
         <Route path='/institution/additional-information' element={<AdditionalInformation/>}/>
         <Route path='/institution/user-pass' element={<UsernamePassword/>}/>
-
+        <Route path='/questionslist' element={<QuestionsList/>}/>
         <Route path='/institution/rules' element={<QuestionRules/>}/>
         <Route path='/institution/testcreation' element={<TestCreation/>}/>
         <Route path='/institution/settings' element={<SettingsUniversity/>}/>
