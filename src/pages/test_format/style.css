@@ -264,7 +264,6 @@ text-align: center;
 
               body  .app_flex{
                     display: flex;
-                     gap: 1rem;
                      flex-direction: column;
                     background-color: #33cc00;
                     padding: 7rem;
@@ -275,7 +274,9 @@ text-align: center;
                     
                 }
 
-               
+                .app_flex > * + *  {
+                    margin-right: 9rem; /* Adjust as needed */
+                  }
 
                
 
@@ -396,9 +397,7 @@ text-align: center;
            body .the_bar {
                 display: none !important;
             }
-            .app_line1{
-                margin-right: 3.3rem;
-            }
+            
             .set_black{
                
                 display: none !important;
