@@ -5,10 +5,10 @@ import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
 import TestPage from "../pages/student/Testpage/TestPage";
 
-const submitUrl = 'https://ciccate2-production.up.railway.app//api/api/exam/submit/'
+const submitUrl = 'http://cicatebackend.cloud/api/api/exam/submit/'
 const Context = createContext({});
-const url = 'https://ciccate2-production.up.railway.app/api/api/'
-const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
+const url = 'http://cicatebackend.cloud/api/api/'
+const QuestionUrl = 'http://cicatebackend.cloud/api/api/exam/start/'
 
 
 export const AuthLogin = ({children}) => {
@@ -20,7 +20,7 @@ export const AuthLogin = ({children}) => {
   
   const [success, setSuccess] = useState(false)
   
-  const Url = 'https://ciccate2-production.up.railway.app/api/api/login/'
+  const Url = 'http://cicatebackend.cloud/api/api/login/'
   
   const {
     userEmail,
@@ -77,7 +77,7 @@ export const AuthLogin = ({children}) => {
   
   
   setTimeout(() => {
-    Navigate('/')
+    Navigate('/student/student-dashboard')
   }, 2000);
   console.log(success)
   }

@@ -4,7 +4,7 @@ import { useAuthLogin } from '../auth/login'
 import './style.css'
 import { Client } from '../api/axios'
 
-const Url = 'https://ciccate2-production.up.railway.app/api/api/create/'
+const Url = 'http://cicatebackend.cloud/api/api/create/'
 
 const Product = (props) => {
  const Navigate = useNavigate()

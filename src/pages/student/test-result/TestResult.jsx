@@ -4,7 +4,7 @@ import { Client } from '../../../api/axios'
 import './style.css'
 
 
-const resultUrl ='https://ciccate2-production.up.railway.app/api/api/question/list/'
+const resultUrl ='http://cicatebackend.cloud/api/api/question/list/'
 
 const resultChecker = () =>{
 Client.get(resultUrl,{

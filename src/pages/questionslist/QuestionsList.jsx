@@ -9,7 +9,7 @@ import './style.css'
 
 /** */
 
-const url = 'https://ciccate2-production.up.railway.app/api/api/question/delete/3/'
+const url = 'http://cicatebackend.cloud/api/api/question/delete/3/'
 const QuestionsList = () => {
 const Navigate = useNavigate()
 const [dropDownVisible, setDropdownVisible] = useState(false);

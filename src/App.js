@@ -66,9 +66,7 @@ function App() {
 <Router>
      <RegisterContext>
       <AuthLogin>
-<ProtectedRoutes>
-  
-</ProtectedRoutes>
+
      
       <Routes>
       <Route path='/student/testresult' element={<TestResult/>}/>

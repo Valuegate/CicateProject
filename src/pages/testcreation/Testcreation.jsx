@@ -13,7 +13,7 @@ import { Client } from '../../api/axios'
 
 
 
-const testUrl = 'https://ciccate2-production.up.railway.app/api/api/question/upload/'
+const testUrl = 'http://cicatebackend.cloud/api/api/question/upload/'
 
 const TestCreation = () => {
 const {question, setQuestion} = useRegisterContext()

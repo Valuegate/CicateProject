@@ -16,7 +16,7 @@ import Alert from '../../../components/alert/Alert'
 
 
 
-const Exam_Register = 'https://ciccate2-production.up.railway.app/api/api/ExamRegister/'
+const Exam_Register = 'http://cicatebackend.cloud/api/api/ExamRegister/'
 const ReviewSubmit = () => {
 
 

@@ -5,10 +5,10 @@ import TestSubmitPop from '../testsubmit/TestSubmitPop'
 import TimeUp from '../TimeUp/TimeUp'
 import './style.css'
 
-const QuestionUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/start/'
+const QuestionUrl = 'http://cicatebackend.cloud/api/api/exam/start/'
 
 const TestPage = () => {
-const submitUrl = 'https://ciccate2-production.up.railway.app/api/api/exam/submit/'
+const submitUrl = 'http://cicatebackend.cloud/api/api/exam/submit/'
 const [timer, setTimer] = useState(0);
 const [currentQuestions, setCurrentQuestions] = useState(-1)
 const [questions, setQuestions] = useState([])
@@ -201,7 +201,7 @@ startExams()
 
       <div className='below-nav'>
        <button onClick={()=>{if(currentQuestions !== 0){ setCurrentQuestions(currentQuestions -1)}}}>Back</button>
-      { currentQuestions < 41 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 41 && (<button onClick={()=>submitTest()}>Submit</button>)}
+      { currentQuestions < 25 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 25 && (<button onClick={()=>submitTest()}>Submit</button>)}
       </div>
       </div>
   </div>

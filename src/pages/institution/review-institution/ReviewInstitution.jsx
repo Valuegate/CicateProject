@@ -9,7 +9,7 @@ import { useRegisterContext } from '../../../auth/Register'
 import Alert from '../../../components/alert/Alert'
 
 import {Client} from '../../../api/axios'
-const Url = 'https://ciccate2-production.up.railway.app/api/api/instituetion/'
+const Url = 'http://cicatebackend.cloud/api/api/instituetion/'
 
 const ReviewInstitution = () =>
 
