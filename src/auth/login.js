@@ -3,7 +3,7 @@ import { Client } from "../api/axios";
 import {useNavigate, useHistory} from 'react-router-dom'
 import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
-import TestPage from "../pages/student/Testpage/TestPage";
+
 
 const submitUrl = 'http://cicatebackend.cloud/api/api/exam/submit/'
 const Context = createContext({});
@@ -27,8 +27,7 @@ export const AuthLogin = ({children}) => {
     pwd,
   } = useRegisterContext()
   
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+
   
 
   const handleLogin = async (e) => {
@@ -62,12 +61,12 @@ export const AuthLogin = ({children}) => {
     localStorage.setItem('user', JSON.stringify(response?.data))
   }
 
-  
+  /*
   setAuth({userEmail,pwd,access,id,token,refresh});
   
   setAuthData(userEmail)
   setAuthId(id);
-  
+  */
   setAlertMessage({
     type: 'success',
     message: `Welcome ${userEmail}`,
