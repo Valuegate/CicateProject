@@ -4,7 +4,8 @@ import { Client } from '../../../api/axios'
 import './style.css'
 
 
-const resultUrl ='http://cicatebackend.cloud/api/api/question/list/'
+const resultUrl ='http://cicatebackend.cloud/api/api/result/list/'
+
 
 const resultChecker = () =>{
 Client.get(resultUrl,{
@@ -14,6 +15,7 @@ Client.get(resultUrl,{
 }).then((response)=>{
   console.log(response.data)
   const results = response.data;
+  console.log(results)
 }).catch((error) =>{
   if(error){
     console.log(error)
