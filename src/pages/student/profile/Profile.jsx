@@ -11,6 +11,17 @@ const Profile = () => {
  const Navigate = useNavigate()
  const [userEmail, setUserEmail] = useState("")
  const [id, setId] = useState("")
+ const [name, setName] = useState("")
+
+ useEffect(() =>{
+  const getName = () =>{
+    const userData = JSON.parse(localStorage.getItem("user"));
+    if (userData){
+      setName(userData.name);
+    }
+  }
+  getName();
+ },[])
 
  useEffect(() =>{
   const getEmail = () => {
@@ -51,7 +62,7 @@ getEmail();
             <div className='profile_justify'>
               <div className='profile_black'>
                  <img src={guy} alt="profile" className='profile_img'/>
-                 <h1 className='profile_name'>John Jonshon David</h1>
+                 <h1 className='profile_name'>{name}</h1>
                  <h2 className='profile_email'>{userEmail}</h2>
                  <p className='tracking'>Tracking ID: {id}</p>
                  <p className='tracking'> <span>32</span>   Tests</p>
