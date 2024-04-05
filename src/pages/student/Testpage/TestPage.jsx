@@ -201,7 +201,7 @@ startExams()
 
       <div className='below-nav'>
        <button onClick={()=>{if(currentQuestions !== 0){ setCurrentQuestions(currentQuestions -1)}}}>Back</button>
-      { currentQuestions < 25 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 25 && (<button onClick={()=>submitTest()}>Submit</button>)}
+      { currentQuestions < 39 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 39 && (<button onClick={()=>submitTest()}>Submit</button>)}
       </div>
       </div>
   </div>

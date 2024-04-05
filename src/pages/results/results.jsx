@@ -6,13 +6,39 @@ import dots from '../../assets/dots.png'
 import siju from '../../assets/siju.png'
 import left from '../../assets/arrow-square-left.png'
 import right from '../../assets/arrow-square-right.png'
-
-
+import { Client } from '../../api/axios'
 
 
 
 import './style.css'
+
+const resultsUrl =  'http://cicatebackend.cloud/api/api/result/list/'
+
+
 const Results = () => {
+const [previews, setPreviews] = useState([])
+
+const GetResults = () =>{
+Client.get(resultsUrl,{
+  headers: {
+    Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+  },
+}).then((response)=>{
+ const {result} = response.data;
+ setPreviews(result);
+ console.log(result);
+}).catch((error)=>{
+  if(error){
+    console.log(error)
+  }
+});
+  }
+
+  useEffect(() => {
+    GetResults()
+  }, [])
+
+
   const Navigate = useNavigate()
   const [dropDownVisible, setDropdownVisible] = useState(false);
   const [dropDownPosition, setDropdownPosition] = useState({x: 0, y: 0});
@@ -76,7 +102,6 @@ const Results = () => {
 <Link to={'/questions'} className='ques'> <span className='white'>filter:</span>Today</Link>
      </div>
 <div className='rules-main5'>
-
 <p className='user_kelly'>The user, Kelly, is a jazz music lover living in Paris.
  They attend a jazz concert most weeks.</p>
 
@@ -93,9 +118,9 @@ const Results = () => {
 <div className='main1'>
              {/* Render individual checkboxes */}
              
-             {Array.from({ length: 7}, (_, i) => i + 1).map((index) => (
+             {previews.map((result, index) => (
 
-    <div className='questions_disp2' key={`Question ${index}`}>
+    <div className='questions_disp2' key={result.index}>
       <label htmlFor=""> 
      <input 
     type="checkbox"
@@ -107,16 +132,16 @@ const Results = () => {
        </label>
        <div className='times'>
          <img src={siju} alt="profile" className='propics'/>  
-       Ayomide Goodness</div>
-         <div className='times'><div>17:38</div> </div>
-           <div className='times'><div>5/42</div> </div> 
+       {result.user}</div>
+         <div className='times'><div>{result.date_created}</div> </div>
+           <div className='times'><div>{result.score}</div> </div> 
  </div>
              ))}
 
 
 
  <div className='questions_disp0'>
-<div>Results <span>198</span></div>
+<div>Results <span>{previews.length}</span></div>
 <div className='navigation'>
   <button><img src={left} alt="img" /></button>
   <span>1-10</span>

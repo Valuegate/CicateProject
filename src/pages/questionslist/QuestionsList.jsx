@@ -6,11 +6,47 @@ import dots from '../../assets/dots.png'
 import deletebin from '../../assets/delete.png'
 import { Client } from '../../api/axios'
 import './style.css'
+import Alert from '../../components/alert/Alert'
 
 /** */
+const list = 'http://cicatebackend.cloud/api/api/question/list/'
 
-const url = 'http://cicatebackend.cloud/api/api/question/delete/3/'
+const url = 'http://cicatebackend.cloud/api/api/question/delete/6/'
+
+
+
+
+
+
 const QuestionsList = () => {
+
+
+const [previews, setPreviews] = useState([])
+
+const displayQuestions = () => {
+   Client.get(list,
+      {
+      headers: { 
+     Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+    }},
+   ).then((response) =>{
+      const {questions} = response.data
+         console.log(questions);
+         setPreviews(questions)
+    
+      
+   }).catch((error) => {
+if (error){
+   console.error(error)
+}
+   });
+}
+
+useEffect(() =>{
+   displayQuestions()
+},[]);
+
+
 const Navigate = useNavigate()
 const [dropDownVisible, setDropdownVisible] = useState(false);
 const [dropDownPosition, setDropdownPosition] = useState({x: 0, y: 0});
@@ -55,24 +91,33 @@ setCheckedBox(updatedboxes)
 
   const handleEdit = (e) =>{
    e.preventDefault();
-   Client.put(url,{
-      params: {id:'1234'},
-   })
-
-  }
-
-  const Handledelete = (e) =>{
-     e.preventDefault();
-     Client.delete(url,
+   Client.put(url,
       {
-         params: {id:'1234'}
-      }).then((response) => {
+      params: { id:'1234'},
+      },
+      {
+         headers: { 
+        Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+       }},
+   )
+
+}
+
+  const Handledelete = (id) =>{
+   
+     Client.delete(url,
+       {
+         headers: { 
+        Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+       }},).then((response) => {
       console.log(response.data);
       alert('Deleted Succesfully')
       }).catch((error) => {
          console.error(error, 'Error deleting');
       });
   }
+
+ 
 
 // individual checkboxes
 const handleIndividualCheckbox = (e) => {
@@ -81,7 +126,15 @@ setCheckedBox({...checkedbox, [name]: checked});
 };
 
 
-
+const handleButtonDelete = (id) => {
+   if(window.confirm('Are you sure you want to delete')){
+      Handledelete(id).then(() => {
+         window.location.reload();
+      }).catch((error) => {
+         Alert('error deleting', error);
+      });
+   }
+  };
 
 
 
@@ -103,12 +156,12 @@ setCheckedBox({...checkedbox, [name]: checked});
     
     
     /> Select all</label></div>
-    <div>{selectAllBoxes === true ? (<img src={deletebin} alt='bin' onClick={handleEdit}/>) : "100 questions" }</div>
+    <div>{selectAllBoxes === true ? (<img src={deletebin} alt='bin' onClick={handleEdit}/>) : `${previews.length} questions` }</div>
  </div>
 <div className='main1'>
              {/* Render individual checkboxes */}
-             {Array.from({ length: 4 }, (_, i) => i + 1).map((index) => (
-<div className='questions_main1' key={`Question ${index}`}>
+           {previews.map((question, index) => (
+<div className='questions_main1' key={question.id}>
     <div className='questions_disp'><label htmlFor=""> 
      <input 
     type="checkbox"
@@ -120,13 +173,13 @@ setCheckedBox({...checkedbox, [name]: checked});
       dropDownVisible && (
          <div className='drops' style={{top:dropDownPosition.y, left:dropDownPosition.x}}>
             <ul>
-               <li onClick={handleEdit}>Edit</li>
-               <li onClick={Handledelete}>Delete</li>
+               <li onClick={()=>handleEdit()}>Edit</li>
+               <li onClick={()=> handleButtonDelete(question.id)}>Delete</li>
             </ul>
          </div>
       )
      }</div></div>
-    <p> The user, Kelly, is a jazz music lover living in Paris. They attend a jazz concert most weeks. </p>
+    <p>  {question.question} </p>
  </div>
              ))}
 
@@ -138,7 +191,6 @@ setCheckedBox({...checkedbox, [name]: checked});
    
  </div>
 </div>
-
 </div>
 
     </div>

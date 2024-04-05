@@ -1,13 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import upload from '../../assets/Upload Minimalistic.svg'
 import './style.css'
-import add_circle from '../../assets/Add Circle.png'
 import bin from '../../assets/Trash Bin Minimalistic.svg'
 import copy from '../../assets/copy.svg'
-import add from '../../assets/add.svg'
 import { useRegisterContext } from '../../auth/Register'
-import { useAuthLogin } from '../../auth/login'
 import { Client } from '../../api/axios'
 
 
@@ -16,14 +13,15 @@ import { Client } from '../../api/axios'
 const testUrl = 'http://cicatebackend.cloud/api/api/question/upload/'
 
 const TestCreation = () => {
-const {question, setQuestion} = useRegisterContext()
+  const [question, setQuestion] = useState("")
+const formdata = new FormData()
+formdata.append("questions", question)
 
 
-const testCreation = (e) => {
+const testCreation = () => {
 
-  Client.post(testUrl,JSON.stringify({
-    questions:question
-  }),
+  Client.post(testUrl,
+   formdata,
   {
     headers: { 
    Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
@@ -59,9 +57,9 @@ const testCreation = (e) => {
     
    
  <input
-accept="csv/*"
-  id="icon-button-file"
-  type="file" 
+   accept="csv/*"
+   id="icon-button-file"
+   type="file"
    placeholder='Upload image here'
    style={{display: 'none'}}
    onChange={((e)=> setQuestion(e.target.files[0]))}

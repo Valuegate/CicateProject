@@ -11,11 +11,8 @@ import { useRegisterContext } from '../../../auth/Register'
 
 
 const PhotoValidation = () => {
-  const {  img,setImg, setValidImg, validImg,
-    time, setTime,validTime, setValidTime,
-    test, setTest,validTest, setValidTest,
-    day, setDay, validDay, setValidDay,
-    month, setMonth, validMonth, setValidMonth} = useRegisterContext()
+  const {setImg
+} = useRegisterContext()
 
   const Navigate = useNavigate()
 
