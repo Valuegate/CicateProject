@@ -12,7 +12,7 @@ import { Client } from '../../api/axios'
 
 import './style.css'
 
-const resultsUrl =  'http://cicatebackend.cloud/api/api/result/list/'
+const resultsUrl =  'https://ciccate2.onrender.com/api/api/result/list/'
 
 
 const Results = () => {

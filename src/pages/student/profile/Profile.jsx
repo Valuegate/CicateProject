@@ -41,8 +41,8 @@ getEmail();
  getId();
  }, [])
  
- const editProfile = () => {
-  Navigate('/student/settings')
+ const editProfile = (id) => {
+  Navigate(`/student/settings/${id}`)
  }
 
 
