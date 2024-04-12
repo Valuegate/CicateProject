@@ -10,7 +10,7 @@ import { Client } from '../../../api/axios'
 import Alert from '../../../components/alert/Alert'
 
 
-const Url = 'http://cicatebackend.cloud/api/api/candidate/';
+const Url = 'https://ciccate2.onrender.com/api/api/candidate/';
 
 const Review =  () => {
 

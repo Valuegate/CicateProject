@@ -1,32 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 import { Client } from '../../../api/axios'
 import './style.css'
 
 
-const resultUrl ='http://cicatebackend.cloud/api/api/result/list/'
+const resultUrl ='https://ciccate2.onrender.com/api/api/result/list/'
 
 
-const resultChecker = () =>{
-Client.get(resultUrl,{
-  headers: { 
-  Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
- },
-}).then((response)=>{
-  console.log(response.data)
-  const results = response.data;
-  console.log(results)
-}).catch((error) =>{
-  if(error){
-    console.log(error)
-  }
-});
-}
+
 
 
 
 const TestResult = () => {
 
+  const [preview, setPreviews] = useState([])
+  const data = localStorage.getItem('user')
+  const userData = JSON.parse(data)
+ const currentUser = userData.email
+  const resultChecker = () =>{
+
+
+    Client.get(resultUrl,{
+      headers: { 
+      Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+     },
+    }).then((response)=>{
+    const {result} = response.data;
+    setPreviews(result);
+   console.log(preview);
+
+   
+    const userResult = result.find(item => item.user === currentUser);
+    if(userResult){
+      alert(userResult.user + ' ' + 'Success your score is' + ' ' + userResult.score);
+    } else{
+      console.log('no result');
+    }
+      
+    }).catch((error) =>{
+      if(error){
+        console.log(error)
+      }
+    });
+    }
 
   return (
     <div>

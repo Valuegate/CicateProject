@@ -9,9 +9,9 @@ import './style.css'
 import Alert from '../../components/alert/Alert'
 
 /** */
-const list = 'http://cicatebackend.cloud/api/api/question/list/'
+const list = 'https://ciccate2.onrender.com/api/api/question/list/'
 
-const url = 'http://cicatebackend.cloud/api/api/question/delete/6/'
+const url = `https://ciccate2.onrender.com/api/api/question/update/10`
 
 
 
@@ -22,6 +22,7 @@ const QuestionsList = () => {
 
 
 const [previews, setPreviews] = useState([])
+const [updateQuestions, setUpdateQuestions] = useState('')
 
 const displayQuestions = () => {
    Client.get(list,
@@ -89,54 +90,61 @@ setCheckedBox(updatedboxes)
 };
 
 
-  const handleEdit = (e) =>{
-   e.preventDefault();
-   Client.put(url,
+  const handleEdit = (id, updatedQuestion) =>{
+   Client.put(`https://ciccate2.onrender.com/api/api/question/update/${id}/`,
       {
-      params: { id:'1234'},
+      question: updatedQuestion
       },
       {
          headers: { 
         Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
        }},
-   )
+   ).then((response) =>{
+      Navigate(`/institution/editquestion/${id}`)
+   }).catch((error) =>{
+      if (error){
+         console.log('could not update');
+      }
+   })
 
 }
 
-  const Handledelete = (id) =>{
-   
-     Client.delete(url,
-       {
-         headers: { 
-        Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
-       }},).then((response) => {
+  const Handledelete = async (id) => {
+   try{
+   const response = await Client.delete(`https://ciccate2.onrender.com/api/api/question/delete/${id}`,
+   {
+      headers: { 
+     Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
+    }});
       console.log(response.data);
       alert('Deleted Succesfully')
-      }).catch((error) => {
-         console.error(error, 'Error deleting');
-      });
+      return response
+   } catch (err) {
+      console.log(err, 'Error deleting');
+   }
   }
-
- 
-
 // individual checkboxes
 const handleIndividualCheckbox = (e) => {
 const {name, checked} = e.target;
 setCheckedBox({...checkedbox, [name]: checked});
 };
+  
 
-
-const handleButtonDelete = (id) => {
+const handleButtonDelete = async (id) => {
    if(window.confirm('Are you sure you want to delete')){
-      Handledelete(id).then(() => {
+      
+      try{
+        await  Handledelete(id)
+         console.log('Deleted');
          window.location.reload();
-      }).catch((error) => {
-         Alert('error deleting', error);
-      });
-   }
+
+      } catch(error) {
+        console.error(error, 'error')
+      };
+   
   };
 
-
+}
 
   return (
     <div className='rules-container'>
@@ -169,11 +177,11 @@ const handleButtonDelete = (id) => {
     name={`Question ${index}`}
     checked={checkedbox[`Question ${index}`]}
 
-     /> Question 1</label>  <div className='shift_dot' onClick={dropDownToggle}>{ dropDownVisible ? <></> : <img src={dots} alt="dots" />} {
+     /> Question {index + 1}</label>  <div className='shift_dot' onClick={dropDownToggle}>{ dropDownVisible ? <></> : <img src={dots} alt="dots" />} {
       dropDownVisible && (
          <div className='drops' style={{top:dropDownPosition.y, left:dropDownPosition.x}}>
             <ul>
-               <li onClick={()=>handleEdit()}>Edit</li>
+               <li onClick={()=>handleEdit(question.id)}>Edit</li>
                <li onClick={()=> handleButtonDelete(question.id)}>Delete</li>
             </ul>
          </div>

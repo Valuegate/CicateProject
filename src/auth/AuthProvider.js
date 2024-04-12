@@ -21,18 +21,6 @@ const mail = (data)=>{
    setUserEmail(data)
    localStorage.setItem('email', JSON.stringify(userEmail))
 }
-/** 
-const setAuthData = (email) =>{
-setUserEmail(email);
-setAuth((prevAuth)=>({...prevAuth, userEmail: email}))
-}
-   
-const setAuthId = (Id)=>{
-setUserId(Id);
-setAuth((prevAuth)=>({...prevAuth, id: Id}))
-}
-
-**/
 
 const checkAuth = (data) =>{
   setAuth(data);

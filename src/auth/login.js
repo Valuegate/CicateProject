@@ -5,10 +5,10 @@ import { useRegisterContext } from "./Register";
 import { useAuth } from "./AuthProvider";
 
 
-const submitUrl = 'http://cicatebackend.cloud/api/api/exam/submit/'
+const submitUrl = 'https://ciccate2.onrender.com/api/api/exam/submit/'
 const Context = createContext({});
-const url = 'http://cicatebackend.cloud/api/api/'
-const QuestionUrl = 'http://cicatebackend.cloud/api/api/exam/start/'
+const url = 'https://ciccate2.onrender.com/api/api/'
+const QuestionUrl = 'https://ciccate2.onrender.com/api/api/exam/start/'
 
 
 export const AuthLogin = ({children}) => {
@@ -20,7 +20,7 @@ export const AuthLogin = ({children}) => {
   
   const [success, setSuccess] = useState(false)
   
-  const Url = 'http://cicatebackend.cloud/api/api/login/'
+  const Url = 'https://ciccate2.onrender.com/api/api/login/'
   
   const {
     userEmail,

@@ -56,7 +56,7 @@ import Information from './pages/student/information/Information';
 import Settings from './pages/student/settings/Settings';
 import SettingsUniversity from './pages/institution/settings/Settings';
 import QuestionsList from './pages/questionslist/QuestionsList';
-
+import EditQuestion from './pages/institution/editQuestion/EditQuestion';
 
 function App() {
 
@@ -103,11 +103,12 @@ function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/whyUs' element={<WhyUs/>}/>
         <Route path='/institution/additional-information' element={<AdditionalInformation/>}/>
+        <Route path='/institution/editquestion/:id' element={<EditQuestion/>}/>
         <Route path='/institution/user-pass' element={<UsernamePassword/>}/>
         <Route path='/questionslist' element={<QuestionsList/>}/>
         <Route path='/institution/rules' element={<QuestionRules/>}/>
         <Route path='/institution/testcreation' element={<TestCreation/>}/>
-        <Route path='/institution/settings' element={<SettingsUniversity/>}/>
+        <Route path='/institution/settings/:id' element={<SettingsUniversity/>}/>
         <Route path='/institution/dashboard' element={<UniversityDashboard/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/institution/personal-information' element={<PersonalInformation/>}/>

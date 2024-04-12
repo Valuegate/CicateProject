@@ -4,13 +4,12 @@ import upload from '../../assets/Upload Minimalistic.svg'
 import './style.css'
 import bin from '../../assets/Trash Bin Minimalistic.svg'
 import copy from '../../assets/copy.svg'
-import { useRegisterContext } from '../../auth/Register'
 import { Client } from '../../api/axios'
 
 
 
 
-const testUrl = 'http://cicatebackend.cloud/api/api/question/upload/'
+const testUrl = 'https://ciccate2.onrender.com/api/api/question/upload/'
 
 const TestCreation = () => {
   const [question, setQuestion] = useState("")

@@ -16,7 +16,7 @@ import Alert from '../../../components/alert/Alert'
 
 
 
-const Exam_Register = 'http://cicatebackend.cloud/api/api/ExamRegister/'
+const Exam_Register = 'https://ciccate2.onrender.com/api/api/ExamRegister/'
 const ReviewSubmit = () => {
 
 
@@ -35,7 +35,7 @@ const handleSubmit = (e) => {
 
     e.preventDefault()
 
-  const formData = new FormData();
+const formData = new FormData();
 formData.append('image', img); // Assuming img is a File object
 formData.append('uploaded_images', img); // Assuming img is a File object
 formData.append('name', test);

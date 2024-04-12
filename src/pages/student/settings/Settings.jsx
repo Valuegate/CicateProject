@@ -11,7 +11,18 @@ import './style.css'
 const Settings = () => {
 
   const [add, setAdd] = useState(0)
- 
+  const [user, setUser] = useState({
+    name: '',
+    surname:'',
+    email: '',
+    position:'',
+  })
+
+  const {name, surname,email,position} = user
+
+const onChangeEdit = (e) => {
+setUser({...user, [e.target.name]: e.target.value})
+  }
 
   return (
     <div>

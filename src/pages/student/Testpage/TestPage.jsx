@@ -3,18 +3,32 @@ import {useNavigate, useLocation} from 'react-router-dom'
 import { Client } from '../../../api/axios'
 import TestSubmitPop from '../testsubmit/TestSubmitPop'
 import TimeUp from '../TimeUp/TimeUp'
+import Alert from '../../../components/alert/Alert'
 import './style.css'
 
-const QuestionUrl = 'http://cicatebackend.cloud/api/api/exam/start/'
+const QuestionUrl = 'https://ciccate2.onrender.com/api/api/exam/start/'
 
 const TestPage = () => {
-const submitUrl = 'http://cicatebackend.cloud/api/api/exam/submit/'
+const submitUrl = 'https://ciccate2.onrender.com/api/api/exam/submit/'
 const [timer, setTimer] = useState(0);
 const [currentQuestions, setCurrentQuestions] = useState(-1)
 const [questions, setQuestions] = useState([])
 const [answers, setAnswers] = useState({})
 const [isModalOpen, setModalOpen] = useState(false)
 const [timeUp, setTimeUp] = useState(false)
+const [marks, setMarks] = useState({})
+const [preview, setPreview] = useState({})
+const [alertMessage, setAlertMessage] = useState(null)
+
+
+useEffect(() => {
+  console.log(preview);
+  setAlertMessage({
+    type: 'success',
+    message: `Score ${JSON.stringify(preview)}` ,
+  })
+}, [preview]);
+
 const Navigate =  useNavigate()
 
 const handleModalClose = () => {
@@ -31,8 +45,8 @@ const handleTimeUpClose = () => {
       headers: { 
       Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
      },
-    }).then((resp) => {
-      const {questions} = resp.data;
+    }).then((response) => {
+      const {questions} = response.data;
       setQuestions(questions);
       setCurrentQuestions(0)
       console.log(questions);
@@ -68,7 +82,6 @@ console.log('success');
       
      
       const accessToken = localStorage.getItem('accesstoken');
-      console.log('Access Token:', accessToken);
   
 
     // Check if access token exists
@@ -82,7 +95,11 @@ console.log('success');
           Authorization: 'Bearer ' + accessToken 
          },
         })
-       console.log(response.data);
+        const {marks} = (response.data.score_card);
+       
+        setPreview(marks);
+       
+     
           setModalOpen(true)
           setTimeout(() => {
             Navigate('/student/testresult')
@@ -93,7 +110,8 @@ console.log('success');
         console.log(err);
       }
   };
-  
+
+ 
 
   const testTimer = (seconds)=>{
     const hrs = Math.floor(seconds / 3600);
@@ -106,7 +124,7 @@ console.log('success');
 useEffect(() => {
   const interval = setInterval(() => {
     setTimer((prev)=> prev + 1)
-    if(timer === 100){
+    if(timer === 150){
       setTimeUp(true);
       setTimeout(() => {
         Navigate('/student/student-dashboard')
@@ -135,13 +153,23 @@ startExams()
     [questionID]: answer
   }))
 };
-
-
+/** 
+useEffect(() => {
+setAnswers(prev => ({
+  ...prev,[questions[currentQuestions]?.question]:null
+}))
+},[currentQuestions, questions])
+**/
 
   return (
     <div>
       <div className='timer'>
        <h1>{testTimer(timer)}</h1>
+       <button onClick={()=>submitTest()}>submit</button>
+       { alertMessage && (<Alert 
+type={alertMessage.type}
+message={alertMessage.message}
+/>)}
       </div>
   <div className='test-container'>
     <TestSubmitPop isOpen={isModalOpen} onClose={handleModalClose}/>
