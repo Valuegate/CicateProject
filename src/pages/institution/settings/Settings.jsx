@@ -6,7 +6,6 @@ import SignedNav from '../../../components/containers/signed/SignedNav'
 import cartgreen from '../../../assets/cartgreen.svg'
 import guy3 from '../../../assets/guy3.png'
 import IdSlide from '../../../components/containers/id_slide/IdSlide'
-import Footer from '../../../components/containers/footer/footer'
 import ResetPassword from '../../../components/ResetPassword'
 import DeleteAccount from '../../../components/DeleteAccount'
 import { Client } from '../../../api/axios'
@@ -36,7 +35,7 @@ const SettingsUniversity = () => {
 
 
 const loadProfile = async () => {
-  const result = await Client.get(`http://cicatebackend.cloud/${id}`,{
+  const result = await Client.get(`https://ciccate2.onrender.com/${id}`,{
     headers: { 
    Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
   }}).then((response)=>{
@@ -48,7 +47,7 @@ const loadProfile = async () => {
   });*/
 
   const editProfile = async (id) => {
-  await Client.put(`http://cicatebackend.cloud/api/api/question/update/${id}/`,user).then((response)=>{
+  await Client.put(`https://ciccate2.onrender.com/api/api/question/update/${id}/`,user).then((response)=>{
 console.log(response.data)
 alert('success')
   }).catch((error)=>{
