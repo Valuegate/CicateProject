@@ -165,7 +165,7 @@ setAnswers(prev => ({
     <div>
       <div className='timer'>
        <h1>{testTimer(timer)}</h1>
-       <button onClick={()=>submitTest()}>submit</button>
+       
        { alertMessage && (<Alert 
 type={alertMessage.type}
 message={alertMessage.message}
