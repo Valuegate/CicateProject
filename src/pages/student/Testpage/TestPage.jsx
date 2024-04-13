@@ -166,10 +166,7 @@ setAnswers(prev => ({
       <div className='timer'>
        <h1>{testTimer(timer)}</h1>
        
-       { alertMessage && (<Alert 
-type={alertMessage.type}
-message={alertMessage.message}
-/>)}
+       
       </div>
   <div className='test-container'>
     <TestSubmitPop isOpen={isModalOpen} onClose={handleModalClose}/>
@@ -177,8 +174,6 @@ message={alertMessage.message}
   <div className='black-test' >
       {currentQuestions > -1 && questions.length > 0 && (  <h1>{currentQuestions + 1}/{questions.length}</h1>)}
       <br />
-     
- 
        {currentQuestions > -1 && questions[currentQuestions].question && ( <p className='pick'>{questions[currentQuestions].question}<br /></p>)}
        
 
@@ -229,7 +224,7 @@ message={alertMessage.message}
 
       <div className='below-nav'>
        <button onClick={()=>{if(currentQuestions !== 0){ setCurrentQuestions(currentQuestions -1)}}}>Back</button>
-      { currentQuestions < 18 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 18 && (<button onClick={()=>submitTest()}>Submit</button>)}
+      { currentQuestions < 15 ? (<button onClick={()=>{if(currentQuestions !== questions.length -1){ setCurrentQuestions(currentQuestions+1)}}}>Next</button>): currentQuestions === 15 && (<button onClick={()=>submitTest()}>Submit</button>)}
       </div>
       </div>
   </div>
