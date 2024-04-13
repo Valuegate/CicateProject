@@ -9,6 +9,16 @@
     display: flex;
     justify-content:center; 
     }
+    .uplood{
+      display: none;
+    }
+
+    .preview_img{
+      margin-top: 15px;
+      border-radius: 20px;
+      height: 250px;
+      width: 300px;
+    }
     .photo_tex {
  color: #ffffff;
 font-family: "Monument Extended-Regular", Helvetica;
@@ -82,6 +92,13 @@ line-height: 40px;
 
               .photo_tex{
                 margin-top: 2rem;
+              }
+
+              .preview_img{
+                margin-top: 10px;
+                border-radius: 20px;
+                height: 100px;
+                width: 270px;
               }
             }
           

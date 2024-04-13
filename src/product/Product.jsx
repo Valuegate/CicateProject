@@ -51,27 +51,21 @@ console.log(response.data)
   
   return (
 
-       <div className='top_bl_white' onClick={()=> {
-        if(id === 1 ){
-          HandleClick()
-        } else if(id === 2){
-          Navigate('/pocas')
-        } else {
-          Navigate('/lisa')
-        }
-       }}>
+       <div className='top_bl_white' >
         <div className='bl_white'>
           <div className='center_image'> 
             <img src={uploaded_images} alt="test" className='imgSize'/>
           </div>
          
-            <div className='to_apply_flex'>  <p className='bl_tests'>{name}</p> </div>
+            <div className='to_apply_flex'>  <p className='namess'>{name}</p> </div>
+           <div className='div_descript'>
+           <p className='descript'>{Description}</p>
+           </div>
            
-            <p className='bl_para'>{Description}</p>
-
-            <p className='price'>Price: ${price}</p>
+<div className='price_display'> <p className='price'>Price: ${price}</p></div>
+            
               <div className='to_apply_flex1'>
-                {user ? (<Link to={'/student/onlineofline'} className='button_to_apply'>Apply</Link>) :(<Link to={'/login'} className='bl_to_apply'>Apply </Link>) }
+                {user ? (<Link to={'/student/onlineofline'} className='buton_aply'>Apply</Link>) :(<Link to={'/login'} className='bl_to_apply'>Apply </Link>) }
               
                 </div>
         </div>

@@ -10,7 +10,7 @@ import tes3 from '../assets/tes3.jpeg'
 export const tests = [
     {
 id: 1,
-name: 'gate',
+name: 'GATE',
 Description:'This trusted evaluation covers language proficiency, academic aptitude, and job-specific skills, boosting your chances for visa approval and showcasing your competence for studying or working abroad.',
 price:'12.99',
 uploaded_images:[tes]
@@ -18,14 +18,14 @@ uploaded_images:[tes]
 },
 {
     id: 2,
-    name:'pocas',
+    name:'POCAS',
     Description: 'This trusted evaluation covers language proficiency, academic aptitude, and job-specific skills, boosting your chances for visa approval and showcasing your competence for studying or working abroad.',
     price:'15.99',
     uploaded_images:[tes2]
 },
 {
 id: 3,
-name: 'lisa',
+name: 'LISA',
 Description: 'This trusted evaluation covers language proficiency, academic aptitude, and job-specific skills, boosting your chances for visa approval and showcasing your competence for studying or working abroad.',
 price:'9.99',
 uploaded_images:[tes3]

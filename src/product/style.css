@@ -3,6 +3,44 @@
     width: 450px;
     border-radius: 53px;
 }
+.namess{
+    padding: 11px 18px;
+    font-size: 25px;
+    font-weight: bold;
+  font-family: "Monument Extended-Regular", Helvetica;
+}
+
+.descript{
+    justify-content: center;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 3px;
+  font-family: "Monument Extended-Regular", Helvetica;
+}
+.price_display{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.buton_aply{
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    padding: 6px;
+    font-size: 30px;
+    border-radius: 5px;
+    font-family: "Monument Extended-Regular", Helvetica;
+    margin-bottom: 1rem;
+}
+
+.buton_aply:hover{
+    background-color: #33cc00;
+}
 
 .center_image{
     display: flex;
@@ -16,8 +54,18 @@
         height: 28vh;
         width: 38vh;
     }
-    .price{
-        background-color: white;
+   
+
+    .descript{
+      
+        font-size: 10px;
      
+        padding: 10px;
+    }
+    .namess{
+        padding: 5px;
+        font-size: 20px;
+        font-weight: bold;
+      font-family: "Monument Extended-Regular", Helvetica;
     }
 }

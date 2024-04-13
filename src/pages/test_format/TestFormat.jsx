@@ -68,7 +68,7 @@ to Success!</div>
        
         <div className=''>
             <p className='empower'>Empowering <br />
-Individuals With <br />
+Individuals With 
 Reliable Tests </p>
             <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
             G.A.T.E and CCA, ensuring accurate evaluations <br />

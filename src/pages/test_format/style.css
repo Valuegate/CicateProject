@@ -90,8 +90,11 @@ text-align: center;
     }
 
     .top_our{
-        width: 10px;
+    
         display: inline-block;
+        border-radius: 25px;
+        background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 80%, rgb(51, 205, 0) 95.04%);
+        background-color: rgba(255, 255, 255, 1);
     }
 
    body .empower{
@@ -132,7 +135,7 @@ text-align: center;
             font-weight: bold !important;
             letter-spacing: 0;
             line-height: 39.2px;
-            margin-left: 1rem;
+           
             margin-top: 2rem;
             margin-bottom: 2rem;
            
@@ -151,7 +154,7 @@ text-align: center;
                 display: grid;
             }
        body .empower_box{
-            border-radius: 30px;
+        border-radius: 30px;
            width: 35vh;
            height: 30vh;
    
@@ -163,7 +166,7 @@ text-align: center;
            body .cicate_offerz{
                 color: #282828;
                 font-family: "Gordita-Regular", Helvetica;
-                font-size: 1.3rem;
+                font-size: 11px;
                 font-weight: 400;
                 opacity: 0.5;
                 letter-spacing: 0;
@@ -235,12 +238,13 @@ text-align: center;
                     flex-direction: column;
                     background-color: #282828;
                     padding: 2rem;
+                    
                    
                 }
 
                body .why__not{
-                    font-size: 4rem;
-                    line-height: 45px;
+                    font-size: 20px;
+                    line-height: 25px;
                     color: #ffffff;
                   
                     
@@ -258,8 +262,8 @@ text-align: center;
                    margin-top: 0.5rem;
                 }
                 
-                .cross__img{
-                    width: 5vh;
+              .cross__img{
+                   height: 20px;
                     }
 
               body  .app_flex{
@@ -549,9 +553,14 @@ white-space: nowrap;
 .top_our{
     justify-content: center;
     display: flex;
+    padding: 10px;
     align-items: center;
     margin-top: 30px;
-    width: 100%
+    width: 100%;
+    height: 10vh;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgb(230.3, 255, 222.06) 80%, rgb(51, 205, 0) 95.04%);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .bl_white{
@@ -790,25 +799,27 @@ opacity: 0.5;
     display: flex;
     align-items: center;
     margin-top: 50px;
+
     
 }
 
 .why_flex > * + * {
-    margin-left: 8rem; /* Adjust as needed */
+    margin-left: 5rem; /* Adjust as needed */
   }
 
 
 .why__not{
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 7rem;
+font-size: 50px;
 font-weight: bold;
 letter-spacing: 0;
-line-height: 76.1px;
+line-height: 50.1px;
+
 }
 
 .cross__img{
-height: 252px;
-width: 217px;
+height: 180px;
+width: 150px;
 }
 
 .applicant_black{

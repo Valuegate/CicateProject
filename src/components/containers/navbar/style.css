@@ -175,6 +175,9 @@ cursor: pointer;
       text-decoration: none;
       z-index: 3;
   }
+  .nav__logo1{
+    display: none;
+   }
 
  body .signUp{
   padding: 0.5rem;
@@ -202,13 +205,16 @@ cursor: pointer;
 
 
 
-
+.nav__logo1{
+ margin-left: 120px;
+ 
+}
 .nav_brand{
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
     text-decoration: none;
-    margin-right: 20px;
     color: #282828;
+    font-family: "Monument Extended-Regular", Helvetica;
 }
 
 
@@ -217,7 +223,8 @@ cursor: pointer;
     font-size: 18px;
     text-decoration: none;
     margin-right: 45px;
-    color:#ffffff
+    color:#ffffff;
+    font-family: "Monument Extended-Regular", Helvetica;
 }
 .login {
     all: unset;

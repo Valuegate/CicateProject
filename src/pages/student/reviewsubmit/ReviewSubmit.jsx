@@ -112,21 +112,7 @@ setTimeout(() => {
                      onChange={(e)=>setTime(e.target)}
                      /></label>
 
-                   <br /> <label htmlFor="test" className='all_info'>Test 
-                    <br />
-
-                    <select 
-                    name="test"
-                     id="test" 
-                     className='inputs'
-                      placeholder='select test'
-                      onChange={(e)=>setTest(e.target.value)}
-                      >
-                      <option value="gate">Gate</option>
-                      <option value="pocas">Pocas</option>
-                      <option value="gate">Lisa</option>
-                    </select>
-           </label>
+                   <br /> 
 
 
 
@@ -154,12 +140,7 @@ setTimeout(() => {
                   
                   /></label>
 
-                <br /><label htmlFor="" className='all_info'>Username 
                 <br />
-                <input type="text"
-                 className='inputs'
-                  placeholder='Select'/>
-                  </label>
                 
                 </div>
                 </form>

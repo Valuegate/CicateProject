@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SignedNav from '../../../components/containers/signed/SignedNav'
 import Footer from '../../../components/containers/footer/footer'
 import TestCarousel from '../../../components/containers/test-carousel/TestCarousel'
@@ -14,11 +14,19 @@ const PhotoValidation = () => {
   const {setImg
 } = useRegisterContext()
 
+const [previewImg, setPreviewImg] = useState(null)
+
   const Navigate = useNavigate()
 
   const handleSubmit = (e) => {
     e.preventDefault()
 Navigate('/student/reviewsubmit')
+  }
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0]
+    setImg(file)
+    setPreviewImg(URL.createObjectURL(file)) 
   }
 
   return (
@@ -38,12 +46,17 @@ Navigate('/student/reviewsubmit')
 
   <div className='flex_idd'>
     <div className='photo_box'>
+    {previewImg ? (
+                  <img src={previewImg} alt="img" className='preview_img' />
+                ) : (
+                  <img src={imgupload} alt="img" className='uplood'/>
+                )}
     <input 
       accept="image/*"
       id="icon-button-file"
         type="file" 
         style={{ display: 'none' }}
-        onChange={(e)=>setImg(e.target.files[0])}
+        onChange={handleFileChange}
         />
       <label htmlFor="icon-button-file" className='photo_tex'>
         <img src={imgupload} alt="img" />

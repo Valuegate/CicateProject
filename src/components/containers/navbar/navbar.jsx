@@ -36,7 +36,8 @@ useEffect(() => {
   return (
     <div className=''>
       <nav className='navv'>
-        <a href="/" className='nav_brand'>CICATE </a>
+        <div className='nav__logo1'> <a href="/" className='nav_brand'>CICATE </a></div>
+  
           <ul className={active}>
             <li><a href="/" className='nav__link' > <img alt='img' src={vector1} className='vector'/>Test Takers</a> </li>
             <li><a href="/institutions" className='nav__link'><img alt='img' src={vector2} className='vector'/>Institutions</a> </li>
