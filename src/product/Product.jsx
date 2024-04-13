@@ -65,7 +65,7 @@ console.log(response.data)
 <div className='price_display'> <p className='price'>Price: ${price}</p></div>
             
               <div className='to_apply_flex1'>
-                {user ? (<Link to={'/student/onlineofline'} className='buton_aply'>Apply</Link>) :(<Link to={'/login'} className='bl_to_apply'>Apply </Link>) }
+                {user ? (<Link to={'/student/onlineofline'} className='buton_aply'>Apply</Link>) :(<Link to={'/login'} className='buton_aply'>Apply </Link>) }
               
                 </div>
         </div>
