@@ -97,9 +97,7 @@ text-align: center;
         background-color: rgba(255, 255, 255, 1);
     }
 
-   body .empower{
-    font-size: 3rem;
-   }
+   
    .app_line{
     margin-top: -8rem;
    }
@@ -125,17 +123,20 @@ text-align: center;
             position: relative;
             margin-top: 100px;
         }
-
+.dmp{
+    margin-left: 2rem;
+}
        
 
        body   .empower{
             color: #282828;
             font-family: "Monument Extended-Regular", Helvetica;
-            font-size: 3.2rem;
+            font-size: 22px;
             font-weight: bold !important;
             letter-spacing: 0;
-            line-height: 39.2px;
-           
+            line-height: 28.2px;
+            text-align: justify;
+            align-items: center;
             margin-top: 2rem;
             margin-bottom: 2rem;
            
@@ -532,10 +533,11 @@ height: 40vh;
 .empower{
 color: #282828;
 font-family: "Monument Extended-Regular", Helvetica;
-font-size: 5rem;
+font-size: 40px;
 font-weight: bold;
 letter-spacing: 0;
-line-height: 60.2px;
+line-height: 45.2px;
+text-align: justify;
 }
 
 .our_test{

@@ -66,10 +66,9 @@ to Success!</div>
       <img src={emp} alt="empower" className='empower_box'/>
      
        
-        <div className=''>
-            <p className='empower'>Empowering <br />
-Individuals With 
-Reliable Tests </p>
+        <div className='dmp'>
+            <p className='empower'>Empowering Individuals <br />
+             With Reliable Tests </p>
             <p className='cicate_offerz'>CICATE offers cutting-edge testing solutions like <br />
             G.A.T.E and CCA, ensuring accurate evaluations <br />
              for your success. Discover how our products can <br />
