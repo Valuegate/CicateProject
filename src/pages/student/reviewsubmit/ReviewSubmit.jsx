@@ -10,6 +10,7 @@ import { useRegisterContext } from '../../../auth/Register'
 import { useAuth } from '../../../auth/AuthProvider'
 import { Client } from '../../../api/axios'
 import Alert from '../../../components/alert/Alert'
+import Loader from '../../../loader'
 
 
 
@@ -19,6 +20,8 @@ import Alert from '../../../components/alert/Alert'
 const Exam_Register = 'https://ciccate2.onrender.com/api/api/ExamRegister/'
 
 const ReviewSubmit = () => {
+const [Loading, setIsLoading] = useState(false)
+
 
   const {  img,setImg,
     time, setTime,
@@ -29,7 +32,7 @@ const ReviewSubmit = () => {
 const { id, setId} = useAuth()
   
 const handleSubmit = () => {
-
+setIsLoading(true)
     
 
 const formData = new FormData(); // Assuming img is a File object
@@ -46,8 +49,9 @@ formData.append('date', month);
        Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
       },
     }
+    
     ).then((res)=>{
-   
+   setIsLoading(false)
 setAlertMessage({
   type: 'success',
   message:'Account Sucessfully created',
@@ -78,6 +82,7 @@ setTimeout(() => {
       </div>
       <div className='try'>
         <div className='second_block'>
+       
         { alertMessage && (<Alert
           type={alertMessage.type}
           message={alertMessage.message}
@@ -85,6 +90,22 @@ setTimeout(() => {
 
             <TestCarousel/>
             <div>
+            {Loading ? (
+                <div
+                    style={{
+                        width: "100px",
+                        margin: "auto",
+                    }}
+                >
+                    <Loader />
+                </div>
+            ) : (
+                <div>
+                    <h3>
+                        please wait 
+                    </h3>
+                </div>
+            )}
                 <form action="" className='review_flex'>
                 <div className=''>
                     <label htmlFor="" className='all_info'>Date

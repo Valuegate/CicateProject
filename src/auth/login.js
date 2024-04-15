@@ -29,8 +29,10 @@ export const AuthLogin = ({children}) => {
   
 
   
+const [Loading, SetIsLoading] = useState(false)
 
   const handleLogin = async (e) => {
+    SetIsLoading(true)
      e.preventDefault();
 
      try{
@@ -208,6 +210,7 @@ console.log('success');
   
       <Context.Provider value={{
         handleLogin,
+        Loading,
         handleLogout,
         setAlertMessage,
         alertMessage,

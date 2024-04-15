@@ -8,10 +8,11 @@ import greenskey from '../../assets/greenskey.svg'
 import mail_black from '../../assets/mail_black.png'
 import Alert from '../../components/alert/Alert'
 import { useAuthLogin } from '../../auth/login'
+import Loader from '../../loader'
 
 const Login = () => {
-  
-  const {handleLogin, endAlert,alertMessage} = useAuthLogin()
+
+  const {handleLogin, endAlert,alertMessage, Loading} = useAuthLogin()
 
 
 
@@ -38,7 +39,9 @@ message={alertMessage.message}
 onClose={endAlert}
 
 />)}
+
   <div className='sign_flex'>
+  
 <div className=''>
 <div><img src={iconsgreen} alt="img" className='grening'/></div>
 <div className='sign_white'>Sign In</div>
@@ -60,7 +63,9 @@ onClose={endAlert}
      required
 
     /> <br /> 
+   
   </div>
+  
  <div> <img src={greenskey} alt="img" className='icon_immg'/>
   <input
    type="password"
@@ -75,6 +80,22 @@ onClose={endAlert}
   
    </div> 
   <button type='submit' className='green_login'>Login</button>
+  {Loading ? (
+                <div
+                    style={{
+                        width: "100px",
+                        margin: "auto",
+                    }}
+                >
+                    <Loader />
+                </div>
+            ) : (
+                <div>
+                    <h3>
+                       
+                    </h3>
+                </div>
+            )}
     <br /> 
     <span ><a href="/choose" className='already_register'>Not yet registered?</a></span>
     <a href="/student/signup" className='forgot_password'>Forgot Password</a> 
