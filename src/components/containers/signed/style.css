@@ -46,6 +46,10 @@ cursor: pointer;
       justify-content: flex-end;
     }
 
+    .nav_brand{
+      display: none !important;
+    }
+
     .nav__menu {
         position: fixed;
         top: 7vh;
