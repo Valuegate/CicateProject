@@ -1,4 +1,4 @@
-import React, {useContext, useState, createContext} from "react";
+import React, {useContext, useState, createContext, useEffect} from "react";
 import { Client } from "../api/axios";
 import {useNavigate, useHistory} from 'react-router-dom'
 import { useRegisterContext } from "./Register";
@@ -167,6 +167,9 @@ return JSON.parse(localStorage.getItem('user'));
   });
   };
 
+  useEffect(() => {
+    SetIsLoading(false);
+  }, [])
 
   const startExams = (e) => {
     SetIsLoading(true);
@@ -212,6 +215,7 @@ console.log('success');
       <Context.Provider value={{
         handleLogin,
         Loading,
+        SetIsLoading,
         handleLogout,
         setAlertMessage,
         alertMessage,

@@ -21,8 +21,12 @@ import './style.css'
 
 
 const StudentDashboard = () => {
-  const {GetExams, startExams, getUser, Loading} = useAuthLogin();
+  const {GetExams, startExams, getUser, Loading, SetIsLoading} = useAuthLogin();
+
 const [user, setUser]=useState(false)
+useEffect(() => {
+  SetIsLoading(false);
+}, [])
 
 useEffect(() => {
 const user = getUser()
