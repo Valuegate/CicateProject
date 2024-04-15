@@ -13,7 +13,7 @@ import reading2 from '../../../assets/reading2.png'
 import read_photo from '../../../assets/read_photo.png'
 import read_photo2 from '../../../assets/read_photo2.png'
 import { useAuthLogin } from '../../../auth/login'
-
+import Loader from '../../../loader'
 
 
 import './style.css'
@@ -21,7 +21,7 @@ import './style.css'
 
 
 const StudentDashboard = () => {
-  const {GetExams, startExams, getUser} = useAuthLogin();
+  const {GetExams, startExams, getUser, Loading} = useAuthLogin();
 const [user, setUser]=useState(false)
 
 useEffect(() => {
@@ -43,6 +43,22 @@ if (user){
      <div className='dashboard_flex'>
 
      <div className=''>
+     {Loading ? (
+                <div
+                    style={{
+                        width: "100px",
+                        margin: "auto",
+                    }}
+                >
+                    <Loader />
+                </div>
+            ) : (
+                <div>
+                    <h3>
+                       
+                    </h3>
+                </div>
+            )}
       <div className='bold_dashboard'><img src={trois} alt="img" className='img_set'/>My Dashboard</div>
       <br />
       <div ><div className='my_test'>My Tests</div>   <a href="/" className='view'>view all Tests</a></div>

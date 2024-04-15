@@ -169,6 +169,7 @@ return JSON.parse(localStorage.getItem('user'));
 
 
   const startExams = (e) => {
+    SetIsLoading(true);
     Client.get(QuestionUrl,{
       headers: { 
       Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
