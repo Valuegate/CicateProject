@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import { Client } from '../../../api/axios'
-
+import './styles.css'
 
 
 
@@ -31,7 +31,7 @@ useEffect(() => {
 
 const onSubmit = async (e) => {
    await Client.put(
-    `https://ciccate2.onrender.com https://ciccate2.onrender.com/api/api/question/update/${id}/`,updateQuestion
+    `https://ciccate2.onrender.com/api/api/question/update/${id}/`,updateQuestion
     ).then((response)=>{
         console.log(response)
         alert('sucessfully updated')
@@ -44,13 +44,13 @@ const onSubmit = async (e) => {
 }
 
 const loadQuestions = async () => {
-    const result = await Client.get(`https://ciccate2.onrender.com https://ciccate2.onrender.com/api/api/question/list/${id}/`,
+    const result = await Client.get(`https://ciccate2.onrender.com/api/api/question/list/${id}/`,
      {
         headers: { 
        Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
       }}).then((response) => {
         console.log(response);
-        setUpdateQuestion(result.data)
+        setUpdateQuestion(result.data.questions)
       }).catch((error) => {
         if (error){
             console.log(error, 'Error getting question')
@@ -73,33 +73,42 @@ const loadQuestions = async () => {
  </div>
 <div className='main1'>
            
-          <form action="">
-            <label htmlFor="question"> Question
+          <form action="edit_flex">
+            <div>
+            <label htmlFor="question" className='labels'> Question <br />
                 <input 
                 type="text"
                 value={question}
+                className='inputs'
                 name='question'
                 onChange={(e) => questionChange(e)}
                  />
             </label>
-
-            <label htmlFor="que_type"> organization
+            </div>
+           
+<div>
+<label htmlFor="que_type" className='labels'> organization <br />
                 <input 
+                className='inputs'
                 type="text"
                 value={que_type}
                 name='que_type'
                 onChange={(e) => questionChange(e)}
                  />
             </label>
-            <button onClick={()=>onSubmit()}>Update Question</button>
+
+            
+</div>
+<br />
+<div className='edit_flex'>
+<button onClick={()=>onSubmit()} className='next_big'>Update Question</button> 
+</div>
+
           </form>
 
 
 
- <div className='questions_disp1'>
 
-   
- </div>
 </div>
 </div>
 

@@ -17,28 +17,23 @@ import Alert from '../../../components/alert/Alert'
 
 
 const Exam_Register = 'https://ciccate2.onrender.com/api/api/ExamRegister/'
+
 const ReviewSubmit = () => {
 
-
-
-  const {  img,setImg, setValidImg, validImg,
-    time, setTime,validTime, setValidTime,
-    test, setTest,validTest, setValidTest,
-    day, setDay, validDay, setValidDay,
-    month, setMonth, validMonth, setValidMonth} = useRegisterContext()
+  const {  img,setImg,
+    time, setTime,
+    month, setMonth} = useRegisterContext()
  
   const Navigate = useNavigate()
   const [alertMessage, setAlertMessage] = useState(null)
-const {userName, id, userEmail} = useAuth()
+const { id, setId} = useAuth()
   
-const handleSubmit = (e) => {
+const handleSubmit = () => {
 
-    e.preventDefault()
+    
 
-const formData = new FormData();
-formData.append('image', img); // Assuming img is a File object
+const formData = new FormData(); // Assuming img is a File object
 formData.append('uploaded_images', img); // Assuming img is a File object
-formData.append('name', test);
 formData.append('time', time);
 formData.append('user', id);
 formData.append('date', month);
@@ -136,7 +131,7 @@ setTimeout(() => {
                  className='inputs'
                   placeholder='Select'
                   value={id}
-                 
+                 onChange={()=>setId(id)}
                   
                   /></label>
 

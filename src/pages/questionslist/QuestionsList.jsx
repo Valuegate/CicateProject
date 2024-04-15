@@ -11,7 +11,7 @@ import Alert from '../../components/alert/Alert'
 /** */
 const list = 'https://ciccate2.onrender.com/api/api/question/list/'
 
-const url = `https://ciccate2.onrender.com/api/api/question/update/10`
+const url = `https://ciccate2.onrender.com/api/api/question/update/`
 
 
 
@@ -100,6 +100,7 @@ setCheckedBox(updatedboxes)
         Authorization: 'Bearer ' + localStorage.getItem('accesstoken') 
        }},
    ).then((response) =>{
+      console.log(response.data)
       Navigate(`/institution/editquestion/${id}`)
    }).catch((error) =>{
       if (error){
