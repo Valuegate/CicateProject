@@ -24,6 +24,7 @@ const StudentDashboard = () => {
   const {GetExams, startExams, getUser, Loading, SetIsLoading} = useAuthLogin();
 
 const [user, setUser]=useState(false)
+
 useEffect(() => {
   SetIsLoading(false);
 }, [])

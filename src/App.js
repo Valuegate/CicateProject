@@ -69,7 +69,8 @@ function App() {
 
      
       <Routes>
-      <Route path='/student/testresult' element={<TestResult/>}/>
+ <Route element={<ProtectedRoutes/>}>
+ <Route path='/student/testresult' element={<TestResult/>}/>
       <Route path='/student/testsubmit' element={<TestSubmitPop/>}/>
       <Route path='/student/photovalidation' element={<PhotoValidation/>}/>
         <Route path='/student/paymentpage' element={<PaymentPage/>}/>
@@ -83,6 +84,11 @@ function App() {
         <Route path='/student/reviewsubmit' element={<ReviewSubmit/>}/>
         <Route path='/student/information' element={<Information/>}/>
         <Route path='/student/settings/:id' element={<Settings/>}/>
+
+  </Route>
+     
+           
+     
 
  
      
